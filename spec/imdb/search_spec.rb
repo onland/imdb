@@ -8,8 +8,8 @@ describe 'Imdb::Search with multiple search results' do
       expect(subject.query).to eq('Star Trek: TOS')
     end
 
-    it 'finds 14 results' do
-      expect(subject.movies.size).to eq(14)
+    it 'finds 6 results' do
+      expect(subject.movies.size).to eq(6)
     end
 
     it 'returns Imdb::Movie objects only' do

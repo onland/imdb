@@ -1,15 +1,18 @@
 HTTP/1.1 200 OK
-Date: Fri, 31 Jan 2014 10:08:23 GMT
+Date: Sun, 26 Mar 2017 08:19:23 GMT
 Server: Server
 X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self' imdb.com *.imdb.com *.media-imdb.com withoutabox.com *.withoutabox.com amazon.com *.amazon.com amazon.co.uk *.amazon.co.uk amazon.de *.amazon.de translate.google.com images.google.com www.google.com www.google.co.uk search.aol.com bing.com www.bing.com
 Content-Type: text/html;charset=UTF-8
 Content-Language: en-US
 Vary: Accept-Encoding,User-Agent
-Set-Cookie: uu=BCYhHrNX-7xvLxO9Twd6h_JY5lsYwsq5oXXNqXbFCg-9VRXUC1ARwsErugmIkWZw4vfOGbVZ0Piu%0D%0AN6f2B8EaRf67pMYSy3eiYA9APoUYS2MeJzHGMG8LT9Nl3FwjX6nzgAVIjLX1OFQzbkc6ajuIUiFj%0D%0AkV77UfGc_rpg9ZDWGVf0TiEfirbv2LAEkYYKFwB721SibiTYkSXgw-ssH8BoFNv4-NTi09ZX-DoV%0D%0ATg_0X4NcHtvfJhaWfIXk67FmBBL6PkNV4g-DKcy6VHpfUlHkARh-iw%0D%0A; Domain=.imdb.com; Expires=Wed, 18-Feb-2082 13:22:31 GMT; Path=/
-Set-Cookie: session-id=000-0000000-0000000; Domain=.imdb.com; Expires=Wed, 18-Feb-2082 13:22:31 GMT; Path=/
-Set-Cookie: session-id-time=1548842903; Domain=.imdb.com; Expires=Wed, 18-Feb-2082 13:22:31 GMT; Path=/
+Set-Cookie: uu=BCYv0SIhrcCGROicuSFTf5HEZI4mURUK8GXKNbz4Xc0WM0l-pGr_eXxM_bSJCM4J3dsIphHk5B4M%0D%0ARr-3RyTyrPiXIbscs-A_5fm4kKJZQojzhUIFj930_Sgz727QuFMftwISmNJ_EQnvOFxyp8_S8hrD%0D%0ATpzDoY2c7TaEImBkRi0zsq8VVPZgQII-cwitV1s8b6yWe5PcMzXxjqXvO-shl2NqG-jkr9urd2bx%0D%0AEvguSWxox2MsW5q0_a67Y1OtZH4zPn3OaB2GDzH3g8uzEuzP7zkP9kKva82WXChuiKb-QxStxqLO%0D%0AGuXFAznS72tO_bE16vCv%0D%0A; Domain=.imdb.com; Expires=Fri, 13-Apr-2085 11:33:30 GMT; Path=/
+Set-Cookie: session-id=000-0000000-0000000; Domain=.imdb.com; Expires=Fri, 13-Apr-2085 11:33:30 GMT; Path=/
+Set-Cookie: session-id-time=1648196362; Domain=.imdb.com; Expires=Fri, 13-Apr-2085 11:33:30 GMT; Path=/
 P3P: policyref="http://i.imdb.com/images/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "
 Transfer-Encoding: chunked
+
+
 
 
 
@@ -25,14 +28,22 @@ Transfer-Encoding: chunked
 xmlns:og="http://ogp.me/ns#"
 xmlns:fb="http://www.facebook.com/2008/fbml">
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="apple-itunes-app" content="app-id=342792525, app-argument=imdb:///title/tt0898266?src=mdot">
+        
+    
             <script type="text/javascript">var ue_t0=window.ue_t0||+new Date();</script>
             <script type="text/javascript">
                 var ue_mid = "A1EVAM02EL8SFB"; 
                 var ue_sn = "www.imdb.com";  
                 var ue_furl = "fls-na.amazon.com";
                 var ue_sid = "000-0000000-0000000";
-                var ue_id = "1X8JTF2AQF0XVVE97TD4";
-                (function(e){var c=e,a={main_scope:"mainscopecsm",q:[],t0:c.ue_t0||+new Date(),d:g};function g(h){return +new Date()-(h?0:a.t0)}function d(h){return function(){a.q.push({n:h,a:arguments,t:a.d()})}}function b(k,j,h){var i={m:k,f:j,l:h,fromOnError:1,args:arguments};c.ueLogError(i);return false}b.skipTrace=1;e.onerror=b;function f(){c.uex("ld")}if(e.addEventListener){e.addEventListener("load",f,false)}else{if(e.attachEvent){e.attachEvent("onload",f)}}a.tag=d("tag");a.log=d("log");a.reset=d("rst");c.ue_csm=c;c.ue=a;c.ueLogError=d("err");c.ues=d("ues");c.uet=d("uet");c.uex=d("uex");c.uet("ue")})(window);(function(e,d){var a=e.ue||{};function c(g){if(!g){return}var f=d.head||d.getElementsByTagName("head")[0]||d.documentElement,h=d.createElement("script");h.async="async";h.src=g;f.insertBefore(h,f.firstChild)}function b(){var k=e.ue_cdn||"z-ecx.images-amazon.com",g=e.ue_cdns||"images-na.ssl-images-amazon.com",j="/images/G/01/csminstrumentation/",h=e.ue_file||"ue-full-ef584a44e8ea58e3d4d928956600a9b6._V1_.js",f,i;if(h.indexOf("NSTRUMENTATION_FIL")>=0){return}if("ue_https" in e){f=e.ue_https}else{f=e.location&&e.location.protocol=="https:"?1:0}i=f?"https://":"http://";i+=f?g:k;i+=j;i+=h;c(i)}if(!e.ue_inline){b()}a.uels=c;e.ue=a})(window,document);
+                var ue_id = "12VKPRCAPN44HPF6MCZZ";
+                (function(e){var c=e;var a=c.ue||{};a.main_scope="mainscopecsm";a.q=[];a.t0=c.ue_t0||+new Date();a.d=g;function g(h){return +new Date()-(h?0:a.t0)}function d(h){return function(){a.q.push({n:h,a:arguments,t:a.d()})}}function b(m,l,h,j,i){var k={m:m,f:l,l:h,c:""+j,err:i,fromOnError:1,args:arguments};c.ueLogError(k);return false}b.skipTrace=1;e.onerror=b;function f(){c.uex("ld")}if(e.addEventListener){e.addEventListener("load",f,false)}else{if(e.attachEvent){e.attachEvent("onload",f)}}a.tag=d("tag");a.log=d("log");a.reset=d("rst");c.ue_csm=c;c.ue=a;c.ueLogError=d("err");c.ues=d("ues");c.uet=d("uet");c.uex=d("uex");c.uet("ue")})(window);(function(e,d){var a=e.ue||{};function c(g){if(!g){return}var f=d.head||d.getElementsByTagName("head")[0]||d.documentElement,h=d.createElement("script");h.async="async";h.src=g;f.insertBefore(h,f.firstChild)}function b(){var k=e.ue_cdn||"z-ecx.images-amazon.com",g=e.ue_cdns||"images-na.ssl-images-amazon.com",j="/images/G/01/csminstrumentation/",h=e.ue_file||"ue-full-11e51f253e8ad9d145f4ed644b40f692._V1_.js",f,i;if(h.indexOf("NSTRUMENTATION_FIL")>=0){return}if("ue_https" in e){f=e.ue_https}else{f=e.location&&e.location.protocol=="https:"?1:0}i=f?"https://":"http://";i+=f?g:k;i+=j;i+=h;c(i)}if(!e.ue_inline){if(a.loadUEFull){a.loadUEFull()}else{b()}}a.uels=c;e.ue=a})(window,document);
+                if (!('CS' in window)) { window.CS = {}; }
+                    window.CS.loginLocation = "https://www.imdb.com/registration/signin?u=%2Ftitle%2Ftt0898266%2Fepisodes%3Fseason%3D1";
             </script>
  
 
@@ -43,37 +54,49 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
         <title>The Big Bang Theory (TV Series 2007– ) - Episodes - IMDb</title>
   <script>(function(t){ (t.events = t.events || {})["csm_head_post_title"] = new Date().getTime(); })(IMDbTimer);</script>
         
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             <link rel="canonical" href="http://www.imdb.com/title/tt0898266/episodes" />
             <meta property="og:url" content="http://www.imdb.com/title/tt0898266/episodes" />
         
   <script>(function(t){ (t.events = t.events || {})["csm_head_pre_icon"] = new Date().getTime(); })(IMDbTimer);</script>
-        <link rel="icon" type="image/ico" href="http://ia.media-imdb.com/images/G/01/imdb/images/favicon-2165806970._V379387995_.ico" />
-        <link rel="shortcut icon" type="image/x-icon" href="http://ia.media-imdb.com/images/G/01/imdb/images/desktop-favicon-2165806970._V379390718_.ico" />
-        <link rel="apple-touch-icon" href="http://ia.media-imdb.com/images/G/01/imdb/images/apple-touch-icon-3173846443._V379391250_.png" />
-        <link rel="search" type="application/opensearchdescription+xml" href="http://ia.media-imdb.com/images/G/01/imdb/images/imdbsearch-3349468880._V379388505_.xml" title="IMDb" />
+        <link href="http://ia.media-imdb.com/images/G/01/imdb/images/safari-favicon-517611381._CB522736552_.svg" mask rel="icon" sizes="any">
+        <link rel="icon" type="image/ico" href="http://ia.media-imdb.com/images/G/01/imdb/images/favicon-2165806970._CB522736556_.ico" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="shortcut icon" type="image/x-icon" href="http://ia.media-imdb.com/images/G/01/imdb/images/desktop-favicon-2165806970._CB522736561_.ico" />
+        <link href="http://ia.media-imdb.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-4151659188._CB522736129_.png" rel="apple-touch-icon"> 
+        <link href="http://ia.media-imdb.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-76x76-53536248._CB522736233_.png" rel="apple-touch-icon" sizes="76x76"> 
+        <link href="http://ia.media-imdb.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-120x120-2442878471._CB522736253_.png" rel="apple-touch-icon" sizes="120x120"> 
+        <link href="http://ia.media-imdb.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-152x152-1475823641._CB522736557_.png" rel="apple-touch-icon" sizes="152x152">            
+        <link rel="search" type="application/opensearchdescription+xml" href="http://ia.media-imdb.com/images/G/01/imdb/images/imdbsearch-3349468880._CB522736605_.xml" title="IMDb" />
   <script>(function(t){ (t.events = t.events || {})["csm_head_post_icon"] = new Date().getTime(); })(IMDbTimer);</script>
         
-    
-        <link rel='image_src' href="http://ia.media-imdb.com/images/M/MV5BMjQzMTYyODM4M15BMl5BanBnXkFtZTcwMTAxMDU1MQ@@._V1_SY799_SX593_.jpg">
-        <meta property='og:image' content="http://ia.media-imdb.com/images/M/MV5BMjQzMTYyODM4M15BMl5BanBnXkFtZTcwMTAxMDU1MQ@@._V1_SY799_SX593_.jpg" />
-    
+        <meta property="pageId" content="tt0898266" />
+        <meta property="pageType" content="title" />
+        <meta property="subpageType" content="episodes" />
+
+
+        <link rel='image_src' href="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyNDMxNjQyN15BMl5BanBnXkFtZTgwNzA4NDQwMDI@._V1_UY1200_CR85,0,630,1200_AL_.jpg">
+        <meta property='og:image' content="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyNDMxNjQyN15BMl5BanBnXkFtZTgwNzA4NDQwMDI@._V1_UY1200_CR85,0,630,1200_AL_.jpg" />
+
         <meta property='og:type' content="video.tv_show" />
     <meta property='fb:app_id' content='115109575169727' />
+
     <meta property='og:title' content="The Big Bang Theory (TV Series 2007– )" />
     <meta property='og:site_name' content='IMDb' />
     <meta name="title" content="The Big Bang Theory (TV Series 2007– ) - IMDb" />
         <meta name="description" content="" />
         <meta property="og:description" content="" />
         <meta name="keywords" content="Episodes" />
-        <meta name="request_id" content="1X8JTF2AQF0XVVE97TD4" />
+        <meta name="request_id" content="12VKPRCAPN44HPF6MCZZ" />
         
   <script>(function(t){ (t.events = t.events || {})["csm_head_pre_css"] = new Date().getTime(); })(IMDbTimer);</script>
-<!-- h=ics-1e-i-9ddcd1e7.us-east-1 -->
+<!-- h=ics-1a-c4-2xl-4b642d2a.us-east-1 -->
 
-            <link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/collections/title-2125033518._V363851123_.css" />
-            <!--[if IE]><link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/collections/ie-1918465287._V354866480_.css" /><![endif]-->
-            <link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/site/consumer-navbar-mega-3538633082._V355276482_.css" />
+            <link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/collections/title-flat-1144577283._CB531876198_.css" />
+            <!--[if IE]><link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/collections/ie-1170868033._CB522736261_.css" /><![endif]-->
+            <link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/site/consumer-navbar-mega-238568768._CB532297092_.css" />
+        <noscript>
+            <link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/wheel/nojs-2827156349._CB522739048_.css">
+        </noscript>
   <script>(function(t){ (t.events = t.events || {})["csm_head_post_css"] = new Date().getTime(); })(IMDbTimer);</script>
         
   <script>(function(t){ (t.events = t.events || {})["csm_head_pre_ads"] = new Date().getTime(); })(IMDbTimer);</script>
@@ -84,8 +107,8 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
             (function(f) {
                 // Fallback javascript, when the ad Service call fails.  
                 
-                if((window.csm === undefined || window.generic === undefined || window.consoleLog === undefined)) {
-                    if (console !== undefined && console.log !== undefined) {
+                if((window.csm == null || window.generic == null || window.consoleLog == null)) {
+                    if (window.console && console.log) {
                         console.log("one or more of window.csm, window.generic or window.consoleLog has been stubbed...");
                     }
                 }
@@ -126,16 +149,17 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
 </div>
   <div id="navbar" class="navbarSprite">
 <noscript>
-  <link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/site/consumer-navbar-no-js-4175877511._V379390803_.css" />
+  <link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/site/consumer-navbar-no-js-3652782989._CB522736526_.css" />
 </noscript>
-<!--[if IE]><link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/site/consumer-navbar-ie-470687728._V379390980_.css"><![endif]-->
+<!--[if IE]><link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/site/consumer-navbar-ie-2133976414._CB522736582_.css"><![endif]-->
 <span id="home_img_holder">
-<a href="/?ref_=nv_home" title="Home" class="navbarSprite" id="home_img" ></a>  <span class="alt_logo">
-    <a href="/?ref_=nv_home" title="Home" >IMDb</a>
+<a href="/?ref_=nv_home"
+title="Home" class="navbarSprite" id="home_img" ></a>  <span class="alt_logo">
+    <a href="/?ref_=nv_home"
+title="Home" >IMDb</a>
   </span>
 </span>
 <form
-onsubmit="(new Image()).src='/rg/SEARCH-BOX/HEADER/images/b.gif?link=/find';"
  method="get"
  action="/find"
  class="nav-searchbar-inner"
@@ -145,6 +169,7 @@ onsubmit="(new Image()).src='/rg/SEARCH-BOX/HEADER/images/b.gif?link=/find';"
   <div id="nb_search">
     <noscript><div id="more_if_no_javascript"><a href="/search/">More</a></div></noscript>
     <button id="navbar-submit-button" class="primary btn" type="submit"><div class="magnifyingglass navbarSprite"></div></button>
+    <input type="hidden" name="ref_" value="nv_sr_fn" />
     <input type="text" autocomplete="off" value="" name="q" id="navbar-query" placeholder="Find Movies, TV shows, Celebrities and more...">
     <div class="quicksearch_dropdown_wrapper">
       <select name="s" id="quicksearch" class="quicksearch_dropdown navbarSprite"
@@ -156,7 +181,6 @@ onsubmit="(new Image()).src='/rg/SEARCH-BOX/HEADER/images/b.gif?link=/find';"
         <option value="co" >Companies</option>
         <option value="kw" >Keywords</option>
         <option value="ch" >Characters</option>
-        <option value="vi" >Videos</option>
         <option value="qu" >Quotes</option>
         <option value="bi" >Bios</option>
         <option value="pl" >Plots</option>
@@ -170,44 +194,71 @@ onsubmit="(new Image()).src='/rg/SEARCH-BOX/HEADER/images/b.gif?link=/find';"
         <li class="spacer"></li>
         <li class="css_nav_item" id="navTitleMenu">
             <p class="navCategory">
-                <a href="/movies-in-theaters/?ref_=nv_tp_inth_1" >Movies</a>,
-                <a href="/tv/?ref_=nv_tp_tvhm_2" >TV</a><br />
-                & <a href="/showtimes/?ref_=nv_tp_sh_3" >Showtimes</a></p>
+                <a href="/movies-in-theaters/?ref_=nv_tp_inth_1"
+>Movies</a>,
+                <a href="/chart/toptv/?ref_=nv_tp_tv250_2"
+>TV</a><br />
+                & <a href="/showtimes/?ref_=nv_tp_sh_3"
+>Showtimes</a></p>
             <span class="downArrow"></span>
             <div id="navMenu1" class="sub_nav">
                 <div id="titleAd"></div>
                 <div class="subNavListContainer">
                     <h5>MOVIES</h5>
                     <ul>
-                        <li><a href="/movies-in-theaters/?ref_=nv_mv_inth_1" >In Theaters</a></li>
-                        <li><a href="/showtimes/?ref_=nv_mv_sh_2" >Showtimes & Tickets</a></li>
-                        <li><a href="/trailers/?ref_=nv_mv_tr_3" >Latest Trailers</a></li>
-                        <li><a href="/movies-coming-soon/?ref_=nv_mv_cs_4" >Coming Soon</a></li>
-                        <li><a href="/calendar/?ref_=nv_mv_cal_5" >Release Calendar</a></li>
+                        <li><a href="/movies-in-theaters/?ref_=nv_mv_inth_1"
+>In Theaters</a></li>
+                        <li><a href="/showtimes/?ref_=nv_mv_sh_2"
+>Showtimes & Tickets</a></li>
+                        <li><a href="/trailers/?ref_=nv_mv_tr_3"
+>Latest Trailers</a></li>
+                        <li><a href="/movies-coming-soon/?ref_=nv_mv_cs_4"
+>Coming Soon</a></li>
+                        <li><a href="/calendar/?ref_=nv_mv_cal_5"
+>Release Calendar</a></li>
+                        <li><a href="/chart/top?ref_=nv_mv_250_6"
+>Top Rated Movies</a></li>
+                        <li><a href="/chart/top-indian-movies?ref_=nv_mv_250_in_7"
+>Top Rated Indian Movies</a></li>
+                        <li><a href="/chart/moviemeter?ref_=nv_mv_mpm_8"
+>Most Popular Movies</a></li>
                     </ul>
                     <h5>CHARTS & TRENDS</h5>
                     <ul>
-                        <li><a href="/search/title?count=100&title_type=feature,tv_series&ref_=nv_ch_mm_1" >Popular Movies & TV</a></li>
-                        <li><a href="/chart/?ref_=nv_ch_cht_2" >Box Office</a></li>
-                        <li><a href="/search/title?count=100&groups=oscar_best_picture_winners&sort=year,desc&ref_=nv_ch_osc_3" >Oscar Winners</a></li>
-                        <li><a href="/chart/top?ref_=nv_ch_250_4" >Top 250</a></li>
-                        <li><a href="/genre/?ref_=nv_ch_gr_5" >Most Popular by Genre</a></li>
+                        <li><a href="/chart/?ref_=nv_ch_cht_1"
+>Box Office</a></li>
+                        <li><a href="/search/title?count=100&groups=oscar_best_picture_winners&sort=year,desc&ref_=nv_ch_osc_2"
+>Oscar Winners</a></li>
+                        <li><a href="/genre/?ref_=nv_ch_gr_3"
+>Most Popular by Genre</a></li>
                     </ul>
                 </div>
                 <div class="subNavListContainer">
                     <h5>TV & VIDEO</h5>
                     <ul>
-                        <li><a href="/tv/?ref_=nv_tvv_hm_1" >TV Home</a></li>
-                        <li><a href="/tvgrid/?ref_=nv_tvv_ls_2" >On Tonight</a></li>
-                        <li><a href="/watchnow/?ref_=nv_tvv_wn_3" >Watch Now on Amazon</a></li>
-                        <li><a href="/sections/dvd/?ref_=nv_tvv_dvd_4" >DVD & Blu-Ray</a></li>
-                        <li><a href="/tv/blog?ref_=nv_tvv_blog_5" >TV Blog</a></li>
+                        <li><a href="/tv/?ref_=nv_tvv_tv_1"
+>IMDb TV</a></li>
+                        <li><a href="/tvgrid/?ref_=nv_tvv_ls_2"
+>On Tonight</a></li>
+                        <li><a href="/chart/toptv/?ref_=nv_tvv_250_3"
+>Top Rated TV Shows</a></li>
+                        <li><a href="/chart/tvmeter?ref_=nv_tvv_mptv_4"
+>Most Popular TV Shows</a></li>
+                        <li><a href="/feature/watch-now-on-amazon/?ref_=nv_tvv_wn_5"
+>Watch Now on Amazon</a></li>
+                        <li><a href="/sections/dvd/?ref_=nv_tvv_dvd_6"
+>DVD & Blu-Ray</a></li>
                     </ul>
                     <h5>SPECIAL FEATURES</h5>
                     <ul>
-                        <li><a href="/year-in-review/?ref_=nv_sf_best_1" >Best of 2013</a></li>
-                        <li><a href="/oscars/?ref_=nv_sf_rto_2" >Road to the Oscars 2014</a></li>
-                        <li><a href="/x-ray/?ref_=nv_sf_xray_3" >X-Ray for Movies & TV</a></li>
+                        <li><a href="/imdbpicks/?ref_=nv_sf_picks_1"
+>IMDb Picks</a></li>
+                        <li><a href="/scary-good/?ref_=nv_sf_sg_2"
+>Scary Good</a></li>
+                        <li><a href="/amazon-originals/?ref_=nv_sf_ams_3"
+>Amazon Originals</a></li>
+                        <li><a href="/star-wars/?ref_=nv_sf_stw_4"
+>Star Wars on IMDb</a></li>
                     </ul>
                 </div>
             </div>
@@ -215,38 +266,62 @@ onsubmit="(new Image()).src='/rg/SEARCH-BOX/HEADER/images/b.gif?link=/find';"
         <li class="spacer"></li>
         <li class="css_nav_item" id="navNameMenu">
             <p class="navCategory">
-                <a href="/search/name?gender=male,female&ref_=nv_tp_cel_1" >Celebs</a>,
-                <a href="/event/?ref_=nv_tp_ev_2" >Events</a><br />
-                & <a href="/media/index/rg1176148480?ref_=nv_tp_ph_3" >Photos</a></p>
+                <a href="/search/name?gender=male,female&ref_=nv_tp_cel_1"
+>Celebs</a>,
+                <a href="/awards-central/?ref_=nv_tp_awrd_2"
+>Events</a><br />
+                & <a href="/gallery/rg784964352?ref_=nv_tp_ph_3"
+>Photos</a></p>
             <span class="downArrow"></span>
             <div id="navMenu2" class="sub_nav">
                 <div id="nameAd"></div>
                 <div class="subNavListContainer">
                     <h5>CELEBS</h5>
                     <ul>
-                            <li><a href="/search/name?birth_monthday=01-31&refine=birth_monthday&ref_=nv_cel_brn_1" >Born Today</a></li>
-                        <li><a href="/news/celebrity?ref_=nv_cel_nw_2" >Celebrity News</a></li>
-                        <li><a href="/search/name?gender=male,female&ref_=nv_cel_m_3" >Most Popular Celebs</a></li>
+                            <li><a href="/search/name?birth_monthday=03-26&refine=birth_monthday&ref_=nv_cel_brn_1"
+>Born Today</a></li>
+                        <li><a href="/news/celebrity?ref_=nv_cel_nw_2"
+>Celebrity News</a></li>
+                        <li><a href="/search/name?gender=male,female&ref_=nv_cel_m_3"
+>Most Popular Celebs</a></li>
                     </ul>
                     <h5>PHOTOS</h5>
                     <ul>
-                        <li><a href="/media/index/rg1176148480?ref_=nv_ph_ls_1" >Latest Stills</a></li>
-                        <li><a href="/media/index/rg1528338944?ref_=nv_ph_lp_2" >Latest Posters</a></li>
-                        <li><a href="/sections/photos/premieres/?ref_=nv_ph_prem_3" >Movie & TV Premieres</a></li>
-                        <li><a href="/sections/photos/red_carpet/?ref_=nv_ph_red_4" >On the Red Carpet</a></li>
-                        <li><a href="/sections/photos/special_galleries/?ref_=nv_ph_sp_5" >Special Galleries</a></li>
+                        <li><a href="/gallery/rg1859820288?ref_=nv_ph_ls_1"
+>Latest Stills</a></li>
+                        <li><a href="/gallery/rg1624939264?ref_=nv_ph_lp_2"
+>Latest Posters</a></li>
+                        <li><a href="/gallery/rg1641716480?ref_=nv_ph_lv_3"
+>Photos We Love</a></li>
                     </ul>
                 </div>
                 <div class="subNavListContainer">
                     <h5>EVENTS</h5>
                     <ul>
-                        <li><a href="/oscars/?ref_=nv_ev_rto_1" >Road to the Oscars</a></li>
-                        <li><a href="/emmys/?ref_=nv_ev_rte_2" >Road to the Emmys</a></li>
-                        <li><a href="/comic-con/?ref_=nv_ev_comic_3" >Comic-Con</a></li>
-                        <li><a href="/cannes/?ref_=nv_ev_can_4" >Cannes</a></li>
-                        <li><a href="/tribeca/?ref_=nv_ev_tri_5" >Tribeca</a></li>
-                        <li><a href="/sundance/?ref_=nv_ev_sun_6" >Sundance</a></li>
-                        <li><a href="/event/?ref_=nv_ev_all_7" >More Popular Events</a></li>
+                        <li><a href="/awards-central/?ref_=nv_ev_awrd_1"
+>Awards Central</a></li>
+                        <li><a href="/oscars/?ref_=nv_ev_acd_2"
+>Oscars</a></li>
+                        <li><a href="/golden-globes/?ref_=nv_ev_gg_3"
+>Golden Globes</a></li>
+                        <li><a href="/sundance/?ref_=nv_ev_sun_4"
+>Sundance</a></li>
+                        <li><a href="/cannes/?ref_=nv_ev_can_5"
+>Cannes</a></li>
+                        <li><a href="/comic-con/?ref_=nv_ev_comic_6"
+>Comic-Con</a></li>
+                        <li><a href="/emmys/?ref_=nv_ev_rte_7"
+>Emmy Awards</a></li>
+                        <li><a href="/venice/?ref_=nv_ev_venice_8"
+>Venice Film Festival</a></li>
+                        <li><a href="/toronto/?ref_=nv_ev_tff_9"
+>Toronto Film Festival</a></li>
+                        <li><a href="/festival-central/?ref_=nv_ev_fc_10"
+>Festival Central</a></li>
+                        <li><a href="/festival-central/tribeca?ref_=nv_ev_tff_11"
+>Tribeca</a></li>
+                        <li><a href="/event/all/?ref_=nv_ev_all_12"
+>All Events</a></li>
                     </ul>
                 </div>
             </div>
@@ -254,8 +329,11 @@ onsubmit="(new Image()).src='/rg/SEARCH-BOX/HEADER/images/b.gif?link=/find';"
         <li class="spacer"></li>
         <li class="css_nav_item" id="navNewsMenu">
             <p class="navCategory">
-                <a href="/news/top?ref_=nv_tp_nw_1" >News</a> &<br />
-                <a href="/boards/?ref_=nv_tp_bd_2" >Community</a></p>
+                <a href="/news/top?ref_=nv_tp_nw_1"
+>News</a> &<br />
+                <a href="/czone/?ref_=nv_cm_cz_2"
+>Community</a>
+            </p>
             <span class="downArrow"></span>
             <div id="navMenu3" class="sub_nav">
                 <div id="latestHeadlines">
@@ -263,19 +341,22 @@ onsubmit="(new Image()).src='/rg/SEARCH-BOX/HEADER/images/b.gif?link=/find';"
                         <h5>LATEST HEADLINES</h5>
     <ul>
                 <li itemprop="headline">
-<a href="/news/ni56738656/?ref_=nv_nw_tn_1" > 'Neighbors' with Seth Rogen, 'Space Station 76,' more join SXSW features lineup
+<a href="/news/ni60924414/?ref_=nv_nw_tn_1"
+> Box Office: ‘Beauty and the Beast’ Repeats No. 1 on Friday
 </a><br />
-                        <span class="time">14 hours ago</span>
+                        <span class="time">17 hours ago</span>
                 </li>
                 <li itemprop="headline">
-<a href="/news/ni56738234/?ref_=nv_nw_tn_2" > Oscars: Michael B. Jordan, Kristen Bell to Host Sci-Tech Awards
+<a href="/news/ni60925054/?ref_=nv_nw_tn_2"
+> Jean Rouverol, Blacklisted Screenwriter, Dies at 100
 </a><br />
-                        <span class="time">15 hours ago</span>
+                        <span class="time">13 hours ago</span>
                 </li>
                 <li itemprop="headline">
-<a href="/news/ni56737830/?ref_=nv_nw_tn_3" > Jerry Seinfeld Sorta Confirms Seinfeld Reunion, Gives Details on Secret Project With Jason Alexander
+<a href="/news/ni60925050/?ref_=nv_nw_tn_3"
+> Watch Carrie Fisher and Debbie Reynolds' Public Memorial
 </a><br />
-                        <span class="time">16 hours ago</span>
+                        <span class="time">12 hours ago</span>
                 </li>
     </ul>
                     </div>
@@ -283,18 +364,23 @@ onsubmit="(new Image()).src='/rg/SEARCH-BOX/HEADER/images/b.gif?link=/find';"
                 <div class="subNavListContainer">
                     <h5>NEWS</h5>
                     <ul>
-                        <li><a href="/news/top?ref_=nv_nw_tp_1" >Top News</a></li>
-                        <li><a href="/news/movie?ref_=nv_nw_mv_2" >Movie News</a></li>
-                        <li><a href="/news/tv?ref_=nv_nw_tv_3" >TV News</a></li>
-                        <li><a href="/news/celebrity?ref_=nv_nw_cel_4" >Celebrity News</a></li>
-                        <li><a href="/news/indie?ref_=nv_nw_ind_5" >Indie News</a></li>
+                        <li><a href="/news/top?ref_=nv_nw_tp_1"
+>Top News</a></li>
+                        <li><a href="/news/movie?ref_=nv_nw_mv_2"
+>Movie News</a></li>
+                        <li><a href="/news/tv?ref_=nv_nw_tv_3"
+>TV News</a></li>
+                        <li><a href="/news/celebrity?ref_=nv_nw_cel_4"
+>Celebrity News</a></li>
+                        <li><a href="/news/indie?ref_=nv_nw_ind_5"
+>Indie News</a></li>
                     </ul>
                     <h5>COMMUNITY</h5>
                     <ul>
-                        <li><a href="/boards/?ref_=nv_cm_bd_1" >Message Boards</a></li>
-                        <li><a href="/czone/?ref_=nv_cm_cz_2" >Contributor Zone</a></li>
-                        <li><a href="/games/guess?ref_=nv_cm_qz_3" >Quiz Game</a></li>
-                        <li><a href="/poll/?ref_=nv_cm_pl_4" >Polls</a></li>
+                        <li><a href="/czone/?ref_=nv_cm_cz_2"
+>Contributor Zone</a></li>
+                        <li><a href="/poll/?ref_=nv_cm_pl_3"
+>Polls</a></li>
                     </ul>
                 </div>
             </div>
@@ -302,13 +388,14 @@ onsubmit="(new Image()).src='/rg/SEARCH-BOX/HEADER/images/b.gif?link=/find';"
         <li class="spacer"></li>
         <li class="css_nav_item" id="navWatchlistMenu">
 <p class="navCategory singleLine watchlist">
-    <a href="/list/watchlist?ref_=nv_wl_all_0" >Watchlist</a>
+    <a href="/list/watchlist?ref_=nv_wl_all_0"
+>Watchlist</a>
 </p>
 <span class="downArrow"></span>
 <div id="navMenu4" class="sub_nav">
     <h5>
             YOUR WATCHLIST
-    </h5> 
+    </h5>
     <ul id="navWatchlist">
     </ul>
     <script>
@@ -316,15 +403,15 @@ onsubmit="(new Image()).src='/rg/SEARCH-BOX/HEADER/images/b.gif?link=/find';"
     window.imdb.watchlistTeaserData = [
                 {
                         href : "/list/watchlist",
-                src : "http://ia.media-imdb.com/images/G/01/imdb/images/navbar/watchlist_slot1_logged_out-1670046337._V360061167_.jpg"
+                src : "http://ia.media-imdb.com/images/G/01/imdb/images/navbar/watchlist_slot1_logged_out-1670046337._CB522736556_.jpg"
                 },
                 {
                     href : "/search/title?count=100&title_type=feature,tv_series",
-                src : "http://ia.media-imdb.com/images/G/01/imdb/images/navbar/watchlist_slot2_popular-4090757197._V360060945_.jpg"
+                src : "http://ia.media-imdb.com/images/G/01/imdb/images/navbar/watchlist_slot2_popular-4090757197._CB522736562_.jpg"
                 },
                 {
                     href : "/chart/top",
-                src : "http://ia.media-imdb.com/images/G/01/imdb/images/navbar/watchlist_slot3_top250-575799966._V360061165_.jpg"
+                src : "http://ia.media-imdb.com/images/G/01/imdb/images/navbar/watchlist_slot3_top250-575799966._CB522736596_.jpg"
                 }
     ];
     </script>
@@ -346,67 +433,57 @@ window.imdb.navbarAdSlots = {
     <ul id="nb_extra_nav" class="main_nav">
         <li class="css_nav_item" id="navProMenu">
             <p class="navCategory">
-<a
-onclick="(new Image()).src='/rg/imdbprohome/navbar/images/b.gif?link=/r/IMDbTabNV/';"
-href="/r/IMDbTabNV/"
-> <img alt="IMDbPro Menu" src="http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_logo_nb-720143162._V377744227_.png" />
+<a href="http://pro.imdb.com/signup/index.html?rf=cons_nb_hm&ref_=cons_nb_hm"
+> <img alt="IMDbPro Menu" src="http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_logo_nb-3000473826._CB530713470_.png" />
 </a>            </p>
             <span class="downArrow"></span>
-            <div id="navMenuPro" class="sub_nav">
-<a
-onclick="(new Image()).src='/rg/imdbprohome/navbar/images/b.gif?link=/r/IMDbTabNV/';"
-href="/r/IMDbTabNV/"
-id="proLink"
-> <div id="proAd">
-<script>
-if (!('imdb' in window)) { window.imdb = {}; }
-window.imdb.proMenuTeaser = {
-imageUrl : "http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_menu_user-2082544740._V377744226_.jpg"
-};
-</script>
+            <div id="navMenuPro" class="imdb-pro-ad sub_nav">
+<a href="http://pro.imdb.com/signup/index.html?rf=cons_nb_hm&ref_=cons_nb_hm"
+class="imdp-pro-ad__link" > <div id="proAd" class="imdb-pro-ad__image">
+<img alt="Go to IMDbPro" height="180" width="174"
+src="http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_menu_user-4091932618._CB530713443_.png"
+srcset="http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_menu_user-4091932618._CB530713443_.png 1x,
+http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_menu_user_2x-2074318947._CB530713441_.png 2x" />
 </div>
-<div class="subNavListContainer">
-<img alt="Go to IMDbPro" title="Go to IMDbPro" src="http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_logo_menu-2185879182._V377744253_.png" />
-<h5>GET INFORMED</h5>
-<p>Industry information at your fingertips</p>
-<h5>GET CONNECTED</h5>
-<p>Over 200,000 Hollywood insiders</p>
-<h5>GET DISCOVERED</h5>
-<p>Enhance your IMDb Page</p>
-<p><strong>Go to IMDbPro &raquo;</strong></p>
-</div>
+<section class="imdb-pro-ad__content">
+<h1 class="imdb-pro-ad__title">The leading information resource for the entertainment industry</h1>
+<p class="imdb-pro-ad__line">Find industry contacts &amp; talent representation</p>
+<p class="imdb-pro-ad__line">Manage your photos, credits, &amp; more</p>
+<p class="imdb-pro-ad__line">Showcase yourself on IMDb &amp; Amazon</p>
+<span role="button" class="imdb-pro-ad__button">Go to IMDbPro</a>
+</section>
 </a>            </div>
         </li>
         <li class="spacer"><span class="ghost">|</span></li>
         <li>
-            <a href="/apps/?ref_=nb_app" >IMDb Apps</a>
+            <a href="/help/?ref_=nb_hlp"
+>Help</a>
         </li>
-        <li class="spacer"><span class="ghost">|</span></li>
-        <li>
-            <a href="/help/?ref_=nb_hlp" >Help</a>
+        <li class="social">
+
+    <a href="/offsite/?page-action=fol_fb&token=BCYj6Ipjo5uo21u09mTQfZFykXUVsYOcQpWh9E_shWQbRPUxg9u1K-bSClkE2FA9mm1j8tlK2q41%0D%0Ab3ioBXtQdUNN1Oxhn49M6jqx0qr_RSgIUA2jfWEKwtREg_QDWIAqjn-ioTZo0H4O8kG9DHcR1dnx%0D%0Ay3AbjMEl2n_s13wB8bEIVn0Xuaq2pVFsCQ3McKqu1Ge2mCygmId6jUJ1k7Y86uQ6Og%0D%0A&ref_=nv_fol_fb"
+title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
+</a>
+    <a href="/offsite/?page-action=fol_tw&token=BCYm-d7ihHUW1T6EFnibEs80nkwuqIDCtHppeXMoAACEVBZDeUkCQ2C5cpXbG4sg8LZ6-Ncm-zG5%0D%0Af-De1YXpCJ39LrPCrxdOi97Dbj_etiJSKAa9lM8nZK6Mck3l6rNXbZcg6N4f240QMUlJj9HvOrft%0D%0An7wwpGNJ7naP4T8qEokaG2vw0L4neYhWs8jLk9HuLgJt%0D%0A&ref_=nv_fol_tw"
+title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
+</a>
+    <a href="/offsite/?page-action=fol_inst&token=BCYtm_9ADmNlvIhIarPJt-sKibMn-l_9xuLbPfSNTfVz8FL-pWKtJQjRHuyi_BEHDOxSuJZYVtis%0D%0ATSkrnOAMwcxaAKz_8SBhCK2MDI2p8tQbitlgpBQqVNWwIMr8F0tGBCVoA-NlPqN_gnszI2NMLO2m%0D%0AbhVNHFgXU6DG1a6fqsh2jlJEzqViiSo3B4i8NTFTY9VB%0D%0A&ref_=nv_fol_inst"
+title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
+</a>
         </li>
     </ul>
 </div>
 <div id="nb_personal">
     <ul id="consumer_user_nav" class="main_nav">
-        <li class="css_nav_menu" id="navUserMenu">
-            <p class="navCategory singleLine">        
-                <a rel="login" href="/register/login?ref_=nv_usr_lgin_1" id="nblogin" >Login</a>
-            </p>
-            <span class="downArrow"></span>
-            <div class="sub_nav">
-                <div class="subNavListContainer">
-                    <br />
-                    <ul>
-                        <li>
-                            <a href="https://secure.imdb.com/register-imdb/form-v2?ref_=nv_usr_reg_2" >Register</a>
-                        </li>
-                        <li>
-                            <a rel="login" href="/register/login?ref_=nv_usr_lgin_3" id="nblogin" >Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
+            <li class="css_nav_menu no_arrow" id="navUserMenu">
+            <p class="navCategory singleLine">
+                <a id="facebook-signin-link" href="https://graph.facebook.com/v2.8/oauth/authorize?client_id=127059960673829&scope=email%2Cuser_about_me%2Cuser_birthday&state=eyI0OWU2YyI6ImRhMjkiLCJ1IjoiaHR0cHM6Ly93d3cuaW1kYi5jb20vP3JlZl89bnZfZmJfbGdpbiIsIm1hbnVhbExpbmsiOiJmYWxzZSJ9&redirect_uri=https%3A%2F%2Fwww.imdb.com%2Fregistration%2Ffacebookhandler%2F" class="signin-button">
+                <span class="facebook-logo"></span>
+                <span class="signin-facebook-text">Sign in with Facebook</span></a>
+                <a href="https://www.imdb.com/registration/signin?u=/title/tt0898266/episodes%3Fseason%3D1&ref_=nv_usr_lgin_1"
+rel="login" class="signin-other-options-text" id="nblogin" >Other Sign in options</a>
+                </p>
         </li>
     </ul>
 </div>
@@ -423,7 +500,9 @@ imageUrl : "http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_menu
       uet("ne");
     }
 </script>
-                    <div id="pagecontent" itemscope itemtype="http://schema.org/TVSeries">
+              
+
+                    <div id="pagecontent" class="pagecontent" itemscope itemtype="http://schema.org/TVSeries">
 	
 	<!-- no content received for slot: injected_billboard -->
 	
@@ -435,15 +514,17 @@ imageUrl : "http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_menu
 
   
 <div class="subpage_title_block">
-<a href="/title/tt0898266/?ref_=ttep_ep_tt" > <img itemprop="image"
+<a href="/title/tt0898266/?ref_=ttep_ep_tt"
+> <img itemprop="image"
 class="poster"
 height="98"
 width="67"
 alt="The Big Bang Theory (TV Series 2007– ) Poster"
-src="http://ia.media-imdb.com/images/M/MV5BMjQzMTYyODM4M15BMl5BanBnXkFtZTcwMTAxMDU1MQ@@._V1_SY98_CR3,0,67,98_.jpg" />
+src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyNDMxNjQyN15BMl5BanBnXkFtZTgwNzA4NDQwMDI@._V1_UX67_CR0,0,67,98_AL_.jpg" />
 </a>  <div class="parent">   
     <h3 itemprop="name">
-<a href="/title/tt0898266/?ref_=ttep_ep_tt" itemprop='url'>The Big Bang Theory</a>         <span class="nobr">
+<a href="/title/tt0898266/?ref_=ttep_ep_tt"
+itemprop='url'>The Big Bang Theory</a>         <span class="nobr">
              (2007– )
          </span>
     </h3>
@@ -457,6 +538,42 @@ src="http://ia.media-imdb.com/images/M/MV5BMjQzMTYyODM4M15BMl5BanBnXkFtZTcwMTAxM
 </div>
   <div id="episodes_content" class="header" itemscope itemtype="http://schema.org/TVSeries">
     <meta itemprop="name" content="The Big Bang Theory (TV Series 2007– )"/>
+  <div class="episodeCurrentState">
+      <div class="episodeBothCurrentNext">
+        <div class="episodeNext episodeNextSidebySide">
+  <h3 id="nextEpisode">Next Episode
+    <span>(airs 30 Mar. 2017)</span>
+  </h3>
+  <h4 id="nextEpsTitle"><a href="/title/tt6565514/?ref_=ttep_ep_cur"
+>The Collaboration Fluctuation</a></h4>
+  <div class="episodeDescription">
+Leonard, Penny and Raj adjust to their new living arrangements; Sheldon expresses an interest in Amy's work.  </div>
+  <div class="wtw-option-standalone"
+       data-tconst="tt6565514"
+       data-watchtype="minibar"
+       data-baseref="ttep">
+  </div>
+        </div>
+        <div class="episodeCurrent episodeCurrentSidebySide">
+  <h3 id="currentEpisode">Current Episode
+    <span>(aired 9 Mar. 2017)</span>
+  </h3>
+  <h4 id="currEpsTitle"><a href="/title/tt6565510/?ref_=ttep_ep_cur"
+>The Escape Hatch Identification</a></h4>
+<a href="/title/tt6565510/?ref_=ttep_ep_cur"
+title="The Escape Hatch Identification (S10, Ep18)" > <img class="episodeCurrentNextImage" src="https://images-na.ssl-images-amazon.com/images/M/MV5BZmEwZGI4ODAtZDkyZi00OTM2LTg3OGMtNTA2ODRhZmE4NGVhXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_UY90_CR30,0,60,90_AL_.jpg">
+</a>  <div class="episodeDescription">
+When the gang offers a place for Raj to live, it creates unexpected conflict among everyone and an argument between Amy and Leonard's mother.  </div>
+  <div class="wtw-option-standalone"
+       data-tconst="tt6565510"
+       data-watchtype="minibar"
+       data-baseref="ttep">
+  </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    <div class="clear"></div>
+  </div>
   <div class="seasonAndYearNav">
     <div class="episode-list-select">
   <div>
@@ -464,122 +581,192 @@ src="http://ia.media-imdb.com/images/M/MV5BMjQzMTYyODM4M15BMl5BanBnXkFtZTcwMTAxM
     <select id="bySeason" tconst="tt0898266" class="current">
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option selected="selected" value="1">
         1
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option  value="2">
         2
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option  value="3">
         3
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option  value="4">
         4
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option  value="5">
         5
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option  value="6">
         6
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option  value="7">
         7
       </option>
+      <!--
+      This ensures that we don't wind up accidentally marking two options
+      (Unknown and the blank one) as selected.
+      -->
+      <option  value="8">
+        8
+      </option>
+      <!--
+      This ensures that we don't wind up accidentally marking two options
+      (Unknown and the blank one) as selected.
+      -->
+      <option  value="9">
+        9
+      </option>
+      <!--
+      This ensures that we don't wind up accidentally marking two options
+      (Unknown and the blank one) as selected.
+      -->
+      <option  value="10">
+        10
+      </option>
+      <!--
+      This ensures that we don't wind up accidentally marking two options
+      (Unknown and the blank one) as selected.
+      -->
+      <option  value="11">
+        11
+      </option>
+      <!--
+      This ensures that we don't wind up accidentally marking two options
+      (Unknown and the blank one) as selected.
+      -->
+      <option  value="12">
+        12
+      </option>
     </select>
   </div>
-        <span class="season-year-separator">&nbsp;OR&nbsp;</span>
+            <span class="season-year-separator">&nbsp;OR&nbsp;</span>
   <div>
     <label for="byYear">Year:</label>
     <select id="byYear" tconst="tt0898266" class="">
       <option selected="selected">&nbsp;</option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
+      -->
+      <option  value="2006">
+        2006
+      </option>
+      <!--
+      This ensures that we don't wind up accidentally marking two options
+      (Unknown and the blank one) as selected.
       -->
       <option  value="2007">
         2007
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option  value="2008">
         2008
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option  value="2009">
         2009
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option  value="2010">
         2010
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option  value="2011">
         2011
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option  value="2012">
         2012
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option  value="2013">
         2013
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
       <option  value="2014">
         2014
       </option>
       <!--
       This ensures that we don't wind up accidentally marking two options
-      (Unknown and the blank one) as selected. 
+      (Unknown and the blank one) as selected.
       -->
-      <option  value="-1">
-        Unknown
+      <option  value="2015">
+        2015
+      </option>
+      <!--
+      This ensures that we don't wind up accidentally marking two options
+      (Unknown and the blank one) as selected.
+      -->
+      <option  value="2016">
+        2016
+      </option>
+      <!--
+      This ensures that we don't wind up accidentally marking two options
+      (Unknown and the blank one) as selected.
+      -->
+      <option  value="2017">
+        2017
+      </option>
+      <!--
+      This ensures that we don't wind up accidentally marking two options
+      (Unknown and the blank one) as selected.
+      -->
+      <option  value="2018">
+        2018
+      </option>
+      <!--
+      This ensures that we don't wind up accidentally marking two options
+      (Unknown and the blank one) as selected.
+      -->
+      <option  value="2019">
+        2019
       </option>
     </select>
   </div>
@@ -594,57 +781,34 @@ src="http://ia.media-imdb.com/images/M/MV5BMjQzMTYyODM4M15BMl5BanBnXkFtZTcwMTAxM
   <div class="list detail eplist">
       <div class="list_item odd">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-1/images/b.gif?link=/title/tt2176186/';"
-href="/title/tt2176186/"
-title="Unaired Pilot"
-itemprop="url"> <div data-const="tt2176186" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="Unaired Pilot" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
-<div>S1, Ep0</div>
+<a href="/title/tt2176186/?ref_=ttep_ep1"
+title="Unaired Pilot" itemprop="url"> <div data-const="tt2176186" class="hover-over-image zero-z-index no-ep-poster">
+<a href="/register/login"
+class="add-image" > <span class="add-image-container episode-list" style="width:200px;height:112px">
+<span class="add-image-icon episode-list" />
+<span class="add-image-text episode-list">Add Image</span>
+</span>
+</a> <div>S1, Ep0</div>
 </div>
 </a>  </div>
   <div class="info" itemprop="episodes" itemscope itemtype="http://schema.org/TVEpisode">
     <meta itemprop="episodeNumber" content="0"/>
     <div class="airdate">
+            1 May 2006
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-1/images/b.gif?link=/title/tt2176186/';"
-href="/title/tt2176186/"
-title="Unaired Pilot"
-itemprop="name">Unaired Pilot</a></strong>
+    <strong><a href="/title/tt2176186/?ref_=ttep_ep1"
+title="Unaired Pilot" itemprop="name">Unaired Pilot</a></strong>
     <div class="item_description" itemprop="description">
-  <a href="/updates?update=tt2176186:outlines.add.1&ref_=ttep_cn_pl_1" >Add a Plot</a>
-    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt2176186&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+The first Pilot of what will become "The Big Bang Theory". Leonard and Sheldon are two awkward scientists who share an apartment. They meet a drunk girl called Katie and invite her to stay at their place, because she has nowhere to stay. The two guys have a female friend, also a scientist, called Gilda.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt2176186" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item even">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-2/images/b.gif?link=/title/tt0775431/';"
-href="/title/tt0775431/"
-title="Pilot"
-itemprop="url"> <div data-const="tt0775431" class="hover-over-image zero-z-index ">
-<img width="120" class="zero-z-index" alt="Pilot" src="http://ia.media-imdb.com/images/M/MV5BNTU4NjE3NDY3OF5BMl5BanBnXkFtZTYwMDA2MTQ3._V1_SX120_CR0,0,120,180_.jpg">
+<a href="/title/tt0775431/?ref_=ttep_ep2"
+title="Pilot" itemprop="url"> <div data-const="tt0775431" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="Pilot" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTgzNzU1MTk5MV5BMl5BanBnXkFtZTYwMDM5ODc2._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep1</div>
 </div>
 </a>  </div>
@@ -653,43 +817,19 @@ itemprop="url"> <div data-const="tt0775431" class="hover-over-image zero-z-index
     <div class="airdate">
             24 Sep. 2007
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-2/images/b.gif?link=/title/tt0775431/';"
-href="/title/tt0775431/"
-title="Pilot"
-itemprop="name">Pilot</a></strong>
+    <strong><a href="/title/tt0775431/?ref_=ttep_ep2"
+title="Pilot" itemprop="name">Pilot</a></strong>
     <div class="item_description" itemprop="description">
-A pair of brilliant theoretical physicists meet a woman who shows them how little they know about the real world.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt0775431&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+A pair of socially awkward theoretical physicists meet their new neighbor Penny, who is their polar opposite.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt0775431" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item odd">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-3/images/b.gif?link=/title/tt1091289/';"
-href="/title/tt1091289/"
-title="The Big Bran Hypothesis"
-itemprop="url"> <div data-const="tt1091289" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Big Bran Hypothesis" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1091289/?ref_=ttep_ep3"
+title="The Big Bran Hypothesis" itemprop="url"> <div data-const="tt1091289" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Big Bran Hypothesis" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjAzNDYwMTEwMV5BMl5BanBnXkFtZTgwNjUzMTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep2</div>
 </div>
 </a>  </div>
@@ -698,43 +838,19 @@ itemprop="url"> <div data-const="tt1091289" class="hover-over-image zero-z-index
     <div class="airdate">
             1 Oct. 2007
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-3/images/b.gif?link=/title/tt1091289/';"
-href="/title/tt1091289/"
-title="The Big Bran Hypothesis"
-itemprop="name">The Big Bran Hypothesis</a></strong>
+    <strong><a href="/title/tt1091289/?ref_=ttep_ep3"
+title="The Big Bran Hypothesis" itemprop="name">The Big Bran Hypothesis</a></strong>
     <div class="item_description" itemprop="description">
-Penny is furious and more than a little freaked out with Leonard and Sheldon when they sneak into her apartment overnight, and clean it while she is sleeping.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1091289&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+Penny is furious with Leonard and Sheldon when they sneak into her apartment and clean it while she is sleeping.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1091289" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item even">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-4/images/b.gif?link=/title/tt1091290/';"
-href="/title/tt1091290/"
-title="The Fuzzy Boots Corollary"
-itemprop="url"> <div data-const="tt1091290" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Fuzzy Boots Corollary" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1091290/?ref_=ttep_ep4"
+title="The Fuzzy Boots Corollary" itemprop="url"> <div data-const="tt1091290" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Fuzzy Boots Corollary" src="https://images-na.ssl-images-amazon.com/images/M/MV5BODQzMDk3MjkxOV5BMl5BanBnXkFtZTgwNTYzMTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep3</div>
 </div>
 </a>  </div>
@@ -743,43 +859,19 @@ itemprop="url"> <div data-const="tt1091290" class="hover-over-image zero-z-index
     <div class="airdate">
             8 Oct. 2007
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-4/images/b.gif?link=/title/tt1091290/';"
-href="/title/tt1091290/"
-title="The Fuzzy Boots Corollary"
-itemprop="name">The Fuzzy Boots Corollary</a></strong>
+    <strong><a href="/title/tt1091290/?ref_=ttep_ep4"
+title="The Fuzzy Boots Corollary" itemprop="name">The Fuzzy Boots Corollary</a></strong>
     <div class="item_description" itemprop="description">
 Leonard gets upset when he discovers that Penny is seeing a new guy, so he tries to trick her into going on a date with him.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1091290&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1091290" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item odd">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-5/images/b.gif?link=/title/tt1091291/';"
-href="/title/tt1091291/"
-title="The Luminous Fish Effect"
-itemprop="url"> <div data-const="tt1091291" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Luminous Fish Effect" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1091291/?ref_=ttep_ep5"
+title="The Luminous Fish Effect" itemprop="url"> <div data-const="tt1091291" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Luminous Fish Effect" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQyODI1MzM4MF5BMl5BanBnXkFtZTgwOTUzMTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep4</div>
 </div>
 </a>  </div>
@@ -788,43 +880,19 @@ itemprop="url"> <div data-const="tt1091291" class="hover-over-image zero-z-index
     <div class="airdate">
             15 Oct. 2007
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-5/images/b.gif?link=/title/tt1091291/';"
-href="/title/tt1091291/"
-title="The Luminous Fish Effect"
-itemprop="name">The Luminous Fish Effect</a></strong>
+    <strong><a href="/title/tt1091291/?ref_=ttep_ep5"
+title="The Luminous Fish Effect" itemprop="name">The Luminous Fish Effect</a></strong>
     <div class="item_description" itemprop="description">
-Sheldon's Christian-fundamentalist mother visits to get him out of the funk he's in after he is fired for being disrespectful toward his new boss.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1091291&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+Sheldon's mother is called to intervene when he delves into numerous obsessions after being fired for being disrespectful to his new boss.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1091291" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item even">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-6/images/b.gif?link=/title/tt1091292/';"
-href="/title/tt1091292/"
-title="The Hamburger Postulate"
-itemprop="url"> <div data-const="tt1091292" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Hamburger Postulate" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1091292/?ref_=ttep_ep6"
+title="The Hamburger Postulate" itemprop="url"> <div data-const="tt1091292" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Hamburger Postulate" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3NDk3MzYyNF5BMl5BanBnXkFtZTgwMTYzMTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep5</div>
 </div>
 </a>  </div>
@@ -833,43 +901,19 @@ itemprop="url"> <div data-const="tt1091292" class="hover-over-image zero-z-index
     <div class="airdate">
             22 Oct. 2007
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-6/images/b.gif?link=/title/tt1091292/';"
-href="/title/tt1091292/"
-title="The Hamburger Postulate"
-itemprop="name">The Hamburger Postulate</a></strong>
+    <strong><a href="/title/tt1091292/?ref_=ttep_ep6"
+title="The Hamburger Postulate" itemprop="name">The Hamburger Postulate</a></strong>
     <div class="item_description" itemprop="description">
-Leonard and his colleague Leslie spend the night together. But Leslie tells Leonard after the fact that she's only interested in a one-night stand.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1091292&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+Leslie seduces Leonard, but afterwards tells him that she is only interested in a one-night stand.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1091292" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item odd">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-7/images/b.gif?link=/title/tt1091293/';"
-href="/title/tt1091293/"
-title="The Middle Earth Paradigm"
-itemprop="url"> <div data-const="tt1091293" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Middle Earth Paradigm" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1091293/?ref_=ttep_ep7"
+title="The Middle Earth Paradigm" itemprop="url"> <div data-const="tt1091293" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Middle Earth Paradigm" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQzODgxMTM5M15BMl5BanBnXkFtZTgwMDYzMTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep6</div>
 </div>
 </a>  </div>
@@ -878,358 +922,166 @@ itemprop="url"> <div data-const="tt1091293" class="hover-over-image zero-z-index
     <div class="airdate">
             29 Oct. 2007
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-7/images/b.gif?link=/title/tt1091293/';"
-href="/title/tt1091293/"
-title="The Middle Earth Paradigm"
-itemprop="name">The Middle Earth Paradigm</a></strong>
+    <strong><a href="/title/tt1091293/?ref_=ttep_ep7"
+title="The Middle Earth Paradigm" itemprop="name">The Middle Earth Paradigm</a></strong>
     <div class="item_description" itemprop="description">
-The guys are invited to Penny's Halloween costume party. During the party, Leonard has a run-in with Penny's ex-boyfriend.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1091293&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+The guys are invited to Penny's Halloween party, where Leonard has yet another run-in with Penny's ex-boyfriend Kurt.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1091293" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item even">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-8/images/b.gif?link=/title/tt1136041/';"
-href="/title/tt1136041/"
-title="The Dumpling Paradox"
-itemprop="url"> <div data-const="tt1136041" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Dumpling Paradox" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1136041/?ref_=ttep_ep8"
+title="The Dumpling Paradox" itemprop="url"> <div data-const="tt1136041" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Dumpling Paradox" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxNTc3NjU2Ml5BMl5BanBnXkFtZTgwMTU4OTQ1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep7</div>
 </div>
 </a>  </div>
   <div class="info" itemprop="episodes" itemscope itemtype="http://schema.org/TVEpisode">
     <meta itemprop="episodeNumber" content="7"/>
     <div class="airdate">
-            13 Apr. 2009
+            5 Nov. 2007
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-8/images/b.gif?link=/title/tt1136041/';"
-href="/title/tt1136041/"
-title="The Dumpling Paradox"
-itemprop="name">The Dumpling Paradox</a></strong>
+    <strong><a href="/title/tt1136041/?ref_=ttep_ep8"
+title="The Dumpling Paradox" itemprop="name">The Dumpling Paradox</a></strong>
     <div class="item_description" itemprop="description">
-When Howard hooks up with Penny's old friend, it ruins the nights on which all of the guys play the game "Halo."    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1136041&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+When Howard hooks up with Penny's old friend, his absence in the gang causes problems for the rest of the guys.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1136041" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item odd">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-9/images/b.gif?link=/title/tt1127389/';"
-href="/title/tt1127389/"
-title="The Grasshopper Experiment"
-itemprop="url"> <div data-const="tt1127389" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Grasshopper Experiment" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1127389/?ref_=ttep_ep9"
+title="The Grasshopper Experiment" itemprop="url"> <div data-const="tt1127389" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Grasshopper Experiment" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjYyODA1NzMzNl5BMl5BanBnXkFtZTgwODU2MTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep8</div>
 </div>
 </a>  </div>
   <div class="info" itemprop="episodes" itemscope itemtype="http://schema.org/TVEpisode">
     <meta itemprop="episodeNumber" content="8"/>
     <div class="airdate">
-            20 Apr. 2009
+            12 Nov. 2007
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-9/images/b.gif?link=/title/tt1127389/';"
-href="/title/tt1127389/"
-title="The Grasshopper Experiment"
-itemprop="name">The Grasshopper Experiment</a></strong>
+    <strong><a href="/title/tt1127389/?ref_=ttep_ep9"
+title="The Grasshopper Experiment" itemprop="name">The Grasshopper Experiment</a></strong>
     <div class="item_description" itemprop="description">
-Raj's parents, communicating from India by Web cam, arrange for him to go out with an Indian woman in the hopes of marriage, but his date turns out to have more in common with Sheldon.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1127389&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+When Raj's parents set him up on a blind date, he finds he can talk to women with the aid of alcohol.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1127389" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item even">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-10/images/b.gif?link=/title/tt1127390/';"
-href="/title/tt1127390/"
-title="The Cooper-Hofstadter Polarization"
-itemprop="url"> <div data-const="tt1127390" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Cooper-Hofstadter Polarization" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1127390/?ref_=ttep_ep10"
+title="The Cooper-Hofstadter Polarization" itemprop="url"> <div data-const="tt1127390" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Cooper-Hofstadter Polarization" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTY5MjM5ODk3MV5BMl5BanBnXkFtZTgwMTQ3MTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep9</div>
 </div>
 </a>  </div>
   <div class="info" itemprop="episodes" itemscope itemtype="http://schema.org/TVEpisode">
     <meta itemprop="episodeNumber" content="9"/>
     <div class="airdate">
-            27 Apr. 2009
+            17 Mar. 2008
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-10/images/b.gif?link=/title/tt1127390/';"
-href="/title/tt1127390/"
-title="The Cooper-Hofstadter Polarization"
-itemprop="name">The Cooper-Hofstadter Polarization</a></strong>
+    <strong><a href="/title/tt1127390/?ref_=ttep_ep10"
+title="The Cooper-Hofstadter Polarization" itemprop="name">The Cooper-Hofstadter Polarization</a></strong>
     <div class="item_description" itemprop="description">
-Leonard and Sheldon's friendship is put to the test when Leonard wants to present a paper they co-authored at a physics convention, but Sheldon does not.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1127390&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+Leonard and Sheldon's friendship is put to the test when Leonard wants to present a paper they co-authored at a physics convention, but Sheldon doesn't.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1127390" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item odd">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-11/images/b.gif?link=/title/tt1127384/';"
-href="/title/tt1127384/"
-title="The Loobenfeld Decay"
-itemprop="url"> <div data-const="tt1127384" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Loobenfeld Decay" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1127384/?ref_=ttep_ep11"
+title="The Loobenfeld Decay" itemprop="url"> <div data-const="tt1127384" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Loobenfeld Decay" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjE4MzYxMTQ0M15BMl5BanBnXkFtZTgwMTE3MTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep10</div>
 </div>
 </a>  </div>
   <div class="info" itemprop="episodes" itemscope itemtype="http://schema.org/TVEpisode">
     <meta itemprop="episodeNumber" content="10"/>
     <div class="airdate">
-            4 May 2009
+            24 Mar. 2008
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-11/images/b.gif?link=/title/tt1127384/';"
-href="/title/tt1127384/"
-title="The Loobenfeld Decay"
-itemprop="name">The Loobenfeld Decay</a></strong>
+    <strong><a href="/title/tt1127384/?ref_=ttep_ep11"
+title="The Loobenfeld Decay" itemprop="name">The Loobenfeld Decay</a></strong>
     <div class="item_description" itemprop="description">
 Leonard lies to Penny so that he and Sheldon can get out of watching her perform. However, Sheldon believes that the lie has too many loose ends, so he comes up with a new, unnecessarily complex one to replace it.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1127384&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1127384" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item even">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-12/images/b.gif?link=/title/tt1127385/';"
-href="/title/tt1127385/"
-title="The Pancake Batter Anomaly"
-itemprop="url"> <div data-const="tt1127385" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Pancake Batter Anomaly" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1127385/?ref_=ttep_ep12"
+title="The Pancake Batter Anomaly" itemprop="url"> <div data-const="tt1127385" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Pancake Batter Anomaly" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ3NDg0MTg1OV5BMl5BanBnXkFtZTgwNDQ2MTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep11</div>
 </div>
 </a>  </div>
   <div class="info" itemprop="episodes" itemscope itemtype="http://schema.org/TVEpisode">
     <meta itemprop="episodeNumber" content="11"/>
     <div class="airdate">
-            18 May 2009
+            31 Mar. 2008
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-12/images/b.gif?link=/title/tt1127385/';"
-href="/title/tt1127385/"
-title="The Pancake Batter Anomaly"
-itemprop="name">The Pancake Batter Anomaly</a></strong>
+    <strong><a href="/title/tt1127385/?ref_=ttep_ep12"
+title="The Pancake Batter Anomaly" itemprop="name">The Pancake Batter Anomaly</a></strong>
     <div class="item_description" itemprop="description">
-Sheldon is sick, and Leonard and the guys sneak out to a "Planet of the Apes" movie marathon to get out of taking care of him--which leaves Penny as the only person to whom the needy Sheldon can turn.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1127385&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+When Sheldon gets sick, Leonard, Howard and Raj go AWOL, leaving a reluctant Penny to deal with him.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1127385" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item odd">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-13/images/b.gif?link=/title/tt1127386/';"
-href="/title/tt1127386/"
-title="The Jerusalem Duality"
-itemprop="url"> <div data-const="tt1127386" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Jerusalem Duality" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1127386/?ref_=ttep_ep13"
+title="The Jerusalem Duality" itemprop="url"> <div data-const="tt1127386" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Jerusalem Duality" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTg3OTQ2OTI4MF5BMl5BanBnXkFtZTgwODk2MTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep12</div>
 </div>
 </a>  </div>
   <div class="info" itemprop="episodes" itemscope itemtype="http://schema.org/TVEpisode">
     <meta itemprop="episodeNumber" content="12"/>
     <div class="airdate">
-            18 May 2009
+            14 Apr. 2008
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-13/images/b.gif?link=/title/tt1127386/';"
-href="/title/tt1127386/"
-title="The Jerusalem Duality"
-itemprop="name">The Jerusalem Duality</a></strong>
+    <strong><a href="/title/tt1127386/?ref_=ttep_ep13"
+title="The Jerusalem Duality" itemprop="name">The Jerusalem Duality</a></strong>
     <div class="item_description" itemprop="description">
-Sheldon is threatened when a 15-year-old prodigy who is smarter than him joins the lab, so the guys come up with a plan to get rid of him.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1127386&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+Sheldon decides to give up his work and focus on other tasks when a 15-year-old prodigy joins the university, so the other guys come up with a plan to get rid of him.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1127386" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item even">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-14/images/b.gif?link=/title/tt1127387/';"
-href="/title/tt1127387/"
-title="The Bat Jar Conjecture"
-itemprop="url"> <div data-const="tt1127387" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Bat Jar Conjecture" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1127387/?ref_=ttep_ep14"
+title="The Bat Jar Conjecture" itemprop="url"> <div data-const="tt1127387" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Bat Jar Conjecture" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjAyMDE5NTk4MF5BMl5BanBnXkFtZTgwNTE2MTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep13</div>
 </div>
 </a>  </div>
   <div class="info" itemprop="episodes" itemscope itemtype="http://schema.org/TVEpisode">
     <meta itemprop="episodeNumber" content="13"/>
     <div class="airdate">
-            25 May 2009
+            21 Apr. 2008
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-14/images/b.gif?link=/title/tt1127387/';"
-href="/title/tt1127387/"
-title="The Bat Jar Conjecture"
-itemprop="name">The Bat Jar Conjecture</a></strong>
+    <strong><a href="/title/tt1127387/?ref_=ttep_ep14"
+title="The Bat Jar Conjecture" itemprop="name">The Bat Jar Conjecture</a></strong>
     <div class="item_description" itemprop="description">
-Sheldon becomes so intent on demonstrating his intellectual superiority over his Physics Bowl teammates that they boot him, and replace him with his nemesis.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1127387&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+Sheldon becomes so intent on demonstrating his intellectual superiority over the other guys that they kick him off the Physics Bowl team and replace him with his nemesis, Leslie.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1127387" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item odd">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-15/images/b.gif?link=/title/tt1127905/';"
-href="/title/tt1127905/"
-title="The Nerdvana Annihilation"
-itemprop="url"> <div data-const="tt1127905" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Nerdvana Annihilation" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1127905/?ref_=ttep_ep15"
+title="The Nerdvana Annihilation" itemprop="url"> <div data-const="tt1127905" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Nerdvana Annihilation" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxOTIxMDExN15BMl5BanBnXkFtZTgwNjM1MTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep14</div>
 </div>
 </a>  </div>
@@ -1238,88 +1090,40 @@ itemprop="url"> <div data-const="tt1127905" class="hover-over-image zero-z-index
     <div class="airdate">
             28 Apr. 2008
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-15/images/b.gif?link=/title/tt1127905/';"
-href="/title/tt1127905/"
-title="The Nerdvana Annihilation"
-itemprop="name">The Nerdvana Annihilation</a></strong>
+    <strong><a href="/title/tt1127905/?ref_=ttep_ep15"
+title="The Nerdvana Annihilation" itemprop="name">The Nerdvana Annihilation</a></strong>
     <div class="item_description" itemprop="description">
-Penny gets mad at Leonard because the guys' new "time machine" causes her to miss work. Leonard is so devastated that he vows to give up all of his nerd memorabilia.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1127905&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+Penny gets mad at the guys when their full scale model of a time machine causes her to miss work, which prompts Leonard to give up all of his nerd memorabilia.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1127905" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item even">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-16/images/b.gif?link=/title/tt1127906/';"
-href="/title/tt1127906/"
-title="The Pork Chop Indeterminacy"
-itemprop="url"> <div data-const="tt1127906" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Pork Chop Indeterminacy" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1127906/?ref_=ttep_ep16"
+title="The Pork Chop Indeterminacy" itemprop="url"> <div data-const="tt1127906" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Pork Chop Indeterminacy" src="https://images-na.ssl-images-amazon.com/images/M/MV5BODcwYTk0YzAtY2VjMi00ZTFiLThjNzItNjUwZGYxOTg3OTkyXkEyXkFqcGdeQXVyNjM1Nzg0MzY@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep15</div>
 </div>
 </a>  </div>
   <div class="info" itemprop="episodes" itemscope itemtype="http://schema.org/TVEpisode">
     <meta itemprop="episodeNumber" content="15"/>
     <div class="airdate">
-            22 Jun. 2009
+            5 May 2008
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-16/images/b.gif?link=/title/tt1127906/';"
-href="/title/tt1127906/"
-title="The Pork Chop Indeterminacy"
-itemprop="name">The Pork Chop Indeterminacy</a></strong>
+    <strong><a href="/title/tt1127906/?ref_=ttep_ep16"
+title="The Pork Chop Indeterminacy" itemprop="name">The Pork Chop Indeterminacy</a></strong>
     <div class="item_description" itemprop="description">
-Sheldon's sexy twin sister arrives in town from Texas, and all of Sheldon's friends fight over who will get to be with her.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1127906&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+Leonard, Howard and Raj fight over Sheldon's twin sister when she arrives in town. Raj takes part in a drug trial to suppress his selective mutism.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1127906" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item odd">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-17/images/b.gif?link=/title/tt1127907/';"
-href="/title/tt1127907/"
-title="The Peanut Reaction"
-itemprop="url"> <div data-const="tt1127907" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Peanut Reaction" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1127907/?ref_=ttep_ep17"
+title="The Peanut Reaction" itemprop="url"> <div data-const="tt1127907" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Peanut Reaction" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjE0Mjg5ODEzM15BMl5BanBnXkFtZTgwNzQ1MTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep16</div>
 </div>
 </a>  </div>
@@ -1328,43 +1132,19 @@ itemprop="url"> <div data-const="tt1127907" class="hover-over-image zero-z-index
     <div class="airdate">
             12 May 2008
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-17/images/b.gif?link=/title/tt1127907/';"
-href="/title/tt1127907/"
-title="The Peanut Reaction"
-itemprop="name">The Peanut Reaction</a></strong>
+    <strong><a href="/title/tt1127907/?ref_=ttep_ep17"
+title="The Peanut Reaction" itemprop="name">The Peanut Reaction</a></strong>
     <div class="item_description" itemprop="description">
-When Penny and the guys learn that Leonard has never had a birthday party, they decide to try to throw a surprise party for him.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1127907&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+When Penny learns that Leonard has never had a birthday party, she and the rest of the guys plan a surprise party for him.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1127907" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
       <div class="list_item even">
   <div class="image">
-<a
-onclick="(new Image()).src='/rg/episodes/image-18/images/b.gif?link=/title/tt1127908/';"
-href="/title/tt1127908/"
-title="The Tangerine Factor"
-itemprop="url"> <div data-const="tt1127908" class="hover-over-image zero-z-index no-ep-poster">
-<img width="120" class="zero-z-index" alt="The Tangerine Factor" src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/120x90/tv-2177376202._V379391383_.png">
+<a href="/title/tt1127908/?ref_=ttep_ep18"
+title="The Tangerine Factor" itemprop="url"> <div data-const="tt1127908" class="hover-over-image zero-z-index ">
+<img width="200" height="112" class="zero-z-index" alt="The Tangerine Factor" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTgzNDAzMDU0OF5BMl5BanBnXkFtZTgwOTc1MTY1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg">
 <div>S1, Ep17</div>
 </div>
 </a>  </div>
@@ -1373,41 +1153,22 @@ itemprop="url"> <div data-const="tt1127908" class="hover-over-image zero-z-index
     <div class="airdate">
             19 May 2008
     </div>
-    <strong><a
-onclick="(new Image()).src='/rg/episodes/episode-18/images/b.gif?link=/title/tt1127908/';"
-href="/title/tt1127908/"
-title="The Tangerine Factor"
-itemprop="name">The Tangerine Factor</a></strong>
+    <strong><a href="/title/tt1127908/?ref_=ttep_ep18"
+title="The Tangerine Factor" itemprop="name">The Tangerine Factor</a></strong>
     <div class="item_description" itemprop="description">
-After Penny breaks up with her new guy, she agrees to go out on a date with Leonard. However, both of them have reservations about the date soon after agreeing to it.    </div>
-    <div class="popoverContainer">
-      <div class="watchInfo">
-        <label><span>Watch now</span></label>
-          <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-      </div>
-  <div class="htwPopover">
-    <div class="popoverClose touch"></div>
-    <h5>Watch now</h5>
-    <div class="watchOptionList">
-        <div class="watchOption">
-            
-            
-<a href="/rj/?p=amazon&m=dvd&s=UK&c=tt1127908&t=imdb-adbox-21&ref_=tt_wb_amzn_all_0" target="_target"> <div class="watchIcon"><span class="titlePageSprite buyam18"></span></div>
-Buy it at Amazon.co.uk
-</a>        </div>
-    </div>
+After a bad breakup, Penny finally agrees to go out on a date with Leonard, however they both develop doubts and turn to Sheldon for advice.    </div>
+    <div class="wtw-option-standalone" data-tconst="tt1127908" data-watchtype="minibar" data-baseref="ttep"></div>
   </div>
-    </div>
-  </div>
-  <div class="clear">&nbsp;</div>        
-        
+  <div class="clear">&nbsp;</div>
       </div>
   </div>
   <hr>
   <div>
 
     &nbsp;<strong>Season 1</strong>&nbsp;
-<span>|&nbsp;</span><a id="load_next_episodes" href="?season=2">Season 2</a>&nbsp;&raquo;
+<span>|&nbsp;</span><a href="?season=2&ref_=ttep_ep_sn_nx"
+id="load_next_episodes" >Season 2</a>
+      &nbsp;&raquo;
   </div>
   </div>
   </div>
@@ -1419,11 +1180,16 @@ Buy it at Amazon.co.uk
         <h2>See also</h2>
         <p>
                             <span class="nobr">
-<a href="/title/tt0898266/epcast?ref_=ttep_sa_1" class="link" >Episode Cast</a>
+<a href="/title/tt0898266/epcast?ref_=ttep_sa_1"
+class="link" >Episode Cast</a>
 <span class="ghost">|</span></span>                            <span class="nobr">
-<a href="/title/tt0898266/eprate?ref_=ttep_sa_2" class="link" >Rated Episodes</a>
-(by <a href="/title/tt0898266/epdate?ref_=ttep_sa_3" class="link" >date</a> / <a href="/title/tt0898266/epvote?ref_=ttep_sa_4" class="link" >vote</a>)<span class="ghost">|</span></span>                            <span class="nobr">
-<a href="/title/tt0898266/tvschedule?ref_=ttep_sa_5" class="link ghost" >TV Schedule</a>
+<a href="/title/tt0898266/eprate?ref_=ttep_sa_2"
+class="link" >Rated Episodes</a>
+(by <a href="/title/tt0898266/epdate?ref_=ttep_sa_3"
+class="link" >date</a> / <a href="/title/tt0898266/epvote?ref_=ttep_sa_4"
+class="link" >vote</a>)<span class="ghost">|</span></span>                            <span class="nobr">
+<a href="/title/tt0898266/tvschedule?ref_=ttep_sa_5"
+class="link" >TV Schedule</a>
 </span>        </p>
     </div>
     
@@ -1432,26 +1198,27 @@ Buy it at Amazon.co.uk
       csm.measure('csm_TitleContributeWidget_started');
     }
   </script>
-
     <div class="article contribute">
         <div class="rightcornerlink">
-<a href="/help/?adding/&ref_=ttep_cn_hlp" >Getting Started</a>
+<a href="/help/?adding/&ref_=ttep_cn_hlp"
+>Getting Started</a>
             <span>|</span>
-<a href="/czone/?ref_=ttep_cn_cz" >Contributor Zone</a>&nbsp;&raquo;</div>
+<a href="/czone/?ref_=ttep_cn_cz"
+>Contributor Zone</a>&nbsp;&raquo;</div>
         <h2>Contribute to This Page</h2>
 
         
 
     
         <div class="button-box">
-            <form method="post" action="/updates?ref_=ttep_cn_eps">
+            <form method="get" action="https://contribute.imdb.com/updates">
+                <input type="hidden" name="ref_" value="ttep_cn_eps" />
                 <input type="hidden" name="update" value="episode" />
                 <input type="hidden" name="parent" value="tt0898266" />
                 <button class="btn large primary" type="submit">Add episode</button>
             </form>
         </div>
 
-    
     
     
     </div>
@@ -1472,9 +1239,10 @@ Buy it at Amazon.co.uk
             
     
     
-    <div class="aux-content-widget-3 links subnav" div="quicklinks">
+    <div class="aux-content-widget-2 links subnav" div="quicklinks">
 
-<a href="/title/tt0898266/?ref_=ttep_ql" class="subnav_heading" >The Big Bang Theory</a>              <span class="nobr">
+<a href="/title/tt0898266/?ref_=ttep_ql"
+class="subnav_heading" >The Big Bang Theory</a>              <span class="nobr">
                 (TV Series)
               </span>
                 <hr/>
@@ -1483,16 +1251,22 @@ Buy it at Amazon.co.uk
         <h4>TV</h4>
     <ul class="quicklinks">
                 <li class="subnav_item_main subnav_selected">
-<a href="/title/tt0898266/episodes?ref_=ttep_ql_1" class="link" >Episode List</a>
+<a href="/title/tt0898266/episodes?ref_=ttep_ql_1"
+class="link" >Episode List</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/epcast?ref_=ttep_ql_2" class="link" >Episode Cast</a>
+<a href="/title/tt0898266/epcast?ref_=ttep_ql_2"
+class="link" >Episode Cast</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/eprate?ref_=ttep_ql_3" class="link" >Rated Episodes</a>
-(by <a href="/title/tt0898266/epdate?ref_=ttep_ql_4" class="link" >date</a> / <a href="/title/tt0898266/epvote?ref_=ttep_ql_5" class="link" >vote</a>)                </li>
+<a href="/title/tt0898266/eprate?ref_=ttep_ql_3"
+class="link" >Rated Episodes</a>
+(by <a href="/title/tt0898266/epdate?ref_=ttep_ql_4"
+class="link" >date</a> / <a href="/title/tt0898266/epvote?ref_=ttep_ql_5"
+class="link" >vote</a>)                </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/tvschedule?ref_=ttep_ql_6" class="link ghost" >TV Schedule</a>
+<a href="/title/tt0898266/tvschedule?ref_=ttep_ql_6"
+class="link" >TV Schedule</a>
                 </li>
     </ul>
         <hr/>
@@ -1503,28 +1277,36 @@ Buy it at Amazon.co.uk
         <h4>Details</h4>
     <ul class="quicklinks">
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/fullcredits?ref_=ttep_ql_dt_1" class="link" >Full Cast and Crew</a>
+<a href="/title/tt0898266/fullcredits?ref_=ttep_ql_dt_1"
+class="link" >Full Cast and Crew</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/releaseinfo?ref_=ttep_ql_dt_2" class="link" >Release Dates</a>
+<a href="/title/tt0898266/releaseinfo?ref_=ttep_ql_dt_2"
+class="link" >Release Dates</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/officialsites?ref_=ttep_ql_dt_3" class="link" >Official Sites</a>
+<a href="/title/tt0898266/officialsites?ref_=ttep_ql_dt_3"
+class="link" >Official Sites</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/business?ref_=ttep_ql_dt_4" class="link ghost" >Box Office/Business</a>
+<a href="/title/tt0898266/business?ref_=ttep_ql_dt_4"
+class="link ghost" >Box Office/Business</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/companycredits?ref_=ttep_ql_dt_5" class="link" >Company Credits</a>
+<a href="/title/tt0898266/companycredits?ref_=ttep_ql_dt_5"
+class="link" >Company Credits</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/locations?ref_=ttep_ql_dt_6" class="link" >Filming Locations</a>
+<a href="/title/tt0898266/locations?ref_=ttep_ql_dt_6"
+class="link" >Filming Locations</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/technical?ref_=ttep_ql_dt_7" class="link" >Technical Specs</a>
+<a href="/title/tt0898266/technical?ref_=ttep_ql_dt_7"
+class="link" >Technical Specs</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/literature?ref_=ttep_ql_dt_8" class="link ghost" >Literature</a>
+<a href="/title/tt0898266/literature?ref_=ttep_ql_dt_8"
+class="link ghost" >Literature</a>
                 </li>
     </ul>
 
@@ -1532,19 +1314,24 @@ Buy it at Amazon.co.uk
         <h4>Storyline</h4>
     <ul class="quicklinks">
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/taglines?ref_=ttep_ql_stry_1" class="link" >Taglines</a>
+<a href="/title/tt0898266/taglines?ref_=ttep_ql_stry_1"
+class="link" >Taglines</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/plotsummary?ref_=ttep_ql_stry_2" class="link" >Plot Summary</a>
+<a href="/title/tt0898266/plotsummary?ref_=ttep_ql_stry_2"
+class="link" >Plot Summary</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/synopsis?ref_=ttep_ql_stry_3" class="link ghost" >Synopsis</a>
+<a href="/title/tt0898266/synopsis?ref_=ttep_ql_stry_3"
+class="link ghost" >Synopsis</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/keywords?ref_=ttep_ql_stry_4" class="link" >Plot Keywords</a>
+<a href="/title/tt0898266/keywords?ref_=ttep_ql_stry_4"
+class="link" >Plot Keywords</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/parentalguide?ref_=ttep_ql_stry_5" class="link" >Parents Guide</a>
+<a href="/title/tt0898266/parentalguide?ref_=ttep_ql_stry_5"
+class="link" >Parents Guide</a>
                 </li>
     </ul>
 
@@ -1552,25 +1339,32 @@ Buy it at Amazon.co.uk
         <h4>Did You Know?</h4>
     <ul class="quicklinks">
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/trivia?ref_=ttep_ql_trv_1" class="link" >Trivia</a>
+<a href="/title/tt0898266/trivia?ref_=ttep_ql_trv_1"
+class="link" >Trivia</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/goofs?ref_=ttep_ql_trv_2" class="link" >Goofs</a>
+<a href="/title/tt0898266/goofs?ref_=ttep_ql_trv_2"
+class="link" >Goofs</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/crazycredits?ref_=ttep_ql_trv_3" class="link" >Crazy Credits</a>
+<a href="/title/tt0898266/crazycredits?ref_=ttep_ql_trv_3"
+class="link" >Crazy Credits</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/quotes?ref_=ttep_ql_trv_4" class="link" >Quotes</a>
+<a href="/title/tt0898266/quotes?ref_=ttep_ql_trv_4"
+class="link" >Quotes</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/alternateversions?ref_=ttep_ql_trv_5" class="link ghost" >Alternate Versions</a>
+<a href="/title/tt0898266/alternateversions?ref_=ttep_ql_trv_5"
+class="link ghost" >Alternate Versions</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/movieconnections?ref_=ttep_ql_trv_6" class="link" >Connections</a>
+<a href="/title/tt0898266/movieconnections?ref_=ttep_ql_trv_6"
+class="link" >Connections</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/soundtrack?ref_=ttep_ql_trv_7" class="link" >Soundtracks</a>
+<a href="/title/tt0898266/soundtrack?ref_=ttep_ql_trv_7"
+class="link" >Soundtracks</a>
                 </li>
     </ul>
 
@@ -1578,10 +1372,12 @@ Buy it at Amazon.co.uk
         <h4>Photo & Video</h4>
     <ul class="quicklinks">
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/mediaindex?ref_=ttep_ql_pv_1" class="link" >Photo Gallery</a>
+<a href="/title/tt0898266/mediaindex?ref_=ttep_ql_pv_1"
+class="link" >Photo Gallery</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/videogallery?ref_=ttep_ql_pv_2" class="link" >Trailers and Videos</a>
+<a href="/title/tt0898266/videogallery?ref_=ttep_ql_pv_2"
+class="link" >Trailers and Videos</a>
                 </li>
     </ul>
 
@@ -1589,25 +1385,28 @@ Buy it at Amazon.co.uk
         <h4>Opinion</h4>
     <ul class="quicklinks">
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/awards?ref_=ttep_ql_op_1" class="link" >Awards</a>
+<a href="/title/tt0898266/awards?ref_=ttep_ql_op_1"
+class="link" >Awards</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/faq?ref_=ttep_ql_op_2" class="link" >FAQ</a>
+<a href="/title/tt0898266/faq?ref_=ttep_ql_op_2"
+class="link" >FAQ</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/reviews?ref_=ttep_ql_op_3" class="link" >User Reviews</a>
+<a href="/title/tt0898266/reviews?ref_=ttep_ql_op_3"
+class="link" >User Reviews</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/ratings?ref_=ttep_ql_op_4" class="link" >User Ratings</a>
+<a href="/title/tt0898266/ratings?ref_=ttep_ql_op_4"
+class="link" >User Ratings</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/externalreviews?ref_=ttep_ql_op_5" class="link" >External Reviews</a>
+<a href="/title/tt0898266/externalreviews?ref_=ttep_ql_op_5"
+class="link" >External Reviews</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/criticreviews?ref_=ttep_ql_op_6" class="link ghost" >Metacritic Reviews</a>
-                </li>
-                <li class="subnav_item_main">
-<a href="/title/tt0898266/board/?ref_=ttep_ql_op_7" class="link" >Message Board</a>
+<a href="/title/tt0898266/criticreviews?ref_=ttep_ql_op_6"
+class="link ghost" >Metacritic Reviews</a>
                 </li>
     </ul>
 
@@ -1616,21 +1415,12 @@ Buy it at Amazon.co.uk
         <h4>Related Items</h4>
     <ul class="quicklinks">
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/news?ref_=ttep_ql_rel_1" class="link" >NewsDesk</a>
+<a href="/title/tt0898266/news?ref_=ttep_ql_rel_1"
+class="link" >NewsDesk</a>
                 </li>
                 <li class="subnav_item_main">
-<a href="/title/tt0898266/externalsites?ref_=ttep_ql_rel_2" class="link" >External Sites</a>
-                </li>
-    </ul>
-
-
-        <h4>Professional Services</h4>
-    <ul class="quicklinks">
-                <li class="subnav_item_main">
-<a href="/r/tt_moviemeter_why/title/tt0898266?ref_=ttep_ql_pro_1" class="link" >Get more at IMDbPro</a>
-                </li>
-                <li class="subnav_item_main">
-<a href="https://secure.imdb.com/store/photos/?ref_=ttep_ql_pro_2" class="link" >Add posters & stills to this title</a>
+<a href="/title/tt0898266/externalsites?ref_=ttep_ql_rel_2"
+class="link" >External Sites</a>
                 </li>
     </ul>
             <hr/>
@@ -1640,16 +1430,17 @@ Buy it at Amazon.co.uk
         <div class="show_less"><span class="titlePageSprite arrows hide"></span>Show Less</div>
     </div>
   <div class="aux-content-widget-2" id="social-share-widget"> 
+    
     <div class="social">
       <div class="social_networking"> 
        <span><strong>Share</strong> this page:</span>
-  <a onclick="window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0898266%2F', 'newWindow', 'width=626, height=436'); return false;" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0898266%2F" target="_blank" title="Share on Facebook" class="share_icon facebook"></a>
-  <a onclick="window.open('http://twitter.com/intent/tweet?text=The%20Big%20Bang%20Theory%20(TV%20Series%202007%E2%80%93%20)%20-%20http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0898266%2F', 'newWindow', 'width=815, height=436'); return false;" href="http://twitter.com/intent/tweet?text=The%20Big%20Bang%20Theory%20(TV%20Series%202007%E2%80%93%20)%20-%20http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0898266%2F" target="_blank" title="Share on Twitter" class="share_icon twitter"></a>
+  <a onclick="window.open(&quot;http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0898266%2F&quot;, 'newWindow', 'width=626, height=436'); return false;" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0898266%2F" target="_blank" title="Share on Facebook" class="share_icon facebook"></a>
+  <a onclick="window.open(&quot;http://twitter.com/intent/tweet?text=The%20Big%20Bang%20Theory%20(TV%20Series%202007%E2%80%93%20)%20-%20http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0898266%2F&quot;, 'newWindow', 'width=815, height=436'); return false;" href="http://twitter.com/intent/tweet?text=The%20Big%20Bang%20Theory%20(TV%20Series%202007%E2%80%93%20)%20-%20http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0898266%2F" target="_blank" title="Share on Twitter" class="share_icon twitter"></a>
   <a onclick="$('div.social input[name=share-link]').show().select(); return false;" title="Share the page" class="share_icon share_url_link" href="http://www.imdb.com/title/tt0898266/"></a>
       </div>
       <input type="text" name="share-link" value="http://www.imdb.com/title/tt0898266/" readonly>
     </div>
-  <script type="text/javascript">generic.monitoring.start_timing("facebook_like_iframe");</script>
+  <script type="text/javascript">if (uet) { uet('bb', 'facebook_like_iframe', {wb: 1}); }</script>
   <div class="social_networking_like">
     <iframe
       id="iframe_like"
@@ -1663,121 +1454,124 @@ Buy it at Amazon.co.uk
       height=65></iframe>
   </div>
   </div>
+<script>
+    if (typeof uet == 'function') {
+      uet("bb", "RelatedListsWidget", {wb: 1});
+    }
+</script>
         <div class="aux-content-widget-2">
             <div id="relatedListsWidget">
                 <div class="rightcornerlink">
-                    <a href="/list/create?ref_=tt_rls" >Create a list</a>&nbsp;&raquo;
+                    <a href="/list/create?ref_=tt_rls"
+>Create a list</a>&nbsp;&raquo;
                 </div>
                 <h3>User Lists</h3>
                 <p>Related lists from IMDb users</p>
-                
-                    <div class="list-preview even">
-                        <div class="list-preview-item-narrow">
-<a href="/list/BMDVp5MdwUQ/?ref_=tt_rls_1" >
-<img height="86" width="86" alt="list image" title="list image"
-src="/images/nopicture/medium/tv.png"
-class="loadlate hidden rec_poster_img" loadlate="http://ia.media-imdb.com/images/M/MV5BMTQ2MDYyNDYyNl5BMl5BanBnXkFtZTgwNDQ4OTkwMDE@._V1_SX86_CR0,0,86,86_.jpg" />
-<noscript>
-<img height="86" width="86" alt="list image" title="list image"
-src="http://ia.media-imdb.com/images/M/MV5BMTQ2MDYyNDYyNl5BMl5BanBnXkFtZTgwNDQ4OTkwMDE@._V1_SX86_CR0,0,86,86_.jpg" class="rec_poster_img" />
-</noscript>
-</a>                        </div>
-                        <div class="list_name">
-                            <b><a href="/list/BMDVp5MdwUQ/?ref_=tt_rls_1" >My top TV series</a></b>
-                        </div>
-                        <div class="list_meta">
-                            a list of 30 titles 
-                             created 31&nbsp;Aug&nbsp;2011
-                        </div>
-                        <div class="clear">&nbsp;</div>
-                    </div>
-                    <div class="list-preview odd">
-                        <div class="list-preview-item-narrow">
-<a href="/list/7DGzikWP7b0/?ref_=tt_rls_2" >
-<img height="86" width="86" alt="list image" title="list image"
-src="/images/nopicture/medium/tv.png"
-class="loadlate hidden rec_poster_img" loadlate="http://ia.media-imdb.com/images/M/MV5BODg3ODE4MjAwNV5BMl5BanBnXkFtZTgwNTI5MTEzMDE@._V1_SX86_CR0,0,86,86_.jpg" />
-<noscript>
-<img height="86" width="86" alt="list image" title="list image"
-src="http://ia.media-imdb.com/images/M/MV5BODg3ODE4MjAwNV5BMl5BanBnXkFtZTgwNTI5MTEzMDE@._V1_SX86_CR0,0,86,86_.jpg" class="rec_poster_img" />
-</noscript>
-</a>                        </div>
-                        <div class="list_name">
-                            <b><a href="/list/7DGzikWP7b0/?ref_=tt_rls_2" >My Top 25 TV Shows</a></b>
-                        </div>
-                        <div class="list_meta">
-                            a list of 25 titles 
-                             created 17&nbsp;Feb&nbsp;2012
-                        </div>
-                        <div class="clear">&nbsp;</div>
-                    </div>
-                    <div class="list-preview even">
-                        <div class="list-preview-item-narrow">
-<a href="/list/h5afNJ4vJtY/?ref_=tt_rls_3" >
-<img height="86" width="86" alt="list image" title="list image"
-src="/images/nopicture/medium/tv.png"
-class="loadlate hidden rec_poster_img" loadlate="http://ia.media-imdb.com/images/M/MV5BMTc1NTg1MDk3NF5BMl5BanBnXkFtZTYwNDYyMjI3._V1_SX86_CR0,0,86,86_.jpg" />
-<noscript>
-<img height="86" width="86" alt="list image" title="list image"
-src="http://ia.media-imdb.com/images/M/MV5BMTc1NTg1MDk3NF5BMl5BanBnXkFtZTYwNDYyMjI3._V1_SX86_CR0,0,86,86_.jpg" class="rec_poster_img" />
-</noscript>
-</a>                        </div>
-                        <div class="list_name">
-                            <b><a href="/list/h5afNJ4vJtY/?ref_=tt_rls_3" >25 best of what a TV shows addict must see....</a></b>
-                        </div>
-                        <div class="list_meta">
-                            a list of 25 titles 
-                             created 26&nbsp;Nov&nbsp;2012
-                        </div>
-                        <div class="clear">&nbsp;</div>
-                    </div>
-                    <div class="list-preview odd">
-                        <div class="list-preview-item-narrow">
-<a href="/list/jP9OzJgE6W0/?ref_=tt_rls_4" >
-<img height="86" width="86" alt="list image" title="list image"
-src="/images/nopicture/medium/tv.png"
-class="loadlate hidden rec_poster_img" loadlate="http://ia.media-imdb.com/images/M/MV5BMTU2MTgzMzQxNV5BMl5BanBnXkFtZTcwODg4NTQ3OQ@@._V1_SX86_CR0,0,86,86_.jpg" />
-<noscript>
-<img height="86" width="86" alt="list image" title="list image"
-src="http://ia.media-imdb.com/images/M/MV5BMTU2MTgzMzQxNV5BMl5BanBnXkFtZTcwODg4NTQ3OQ@@._V1_SX86_CR0,0,86,86_.jpg" class="rec_poster_img" />
-</noscript>
-</a>                        </div>
-                        <div class="list_name">
-                            <b><a href="/list/jP9OzJgE6W0/?ref_=tt_rls_4" >My Favorite TV Shows</a></b>
-                        </div>
-                        <div class="list_meta">
-                            a list of 8 titles 
-                             created 1&nbsp;month&nbsp;ago
-                        </div>
-                        <div class="clear">&nbsp;</div>
-                    </div>
-                    <div class="list-preview even">
-                        <div class="list-preview-item-narrow">
-<a href="/list/FBGZANPH1lc/?ref_=tt_rls_5" >
-<img height="86" width="86" alt="list image" title="list image"
-src="/images/nopicture/medium/tv.png"
-class="loadlate hidden rec_poster_img" loadlate="http://ia.media-imdb.com/images/M/MV5BMTA0MTI2Njg1MTJeQTJeQWpwZ15BbWU3MDYwNTMyOTg@._V1_SX86_CR0,0,86,86_.jpg" />
-<noscript>
-<img height="86" width="86" alt="list image" title="list image"
-src="http://ia.media-imdb.com/images/M/MV5BMTA0MTI2Njg1MTJeQTJeQWpwZ15BbWU3MDYwNTMyOTg@._V1_SX86_CR0,0,86,86_.jpg" class="rec_poster_img" />
-</noscript>
-</a>                        </div>
-                        <div class="list_name">
-                            <b><a href="/list/FBGZANPH1lc/?ref_=tt_rls_5" >TV 2013</a></b>
-                        </div>
-                        <div class="list_meta">
-                            a list of 22 titles 
-                             created 1&nbsp;month&nbsp;ago
-                        </div>
-                        <div class="clear">&nbsp;</div>
-                    </div>
+
+    <div class="list-preview even">
+        <div class="list-preview-item-narrow">
+<a href="/list/ls006775680?ref_=rls_1"
+><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/tv.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BNTY5NjQ4MDQ5Nl5BMl5BanBnXkFtZTcwNTg4MTY2Ng@@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
+        <div class="list_name">
+            <strong><a href="/list/ls006775680?ref_=rls_1"
+>
+TV Shows
+</a></strong>
+        </div>
+        <div class="list_meta">
+            a list of 23 titles
+            <br />created 09&nbsp;Dec&nbsp;2011
+        </div>
+        <div class="clear">&nbsp;</div>
+    </div>
+    <div class="list-preview odd">
+        <div class="list-preview-item-narrow">
+<a href="/list/ls057883128?ref_=rls_2"
+><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/tv.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BNGEzYjIzZGUtNWI5YS00Y2IzLWIzMTQtMGJhNDljZDkzYzM0XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
+        <div class="list_name">
+            <strong><a href="/list/ls057883128?ref_=rls_2"
+>
+Favourite TV Shows
+</a></strong>
+        </div>
+        <div class="list_meta">
+            a list of 40 titles
+            <br />created 18&nbsp;Mar&nbsp;2013
+        </div>
+        <div class="clear">&nbsp;</div>
+    </div>
+    <div class="list-preview even">
+        <div class="list-preview-item-narrow">
+<a href="/list/ls059517010?ref_=rls_3"
+><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/tv.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyNDMxNjQyN15BMl5BanBnXkFtZTgwNzA4NDQwMDI@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
+        <div class="list_name">
+            <strong><a href="/list/ls059517010?ref_=rls_3"
+>
+TV Shows
+</a></strong>
+        </div>
+        <div class="list_meta">
+            a list of 45 titles
+            <br />created 11&nbsp;Jan&nbsp;2014
+        </div>
+        <div class="clear">&nbsp;</div>
+    </div>
+    <div class="list-preview odd">
+        <div class="list-preview-item-narrow">
+<a href="/list/ls076672162?ref_=rls_4"
+><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/tv.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwOTcxODc2Ml5BMl5BanBnXkFtZTgwMjMyMDk2MTI@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
+        <div class="list_name">
+            <strong><a href="/list/ls076672162?ref_=rls_4"
+>
+The greatest TV shows
+</a></strong>
+        </div>
+        <div class="list_meta">
+            a list of 28 titles
+            <br />created 15&nbsp;Mar&nbsp;2015
+        </div>
+        <div class="clear">&nbsp;</div>
+    </div>
+    <div class="list-preview even">
+        <div class="list-preview-item-narrow">
+<a href="/list/ls031566483?ref_=rls_5"
+><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/tv.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BN2FjNjBlMDEtNGMxNS00MmU2LThkYTAtOGNkOTBiMjZjZjA1XkEyXkFqcGdeQXVyNjM2MzAyODA@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
+        <div class="list_name">
+            <strong><a href="/list/ls031566483?ref_=rls_5"
+>
+TV-Shows
+</a></strong>
+        </div>
+        <div class="list_meta">
+            a list of 39 titles
+            <br />created 21&nbsp;Nov&nbsp;2015
+        </div>
+        <div class="clear">&nbsp;</div>
+    </div>
                 <div class="see-more">
-                    <a href="/lists/tt0898266?ref_=tt_rls_sm" >See all related lists</a>&nbsp;&raquo;
+                    <a href="/lists/tt0898266?ref_=rls_sm"
+>See all related lists</a>&nbsp;&raquo;
                 </div>
             </div>
         </div>
+<script>
+    if (typeof uet == 'function') {
+      uet("be", "RelatedListsWidget", {wb: 1});
+    }
+</script>
+<script>
+    if (typeof uex == 'function') {
+      uex("ld", "RelatedListsWidget", {wb: 1});
+    }
+</script>
 	
 	<!-- no content received for slot: bottom_rhs -->
+	
+	
+	<!-- no content received for slot: rhs_cornerstone -->
+	
+	
+	<!-- no content received for slot: btf_rhs2 -->
 	
 </div> 
 
@@ -1790,230 +1584,273 @@ src="http://ia.media-imdb.com/images/M/MV5BMTA0MTI2Njg1MTJeQTJeQWpwZ15BbWU3MDYwN
                 </div>
 
 
-  <div id="footer" class="ft">
-    <hr width="100%" size=1>
-    <div id="rvi-div">
-        <div class="recently-viewed">&nbsp;</div>
-        <br class="clear">
-        <hr width="100%" size="1">
-    </div>
-    <p class="footer" align="center">
-        <a
-onclick="(new Image()).src='/rg/home/footer/images/b.gif?link=/';"
-href="/"
->Home</a>
-        | <a
-onclick="(new Image()).src='/rg/search/footer/images/b.gif?link=/search';"
-href="/search"
->Search</a>
-        | <a
-onclick="(new Image()).src='/rg/siteindex/footer/images/b.gif?link=/a2z';"
-href="/a2z"
->Site Index</a>
-        | <a
-onclick="(new Image()).src='/rg/intheaters/footer/images/b.gif?link=/movies-in-theaters/';"
-href="/movies-in-theaters/"
->In Theaters</a>
-        | <a
-onclick="(new Image()).src='/rg/comingsoon/footer/images/b.gif?link=/movies-coming-soon/';"
-href="/movies-coming-soon/"
->Coming Soon</a>
-        | <a
-onclick="(new Image()).src='/rg/topmovies/footer/images/b.gif?link=/chart/';"
-href="/chart/"
->Top Movies</a>
-        | <a
-onclick="(new Image()).src='/rg/top250/footer/images/b.gif?link=/chart/top';"
-href="/chart/top"
->Top 250</a>
-        | <a
-onclick="(new Image()).src='/rg/tv/footer/images/b.gif?link=/sections/tv/';"
-href="/sections/tv/"
->TV</a>
-        | <a
-onclick="(new Image()).src='/rg/news/footer/images/b.gif?link=/news/';"
-href="/news/"
->News</a>
-        | <a
-onclick="(new Image()).src='/rg/messageboards/footer/images/b.gif?link=/boards/';"
-href="/boards/"
->Message Boards</a>
-        | <a
-onclick="(new Image()).src='/rg/pressroom/footer/images/b.gif?link=/pressroom/';"
-href="/pressroom/"
->Press Room</a>
-        <br>
 
-        <a
-onclick="(new Image()).src='/rg/register-v2/footer/images/b.gif?link=https://secure.imdb.com/register-imdb/form-v2';"
-href="https://secure.imdb.com/register-imdb/form-v2"
->Register</a>
-        | <a
-onclick="(new Image()).src='/rg/advertising/footer/images/b.gif?link=/advertising/';"
-href="/advertising/"
->Advertising</a>
-        | <a
-onclick="(new Image()).src='/rg/helpdesk/footer/images/b.gif?link=/helpdesk/contact';"
-href="/helpdesk/contact"
->Contact Us</a>
-        | <a
-onclick="(new Image()).src='/rg/jobs/footer/images/b.gif?link=/jobs';"
-href="/jobs"
->Jobs</a>
-        | <a
-onclick="(new Image()).src='/rg/IMDbFooter/prosystem/images/b.gif?link=https://secure.imdb.com/r/IMDbFooter/register/subscribe?c=a394d4442664f6f6475627';"
-href="https://secure.imdb.com/r/IMDbFooter/register/subscribe?c=a394d4442664f6f6475627"
->IMDbPro</a>
-        | <a
-onclick="(new Image()).src='/rg/BOXOFFICEMOJO/FOOTER/images/b.gif?link=http://www.boxofficemojo.com/';"
-href="http://www.boxofficemojo.com/"
->Box Office Mojo</a>
-        | <a
-onclick="(new Image()).src='/rg/WITHOUTABOX/FOOTER/images/b.gif?link=http://www.withoutabox.com/';"
-href="http://www.withoutabox.com/"
->Withoutabox</a>
-        <br /><br />
-        IMDb Mobile:
-          <a
-onclick="(new Image()).src='/rg/mobile-ios/footer/images/b.gif?link=/apps/ios/';"
-href="/apps/ios/"
->iPhone/iPad</a>
-        | <a
-onclick="(new Image()).src='/rg/mobile-android/footer/images/b.gif?link=/android';"
-href="/android"
->Android</a>
-        | <a
-onclick="(new Image()).src='/rg/mobile-web/footer/images/b.gif?link=http://m.imdb.com';"
-href="http://m.imdb.com"
->Mobile site</a>
-        | <a
-onclick="(new Image()).src='/rg/mobile-win7/footer/images/b.gif?link=/windowsphone';"
-href="/windowsphone"
->Windows Phone 7</a>
-        | IMDb Social:
-          <a
-onclick="(new Image()).src='/rg/facebook/footer/images/b.gif?link=http://www.facebook.com/imdb';"
-href="http://www.facebook.com/imdb"
->Facebook</a>
-        | <a
-onclick="(new Image()).src='/rg/twitter/footer/images/b.gif?link=http://twitter.com/imdb';"
-href="http://twitter.com/imdb"
->Twitter</a>
-       <br /><br />
-    </p>
-  
-    <p class="footer" align="center">
-        <a
-onclick="(new Image()).src='/rg/help/footer/images/b.gif?link=/help/show_article?conditions';"
-href="/help/show_article?conditions"
->Copyright &copy;</a> 1990-2014 
-        <a
-onclick="(new Image()).src='/rg/help/footer/images/b.gif?link=/help/';"
-href="/help/"
->IMDb.com, Inc.</a>
-        <br>
-        <a
-onclick="(new Image()).src='/rg/help/footer/images/b.gif?link=/help/show_article?conditions';"
-href="/help/show_article?conditions"
->Conditions of Use</a> | <a
-onclick="(new Image()).src='/rg/help/footer/images/b.gif?link=/privacy';"
-href="/privacy"
->Privacy Policy</a> | <a
-onclick="(new Image()).src='/rg/help/footer/images/b.gif?link=//www.amazon.com/InterestBasedAds';"
-href="//www.amazon.com/InterestBasedAds"
->Interest-Based Ads</a>
-        <br>
-        An <span id="amazon_logo" class="footer_logo" align="middle"></span> company.
-    </p>
-  
-  <table class="footer" id="amazon-affiliates">
-    <tr>
-      <td colspan="8">
-        Amazon Affiliates
-      </td>
-    </tr>
-    <tr>
-      <td class="amazon-affiliate-site-first">
-        <a class="amazon-affiliate-site-link" href="http://www.amazon.com/b?ie=UTF8&node=2858778011&tag=imdbpr1-20">
-          <span class="amazon-affiliate-site-name">Amazon Instant Video</span><br>
-          <span class="amazon-affiliate-site-desc">Watch Movies &<br>TV Online</span>
-        </a>
-      </td>
-    <td class="amazon-affiliate-site-item-nth">
-        <a class="amazon-affiliate-site-link" href=http://www.amazon.com/b?ie=UTF8&node=2676882011&tag=imdbpr1-20 >
-          <span class="amazon-affiliate-site-name">Prime Instant Video</span><br>
-          <span class="amazon-affiliate-site-desc">Unlimited Streaming<br>of Movies & TV</span>
-        </a>
-    </td>
-    <td class="amazon-affiliate-site-item-nth">
-        <a class="amazon-affiliate-site-link" href=http://www.amazon.de/b?ie=UTF8&node=284266&tag=imdbpr1-de-21 >
-          <span class="amazon-affiliate-site-name">Amazon Germany</span><br>
-          <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
-        </a>
-    </td>
-    <td class="amazon-affiliate-site-item-nth">
-        <a class="amazon-affiliate-site-link" href=http://www.amazon.it/b?ie=UTF8&node=412606031&tag=imdbpr1-it-21 >
-          <span class="amazon-affiliate-site-name">Amazon Italy</span><br>
-          <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
-        </a>
-    </td>
-    <td class="amazon-affiliate-site-item-nth">
-        <a class="amazon-affiliate-site-link" href=http://www.amazon.fr/b?ie=UTF8&node=405322&tag=imdbpr1-fr-21 >
-          <span class="amazon-affiliate-site-name">Amazon France</span><br>
-          <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
-        </a>
-    </td>
-    <td class="amazon-affiliate-site-item-nth">
-        <a class="amazon-affiliate-site-link" href=http://www.amazon.in/movies-tv-shows/b/?ie=UTF&node=976416031&tag=imdbpr1-in-21 >
-          <span class="amazon-affiliate-site-name">Amazon India</span><br>
-          <span class="amazon-affiliate-site-desc">Buy Movie and<br>TV Show DVDs</span>
-        </a>
-    </td>
-    <td class="amazon-affiliate-site-item-nth">
-        <a class="amazon-affiliate-site-link" href=http://www.dpreview.com >
-          <span class="amazon-affiliate-site-name">DPReview</span><br>
-          <span class="amazon-affiliate-site-desc">Digital<br>Photography</span>
-        </a>
-    </td>
-    <td class="amazon-affiliate-site-item-nth">
-        <a class="amazon-affiliate-site-link" href=http://www.audible.com >
-          <span class="amazon-affiliate-site-name">Audible</span><br>
-          <span class="amazon-affiliate-site-desc">Download<br>Audio Books</span>
-        </a>
-    </td>
-    </tr>
-  </table>
-  </div>
+
+
+
+    <div id="footer" class="ft">
+
+            <div id="rvi-div">
+                <div class="recently-viewed">&nbsp;</div>
+                <br class="clear">
+            </div>
+
 	
 	<!-- no content received for slot: bottom_ad -->
 	
+
+        <div class="container footer-grid-wrapper">
+            <div class="row footer-row">
+                <div class="col outside">
+    <h3>IMDb Everywhere</h3>
+    <div class="app-links">
+    <a href="/offsite/?page-action=ft_app_apple&token=BCYpWLnzpaiBzU-ha6Kj2nkp9Hz8czH434FkXi8i84cKmGnRcxoRMEtOAVNlI6COIl3mOyMYgaaE%0D%0AuFQHwbh4tyvBx1SemVg-Q4VgP6g55yjetP8vDD5NYFhiAXQljE7uI5YKV7DvaOPRTJTNGBeY9ISg%0D%0AyT5cWdBrYJFYfXpp2v_Tu45feSjy_0FPeaVEhXcUY8j4x2KM-EjRIAd7NdU0B171AMowqTMq0eko%0D%0Ayuh1_Ej6uaU%0D%0A&ref_=ft_app_apple"
+title="Get the IMDb App on the Apple App Store" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-apple" ></span>
+</a>
+    <a href="/offsite/?page-action=ft_app_google&token=BCYr1tARGkpNSqxXgu8v30OhEtgVg06pL_xeSgLAzBsRy6MmxRULSv07uW2tOitz66VMkxeCBEz6%0D%0AgrYberoyNjvMvoIvtpdvtYW_800FCXHI26EWnXZW4KfASFlKg3Me2rfxDPyCAHZkybLyRGt-6VMz%0D%0AAJEZeqLAmokewIHzPk6HHEQBmsMPZB5eX-yvK_aRPCHkr_AHPBPQy6-xGC3GVsEK2otvMGz3ozFB%0D%0A0RtyfIT-684%0D%0A&ref_=ft_app_google"
+title="Get the IMDb app on Google Play" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-google" ></span>
+</a>
+    <a href="/offsite/?page-action=ft_app_amazon&token=BCYp852cK1G4GkMwKCOIwSecRJXvSIBC2uUo2Us2UwaIzKJ3N8rFrU1PNH7mNZcyoAWs88suNEkk%0D%0AXxVQXgzIEGmx9RqO-EVZOJ3VUczDrXfmWmM1V7HkoHx4UNPqkvtWgtlBAzk8wBgfSbfs_WS12Gep%0D%0AzIarSuMr4W-xKHE1bRipEUA0Lb72auvafnGbMzEMzwoYIXlS9jNqvsqCXjQbXsuOS24LtEqMN3wS%0D%0A2gI20VrO6jK9EYwzj0aqFpxlmaRiMCVNY02HdnW4q0pvWraACpZjoAKRHcXuJew4IJxurflXlyXm%0D%0A5pjD_2Lrmr1OM6WsAsWkNT_LjSrzXy0KlstV80igsIzEX-U5o8HbwTgiFdqUEKkGBunJZYXEPbD9%0D%0ATeFL1ayff02l-S6RBFLaCmNk_UnC7S9zoWsCn7ldWm-PBy7rd8A%0D%0A&ref_=ft_app_amazon"
+title="Get the IMDb app on Amazon Appstore for Android" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-amazon" ></span>
+</a>
+    </div>
+
+    <p>Find showtimes, watch trailers, browse photos, track your Watchlist and rate your favorite movies and TV shows on your phone or tablet!</p>
+
+    <a href="http://m.imdb.com?ref_=ft_mdot"
+class="touchlink" >IMDb Mobile site</a>
+                </div>
+                <div class="col center">
+  <div class="link-bar icon-link-bar">
+    <h3>
+      Follow IMDb on
+      <div>
+
+    <a href="/offsite/?page-action=fol_fb&token=BCYvy0YiNtF76_ZxjOOZKovUVCATp4fPaehN9PrIZrrIuW6pJRKDNFZ90BvtFQsw8b2QVyDSUZ-M%0D%0A6p6GgagzOFXkE8nL8A33k_Gs-wfSLptimad-VM7_QDyaWlFNuix1iClKlyZhk00Re4GauNiPZFRF%0D%0ALmGaLIIVxn6VRB5zmmkMlTlDDgaLpb6_I7R0H6danfJnMhyhUQeY8r-ZimrFq6aEKg%0D%0A&ref_=ft_fol_fb"
+title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
+</a>
+    <a href="/offsite/?page-action=fol_tw&token=BCYusJYV38GNAjQ4XtjVOXIto0je68fB8LdhPkrpww2NWMvzTy8nrTH7Ha7budu38TNjrtULLLKT%0D%0AfIryAxmLI7_GeMN1Kc6ET-TMNfM1aT_FPzIzMN2LN51jSD4T2HKgDFZCu9V-RBh0r9BpiuGx6c5H%0D%0AUuiqcye10A6U7VTbyu47Emy_m3VR_PXHOwMfNAaofb-I%0D%0A&ref_=ft_fol_tw"
+title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
+</a>
+    <a href="/offsite/?page-action=fol_inst&token=BCYvvfQ9hYHT4c-Y7IZBlIuybvmJOhbrF2n0DaDpqn6FJx9OpYVYDFcner1bD9J8dMcGulWiCmKd%0D%0A_7xpxebyTKx3dZI4AvZBIoS-ljdLDsZGKj4-b26D567el78vVkAGi3hnxmdiasBe5ZaNqToVCwNC%0D%0AysCW_MlNTeRLM3f83dMBi71miQM6LuR0efBvqvpD3SKj%0D%0A&ref_=ft_fol_inst"
+title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
+</a>
+      </div>
+    </h3>
+  </div>
+                </div>
+                <div class="col outside">
+    <div class="row">
+        <div class="col col-4">
+            <ul class="unstyled">
+                <li><a href="/?ref_=ft_hm"
+>Home</a></li>
+                <li><a href="/chart/top?ref_=ft_250"
+>Top Rated Movies</a></li>
+                <li><a href="/chart/?ref_=ft_cht"
+>Box Office</a></li>
+                <li><a href="/sections/tv/?ref_=ft_tv"
+>TV</a></li>
+                <li><a href="/movies-coming-soon/?ref_=ft_cs"
+>Coming Soon</a></li>
+                <li><a href="/a2z?ref_=ft_si"
+>Site Index</a></li>
+                <li><a href="/search?ref_=ft_sr"
+>Search</a></li>
+                <li><a href="/movies-in-theaters/?ref_=ft_inth"
+>In Theaters</a></li>
+            </ul>
+        </div>
+        <div class="col col-4">
+            <ul class="unstyled">
+                <li><a href="/helpdesk/contact?ref_=ft_con"
+>Contact Us</a></li>
+                <li>        <a href="https://secure.imdb.com/register-imdb/form-v2?ref_=ft_reg"
+>Register</a>
+</li>
+                <li><a href="/news/?ref_=ft_nw"
+>News</a></li>
+                <li class="spacer"></li>
+                <li><a href="/pressroom/?ref_=ft_pr"
+>Press Room</a></li>
+                <li><a href="/advertising/?ref_=ft_ad"
+>Advertising</a></li>
+                <li><a href="/jobs?ref_=ft_jb"
+>Jobs</a></li>
+            </ul>
+        </div>
+        <div class="col col-4">
+            <ul class="unstyled">
+                <li><a href="http://pro.imdb.com/signup/index.html?rf=cons_ft_hm&ref_=cons_ft_hm"
+>IMDbPro</a></li>
+                <li>    <a href="/offsite/?page-action=ft-mojo&token=BCYmwmyp1wrfssAP7PU2qavBGOfgadlaO01PoVSjvTonM-zvxwj3qAEbbfOKDXnyfsZ5GnAiUWSB%0D%0AzvQBBv0qCo30sqyJBLiW1elC94WvX8EgV_34Pek2Qz6m7CSQ84UTMwm86_MdxGHTER_sEIQS-XzG%0D%0AkZ9kb9sUOX4N8hNIESd15WnmFXxMjethdE8EpoNKb3cO%0D%0A&ref_=ft_bom"
+itemprop='url'>Box Office Mojo</a>
+</li>
+                <li>    <a href="/offsite/?page-action=ft-wab&token=BCYlfTBj-6h57C2gnqbs6Z08W0DmJQ_r9cIgHUBBSuAo7eQCSHsvXXJpdRq3ZYqNiRoDD-piF04O%0D%0A5vRBsZw-P8KqZ5yTP_myeqtwEVUreRlUk6bp0GMADCjwRYGdR4R9yt90lAvQOZTXstALgKsQujmu%0D%0A6yqGK-fvIAWJ8SgF1MgeIgGkxeoa7XgGkp35B2KAJp5u%0D%0A&ref_=ft_wab"
+itemprop='url'>Withoutabox</a>
+</li>
+                <li class="spacer"></li>
+                <li><a href="/help/show_article?conditions&ref_=ft_cou"
+>Conditions of Use</a></li>
+                <li><a href="/privacy?ref_=ft_pvc"
+>Privacy Policy</a></li>
+                <li>    <a href="/offsite/?page-action=ft-iba&token=BCYgVGM298p5x59YeYM_OB6m8kUQZSDz_2b8BLDXI8aS61r5nETnadEQ9RpxXABv-sTNjgPD6JRA%0D%0AG0sZF534xENAe8a58qkmxZXbq2yml8q7UwUSnx4FEd1bH-bwH2UznAX_Hun3GW6lIGzNgtoAlETZ%0D%0A9JtPbckertEPVt0SeE58GLQwWm0Bj6NoSruCCzfEu3QOFopXf0R_t3STpRAFGKlTmvGzvsWZ0kIK%0D%0APJ7o3AG16iCjW3qCD6geXKJ6ApnXUHK3%0D%0A&ref_=ft_iba"
+itemprop='url'>Interest-Based Ads</a>
+</li>
+                <li class="spacer"></li>
+            </ul>
+        </div>
+    </div>
+                </div>
             </div>
         </div>
 
-<script type="text/javascript" src="http://ia.media-imdb.com/images/G/01/imdb/js/collections/title-36935490._V363304090_.js"></script>
+        <div class="container">
+            <div class="ft-copy float-right">
+                <a
+href="/help/show_article?conditions"
+>Copyright &copy;</a> 1990-2017
+                <a
+href="/help/"
+>IMDb.com, Inc.</a>
+            </div>
+            <div>
+                An <span id="amazon_logo" class="footer_logo" align="middle">Amazon.com</span> company.
+            </div>
+        </div>
 
-<script type="text/imdblogin-js" id="login">
-jQuery(document).ready(function(){
-    window.imdb.login_lightbox("https://secure.imdb.com", "http://www.imdb.com/title/tt0898266/episodes?season=1");
-});
+
+
+    <table class="footer" id="amazon-affiliates">
+        <tr>
+            <td colspan="8">
+                Amazon Affiliates
+            </td>
+        </tr>
+        <tr>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-aiv&token=BCYgYK5JhWwxe5OsM2NK-Er1P0cdaAhEP7xog7WyWfwh7hbmLKB2uMOoXXB14jdpEG-EfxDyB4VN%0D%0AI5uOU_PXXWMbg5UIG1AHebtNA1R2rBkVRzWn6cbCszy0x7UhOkqswA0Oq2eH3IKn8RZaABuJUC02%0D%0AaftWj_F9yYllJAZJJexfT-_s6jxXbloVMbfep86GbzvUwLNpzfZpba6b9oozS-I1VahuG5VeCAoI%0D%0A7ZjPLzZRfHE%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Amazon Video</span><br>
+                <span class="amazon-affiliate-site-desc">Watch Movies &<br>TV Online</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-piv&token=BCYtjzVO26N-9oyWa6djSnH4uFoqgKzB-gE3aBKaSVOzVxJQn4t_eQodUJGt8bPy2EnPiDITyuIJ%0D%0A1Fv3OL2tBsDwxuJKHec132oEpRF0F8mVo3lrqESTs9qVCl6vpiwGNryoH4YCDhbe5WuakoRK3DRx%0D%0A47_DAtEYE4d2a2XGJ4_Ssp6DaJQrO_hfmtVxOHiFdg-UZDiHu8Nfot2-oDOIo-zRCRs8cj08Cvie%0D%0A-CiEfUUXtx8%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Prime Video</span><br>
+                <span class="amazon-affiliate-site-desc">Unlimited Streaming<br>of Movies & TV</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-amzn-de&token=BCYgYrC1KCy-rFWVrwHJNx7Y7qaCdOo575CuB0uWvYWAHQEeFKqFYQXQblbkVbHL5WU_7VRNL1a1%0D%0A0WEuA65K6Yde-CNsPn4iF5E6Mtdiqq6uWf2j9yO0sRHw8h78BsrpHrP7M7xdWzCUPXmkTgSuWz9K%0D%0ATwFvK6YpYOSG6TsbNP35jsfrWJhRx0dZgNzx1l9SQOJGGwoQpjD3E4KpE1n-zv3hdyYLmtVWe5ip%0D%0ATA6NSZGnZFs%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Amazon Germany</span><br>
+                <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-amzn-it&token=BCYjRWFO9d5pvbpilxPKd31GEBs1kaNvuDUBDwPtr0I53uAkNfrP1Ksv8AMZ5RL86uIHXkZ22keC%0D%0AOjXPAB1AEErXnkPUNkdU2VCMW7wm0mI9j-KdPbxpjakcguAc_9Z9yD10r41xOn59g0OXa7ZvDTVU%0D%0A5P5E33u1LlCU2W1uxcMr4oeMe19BLrKmbLGzgku4ahTdm6GYSUWb-drwDWUIQe8QpHIu07YRQAiR%0D%0AFopN3PrXZ40%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Amazon Italy</span><br>
+                <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-amzn-fr&token=BCYtXOgwBuUrjnoFKABjAnnPV2WcOWV6dLZahTs__I9RG5IeHSVemolSj2qvivbK9A6HPM-El3J9%0D%0AroeEoWGmJuvZkGdX3PykKpc45i2EPMStO-b_O1rlNdd-Dl3W874xfv_uvCpYdaWdalg5ZsPtk2mi%0D%0AwzkLVGdus3KTB0NIwRLjG0x3e5EUkMN2H4ja5Nm2YbAniKhR1ykvkY_A8fzSASarcC8d9QVT2Vem%0D%0AujPRUcXtHvM%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Amazon France</span><br>
+                <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-amzn-in&token=BCYjmMdOHe0KcWcIxcjvqEihewMrPLFQHOkydWuAgUS2hxG4oqBNDksRrTrazUPeaL_H6T6UXVYR%0D%0AUZS9RgRiha1MAb4BSUboGtJUa3vrT6O53Qs7vqqR6g0Dz8ydVTjG2H7SQmetgHQC7bCCF8EMBKBy%0D%0AMHJZjnQ2aZoraATUI4ATKznduTXjS1rqREmvzOaWEURi_usDbhZ4yyCLlBGzzdxpY5O4Bxe-ARL2%0D%0AgPQ-dTMgZLPg16j23Z5ZVFLtDWSfYDVp%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Amazon India</span><br>
+                <span class="amazon-affiliate-site-desc">Buy Movie and<br>TV Show DVDs</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-amzn-dpr&token=BCYpO5rasxqDTrnx99yGvBgL7X_zhzHOFolMdeRpNy4eFHkB1NEKfUt-_D3QmSgEZandYBiVcHgM%0D%0AsRomhIuN7JexXpm81H_ufUkNASJYLtXX3eTYJL_WuAUZtRxcNQbpP1NJFKS-9BsbQWNgVPOQjqXS%0D%0A0c4Hm4JxtuYYu897x8l7xTg%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">DPReview</span><br>
+                <span class="amazon-affiliate-site-desc">Digital<br>Photography</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-amzn-aud&token=BCYndr_W5t6v7qljlE0EmNSQWTVnmtxR6lDK-i2RBURZy-3ugpOtbfPAs4w1uwZ9KTk62YhUvebX%0D%0AgFAzm3JF2dx4p9Vnmw79vFmMwTj1yr4FbbDDlxDgwz_3tEb-F95IBaQ2_cHah-pVtajAosBB4o2O%0D%0AhXsm2ZHvTun0HwNfZIkNwK0%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Audible</span><br>
+                <span class="amazon-affiliate-site-desc">Download<br>Audio Books</span>
+            </a>
+        </div>
+    </td>
+        </tr>
+    </table>
+      </div>
+            </div>
+        </div>
+
+
+
+<script type="text/javascript" src="http://ia.media-imdb.com/images/G/01/imdb/js/collections/common-485701321._CB522736548_.js"></script>
+<script type="text/javascript" src="http://ia.media-imdb.com/images/G/01/imdb/js/collections/title-2540067574._CB530989936_.js"></script>
+
+<script type="text/javascript" id="login">
+(function(){
+    var readyTimeout = setInterval(function() {
+        if (window.jQuery && window.imdb && window.imdb.login_lightbox) {
+            clearTimeout(readyTimeout);
+            window.imdb.login_lightbox();
+        }
+    }, 100);
+})();
 </script>
 
         <script type="text/javascript">
+        function jQueryOnReady(remaining_count) {
+            if (window.jQuery && typeof $.fn.watchlistRibbon !== 'undefined') {
                 jQuery(
                              function() {
-           var facebookTheme = (window.custom && window.custom.full_page && window.custom.full_page.theme) ? window.custom.full_page.theme : "light",
-               url = "http://www.facebook.com/widgets/like.php?width=280&show_faces=1&layout=standard&href=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0898266%2F&colorscheme=" + facebookTheme,
+           var isAdvertisingThemed = !!(window.custom && window.custom.full_page && window.custom.full_page.theme),
+               url = "http://www.facebook.com/widgets/like.php?width=280&show_faces=1&layout=standard&href=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0898266%2F&colorscheme=light",
                like = document.getElementById('iframe_like');
-           if (like) {
+
+           if (!isAdvertisingThemed && like) {
               like.src = url;
-              like.onload = function () { generic.monitoring.stop_timing('facebook_like_iframe', '', false); };
+              like.onload = function () { 
+                  if (uex) { uex('ld', 'facebook_like_iframe', {wb: 1}); }
+              };
+           } else if (isAdvertisingThemed) {
+              $('.social_networking_like').closest('.aux-content-widget-2').hide();
            }
         }
 
                 );
+            } else if (remaining_count > 0) {
+                setTimeout(function() { jQueryOnReady(remaining_count-1) }, 100);
+            }
+        }
+        jQueryOnReady(50);
         </script>
 
-<div id="servertime" time="854"/>
+
+<div id="servertime" time="1032"/>
 
 
 
@@ -2022,6 +1859,7 @@ jQuery(document).ready(function(){
       uet("be");
     }
 </script>
+
     </body>
 </html>
 

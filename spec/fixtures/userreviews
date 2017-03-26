@@ -1,11 +1,11 @@
 HTTP/1.1 200 OK
-Date: Thu, 09 Mar 2017 14:39:12 GMT
+Date: Sun, 26 Mar 2017 08:18:47 GMT
 Server: HTTPDaemon
 X-Frame-Options: SAMEORIGIN
 Cache-Control: private
 Content-Type: text/html; charset=iso-8859-1
-Set-Cookie: uu=BCYoADudxSp9qnTmpXy7L-Iw33hKmR2C8fZvd-TNTbHl0nus7pSep04IrUcBMYvGn2F5QXjNkoN7FrVwEV-zXnuc7nIsigSGjoG4DG7e4NjBRsEBdyhfcSegoYHY8EEkcrXCMMZZHaI4PGf520MOPmxHBoVWV448pgBRFMqN01ZtI2k;expires=Thu, 30 Dec 2037 00:00:00 GMT;path=/;domain=.imdb.com
-Set-Cookie: cs=OjHtCxIVrwDt9B175Z/ZXgiOAiSO2RITtsmaRI3qQQQNShFXjnoBZw7ZEhQoWVIEjtkkY9mdsiSJypUyLZwnMemZspfO2SSyblESJI7vJDOO2RIkjvkSJI7ZEmTOiWIUg=;expires=Fri, 10 Mar 2017 08:00:00 GMT;path=/;domain=.imdb.com
+Set-Cookie: uu=BCYpsPDcnH4SxH8tULCbBwr7_Z9kfI9jIN3GEcBK7f-YHWys2mdUMwfuU3843cb6JHh26OUZJjslE8RnjMuE9QjjxJg7F4KbLw33o4arT5yfv3ptDkSFUD_hNhL0gR2u5FP9HTBFeTw8CeJq8BrU8uZu8X82BfzvsKyD3tAlK-Lisx8;expires=Thu, 30 Dec 2037 00:00:00 GMT;path=/;domain=.imdb.com
+Set-Cookie: cs=lncXWIyQLrtoUWfgmYyGUAeBbbqgkVqM8BkNuqOyHTKzwn7Zk4IuKaCRXRoA0U26oKcq7CfxbbqjpAseJ9HN2dCRWyxAGW26oKdbraCRbbqgsW26oJFt+uDBHYqg==;expires=Mon, 27 Mar 2017 07:00:00 GMT;path=/;domain=.imdb.com
 Vary: Accept-Encoding,User-Agent
 P3P: policyref="http://i.imdb.com/images/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "
 Transfer-Encoding: chunked
@@ -20,7 +20,7 @@ Transfer-Encoding: chunked
 <script>(function(t){ (t.events = t.events || {})["csm_head_pre_title"] = new Date().getTime(); })(IMDbTimer);</script>
 <script>
 var addClickstreamHeadersToAjax = function(xhr) {
-    xhr.setRequestHeader("x-imdb-parent-id", "1C8MQQDESW4APK82WPDV");
+    xhr.setRequestHeader("x-imdb-parent-id", "1QN2J84H14N6TKRE1CRT");
 };
 </script>
 
@@ -33,7 +33,7 @@ var addClickstreamHeadersToAjax = function(xhr) {
 
 <meta name="keywords" content="Reviews, Showtimes, DVDs, Photos, Message Boards, User Ratings, Synopsis, Trailers, Credits">
 <script>(function(t){ (t.events = t.events || {})["csm_head_pre_css"] = new Date().getTime(); })(IMDbTimer);</script>
-<link rel="stylesheet" type="text/css" href="http://i.media-imdb.com/images/SFbffed916d439cb9a451915be4eabd598/css/min/title.css" ><link rel="stylesheet" type="text/css" href="http://i.media-imdb.com/images/SFd14d3e3e54608a3a94d6d6ede9ee6b11/css2/site/consumer-navbar-mega.css" ><script>(function(t){ (t.events = t.events || {})["csm_head_post_css"] = new Date().getTime(); })(IMDbTimer);</script>
+<link rel="stylesheet" type="text/css" href="http://i.media-imdb.com/images/SFbffed916d439cb9a451915be4eabd598/css/min/title.css" ><link rel="stylesheet" type="text/css" href="http://i.media-imdb.com/images/SFee9c9a814eba8342b847680ef4330580/css2/site/consumer-navbar-mega.css" ><script>(function(t){ (t.events = t.events || {})["csm_head_post_css"] = new Date().getTime(); })(IMDbTimer);</script>
 
 
 <meta name="application-name" content="IMDb" />
@@ -69,16 +69,16 @@ var imdbads = imdbads || {}; imdbads.cmd = imdbads.cmd || [];
 !function a(b,c,d){function e(g,h){if(!c[g]){if(!b[g]){var i="function"==typeof require&&require;if(!h&&i)return i(g,!0);if(f)return f(g,!0);var j=new Error("Cannot find module '"+g+"'");throw j.code="MODULE_NOT_FOUND",j}var k=c[g]={exports:{}};b[g][0].call(k.exports,function(a){var c=b[g][1][a];return e(c?c:a)},k,k.exports,a,b,c,d)}return c[g].exports}for(var f="function"==typeof require&&require,g=0;g<d.length;g++)e(d[g]);return e}({1:[function(a,b,c){"use strict";a(2)},{2:2}],2:[function(a,b,c){"use strict";!function(){var a,b,c=function(a){return"[object Array]"===Object.prototype.toString.call(a)},d=function(a,b){for(var c=0;c<a.length;c++)c in a&&b.call(null,a[c],c)},e=[],f=!1,g=!1,h=function(){var a=[],b=[],c={};return d(e,function(e){var f="";d(e.dartsite.split("/"),function(b){""!==b&&(b in c||(c[b]=a.length,a.push(b)),f+="/"+c[b])}),b.push(f)}),{iu_parts:a,enc_prev_ius:b}},i=function(){var a=[];return d(e,function(b){var c=[];d(b.sizes,function(a){c.push(a.join("x"))}),a.push(c.join("|"))}),a},j=function(){var a=[];return d(e,function(b){a.push(k(b.targeting))}),a.join("|")},k=function(a,b){var c,d=[];for(var e in a){c=[];for(var f=0;f<a[e].length;f++)c.push(encodeURIComponent(a[e][f]));b?d.push(e+"="+encodeURIComponent(c.join(","))):d.push(e+"="+c.join(","))}return d.join("&")},l=function(){var a=+new Date;g||document.readyState&&"loaded"!==document.readyState||(g=!0,f&&imdbads.cmd.push(function(){for(var b=0;b<e.length;b++)generic.monitoring.record_metric(e[b].name+".fail",csm.duration(a))}))};window.tinygpt={define_slot:function(a,b,c,d){e.push({dartsite:a.replace(/\/$/,""),sizes:b,name:c,targeting:d})},set_targeting:function(b){a=b},callback:function(a){var c,d,f={},g=+new Date;try{for(var h=0;h<e.length;h++)c=e[h].dartsite,d=e[h].name,a[h][c]?f[d]=a[h][c]:window.console&&console.error&&console.error("Unable to correlate GPT response for "+d);imdbads.cmd.push(function(){for(var a=0;a<e.length;a++)ad_utils.slot_events.trigger(e[a].name,"request",{timestamp:b}),ad_utils.slot_events.trigger(e[a].name,"tagdeliver",{timestamp:g});ad_utils.gpt.handle_response(f)})}catch(i){window.console&&console.error&&console.error("Exception in GPT callback: "+i.message)}},send:function(){var d,g,m=[],n=function(a,b){c(b)&&(b=b.join(",")),b&&m.push(a+"="+encodeURIComponent(""+b))};if(0===e.length)return void tinygpt.callback({});n("gdfp_req","1"),n("correlator",Math.floor(4503599627370496*Math.random())),n("output","json_html"),n("callback","tinygpt.callback"),n("impl","fifs"),n("json_a","1");var o=h();n("iu_parts",o.iu_parts),n("enc_prev_ius",o.enc_prev_ius),n("prev_iu_szs",i()),n("prev_scp",j()),n("cust_params",k(a,!0)),d=document.createElement("script"),g=document.getElementsByTagName("script")[0],d.async=!0,d.type="text/javascript",d.src="http://pubads.g.doubleclick.net/gampad/ads?"+m.join("&"),d.id="tinygpt",d.onload=d.onerror=d.onreadystatechange=l,f=!0,g.parentNode.insertBefore(d,g),b=+new Date}}}()},{}]},{},[1]);</script>
 <script>
 tinygpt.define_slot('/4215/imdb2.consumer.title/',
-[[728,90],[1008,150],[1008,200],[1008,30],[970,250],[9,1]],
-'top_ad',
-{
-'p': ['top','t']
-});
-tinygpt.define_slot('/4215/imdb2.consumer.title/',
 [[300,250],[300,600],[11,1]],
 'top_rhs',
 {
 'p': ['tr']
+});
+tinygpt.define_slot('/4215/imdb2.consumer.title/',
+[[728,90],[1008,150],[1008,200],[1008,30],[970,250],[9,1]],
+'top_ad',
+{
+'p': ['top','t']
 });
 tinygpt.set_targeting({
 'tt' : ['f'],
@@ -86,11 +86,11 @@ tinygpt.set_targeting({
 'ab' : ['f'],
 'coo' : ['us'],
 'b' : ['t250'],
-'c' : ['0'],
+'c' : ['1'],
 'g' : ['ac','th'],
 'id' : ['tt0095016'],
 'bpx' : ['1'],
-'u': ['697120577248'],
+'u': ['324852551154'],
 'oe': ['utf-8']
 });
 tinygpt.send();
@@ -134,13 +134,13 @@ generic.monitoring.set_forester_info("title");
 generic.monitoring.set_twilight_info(
 "title_subpage",
 "UNKNOWN",
-"d47ff5e23b255959e2851658a42d5d5a1c656c90",
-"2017-03-09T14%3A39%3A12GMT",
+"962ce29e8ed56a06247f5c8bc920144d43b851cc",
+"2017-03-26T08%3A18%3A47GMT",
 "https://s.media-imdb.com/twilight/?",
 "consumer");
 generic.monitoring.start_timing("page_load");
-generic.seconds_to_midnight = 62448;
-generic.days_to_midnight = 0.722777783870697;
+generic.seconds_to_midnight = 81673;
+generic.days_to_midnight = 0.9452893733978271;
 },"Generic not defined, skipping monitoring setup.");
 </script>
 <script src="https://images-na.ssl-images-amazon.com/images/G/01/dacx/sf/DAsf-1.34_FX1._V275812351_.js"></script>
@@ -204,8 +204,8 @@ ad_utils.register_ad('top_ad');
 }
 });
 </script>
-<iframe allowtransparency="true" class="yesScript" data-dart-params="#doubleclick;u=697120577248;ord=697120577248?" frameborder="0" id="top_ad" marginwidth="0" marginheight="0" name="top_ad" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="0" data-original-height="85" width="0" height="85" ></iframe> </div>
-<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/&sz=728x90|1008x150|1008x200|1008x30|970x250|9x1&t=p%3Dtop%26p%3Dt%26g%3Dac%26g%3Dth%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0095016%26ab%3Df%26bpx%3D1%26c%3D0&tile=0&c=697120577248" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/&sz=728x90|1008x150|1008x200|1008x30|970x250|9x1&t=p%3Dtop%26p%3Dt%26g%3Dac%26g%3Dth%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0095016%26ab%3Df%26bpx%3D1%26c%3D0&tile=0&c=697120577248" border="0" alt="advertisement" /> </a> </noscript>
+<iframe allowtransparency="true" class="yesScript" data-dart-params="#doubleclick;u=324852551154;ord=324852551154?" frameborder="0" id="top_ad" marginwidth="0" marginheight="0" name="top_ad" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="0" data-original-height="85" width="0" height="85" ></iframe> </div>
+<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/&sz=728x90|1008x150|1008x200|1008x30|970x250|9x1&t=p%3Dtop%26p%3Dt%26g%3Dac%26g%3Dth%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0095016%26ab%3Df%26bpx%3D1%26c%3D1&tile=0&c=324852551154" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/&sz=728x90|1008x150|1008x200|1008x30|970x250|9x1&t=p%3Dtop%26p%3Dt%26g%3Dac%26g%3Dth%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0095016%26ab%3Df%26bpx%3D1%26c%3D1&tile=0&c=324852551154" border="0" alt="advertisement" /> </a> </noscript>
 <div id="top_ad_reflow_helper"></div>
 <script id="top_ad_rendering">
 doWithAds(function(){
@@ -336,7 +336,7 @@ ad_utils.gpt.render_ad('top_ad');
                 <div class="subNavListContainer">
                     <h5>CELEBS</h5>
                     <ul>
-                        <li><a     href="/search/name?birth_monthday=3-9&refine=birth_monthday&ref_=nv_cel_brn_1"    >Born Today</a></li>
+                        <li><a     href="/search/name?birth_monthday=3-26&refine=birth_monthday&ref_=nv_cel_brn_1"    >Born Today</a></li>
                         <li><a     href="/news/celebrity?ref_=nv_cel_nw_2"    >Celebrity News</a></li>
                         <li><a     href="/search/name?gender=male,female&ref_=nv_cel_m_3"    >Most Popular Celebs</a></li>
                     </ul>
@@ -380,21 +380,21 @@ ad_utils.gpt.render_ad('top_ad');
                         
 <ul>
     <li itemprop="headline">
-        <a     href="/news/ni60864735/?ref_=nb_nwt_1"    >
-            Shannon Purser (aka Stranger Things&#x27; Barb) Enrolls in NBC&#x27;s Drama High</a><br />
-            <span class="time">18 hours ago
-</span>
-    </li>
-    <li itemprop="headline">
-        <a     href="/news/ni60864864/?ref_=nb_nwt_2"    >
-            &#x2018;Deadpool 2&#x2019; Writer Drew Goddard to Direct Fox&#x2019;s &#x2018;Bad Times at the El Royale&#x2019;</a><br />
-            <span class="time">18 hours ago
-</span>
-    </li>
-    <li itemprop="headline">
-        <a     href="/news/ni60865156/?ref_=nb_nwt_3"    >
-            &#x2018;Jurassic World 2&#x2019; Director Ja Bayona Shares Mysterious First Look (Photo)</a><br />
+        <a     href="/news/ni60924414/?ref_=nb_nwt_1"    >
+            Box Office: &#x2018;Beauty and the Beast&#x2019; Repeats No. 1 on Friday</a><br />
             <span class="time">17 hours ago
+</span>
+    </li>
+    <li itemprop="headline">
+        <a     href="/news/ni60925054/?ref_=nb_nwt_2"    >
+            Jean Rouverol, Blacklisted Screenwriter, Dies at 100</a><br />
+            <span class="time">13 hours ago
+</span>
+    </li>
+    <li itemprop="headline">
+        <a     href="/news/ni60925050/?ref_=nb_nwt_3"    >
+            Watch Carrie Fisher and Debbie Reynolds&#x27; Public Memorial</a><br />
+            <span class="time">12 hours ago
 </span>
     </li>
 </ul>
@@ -455,7 +455,7 @@ ad_utils.gpt.render_ad('top_ad');
     </ul>
     <script>
     if (!('imdb' in window)) { window.imdb = {}; }
-    window.imdb.navbarAdSlots = {"nameAd":{"clickThru":"http://www.imdb.com/name/nm1289434/","imageUrl":"http://ia.media-imdb.com/images/M/MV5BMTM2MjQ0MzI1NF5BMl5BanBnXkFtZTcwMjA3NDQyNA@@._V1._SY315_CR5,0,250,315_.jpg","rank":80,"headline":"Emily Blunt"},"titleAd":{"clickThru":"http://www.imdb.com/title/tt0119698/","imageUrl":"http://ia.media-imdb.com/images/M/MV5BMjE4MzQ2NjMwM15BMl5BanBnXkFtZTcwOTUwMzU0NQ@@._V1._SY335_CR50,10,410,315_BR15_CT10_.jpg","titleYears":"1997","titleDisplayBase":{"displayTitleTypeOriginal":"movie","primaryTitleText":"Mononoke-hime","titleId":"tt0119698","displayTitleType":"movie","regionalTitleTexts":[{"region":"AR","title":"La princesa Mononoke"},{"region":"AU","title":"Princess Mononoke"},{"language":"fr","region":"BE","title":"Princesse Mononoké"},{"language":"bg","region":"BG","title":"Принцеса Мононоке"},{"region":"BR","title":"Princesa Mononoke"},{"language":"en","region":"CA","title":"Princess Mononoke"},{"region":"CL","title":"La princesa Mononoke"},{"region":"CZ","title":"Princezna Mononoke"},{"region":"DE","title":"Prinzessin Mononoke"},{"region":"DK","title":"Prinsesse Mononoke"},{"region":"EE","title":"Printsess Mononoke"},{"region":"ES","title":"La princesa Mononoke"},{"region":"FI","title":"Prinsessa Mononoke"},{"region":"FR","title":"Princesse Mononoké"},{"region":"GB","title":"Princess Mononoke"},{"region":"GR","title":"Πριγκίπισσα Μονονόκε"},{"region":"HR","title":"Princeza Mononoke"},{"region":"HU","title":"A vadon hercegnője"},{"region":"IT","title":"Principessa Mononoke"},{"region":"JP","title":"Mononoke-hime"},{"region":"LT","title":"Princese Mononoke"},{"region":"MX","title":"La princesa Mononoke"},{"language":"en","region":"MY","title":"Princess Mononoke"},{"region":"NO","title":"Prinsesse Mononoke"},{"region":"PL","title":"Ksiezniczka Mononoke"},{"region":"PT","title":"A Princesa Mononoke"},{"region":"RO","title":"Printesa Mononoke"},{"region":"RS","title":"Princeza Mononoke"},{"region":"RU","title":"Принцесса Мононокэ"},{"region":"SE","title":"Prinsessan Mononoke"},{"region":"SI","title":"Princesa Mononoke"},{"region":"SK","title":"Princezna Mononoke"},{"language":"tr","region":"TR","title":"Prenses Mononoke"},{"region":"UA","title":"Принцеса Мононоке"},{"region":"US","title":"Princess Mononoke"},{"region":"VN","title":"Công Chúa Mononoke"},{"language":"en","region":"XWW","title":"Princess Mononoke"}],"year":"1997"},"rank":66,"headline":"Mononoke-hime"}};
+    window.imdb.navbarAdSlots = {"nameAd":{"clickThru":"http://www.imdb.com/name/nm0413168/","imageUrl":"http://ia.media-imdb.com/images/M/MV5BMTM3Njk0NjEwM15BMl5BanBnXkFtZTcwNzgzOTUxOQ@@._V1._SX250_CR0,0,250,315_BR-20_CT5_.jpg","rank":8,"headline":"Hugh Jackman"},"titleAd":{"clickThru":"http://www.imdb.com/title/tt0111161/","imageUrl":"http://ia.media-imdb.com/images/M/MV5BMTkzMTY0MjE5MV5BMl5BanBnXkFtZTcwODMxNDY3Mw@@._V1._SY317_CR1,1,410,315_.jpg","titleYears":"1994","titleDisplayBase":{"displayTitleTypeOriginal":"movie","primaryTitleText":"The Shawshank Redemption","titleId":"tt0111161","displayTitleType":"movie","regionalTitleTexts":[{"region":"AR","title":"Sueños de libertad"},{"region":"AT","title":"Die Verurteilten"},{"region":"AZ","title":"Shoushenkden Qacish"},{"language":"bg","region":"BG","title":"Изкуплението Шоушенк"},{"region":"BR","title":"Um Sonho de Liberdade"},{"language":"fr","region":"CA","title":"À l'ombre de Shawshank"},{"region":"CL","title":"Sueños de Libertad"},{"language":"cmn","region":"CN","title":"Xiao shen ke de jiu shu"},{"region":"CZ","title":"Vykoupení z veznice Shawshank"},{"region":"DE","title":"Die Verurteilten"},{"region":"DK","title":"En verden udenfor"},{"region":"EE","title":"Shawshanki lunastus"},{"region":"ES","title":"Cadena perpetua"},{"language":"ca","region":"ES","title":"Cadena perpètua"},{"region":"FI","title":"Rita Hayworth - avain pakoon"},{"language":"sv","region":"FI","title":"Rita Hayworth - nyckel till flykten"},{"region":"FR","title":"Les évadés"},{"region":"GE","title":"Gaqceva shoushenkidan"},{"region":"GR","title":"Τελευταία έξοδος: Ρίτα Χέιγουορθ"},{"region":"HR","title":"Iskupljenje u Shawshanku"},{"region":"HU","title":"A remény rabjai"},{"language":"he","region":"IL","title":"Homot Shel Tikva"},{"language":"fa","region":"IR","title":"Rastgari Dar Shawshank"},{"region":"IS","title":"The Shawshank Redemption"},{"region":"IT","title":"Le ali della libertà"},{"region":"JP","title":"Shôshanku no sora ni"},{"region":"MX","title":"Sueños de libertad"},{"region":"NO","title":"Frihetens regn"},{"region":"PE","title":"Sueños de fuga"},{"region":"PL","title":"Skazani na Shawshank"},{"region":"PT","title":"Os Condenados de Shawshank"},{"region":"RO","title":"Închisoarea îngerilor"},{"region":"RS","title":"Bekstvo iz Šošenka"},{"region":"RU","title":"Побег из Шоушенка"},{"region":"SE","title":"Nyckeln till frihet"},{"region":"SI","title":"Kaznilnica odrešitve"},{"region":"SK","title":"Vykúpenie z väznice Shawshank"},{"language":"tr","region":"TR","title":"Esaretin Bedeli"},{"region":"UA","title":"Втеча з Шоушенка"},{"region":"US","title":"The Shawshank Redemption"},{"region":"UY","title":"Sueño de libertad"},{"region":"VN","title":"Nhà tù Shawshank"},{"language":"es","region":"XWW","title":"Sueño de fuga"}],"year":"1994"},"rank":1,"headline":"The Shawshank Redemption"}};
     </script>
 </div>
 
@@ -466,24 +466,26 @@ ad_utils.gpt.render_ad('top_ad');
         <li class="css_nav_item" id="navProMenu" aria-haspopup="true">
             <p class="navCategory">
                 <a     href="http://pro.imdb.com/signup/index.html?rf=cons_nb_hm&ref_=cons_nb_hm"    >
-                    <img alt="IMDbPro Menu" src="http://i.media-imdb.com/images/SF4a741137cf9a260e127fef64455ebfbc/navbar/imdbpro_logo_nb.png" />
+                    <img alt="IMDbPro Menu" src="http://i.media-imdb.com/images/SF4fdfd2dc36b14ed0aabc4f2ccf847c0f/navbar/imdbpro_logo_nb.png" />
                 </a>
             </p>
             <span class="downArrow"></span>
-            <div id="navMenuPro" class="sub_nav">
-                <a    id="proLink"     href="http://pro.imdb.com/signup/index.html?rf=cons_nb_hm&ref_=cons_nb_hm"    >
-                    <div id="proAd">
+            <div id="navMenuPro" class="imdb-pro-ad sub_nav">
+                <a    id="proLink"     href="http://pro.imdb.com/signup/index.html?rf=cons_nb_hm&ref_=cons_nb_hm"   class="imdb-pro-ad__link"
+    >
+                    <div id="proAd" class="imdb-pro-ad__image">
+                        <img alt="Go to IMDbPro" height="180" width="174"
+                             src="http://i.media-imdb.com/images/SF3cf48fa843440b070cb5b77469e1d3ae/navbar/imdbpro_menu_user.png"
+                             srcset="http://i.media-imdb.com/images/SF3cf48fa843440b070cb5b77469e1d3ae/navbar/imdbpro_menu_user.png 1x,
+                                     http://i.media-imdb.com/images/SFb98bc5e7183c9e552c0cc0a4de074b33/navbar/imdbpro_menu_user_2x.png 2x" />
                     </div>
-                    <div class="subNavListContainer">
-                        <img alt="Go to IMDbPro" title="Go to IMDbPro" src="http://i.media-imdb.com/images/SF8104186305d957dd4ee4455f5434b40c/navbar/imdbpro_logo_menu.png" />
-                        <h5>GET INFORMED</h5>
-                        <p>Industry information at your fingertips</p>
-                        <h5>GET CONNECTED</h5>
-                        <p>Over 200,000 Hollywood insiders</p>
-                        <h5>GET DISCOVERED</h5>
-                        <p>Enhance your IMDb Page</p>
-                        <p><strong>Go to IMDbPro &raquo;</strong></p>
-                    </div>
+                    <section class="imdb-pro-ad__content">
+                        <h1 class="imdb-pro-ad__title">The leading information resource for the entertainment industry</h1>
+                        <p class="imdb-pro-ad__line">Find industry contacts &amp; talent representation</p>
+                        <p class="imdb-pro-ad__line">Manage your photos, credits, &amp; more</p>
+                        <p class="imdb-pro-ad__line">Showcase yourself on IMDb &amp; Amazon</p>
+                        <span role="button" class="imdb-pro-ad__button">Go to IMDbPro</a>
+                    </section>
                 </a>
             </div>
         </li>
@@ -518,7 +520,7 @@ ad_utils.gpt.render_ad('top_ad');
     <script>
         if (!('imdb' in window)) { window.imdb = {}; }
         window.imdb.proMenuTeaser = {
-            imageUrl : "http://i.media-imdb.com/images/SF2345fb7eb51cd4cf2158ed364c263a05/navbar/imdbpro_menu_user.jpg"
+            imageUrl : "http://i.media-imdb.com/images/SF3cf48fa843440b070cb5b77469e1d3ae/navbar/imdbpro_menu_user.png"
         };
     </script> 
 </div>
@@ -529,7 +531,7 @@ ad_utils.gpt.render_ad('top_ad');
 <ul id="consumer_user_nav" class="main_nav">
   <li class="css_nav_item no_arrow" id="navUserMenu" aria-haspopup="true">
         <p class="navCategory singleLine">
-            <a id="facebook-signin-link" class="signin-button" href="https://graph.facebook.com/v2.2/oauth/authorize?client_id=127059960673829&redirect_uri=https%3A%2F%2Fsecure.imdb.com%2Foauth%2Ffacebook&scope=email%2Cuser_about_me%2Cuser_birthday&state=%257B%252249e6c%2522%253A%2522da29%2522%257D">
+            <a id="facebook-signin-link" class="signin-button" href="https://graph.facebook.com/v2.8/oauth/authorize?client_id=127059960673829&redirect_uri=https%3A%2F%2Fsecure.imdb.com%2Foauth%2Ffacebook&scope=email%2Cuser_about_me%2Cuser_birthday&state=%257B%252249e6c%2522%253A%2522da29%2522%257D">
 				<span class="facebook-logo"></span>
                 <span class="signin-facebook-text">Sign in with Facebook</span>
             </a>               
@@ -569,7 +571,7 @@ ad_utils.register_ad('injected_navstrip');
 }
 });
 </script>
-<iframe allowtransparency="true" class="yesScript" data-dart-params="#doubleclick;u=697120577248;ord=697120577248?" frameborder="0" id="injected_navstrip" marginwidth="0" marginheight="0" name="injected_navstrip" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="0" data-original-height="0" width="0" height="0" ></iframe> </div>
+<iframe allowtransparency="true" class="yesScript" data-dart-params="#doubleclick;u=324852551154;ord=324852551154?" frameborder="0" id="injected_navstrip" marginwidth="0" marginheight="0" name="injected_navstrip" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="0" data-original-height="0" width="0" height="0" ></iframe> </div>
 <div id="injected_navstrip_reflow_helper"></div>
 <script id="injected_navstrip_rendering">
 doWithAds(function(){
@@ -596,7 +598,7 @@ ad_utils.register_ad('injected_billboard');
 }
 });
 </script>
-<iframe allowtransparency="true" class="yesScript" data-dart-params="#doubleclick;u=697120577248;ord=697120577248?" frameborder="0" id="injected_billboard" marginwidth="0" marginheight="0" name="injected_billboard" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="0" data-original-height="0" width="0" height="0" ></iframe> </div>
+<iframe allowtransparency="true" class="yesScript" data-dart-params="#doubleclick;u=324852551154;ord=324852551154?" frameborder="0" id="injected_billboard" marginwidth="0" marginheight="0" name="injected_billboard" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="0" data-original-height="0" width="0" height="0" ></iframe> </div>
 <div id="injected_billboard_reflow_helper"></div>
 <script id="injected_billboard_rendering">
 doWithAds(function(){
@@ -701,8 +703,8 @@ ad_utils.register_ad('top_rhs');
 }
 });
 </script>
-<iframe allowtransparency="true" class="yesScript" data-dart-params="#doubleclick;u=697120577248;ord=697120577248?" frameborder="0" id="top_rhs" marginwidth="0" marginheight="0" name="top_rhs" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="300" data-original-height="250" width="300" height="250" ></iframe> </div>
-<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/&sz=300x250|300x600|11x1&t=p%3Dtr%26g%3Dac%26g%3Dth%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0095016%26ab%3Df%26bpx%3D1%26c%3D0&tile=1&c=697120577248" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/&sz=300x250|300x600|11x1&t=p%3Dtr%26g%3Dac%26g%3Dth%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0095016%26ab%3Df%26bpx%3D1%26c%3D0&tile=1&c=697120577248" border="0" alt="advertisement" /> </a> </noscript>
+<iframe allowtransparency="true" class="yesScript" data-dart-params="#doubleclick;u=324852551154;ord=324852551154?" frameborder="0" id="top_rhs" marginwidth="0" marginheight="0" name="top_rhs" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="300" data-original-height="250" width="300" height="250" ></iframe> </div>
+<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/&sz=300x250|300x600|11x1&t=p%3Dtr%26g%3Dac%26g%3Dth%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0095016%26ab%3Df%26bpx%3D1%26c%3D1&tile=1&c=324852551154" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/&sz=300x250|300x600|11x1&t=p%3Dtr%26g%3Dac%26g%3Dth%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0095016%26ab%3Df%26bpx%3D1%26c%3D1&tile=1&c=324852551154" border="0" alt="advertisement" /> </a> </noscript>
 <div id="top_rhs_reflow_helper"></div>
 <div id="top_rhs_after" class="after_ad" style="visibility:hidden;">
 <a class="yesScript" href="#" onclick="ad_utils.show_ad_feedback('top_rhs');return false;" id="ad_feedback_top_rhs">ad feedback</a>
@@ -826,7 +828,7 @@ function ynd(id, status) {
 <hr size="1" noshade="1">
 
 <div>
-<small>292 out of 402 people found the following review useful:</small><br>
+<small>292 out of 403 people found the following review useful:</small><br>
 <a href="/user/ur1125206/"><img class="avatar" src="http://ia.media-imdb.com/images/M/MV5BMjI2NDEyMjYyMF5BMl5BanBnXkFtZTcwMzM3MDk0OQ@@._SX40_SY40_SS40_.jpg" height=${avatar.image.size} width=${avatar.image.size}></a>
 <h2>The Perfect Modern Action Film</h2>
 <img width="102" height="12" alt="9/10" src="http://i.media-imdb.com/images/showtimes/90.gif"><br>
@@ -966,7 +968,7 @@ Was the above review useful to you?
 <hr noshade="1" size="1" align="center">
 
 <div>
-<small>236 out of 349 people found the following review useful:</small><br>
+<small>236 out of 350 people found the following review useful:</small><br>
 <a href="/user/ur0892646/"><img class="avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ4NTU5NjA3MF5BMl5BanBnXkFtZTgwNzExNDg1MDE@._V1._SX40_SY40_SS40_.jpg" height=${avatar.image.size} width=${avatar.image.size}></a>
 <h2>You'll &quot;Die Hard&quot; with this action-lover's action movie</h2>
 <img width="102" height="12" alt="10/10" src="http://i.media-imdb.com/images/showtimes/100.gif"><br>
@@ -1053,7 +1055,7 @@ Was the above review useful to you?
 <hr noshade="1" size="1" width="50%" align="center">
 
 <div>
-<small>101 out of 107 people found the following review useful:</small><br>
+<small>101 out of 108 people found the following review useful:</small><br>
 <a href="/user/ur15794099/"><img class="avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTA3MTgxMDE5MzVeQTJeQWpwZ15BbWU4MDQ2OTUxMDEx._V1._SX40_SY40_SS40_.jpg" height=${avatar.image.size} width=${avatar.image.size}></a>
 <h2>The ultimate thrill-ride &#x96; and still the standard by which I judge an action movie</h2>
 <img width="102" height="12" alt="10/10" src="http://i.media-imdb.com/images/showtimes/100.gif"><br>
@@ -1121,7 +1123,7 @@ Was the above review useful to you?
 <hr noshade="1" size="1" width="50%" align="center">
 
 <div>
-<small>124 out of 211 people found the following review useful:</small><br>
+<small>124 out of 212 people found the following review useful:</small><br>
 <a href="/user/ur1139701/"><img class="avatar" src="http://ia.media-imdb.com/images/M/MV5BMjI2NDEyMjYyMF5BMl5BanBnXkFtZTcwMzM3MDk0OQ@@._SX40_SY40_SS40_.jpg" height=${avatar.image.size} width=${avatar.image.size}></a>
 <h2>Action-packed thrill ride that could be the best in the genre!!!</h2>
 <img width="102" height="12" alt="9/10" src="http://i.media-imdb.com/images/showtimes/90.gif"><br>
@@ -1209,7 +1211,7 @@ Was the above review useful to you?
 <hr noshade="1" size="1" width="50%" align="center">
 
 <div>
-<small>105 out of 187 people found the following review useful:</small><br>
+<small>105 out of 188 people found the following review useful:</small><br>
 <a href="/user/ur11881064/"><img class="avatar" src="http://ia.media-imdb.com/images/M/MV5BMjI2NDEyMjYyMF5BMl5BanBnXkFtZTcwMzM3MDk0OQ@@._SX40_SY40_SS40_.jpg" height=${avatar.image.size} width=${avatar.image.size}></a>
 <h2>A guy movie that is still fun to watch</h2>
 <img width="102" height="12" alt="10/10" src="http://i.media-imdb.com/images/showtimes/100.gif"><br>
@@ -1261,7 +1263,7 @@ Was the above review useful to you?
 <hr noshade="1" size="1" width="50%" align="center">
 
 <div>
-<small>73 out of 124 people found the following review useful:</small><br>
+<small>73 out of 125 people found the following review useful:</small><br>
 <a href="/user/ur0102816/"><img class="avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNDU5MzQ3NTc4Nl5BMl5BanBnXkFtZTgwMjg1ODIxODE@._V1._SX40_SY40_SS40_.jpg" height=${avatar.image.size} width=${avatar.image.size}></a>
 <h2>The most influential action film of the last half-century</h2>
 <img width="102" height="12" alt="10/10" src="http://i.media-imdb.com/images/showtimes/100.gif"><br>
@@ -1342,7 +1344,7 @@ Was the above review useful to you?
 <hr noshade="1" size="1" width="50%" align="center">
 
 <div>
-<small>100 out of 178 people found the following review useful:</small><br>
+<small>100 out of 179 people found the following review useful:</small><br>
 <a href="/user/ur1350313/"><img class="avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNDU5MTUzMTQyM15BMl5BanBnXkFtZTgwMjk5Njc2MDE@._V1._SX40_SY40_SS40_.jpg" height=${avatar.image.size} width=${avatar.image.size}></a>
 <h2>Top action film of the 1980's</h2>
 <img width="102" height="12" alt="8/10" src="http://i.media-imdb.com/images/showtimes/80.gif"><br>
@@ -1399,7 +1401,7 @@ Was the above review useful to you?
 <hr noshade="1" size="1" width="50%" align="center">
 
 <div>
-<small>79 out of 146 people found the following review useful:</small><br>
+<small>79 out of 147 people found the following review useful:</small><br>
 <a href="/user/ur1354726/"><img class="avatar" src="http://ia.media-imdb.com/images/M/MV5BMjI2NDEyMjYyMF5BMl5BanBnXkFtZTcwMzM3MDk0OQ@@._SX40_SY40_SS40_.jpg" height=${avatar.image.size} width=${avatar.image.size}></a>
 <h2>John McClane terminates all other action heroes</h2>
 
@@ -1472,7 +1474,7 @@ Was the above review useful to you?
 <hr noshade="1" size="1" width="50%" align="center">
 
 <div>
-<small>98 out of 185 people found the following review useful:</small><br>
+<small>98 out of 186 people found the following review useful:</small><br>
 <a href="/user/ur0199296/"><img class="avatar" src="http://ia.media-imdb.com/images/M/MV5BMjI2NDEyMjYyMF5BMl5BanBnXkFtZTcwMzM3MDk0OQ@@._SX40_SY40_SS40_.jpg" height=${avatar.image.size} width=${avatar.image.size}></a>
 <h2>Yippee-ki-yay</h2>
 
@@ -1520,91 +1522,30 @@ Was the above review useful to you?
 <hr noshade="1" size="1" width="50%" align="center">
 
 <div>
-<small>11 out of 13 people found the following review useful:</small><br>
-<a href="/user/ur16161013/"><img class="avatar" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjEzMzg4NTU1Ml5BMl5BanBnXkFtZTgwNzAyNjM2MzE@._V1._SX40_SY40_SS40_.jpg" height=${avatar.image.size} width=${avatar.image.size}></a>
-<h2>One seized tower block, one sweaty vest and one big set of action cojones.</h2>
+<small>13 out of 17 people found the following review useful:</small><br>
+<a href="/user/ur9715638/"><img class="avatar" src="http://ia.media-imdb.com/images/M/MV5BMjI2NDEyMjYyMF5BMl5BanBnXkFtZTcwMzM3MDk0OQ@@._SX40_SY40_SS40_.jpg" height=${avatar.image.size} width=${avatar.image.size}></a>
+<h2>An action movie for all to see</h2>
 <img width="102" height="12" alt="10/10" src="http://i.media-imdb.com/images/showtimes/100.gif"><br>
 <b>Author:</b>
-<a href="/user/ur16161013/">Spikeopath</a> <small>from United Kingdom</small><br>
-<small>31 December 2010</small><br>
+<a href="/user/ur9715638/">srobi280</a> <small>from Hungary</small><br>
+<small>7 April 2006</small><br>
+<p><b>*** This review may contain spoilers ***</b></p>
 
 </div>
 <p>
-Based on ex cop Roderick Thorpe&#x27;s 1979 novel Nothing Lasts Forever, Die
-Hard, directed by John McTiernan, changed the face of the action movie.
-Starring Bruce Willis, Alan Rickman, Bonnie Bedelia, Reginald
-Veljohnson, Alexander Godunov, William Atherton &#x26; Paul Gleason,
-McTiernan&#x27;s movie went on to make over $100 million in profit at the
-box office alone. Spawning three equally successful sequels (at the
-time of writing), it began a franchise that showed that if done well,
-the action movie could be a dominant force in the world of cinema. <br><br>The set up is relatively simple, Willis plays New York cop John McLane
-who during the Christmas holidays is in L.A. to visit his estranged
-wife Holly (Bedelia). She works for the Japanese Corporation of
-Nakatomi, and currently she&#x27;s attending the company Christmas party up
-on the 30th floor of the humongous Nakatomi Plaza tower block. Bad day
-at the office because a group of apparent German terrorists, led by the
-charismatic Hans Gruber (Rickman), take the whole building hostage:
-with one exception; McLane, who evades capture and launches a one man
-war against the terrorists. <br><br>What follows is just over two hours of high octane action, smart
-dialogue and technical smarts. McTiernan had already endeared himself
-to the action movie fan with the ball busting beef stew that was
-Predator in 87, a fact not lost on Die Hard&#x27;s co producer Joel Silver,
-who clearly knew that McTiernan could smoothly shift the action from
-the Val Verde jungle to the urban jungle of L.A. And he did. Next was
-to get the right man for McLane. Richard Gere was first choice but
-passed, so the makers took a gamble on Willis, whose career was at a
-standstill after his leap from TV show Moonlighting on to the big
-screen with the likes of Blind Date &#x26; Sunset barely making a ripple in
-Hollywood. The rest for Willis, as they say, is history. McLane is an
-everyman hero, streetwise, even slobbish, but identifiable to many with
-his work ethics, desperate heroics and emotional vulnerability. Willis
-attacks the role with a hunger rarely seen from the big male earners in
-filmdom. During the two hours and ten minute running time of Die Hard,
-Willis as McLane changed the face of the action hero for ever; even
-making a dirty white vest iconic in the process; the latter of which
-couples nicely with the hero being bare footed throughout for a nifty
-bit of writing. <br><br>Across the board the casting is flawless, Bedelia is spunky and driven,
-a woman worth fighting for. Veljohnson as beat copper Al
-Powell-McLane&#x27;s walkie-talkie buddy and only link to the outside
-world-is memorable because it feels real, he has his own issue gnawing
-away at him, but his exchanges with Willis keeps the humanity grounded
-as the carnage unfolds. Gleason &#x26; Atherton are wonderfully anal as
-Deputy Police Chief and TV Reporter respectively, while Hart Bochner as
-Ellis dishes out one of the best weasel turns to have ever graced a
-movie featuring corporate suit types. But as Die Hard resembles the
-great Westerns of yesteryear, much like the great Oaters, Die Hard
-could only be as good as its chief villain. As Willis&#x27; McLane ushered
-in a new action hero to copy, Rickman&#x27;s uber intelligent villain set a
-new benchmark. <br><br>Snappily dressed, well versed and as charming as they come, Gruber in
-Rickman&#x27;s hands is a villain you could quite easily root for! That&#x27;s
-further testament to Willis&#x27; turn that Rickman doesn&#x27;t walk away with
-the movie, both men are from different sides of the fence, good and
-evil, yet both are characters you can hang your hat on. Quite a trick
-from McTiernan that. Rickman is ably supported by the scary Godunov as
-right hand man Karl and Clarence Gilyard Jr. as the cold hearted Theo.
-Elsewhere the impact of Robert Davi &#x26; Grand L. Bush as the two cocksure
-FBI agents Johnson &#x26; Johnson (no relation) should not be
-underestimated. All the actors, of course, are indebted to the sizzling
-script by Steven E. de Souza &#x26; Jeb Stuart. So to is praise due to
-photographer Jan de Bont, who in collaboration with McTiernan, produces
-a camera work lesson for action movies, as the camera swoops in and
-around the tower, down elevator shafts and up tilt to roofs; with the
-fight scenes afforded a spatial sheen not expected in the confines of a
-tower block setting (the film was actually shot at 20th Century Fox&#x27;s
-own 2121 Fox Plaza). Even the scoring from Michael Kamen and the sound
-tracking are of a high standard; check out the various &#x22;mood&#x22; uses of
-Beethoven&#x27;s Ode to Joy from Symphony No.9 and Bach&#x27;s Brandenburg
-Concerto No. 3 In G Major: Brilliant. <br><br>The 80s was well served by action movies with the likes of Lethal
-Weapon and Beverly Hills Cop proving massively popular. But just as
-Raiders Of The Lost Ark changed the game for action/adventure, so too
-did Die Hard. It&#x27;s now the benchmark movie for action, a film that
-unlike Hills Cop &#x26; Lethal Weapon remarkably shows no signs of ageing
-either. It&#x27;s no monkey in the wrench or a fly in the ointment, it&#x27;s the
-daddy, and the one that all other action movies have to answer to.
-10/10
+This movie is one action-packed ride. Bruce Willis (John McClane) is a
+New York cop coming to see his wife who has moved to L.A. with their
+children, hoping for a relaxing Xmas vacation. Instead, he gets a bunch
+of bad guys who have taken over the Nakatomi building which he and his
+wife are located in. He hides out, and takes out the bad guys one by
+one, all while trying to get police attention from the outside world.
+This movie is tense and full of action. Bruce Willis and Alan Rickman
+put in outstanding performances. Willis manages to kill all of the bad
+guys and throw Rickman off the building. If you haven&#39;t seen it yet for
+whatever reason, now is the time to do so.
 </p>
 
-<div class="yn" id="ynd_2361629">
+<div class="yn" id="ynd_1335708">
 
 <form method="get" 
 
@@ -1614,13 +1555,13 @@ daddy, and the one that all other action movies have to answer to.
 Was the above review useful to you?
 
 <input class="click linkasbutton-secondary" type="submit" 
- name="ynb_2361629_yes" value="Yes" 
+ name="ynb_1335708_yes" value="Yes" 
 
  rel="login" 
 
 >
 <input class="click linkasbutton-secondary" type="submit"
- name="ynb_2361629_no" value="No"
+ name="ynb_1335708_no" value="No"
 
  rel="login" 
 
@@ -1927,10 +1868,10 @@ An <img id="amazon_logo" align="middle" style="width:80px;height:19px;border:0 n
   
 </layer>
 </div>
-<img src="/rd/?q=50703000000030a090f29616f226e276966600000010c6a08023031373033303930000001037a040379646370000001047&cb=148907035251569" width="1" height="1" alt="" border="0">
+<img src="/rd/?q=50703000000030a090f29616f226e276966600000010c6a08023031373033323630000001037a040379646370000001047&cb=149051632724749" width="1" height="1" alt="" border="0">
 </div> <!-- id="wrapper" -->
-<!-- h=iop7011 i=2017-03-08 s=legacy(akas) t='Thu Mar  9 06:39:12 2017' -->
-<script src="http://i.media-imdb.com/images/SF539be3987208630802e712857c51a6c9/js/jquery.js" ></script><script src="http://i.media-imdb.com/images/SFe67176cf105f35f6c0c4c8477a88c9a8/js/cc/title/main.js" ></script><script src="http://i.media-imdb.com/images/SF4f789f206c87a31b26eb8666da48322e/js/app/win7/sitemode.js" ></script><!-- begin ads footer -->
+<!-- h=iop619 i=2017-03-25 s=legacy(akas) t='Sun Mar 26 01:18:47 2017' -->
+<script src="http://i.media-imdb.com/images/SF539be3987208630802e712857c51a6c9/js/jquery.js" ></script><script src="http://i.media-imdb.com/images/SF9736e24c00e4021bd06252171e5e03ea/js/cc/title/main.js" ></script><script src="http://i.media-imdb.com/images/SF4f789f206c87a31b26eb8666da48322e/js/app/win7/sitemode.js" ></script><!-- begin ads footer -->
 
 <!-- Begin SIS code --> 
 <iframe id="sis_pixel_sitewide" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" style="display: none;"></iframe>
@@ -1947,7 +1888,7 @@ An <img id="amazon_logo" align="middle" style="width:80px;height:19px;border:0 n
                     "r=1",
                     "rP=http%3A%2F%2Fakas.imdb.com%2Ftitle%2Ftt0095016%2Freviews%3Fstart%3D0",
                     "encoding=server",
-                    "cb=697120577248"  
+                    "cb=324852551154"  
                 ];
         
             if (document.getElementById('sis_pixel_sitewide')) {
@@ -1988,7 +1929,7 @@ c15:""
 
 <script>
     doWithAds(function(){
-        (new Image()).src = "http://www.amazon.com/aan/2009-05-01/imdb/default?slot=sitewide-iframe&u=697120577248&ord=697120577248";
+        (new Image()).src = "http://www.amazon.com/aan/2009-05-01/imdb/default?slot=sitewide-iframe&u=324852551154&ord=324852551154";
     },"unable to request AAN pixel");
 </script>
 

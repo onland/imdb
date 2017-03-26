@@ -26,7 +26,7 @@ describe 'Imdb::Episode' do
   end
 
   it 'has a plot' do
-    expect(episode.plot).to match(/Rick finds himself trapped with other survivors inside a department store, surrounded by walkers/)
+    expect(episode.plot).to match(/In Atlanta, Rick is rescued by a group of survivors, but they soon find themselves trapped inside a department store surrounded by walkers./)
   end
 
   it 'has a original air data' do
