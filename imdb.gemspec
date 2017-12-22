@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ['Ariejan de Vroom']
   s.email       = ['ariejan@ariejan.net']
   s.homepage    = 'http://github.com/ariejan/imdb'
-  s.summary     = %q(Easily access the publicly available information on IMDB.)
-  s.description = %q(Easily use Ruby or the command line to find information on IMDB.com.)
+  s.summary     = 'Easily access the publicly available information on IMDB.'
+  s.description = 'Easily use Ruby or the command line to find information on IMDB.com.'
 
   s.rubyforge_project = 'imdb'
 
@@ -26,5 +26,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'gokdok'
   s.add_development_dependency 'rdoc', '~> 4.0'
   s.add_development_dependency 'fakeweb'
-
 end
