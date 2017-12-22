@@ -11,9 +11,14 @@ module Imdb
 
     private
 
+    def newest_season
+      document.at("//div[contains(text(), 'Seasons:')]/a").content.strip.to_i rescue 0
+    end
+
     def season_urls
-      document.search("h5[text()='Seasons:'] ~ div a[@href*='episodes?season']")
-        .map { |link| url.gsub('combined', '') + 'episodes?season=' + link.content.strip } rescue []
+      (1..newest_season).map do |num|
+        Imdb::Base.url_for(@id, "episodes?season=#{num}")
+      end
     end
   end # Serie
 end # Imdb

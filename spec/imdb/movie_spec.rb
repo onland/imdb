@@ -29,7 +29,7 @@ describe 'Imdb::Movie' do
       expected_cast_characters = [
         'Karl',
         'John McClane',
-        'Police Detective (uncredited)',
+        'Police Detective',
         'Hostage',
       ]
 
@@ -55,7 +55,7 @@ describe 'Imdb::Movie' do
 
     it 'finds the starring actors' do
       stars = subject.starring_actors
-      expect(stars).to eq(["Bruce Willis", "Alan Rickman", "Bonnie Bedelia"])
+      expect(stars).to eq(['Bruce Willis', 'Alan Rickman', 'Bonnie Bedelia'])
     end
 
     it 'can get the user reviews' do
@@ -78,21 +78,25 @@ describe 'Imdb::Movie' do
       end
 
       it 'returns the imdb actor number for each cast member' do
-        expect(subject.cast_member_ids).to match_array(%w(nm0000246 nm0000614 nm0000889 nm0000952 nm0001108 nm0001817 nm0005598 nm0033749 nm0040472 nm0048326 nm0072054 nm0094770 nm0101088 nm0112505 nm0112779 nm0119594 nm0127960 nm0142420 nm0160690 nm0162041 nm0234426 nm0236525 nm0239958 nm0278010 nm0296791 nm0319739 nm0322339 nm0324231 nm0326276 nm0338808 nm0356114 nm0370729 nm0383487 nm0416429 nm0421114 nm0441665 nm0484360 nm0484650 nm0493493 nm0502959 nm0503610 nm0504342 nm0539639 nm0546076 nm0546747 nm0662568 nm0669625 nm0681604 nm0687270 nm0688235 nm0718021 nm0731114 nm0776208 nm0793363 nm0852311 nm0870729 nm0882139 nm0902455 nm0907234 nm0924636 nm0936591 nm0958105 nm2143912 nm2476262 nm2565888 nm0403767 nm0727004 nm1170673))
+        expect(subject.cast_member_ids).to match_array(%w(nm0000246 nm0000614 nm0000889 nm0000952 nm0001108 nm0001817 nm0005598 nm0033749 nm0040472 nm0048326 nm0072054 nm0094770 nm0101088 nm0112505 nm0112779 nm0119594 nm0127960 nm0142420 nm0160690 nm0162041 nm0234426 nm0236525 nm0239958 nm0278010 nm0296791 nm0319739 nm0322339 nm0324231 nm0326276 nm0338808 nm0356114 nm0370729 nm0383487 nm0416429 nm0421114 nm0441665 nm0484360 nm0484650 nm0493493 nm0502959 nm0503610 nm0504342 nm0539639 nm0546076 nm0546747 nm0662568 nm0669625 nm0681604 nm0687270 nm0688235 nm0718021 nm0731114 nm0776208 nm0793363 nm0852311 nm0870729 nm0882139 nm0902455 nm0907234 nm0924636 nm0936591 nm0958105 nm2143912 nm2476262 nm2565888 nm0403767 nm0727004 nm1170673 nm0443038))
       end
     end
 
     it 'returns the url to the movie trailer' do
       expect(subject.trailer_url).to be_a(String)
-      expect(subject.trailer_url).to eq('http://imdb.com/video/screenplay/vi782369049/')
+      expect(subject.trailer_url).to eq('http://www.imdb.com/videoplayer/vi782369049')
     end
 
     it 'finds the director' do
       expect(subject.director).to eq(['John McTiernan'])
     end
 
-    it 'finds the company info' do
-      expect(subject.company).to eq('Twentieth Century Fox Film Corporation')
+    it 'finds a production company' do
+      expect(subject.company).to eq('Twentieth Century Fox')
+    end
+
+    it 'finds all production companies' do
+      expect(subject.production_companies).to match_array(['Twentieth Century Fox', 'Gordon Company', 'Silver Pictures'])
     end
 
     it 'finds the genres' do
@@ -108,16 +112,16 @@ describe 'Imdb::Movie' do
       subject { Imdb::Movie.new('0468569') }
 
       it 'finds the countries' do
-        expect(subject.countries).to match_array(%w(USA UK))
+        expect(subject.countries).to match_array(['United States', 'United Kingdom'])
       end
     end
 
     it 'finds the length (in minutes)' do
-      expect(subject.length).to eq(131)
+      expect(subject.length).to eq(132)
     end
 
     it 'finds the plot' do
-      expect(subject.plot).to eq("John McClane, officer of the NYPD, tries to save his wife Holly Gennaro and several others that were taken hostage by German terrorist Hans Gruber during a Christmas party at the Nakatomi Plaza in Los Angeles.")
+      expect(subject.plot).to eq('John McClane, officer of the NYPD, tries to save his wife Holly Gennaro and several others that were taken hostage by German terrorist Hans Gruber during a Christmas party at the Nakatomi...')
     end
 
     it 'finds plot synopsis' do
@@ -125,11 +129,11 @@ describe 'Imdb::Movie' do
     end
 
     it 'finds plot summary' do
-      expect(subject.plot_summary).to eq("NYPD cop John McClane goes on a Christmas vacation to visit his wife Holly in Los Angeles where she works for the Nakatomi Corporation. While they are at the Nakatomi headquarters for a Christmas party, a group of bank robbers led by Hans Gruber take control of the building and hold everyone hostage, with the exception of John, while they plan to perform a lucrative heist. Unable to escape and with no immediate police response, John is forced to take matters into his own hands.")
+      expect(subject.plot_summary).to eq('NYPD cop John McClane goes on a Christmas vacation to visit his wife Holly in Los Angeles where she works for the Nakatomi Corporation. While they are at the Nakatomi headquarters for a Christmas party, a group of bank robbers led by Hans Gruber take control of the building and hold everyone hostage, with the exception of John, while they plan to perform a lucrative heist. Unable to escape and with no immediate police response, John is forced to take matters into his own hands.')
     end
 
     it 'finds the poster thumbnail' do
-      expect(subject.poster_thumbnail).to eq('https://images-na.ssl-images-amazon.com/images/M/MV5BMzNmY2IwYzAtNDQ1NC00MmI4LThkOTgtZmVhYmExOTVhMWRkXkEyXkFqcGdeQXVyMTk5NDA3Nw@@._V1._SX95_SY140_.jpg')
+      expect(subject.poster_thumbnail).to eq('https://images-na.ssl-images-amazon.com/images/M/MV5BMzNmY2IwYzAtNDQ1NC00MmI4LThkOTgtZmVhYmExOTVhMWRkXkEyXkFqcGdeQXVyMTk5NDA3Nw@@._V1_UY150_CR0,0,101,150_AL_.jpg')
     end
 
     it 'finds the poster' do
@@ -139,21 +143,21 @@ describe 'Imdb::Movie' do
     it 'finds the rating' do
       expect(subject.rating).to eq(8.2)
     end
-    
+
     it 'finds the metascore' do
       expect(subject.metascore).to eq(70)
     end
-    
+
     it 'finds number of votes' do
       expect(subject.votes).to be_within(500_000).of(800_000)
     end
 
     it 'finds the title' do
-      expect(subject.title).to eq("Die Hard")
+      expect(subject.title).to eq('Die Hard')
     end
 
     it 'finds the tagline' do
-      expect(subject.tagline).to eq("It will blow you through the back wall of the theater!")
+      expect(subject.tagline).to eq('It will blow you through the back wall of the theater!')
     end
 
     it 'finds the year' do
@@ -161,11 +165,10 @@ describe 'Imdb::Movie' do
     end
 
     it 'finds the MPAA letter rating' do
-      expect(subject.mpaa_letter_rating).to eq("R")
+      expect(subject.mpaa_letter_rating).to eq('R')
     end
 
     describe 'special scenarios' do
-
       context 'The Matrix Revolutions' do
         # The Matrix Revolutions (2003)
         subject { Imdb::Movie.new('0242653') }
@@ -193,7 +196,7 @@ describe 'Imdb::Movie' do
     it "finds multiple 'also known as' versions" do
       also_known_as = subject.also_known_as
       expect(also_known_as).to be_a(Array)
-      expect(also_known_as.size).to eql(50)
+      expect(also_known_as.size).to eql(52)
     end
 
     it "finds a specific 'also known as' version" do
@@ -221,14 +224,14 @@ describe 'Imdb::Movie' do
     context 'Biography of Mohandas K. Gandhi' do
       subject { Imdb::Movie.new('0083987') }
       it 'finds a correct plot when HTML links are present' do
-        expect(subject.plot).to eq("Gandhi's character is fully explained as a man of nonviolence. Through his patience, he is able to drive the British out of the subcontinent. And the stubborn nature of Jinnah and his commitment towards Pakistan is portrayed.")
+        expect(subject.plot).to eq("Gandhi's character is fully explained as a man of nonviolence. Through his patience, he is able to drive the British out of the subcontinent. And the stubborn nature of Jinnah and his...")
       end
     end
 
     context 'movie 0036855' do
       subject { Imdb::Movie.new('0036855') }
       it "does not have a 'more' link in the plot" do
-        expect(subject.plot).to eq("Years after her aunt was murdered in her home, a young woman moves back into the house with her new husband. However, he has a secret that he will do anything to protect, even if it means driving his wife insane.")
+        expect(subject.plot).to eq('Years after her aunt was murdered in her home, a young woman moves back into the house with her new husband. However, he has a secret that he will do anything to protect, even if it means...')
       end
     end
   end
@@ -236,15 +239,15 @@ describe 'Imdb::Movie' do
   describe 'mpaa rating' do
     context 'movie 0111161' do
       subject { Imdb::Movie.new('0111161') }
-      it 'finds the mpaa rating when present' do
-        expect(subject.mpaa_rating).to eq('Rated R for language and prison violence (certificate 33087)')
+      it 'finds the mpaa rating with explination when present' do
+        expect(subject.mpaa_rating).to eq('Rated R for language and prison violence')
       end
     end
 
     context 'movie 0095016' do
       subject { Imdb::Movie.new('0095016') }
-      it 'is nil when not present' do
-        expect(subject.mpaa_rating).to be_nil
+      it 'is letter only when no explination is present' do
+        expect(subject.mpaa_rating).to eq('R')
       end
     end
   end
@@ -255,7 +258,7 @@ describe 'Imdb::Movie' do
       subject { Imdb::Movie.new('1401252') }
 
       it 'has a title' do
-        expect(subject.title(true)).to eq("Up Is Down")
+        expect(subject.title(true)).to eq('Up Is Down')
       end
 
       it 'has a year' do
@@ -269,7 +272,7 @@ describe 'Imdb::Movie' do
       context 'movie 0111161' do
         subject { Imdb::Movie.new('0111161') }
         it 'returns the release date for movies' do
-          expect(subject.release_date).to eq('14 October 1994 (USA)')
+          expect(subject.release_date).to eq('14 Oct 1994 (USA)')
         end
       end
     end
@@ -288,10 +291,10 @@ describe 'Imdb::Movie' do
   describe 'with title that has utf-8 characters' do
     context 'WALL-E' do
       # WALL-E
-      subject { Imdb::Movie.search('Wall-E').first }
+      subject { Imdb::Movie.new('0910970') }
 
       it 'returns the proper title' do
-        expect(subject.title).to eq('WALL·E (2008)')
+        expect(subject.title).to eq('WALL·E')
       end
     end
   end

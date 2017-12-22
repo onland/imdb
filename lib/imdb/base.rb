@@ -13,22 +13,22 @@ module Imdb
     #
     def initialize(imdb_id, title = nil)
       @id = imdb_id
-      @url = "http://akas.imdb.com/title/tt#{imdb_id}/combined"
+      @url = Imdb::Base.url_for(@id, :reference)
       @title = title.gsub(/"/, '').strip if title
     end
 
     # Returns an array with cast members
     def cast_members
-      document.search('table.cast td.nm a').map { |link| link.content.strip } rescue []
+      document.search('table.cast_list td.itemprop a').map { |a| a.content.strip } rescue []
     end
 
     def cast_member_ids
-      document.search('table.cast td.nm a').map { |l| l['href'].sub(%r{^/name/(.*)/}, '\1') }
+      document.search('table.cast_list td.itemprop a').map { |a| a['href'].sub(%r{^/name/(.*)/.*}, '\1') } rescue []
     end
 
     # Returns an array with cast characters
     def cast_characters
-      document.search('table.cast td.char').map { |link| link.content.strip } rescue []
+      document.search('table.cast_list td.character').map { |a| a.content.strip } rescue []
     end
 
     # Returns an array with cast members and characters
@@ -47,69 +47,67 @@ module Imdb
 
     # Returns the name of the director
     def director
-      document.search("h5[text()^='Director'] ~ div a").map { |link| link.content.strip } rescue []
+      document.search("div[text()*='Director']//a").map { |a| a.content.strip } rescue []
     end
 
     # Returns the names of Writers
     def writers
-      writers_list = []
-
-      fullcredits_document.search("h4[text()^='Writing Credits'] + table tbody tr td[class='name']").each_with_index do |name, i|
-        writers_list[i] = name.content.strip unless writers_list.include? name.content.strip
-      end rescue []
-
-      writers_list
+      document.search("div[text()*='Writer']//a").map { |a| a.content.strip } rescue []
     end
 
     # Returns the url to the "Watch a trailer" page
     def trailer_url
-      'http://imdb.com' + document.at("a[@href*='/video/screenplay/']")['href'] rescue nil
+      'http://www.imdb.com/' + document.at("a[@href^='videoplayer/']")['href'] rescue nil
     end
 
     # Returns an array of genres (as strings)
     def genres
-      document.search("h5[text()='Genre:'] ~ div a[@href*='/Sections/Genres/']").map { |link| link.content.strip } rescue []
+      document.search("//tr[td[contains(@class, 'label') and text()='Genres']]/td[2]//a").map { |a| a.content.strip } rescue []
     end
 
     # Returns an array of languages as strings.
     def languages
-      document.search("h5[text()='Language:'] ~ div a[@href*='/language/']").map { |link| link.content.strip } rescue []
+      document.search("//tr[td[contains(@class, 'label') and text()='Language']]/td[2]//a").map { |a| a.content.strip } rescue []
     end
 
     # Returns an array of countries as strings.
     def countries
-      document.search("h5[text()='Country:'] ~ div a[@href*='/country/']").map { |link| link.content.strip } rescue []
+      document.search("//tr[contains(@class, 'item') and td[text()='Country']]/td[2]//a").map { |a| a.content.strip } rescue []
     end
 
     # Returns the duration of the movie in minutes as an integer.
     def length
-      document.at("h5[text()='Runtime:'] ~ div").content[/\d+ min/].to_i rescue nil
+      document.at("//tr[td[contains(@class, 'label') and text()='Runtime']]/td[2]").content.strip.gsub(/ min$/, '').to_i rescue nil
     end
 
-    # Returns the company
+    # Returns a single production company (legacy)
     def company
-      document.search("h5[text()='Company:'] ~ div a[@href*='/company/']").map { |link| link.content.strip }.first rescue nil
+      production_companies.first
     end
 
-    # Returns a string containing the plot.
+    # Returns a list of production companies
+    def production_companies
+      document.search("//h4[text()='Production Companies']/following::ul[1]/li/a[contains(@href, '/company/')]").map { |a| a.content.strip } rescue []
+    end
+
+    # Returns a string containing the (possibly truncated) plot summary.
     def plot
-      sanitize_plot(document.at("h5[text()='Plot:'] ~ div").content) rescue nil
+      sanitize_plot(document.at('//section[contains(@class, "article")]/hr/preceding-sibling::div[1]').content) rescue nil
     end
 
-    # Returns a string containing the plot summary
+    # Returns a string containing the plot synopsis
     def plot_synopsis
-      doc = Nokogiri::HTML(Imdb::Movie.find_by_id(@id, :synopsis))
-      doc.at("div[@id='swiki.2.1']").content.strip rescue nil
+      summary_document.at("li[@id*='synopsis']").content.strip rescue nil
     end
 
+    # Retruns a string with a longer plot summary
     def plot_summary
-      doc = Nokogiri::HTML(Imdb::Movie.find_by_id(@id, :plotsummary))
-      doc.at('p.plotSummary').inner_html.gsub(/<i.*/im, '').strip.imdb_unescape_html rescue nil
+      document.at("//tr[td[contains(@class, 'label') and text()='Plot Summary']]/td[2]/p/text()").content.strip rescue nil
     end
 
     # Returns a string containing the URL for a thumbnail sized movie poster.
     def poster_thumbnail
-      document.at("a[@name='poster'] img")['src'] rescue nil
+      document.at("img[@alt*=' Poster']")['src'] rescue nil
     end
 
     # Returns a string containing the URL to the movie poster.
@@ -124,31 +122,21 @@ module Imdb
 
     # Returns a float containing the average user rating
     def rating
-      document.at('.starbar-meta b').content.split('/').first.strip.to_f rescue nil
+      document.at('.ipl-rating-star__rating').content.strip.to_f rescue nil
     end
 
+    # Returns an enumerator of pages of user reviews
+    # NOTE: unfortunatly paganation no longer supported
     def user_reviews
-      Enumerator.new do |enum|
-        start = 0
-        loop do
-          ratings = userreviews_document(start)
-                      .search('//div[contains(@id, "tn15content")]//div[@class="yn"]//preceding-sibling::*[self::div and not(contains(@class, "yn")) or self::p]')
-                      .each_slice(2).map do |head, review|
-                        rating = head.children.search('img')[1]
-                        {
-                          title: head.at('h2').text,
-                          rating: rating ? rating['alt'].to_s.gsub('/10', '').to_i : nil,
-                          review: review.text
-                        }
-          end.compact
-          break if ratings.empty?
-          enum.yield(ratings)
-          start += 10
-          sleep 1
-        end
-      end
+      [userreviews_document.search("//div[contains(@class, 'user-review')]").map do |review|
+        {
+          title: review.at("//div[@class='title']").content.strip,
+          rating: review.at("//span[contains(@class, 'rating')]/span").content.strip.to_i,
+          review: review.at("//div[@class='text']").content.strip,
+        }
+      end].to_enum
     end
-    
+
     # Returns an int containing the Metascore
     def metascore
       apex_document.at('div[@class*="metacriticScore"]/span').content.to_i rescue nil
@@ -156,22 +144,22 @@ module Imdb
 
     # Returns an int containing the number of user ratings
     def votes
-      document.at('#tn15rating .tn15more').content.strip.gsub(/[^\d+]/, '').to_i rescue nil
+      document.at('.ipl-rating-star__total-votes').content.strip.gsub(/[^\d+]/, '').to_i rescue nil
     end
 
     # Returns a string containing the tagline
     def tagline
-      document.at("h5[text()='Tagline:'] ~ div/text()").content.strip rescue nil
+      document.at("//tr[td[contains(@class, 'label') and text()='Taglines']]/td[2]/text()").text.strip rescue nil
     end
 
     # Returns a string containing the mpaa rating and reason for rating
     def mpaa_rating
-      document.at("//a[starts-with(.,'MPAA')]/../following-sibling::*").content.strip rescue nil
+      apex_document.at("span[@itemprop='contentRating']").content.strip
     end
 
     # Returns a string containing the MPAA letter rating
     def mpaa_letter_rating
-      document.at("a[@href*='certificates=us:']").content.gsub(/^USA:/, '') rescue nil
+      document.at("a[@href*='certificates=US%3A']").content.gsub(/^United States:/, '') rescue nil
     end
 
     # Returns a string containing the title
@@ -179,18 +167,18 @@ module Imdb
       if @title && !force_refresh
         @title
       else
-        @title = document.at("div[@id='tn15title']/h1/text()").text.strip rescue nil
+        @title = document.at("div[@class='parent']/h3/a").text.strip rescue nil
       end
     end
 
     # Returns an integer containing the year (CCYY) the movie was released in.
     def year
-      document.at("a[@href^='/year/']").content.to_i rescue nil
+      document.at("div[@class='parent']/h3/span").text.strip.gsub(/[)(]/, '').to_i rescue nil
     end
 
     # Returns release date for the movie.
     def release_date
-      sanitize_release_date(document.at("h5[text()*='Release Date'] ~ div").content) rescue nil
+      sanitize_release_date(document.at("a[@href*='/releaseinfo']").text) rescue nil
     end
 
     # Returns filming locations from imdb_url/locations
@@ -203,7 +191,7 @@ module Imdb
       releaseinfo_document.search('#akas tr').map do |aka|
         {
           version: aka.search('td:nth-child(1)').text,
-          title:   aka.search('td:nth-child(2)').text
+          title:   aka.search('td:nth-child(2)').text,
         }
       end rescue []
     end
@@ -226,18 +214,26 @@ module Imdb
     def fullcredits_document
       @fullcredits_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'fullcredits'))
     end
-    
+
     def apex_document
       @apex_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, ''))
     end
 
-    def userreviews_document(start=0)
-      Nokogiri::HTML(Imdb::Movie.find_by_id(@id, "reviews?start=#{start}"))
+    def summary_document
+      @summary_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'plotsummary'))
     end
-    
+
+    def userreviews_document
+      @userreviews_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'reviews'))
+    end
+
     # Use HTTParty to fetch the raw HTML for this movie.
-    def self.find_by_id(imdb_id, page = :combined)
-      open("http://akas.imdb.com/title/tt#{imdb_id}/#{page}")
+    def self.find_by_id(imdb_id, page = :reference)
+      open(Imdb::Base.url_for(imdb_id, page))
+    end
+
+    def self.url_for(imdb_id, page = :reference)
+      "http://akas.imdb.com/title/tt#{imdb_id}/#{page}"
     end
 
     # Convenience method for search

@@ -29,7 +29,7 @@ end
 describe 'Imdb::Search with an exact match and no poster' do
   it 'does not raise an exception' do
     expect do
-      subject = Imdb::Search.new('Kannethirey Thondrinal').movies
+      Imdb::Search.new('Kannethirey Thondrinal').movies
     end.not_to raise_error
   end
 

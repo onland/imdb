@@ -10,7 +10,7 @@ describe 'Imdb::Episode' do
   end
 
   it 'has a url' do
-    expect(episode.url).to eq('http://akas.imdb.com/title/tt1628064/combined')
+    expect(episode.url).to eq('http://akas.imdb.com/title/tt1628064/reference')
   end
 
   it 'has an episode title' do
@@ -30,6 +30,6 @@ describe 'Imdb::Episode' do
   end
 
   it 'has a original air data' do
-    expect(episode.air_date).to eq('7 November 2010')
+    expect(episode.air_date).to eq('07 Nov 2010')
   end
 end
