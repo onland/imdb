@@ -6,9 +6,9 @@ namespace :fixtures do
     ONLY = ENV['ONLY'] ? ENV['ONLY'].split(',') : []
     IMDB_SAMPLES.each_pair do |url, fixture|
       next if !ONLY.empty? && !ONLY.include?(fixture)
-      dest_file = File.expand_path(File.dirname(__FILE__) + '/../spec/fixtures/#{fixture}')
+      dest_file = File.expand_path(File.dirname(__FILE__) + "/../spec/fixtures/#{fixture}")
 
-      puts "#{fixture}: updating from #{url} -> #{dest_file}"
+      puts "Updating from #{url} -> #{dest_file}"
 
       data = `curl -is #{url}`
       File.open(dest_file, 'w') { |f| f.write(data) }
