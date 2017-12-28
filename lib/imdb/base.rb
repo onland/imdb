@@ -28,7 +28,7 @@ module Imdb
 
     # Returns an array with cast characters
     def cast_characters
-      document.search('table.cast_list td.character').map { |a| a.content.strip } rescue []
+      document.search('table.cast_list td.character').map { |a| a.content.gsub("\u00A0", " ").gsub(/(\(|\/).*/, '').strip } rescue []
     end
 
     # Returns an array with cast members and characters
@@ -92,7 +92,7 @@ module Imdb
 
     # Returns a string containing the (possibly truncated) plot summary.
     def plot
-      sanitize_plot(document.at('//section[contains(@class, "article")]/hr/preceding-sibling::div[1]').content) rescue nil
+      sanitize_plot(document.at('//section[contains(@class, "overview")]//hr[last()]/preceding-sibling::div[1]').content.strip) rescue nil
     end
 
     # Returns a string containing the plot synopsis
@@ -107,7 +107,7 @@ module Imdb
 
     # Returns a string containing the URL for a thumbnail sized movie poster.
     def poster_thumbnail
-      document.at("img[@alt*=' Poster']")['src'] rescue nil
+      document.at("img[@alt*='Poster']")['src'] rescue nil
     end
 
     # Returns a string containing the URL to the movie poster.
@@ -167,13 +167,13 @@ module Imdb
       if @title && !force_refresh
         @title
       else
-        @title = document.at("div[@class='parent']/h3/a").text.strip rescue nil
+        @title = document.at("//h3[@itemprop='name']/text()").content.strip rescue nil
       end
     end
 
     # Returns an integer containing the year (CCYY) the movie was released in.
     def year
-      document.at("div[@class='parent']/h3/span").text.strip.gsub(/[)(]/, '').to_i rescue nil
+      document.at("//h3[@itemprop='name']/span/a/text()").content.strip.to_i rescue nil
     end
 
     # Returns release date for the movie.

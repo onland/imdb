@@ -47,7 +47,9 @@ IMDB_SAMPLES = {
   'http://akas.imdb.com/title/tt1628064/reference' => 'thewalkingdead-s1e2',
   'http://akas.imdb.com/title/tt0898266/episodes?season=1' => 'tbbt-s1',
   'http://akas.imdb.com/title/tt0898266/reference' => 'tt0898266',
-  'http://akas.imdb.com/title/tt0910970/reference' => 'tt0910970',
+  'http://akas.imdb.com/title/tt0056801/reference' => 'tt0056801',
+  'http://akas.imdb.com/title/tt0804503/reference' => 'tt0804503',
+  'http://akas.imdb.com/title/tt0804503/' => 'tt0804503_apex',
 }
 
 unless ENV['LIVE_TEST']

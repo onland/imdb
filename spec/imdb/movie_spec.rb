@@ -133,7 +133,7 @@ describe 'Imdb::Movie' do
     end
 
     it 'finds the poster thumbnail' do
-      expect(subject.poster_thumbnail).to eq('https://images-na.ssl-images-amazon.com/images/M/MV5BMzNmY2IwYzAtNDQ1NC00MmI4LThkOTgtZmVhYmExOTVhMWRkXkEyXkFqcGdeQXVyMTk5NDA3Nw@@._V1_UY150_CR0,0,101,150_AL_.jpg')
+      expect(subject.poster_thumbnail).to eq('https://images-na.ssl-images-amazon.com/images/M/MV5BMzNmY2IwYzAtNDQ1NC00MmI4LThkOTgtZmVhYmExOTVhMWRkXkEyXkFqcGdeQXVyMTk5NDA3Nw@@._V1_SY150_CR0,0,101,150_.jpg')
     end
 
     it 'finds the poster' do
@@ -289,12 +289,11 @@ describe 'Imdb::Movie' do
   end
 
   describe 'with title that has utf-8 characters' do
-    context 'WALL-E' do
-      # WALL-E
-      subject { Imdb::Movie.new('0910970') }
+    context '8 1/2' do
+      subject { Imdb::Movie.new('0056801') }
 
       it 'returns the proper title' do
-        expect(subject.title).to eq('WALL·E')
+        expect(subject.title).to eq("Federico Fellini's 8½")
       end
     end
   end

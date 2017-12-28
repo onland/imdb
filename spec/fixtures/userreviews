@@ -1,14 +1,14 @@
 HTTP/1.1 200 OK
-Date: Thu, 21 Dec 2017 19:46:54 GMT
+Date: Thu, 28 Dec 2017 17:37:17 GMT
 Server: Server
 X-Frame-Options: SAMEORIGIN
 Content-Security-Policy: frame-ancestors 'self' imdb.com *.imdb.com *.media-imdb.com withoutabox.com *.withoutabox.com amazon.com *.amazon.com amazon.co.uk *.amazon.co.uk amazon.de *.amazon.de translate.google.com images.google.com www.google.com www.google.co.uk search.aol.com bing.com www.bing.com
 Content-Type: text/html;charset=UTF-8
 Content-Language: en-US
 Vary: Accept-Encoding,User-Agent
-Set-Cookie: uu=BCYu-K5fHTxfdRuVORqEjsS4bDaFa6f4Awg1U1u_nVHNdin2dqKoAJCAbsdJ2EbzAGEPPivq7Pzn%0D%0ABGtUBGVp0VL3tFCHFxxJl3GnM6oL9jYiiQVEd1vlDW4fxSx8aRmk9vRIlQPph-22eNKj6I5QARqM%0D%0Atv49vPvs16_mrkc55OZqOTKdiKQWxrNNlM-BWOsogoT_UcCHLIjG2kT77XiFY0Z925bMujl50kki%0D%0AAIz2g1NzCEgUYFLbCnyrptTZYLY1l9FcGmfXHgMKfhI4IJSkDb8bopF62Zth12MRdJsKZmtb9Xzw%0D%0Akp6OH9_6oPnBeXLG-sRw%0D%0A; Domain=.imdb.com; Expires=Tue, 08-Jan-2086 23:01:01 GMT; Path=/
-Set-Cookie: session-id=000-0000000-0000000; Domain=.imdb.com; Expires=Tue, 08-Jan-2086 23:01:01 GMT; Path=/
-Set-Cookie: session-id-time=2144605614; Domain=.imdb.com; Expires=Tue, 08-Jan-2086 23:01:01 GMT; Path=/
+Set-Cookie: uu=BCYisClkekd7PyBqXLOiXVciml-BYNNJb6Yd_XOASVU-rjflTqSLqqCShnEjAQhFawATV3VEFNjX%0D%0AIO0baNXblY_bFWAA5kRn-4Zb53FbrWdGATW_orxBmupOAG0TWJVZair37AZ6DHp5mEqowsriq3RF%0D%0ABZQguOH3KnX4lX7K8yrDkruaw28Rh5y7Q98w9DqlmK25UsGJbQ9uPGiN1EztXfDIuqz_PhwtULHm%0D%0Al5jKbNRfbvtpD_5CFCNmFPC7hXGeEhrTP0vycagBgKwjWpHloP-Qv3wF-RDpqVECB2CMPiBpM9s%0D%0A; Domain=.imdb.com; Expires=Tue, 15-Jan-2086 20:51:24 GMT; Path=/
+Set-Cookie: session-id=000-0000000-0000000; Domain=.imdb.com; Expires=Tue, 15-Jan-2086 20:51:24 GMT; Path=/
+Set-Cookie: session-id-time=2145202637; Domain=.imdb.com; Expires=Tue, 15-Jan-2086 20:51:24 GMT; Path=/
 P3P: policyref="http://i.imdb.com/images/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "
 Transfer-Encoding: chunked
 
@@ -38,7 +38,7 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
                 var ue_sn = "www.imdb.com";  
                 var ue_furl = "fls-na.amazon.com";
                 var ue_sid = "000-0000000-0000000";
-                var ue_id = "0NV61F5YWN4H2PVECSV0";
+                var ue_id = "00A2V0FB4KYRW68PPHYN";
                 (function(e){var c=e;var a=c.ue||{};a.main_scope="mainscopecsm";a.q=[];a.t0=c.ue_t0||+new Date();a.d=g;function g(h){return +new Date()-(h?0:a.t0)}function d(h){return function(){a.q.push({n:h,a:arguments,t:a.d()})}}function b(m,l,h,j,i){var k={m:m,f:l,l:h,c:""+j,err:i,fromOnError:1,args:arguments};c.ueLogError(k);return false}b.skipTrace=1;e.onerror=b;function f(){c.uex("ld")}if(e.addEventListener){e.addEventListener("load",f,false)}else{if(e.attachEvent){e.attachEvent("onload",f)}}a.tag=d("tag");a.log=d("log");a.reset=d("rst");c.ue_csm=c;c.ue=a;c.ueLogError=d("err");c.ues=d("ues");c.uet=d("uet");c.uex=d("uex");c.uet("ue")})(window);(function(e,d){var a=e.ue||{};function c(g){if(!g){return}var f=d.head||d.getElementsByTagName("head")[0]||d.documentElement,h=d.createElement("script");h.async="async";h.src=g;f.insertBefore(h,f.firstChild)}function b(){var k=e.ue_cdn||"z-ecx.images-amazon.com",g=e.ue_cdns||"images-na.ssl-images-amazon.com",j="/images/G/01/csminstrumentation/",h=e.ue_file||"ue-full-11e51f253e8ad9d145f4ed644b40f692._V1_.js",f,i;if(h.indexOf("NSTRUMENTATION_FIL")>=0){return}if("ue_https" in e){f=e.ue_https}else{f=e.location&&e.location.protocol=="https:"?1:0}i=f?"https://":"http://";i+=f?g:k;i+=j;i+=h;c(i)}if(!e.ue_inline){if(a.loadUEFull){a.loadUEFull()}else{b()}}a.uels=c;e.ue=a})(window,document);
                 if (!('CS' in window)) { window.CS = {}; }
                     window.CS.loginLocation = "https://www.imdb.com/registration/signin?u=%2Ftitle%2Ftt0095016%2Freviews";
@@ -114,7 +114,7 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
         <meta name="description" content="Die Hard (1988) on IMDb: Movies, TV, Celebs, and more..." />
         <meta property="og:description" content="Die Hard (1988) on IMDb: Movies, TV, Celebs, and more..." />
         <meta name="keywords" content="Reviews, Showtimes, DVDs, Photos, User Ratings, Synopsis, Trailers, Credits" />
-        <meta name="request_id" content="0NV61F5YWN4H2PVECSV0" />
+        <meta name="request_id" content="00A2V0FB4KYRW68PPHYN" />
 
 <script>
     if (typeof uet == 'function') {
@@ -122,8 +122,8 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
     }
 </script>
   <script>(function(t){ (t.events = t.events || {})["csm_head_pre_css"] = new Date().getTime(); })(IMDbTimer);</script>
-<link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/collections/consumersite-696186307._CB491153511_.css" />
-<!-- h=ics-1d-c4-2xl-d9c071d7.us-east-1 -->
+<link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/collections/consumersite-2213397792._CB491302526_.css" />
+<!-- h=ics-c42xl-1a-03e2467c.us-east-1 -->
 <link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/site/consumer-navbar-mega-781396493._CB492453583_.css" />
 <!--[if IE]><link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/collections/ie-1170868033._CB514892137_.css" /><![endif]-->
 
@@ -239,9 +239,6 @@ title="Home" >IMDb</a>
         <option value="nm" >Names</option>
         <option value="co" >Companies</option>
         <option value="kw" >Keywords</option>
-        <option value="qu" >Quotes</option>
-        <option value="bi" >Bios</option>
-        <option value="pl" >Plots</option>
       </select>
     </div>
     <div id="navbar-suggestionsearch"></div>
@@ -260,20 +257,20 @@ title="Home" >IMDb</a>
 >Showtimes</a></p>
             <span class="downArrow"></span>
             <div id="navMenu1" class="sub_nav">
-                    <div id="titleMenuImage" style="background: url('http://ia.media-imdb.com/images/M/MV5BMjE5MTQxNTE3Nl5BMl5BanBnXkFtZTcwMjM0ODEyMw@@._V1._SY315_CR58,0,410,315_.jpg')">
-                        <a title="                            Aliens
-, #69 on IMDb Top Rated Movies"
-                            href="/title/tt0090605/?ref_=nv_mv_dflt_1" class="fallback">
+                    <div id="titleMenuImage" style="background: url('http://ia.media-imdb.com/images/M/MV5BMTQwNTAzMTU4M15BMl5BanBnXkFtZTcwMDgzNDY3Mw@@._V1._SY325_CR80,5,410,315_.jpg')">
+                        <a title="                            Fargo
+, #160 on IMDb Top Rated Movies"
+                            href="/title/tt0116282/?ref_=nv_mv_dflt_1" class="fallback">
                         </a>
                         <div class="overlay">
                             <p>
-                                <a href="/title/tt0090605/?ref_=nv_mv_dflt_2" id="titleMenuImageClick">
-                                    <strong>                            Aliens
-</strong> (1986)
+                                <a href="/title/tt0116282/?ref_=nv_mv_dflt_2" id="titleMenuImageClick">
+                                    <strong>                            Fargo
+</strong> (1996)
                                 </a>
                                 <br />
                                 <a href="/chart/top?ref_=nv_mv_dflt_3" id="titleMenuImageSecondaryClick">
-                                    #<strong>69</strong> on IMDb Top Rated Movies
+                                    #<strong>160</strong> on IMDb Top Rated Movies
                                 </a> &raquo;
                             </p>
                         </div>
@@ -347,24 +344,24 @@ title="Home" >IMDb</a>
 >Photos</a></p>
             <span class="downArrow"></span>
             <div id="navMenu2" class="sub_nav">
-                    <div id="nameMenuImage" style="background: url('http://ia.media-imdb.com/images/M/MV5BMjY5ODQzMTQ1MF5BMl5BanBnXkFtZTcwNDE0NDE5NQ@@._V1._SX300_CR25,0,250,315_.jpg')">
-                        <a title="Zooey Deschanel, #141 on STARmeter"
-                            href="/name/nm0221046/?ref_=nv_cel_dflt_1" class="fallback">
+                    <div id="nameMenuImage" style="background: url('http://ia.media-imdb.com/images/M/MV5BMjAyMjI0NDk2NV5BMl5BanBnXkFtZTcwODAyNzMxMw@@._V1._SX250_CR0,0,250,315_.jpg')">
+                        <a title="Harrison Ford, #115 on STARmeter"
+                            href="/name/nm0000148/?ref_=nv_cel_dflt_1" class="fallback">
                         </a>
                         <div class="overlay">
                             <p>
-                                <a href="/name/nm0221046/?ref_=nv_cel_dflt_2" id="nameAdClick">
-                                    <strong>Zooey Deschanel</strong>
+                                <a href="/name/nm0000148/?ref_=nv_cel_dflt_2" id="nameAdClick">
+                                    <strong>Harrison Ford</strong>
                                 </a> &raquo;
                                 <br />
-                                #<strong>141</strong> on STARmeter
+                                #<strong>115</strong> on STARmeter
                             </p>
                         </div>
                     </div>
                 <div class="subNavListContainer">
                     <h5>CELEBS</h5>
                     <ul>
-                            <li><a href="/search/name?birth_monthday=12-21&refine=birth_monthday&ref_=nv_cel_brn_1"
+                            <li><a href="/search/name?birth_monthday=12-28&refine=birth_monthday&ref_=nv_cel_brn_1"
 >Born Today</a></li>
                         <li><a href="/news/celebrity?ref_=nv_cel_nw_2"
 >Celebrity News</a></li>
@@ -427,22 +424,22 @@ title="Home" >IMDb</a>
                         <h5>LATEST HEADLINES</h5>
     <ul>
                 <li itemprop="headline">
-<a href="/news/ni61839914/?ref_=nv_nw_tn_1"
-> Amazon Prime Unveils 2018 Original Program Slate & Premiere Dates
+<a href="/news/ni61846586/?ref_=nv_nw_tn_1"
+> Alicia Vikander, Carol Burnett, Aaron Taylor-Johnson Set as Golden Globe Presenters
 </a><br />
-                        <span class="time">2 hours ago</span>
+                        <span class="time">1 hours ago</span>
                 </li>
                 <li itemprop="headline">
-<a href="/news/ni61839641/?ref_=nv_nw_tn_2"
-> Ridley Scott Explains The Difference Between Christopher Plummer & Kevin Spacey’s Performance In ‘All The Money In The World’
+<a href="/news/ni61844931/?ref_=nv_nw_tn_2"
+> 2017 U.S. Box Office Set to Fall to Three-Year Low
 </a><br />
-                        <span class="time">3 hours ago</span>
+                        <span class="time">26 December 2017 10:25 PM, UTC</span>
                 </li>
                 <li itemprop="headline">
-<a href="/news/ni61839602/?ref_=nv_nw_tn_3"
-> ‘Jumanji’ Roars Past ‘The Greatest Showman’ in Wednesday Box Office Opening
+<a href="/news/ni61844565/?ref_=nv_nw_tn_3"
+> ‘The Last Jedi’ Rides To $844M Worldwide, $420M Overseas Box Office
 </a><br />
-                        <span class="time">3 hours ago</span>
+                        <span class="time">23 hours ago</span>
                 </li>
     </ul>
                     </div>
@@ -510,12 +507,12 @@ title="Home" >IMDb</a>
     <ul id="nb_extra_nav" class="main_nav">
         <li class="css_nav_item" id="navProMenu">
             <p class="navCategory">
-<a href="http://pro.imdb.com/signup/index.html?rf=cons_nb_hm&ref_=cons_nb_hm"
+<a href="https://pro.imdb.com/signup/index.html?rf=cons_nb_hm&ref_=cons_nb_hm"
 > <img alt="IMDbPro Menu" src="http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_logo_nb-3000473826._CB514891971_.png" />
 </a>            </p>
             <span class="downArrow"></span>
             <div id="navMenuPro" class="imdb-pro-ad sub_nav">
-<a href="http://pro.imdb.com/signup/index.html?rf=cons_nb_hm&ref_=cons_nb_hm"
+<a href="https://pro.imdb.com/signup/index.html?rf=cons_nb_hm&ref_=cons_nb_hm"
 class="imdp-pro-ad__link" > <div id="proAd" class="imdb-pro-ad__image">
 <img alt="Go to IMDbPro" height="180" width="174"
 src="http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_menu_user-4091932618._CB514893321_.png"
@@ -538,13 +535,13 @@ http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_menu_user_2x-207
         </li>
         <li class="social">
 
-    <a href="/offsite/?page-action=fol_fb&token=BCYuFaBna1rhlrHleXKMkTh9s6empz_l2R1nw4FLmrcSboKT7Uie39F3qmZpouu-E1RuLacGbm5A%0D%0Ag0sneDod08-C0Hfl96KspKUQCEozpi9zgvc-zYF9u10tPQ9Q7_TbC7rimitvT_30si71lQH5aR9P%0D%0AQoM8WB-tBBEQZWvB6cFWVhAt8nlbfqzbE_D9Q-wcPbd8FuPl83C3899qUQii4oca2A%0D%0A&ref_=tt_nv_fol_fb"
+    <a href="/offsite/?page-action=fol_fb&token=BCYsrbO0IyJbO28UW_BsodzqorsIFm-Q03k_wybvtY-jmqEe9a9yLWTRP221fpqZEoAf7DQrSBOs%0D%0AOuipSSVo81e77AysbJijhQsfFfuq1swg0iI75Sm3HUJnPmy1jPrjKD9_G9fVXQclPSXzL2b5nK0p%0D%0A0yY2_XLXWNKVAldiHdRDRz_oyJd8Tz7UeuVbKrbCqLtNQkaH2Z9qURk2sfOGP9mMsA%0D%0A&ref_=tt_nv_fol_fb"
 title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_tw&token=BCYlcqSBdlCEhKDAf80zIuqSwwO_Jocei3Ng_pHhfo8QzagxK4g1Xp775ksyUDTC5YrcsnG-SEW1%0D%0An0sjC-2BS2rRy3mxSm7Tvxk9abZK-iAKmb_dotoJ5Sbnq5H04uHb4gHYu0DJFDTLcHG1rKTf4Zo1%0D%0AzDBKHOOghtfNcPe1TBJX95U-nPDX5edVxgNv8_WyHwQbixEb77gpeSSxd86mw6l-8A%0D%0A&ref_=tt_nv_fol_tw"
+    <a href="/offsite/?page-action=fol_tw&token=BCYq1_ZLJx5JDu9zy06o37M-8ty1QmuHg-M4e1gjtWRcEsKyjHJbsET4_AW0PRc31mJcugN94iqM%0D%0AyvjnT5VxRBgw7ZXRXs3nAqGMN51WcbBDuhogWKcknVuNYxkN93rlJMHhT9Jjx0U9DzxBBRtfS6LL%0D%0AbtYjz178XBRC0VC-rXewsU4hVaOezzMZyxz5y9yVbQu1wKA6xg1LLhBH8pZP0uEXvg%0D%0A&ref_=tt_nv_fol_tw"
 title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_inst&token=BCYnvRjrc9llHZik40B7LkORCjeSAGSEY8FEGynZZmSv5Gb5BjL21pT2oSUJg08FqHeH-hD9QqMw%0D%0AKghkDdi-cqlg2XrxzEiWyQD89hku_N2LY-0_jrdoZoZsNNKdBixJzVb2ihfXLAAUP31uN6YFo_ht%0D%0ANTWTyb8di3N2BblnDXtSOzZBOFvfBdosfZdrqqk520cy7JZ4Fqn4cHDzlrn3wRf7wA%0D%0A&ref_=tt_nv_fol_inst"
+    <a href="/offsite/?page-action=fol_inst&token=BCYt51x1eCzDmLihCXqfEHZcT4GgwUvzOFPbA8Gf5pC95Z9C-imKYjVxVm1QGNYXuEt1cey4jCmK%0D%0Ap7MZUWRf2BmWI7pQFULw2mie5IfdaMgA9wYg7zvcimBMrXd9WChGeLqoAO9kRTT5CStKesfzRFEE%0D%0AmXCa_0yjrbNrpXtumzZvKnMOxdIRxJSI_iDnat86i8ZiUIkqesVGgD89vY-OdxNPwg%0D%0A&ref_=tt_nv_fol_inst"
 title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
 </a>
         </li>
@@ -618,7 +615,7 @@ onclick="imdb.contribution.clickHandler(event)" class="ipl-icon-link ipl-icon-li
 </a></div>
 <div class="lister">
     <div class="header">
-        <span>752 Reviews</span><span class="sort-by-header">Ordered By: Helpfulness</span>
+        <span>754 Reviews</span><span class="sort-by-header">Ordered By: Helpfulness</span>
     </div>
     <div class="lister-list">
 <div class="lister-item mode-detail imdb-user-review  collapsable" data-vote-url="/title/tt0095016/review/rw3056864/vote/interesting">
@@ -642,7 +639,7 @@ onclick="imdb.contribution.clickHandler(event)" class="ipl-icon-link ipl-icon-li
             <div class="content">
                 <div class="text">Seeing &#39;Die Hard&#39; for the first time as a teenager was a one-of-a-kind experience. This level of raw, &quot;edge-of-your-seat&quot; action was unknown to me prior to this film; it made my head spin and the intensity of it was nearly unbearable. When it was over, I could only think of one word: Wow!<br/><br/>For a long time - at least in western cinema - the only &quot;true&quot; action movies (by that I mean films that were all about the action and you went to see them because of the action) were the &#39;James Bond&#39; movies. They had the most unreal stunts and crazy, over the top action sequences that you could imagine at the time, and they were (and still are) great fun. However, they usually lacked three vital ingredients:<br/><br/>1. A sense of realism (meaning: the hero is only human and can get hurt)<br/><br/>2. Grit (messy, unpolished action, dirty people and LOTS of swearing)<br/><br/>3. R-rated violence (showing the audience what real weapons do to the human body)<br/><br/>Well, it took John McTiernan to bring those three key elements together in &#39;Die Hard&#39; - and thus the modern action film was born (it had a good run through the late eighties until the end of the nineties  then the studios figured out they could maximise the box-office by taming down the swearing, violence and sex and thus, alas, the contemporary, toothless PG-13 action film was born). Sure, there have been a couple of others before McTiernan&#39;s masterpiece (&#39;First Blood&#39;, &#39;Terminator&#39;, &#39;Predator&#39; - which was also by McTiernan - or &#39;Lethal Weapon&#39; and probably some more), but those films could have fallen into any number of other categories as well (&#39;Adventure-/Survival-/War-&#39;, &#39;Sci- Fi&#39;, &#39;Horror-&#39; or &#39;Buddy-movie&#39;)  and I can&#39;t think of another film that was just such a relentless, pure-action-from-the-beginning-to-the-end film as was &#39;Die Hard&#39;. To me, it&#39;s the ultimate thrill ride. The formula has since been repeated so many times, but the original still sets the standard by which I judge an action film. Should be seen every Christmas. 10 stars out of 10.<br/><br/>Favorite Films: http://www.imdb.com/list/ls054200841/<br/><br/>Lesser-known Masterpieces: http://www.imdb.com/list/ls070242495/<br/><br/>Favorite Low-Budget and B-movies: http://www.imdb.com/list/ls054808375/<br/><br/>Favorite TV-Shows reviewed: http://www.imdb.com/list/ls075552387/</div>
                 <div class="actions text-muted">
-                94 out of 101 found this helpful.
+                95 out of 103 found this helpful.
                     <span>Was this review helpful? <button class="btn small" data-value="UP">Yes</button> <button class="btn small" data-value="DOWN">No</button></span>
                             | <a href="/registration/signin?u=/title/tt0095016/reviews&ref_=tt_urv"
 onclick="imdb.contribution.clickHandler(event)" >Report this</a>
@@ -685,7 +682,7 @@ onclick="imdb.contribution.clickHandler(event)" >Report this</a>
                 <div class="text">&quot;Die Hard&quot; is the prototype type for the modern action film.  Since it&#39;s also one of the best action films ever made, that happens to be a very good thing.  &quot;Die Hard&quot; is lean, mean, and doesn&#39;t contain a single second of wasted screen time. The direction, the action, the story, the acting . . . every aspect of this film comes close to big-budget action movie perfection. Since &quot;Die Hard&quot; was first released in 1988, it&#39;s difficult to think of a blockbuster action film that doesn&#39;t follow the basic structure and format of &quot;Die Hard&quot; . . . or, for that matter, is better than &quot;Die Hard&quot;.<br/><br/>
 &quot;Die Hard&quot; is about John McClane (Bruce Willis, in one of his all-time best film performances), a basically good, honest New York cop with a penchant for annoying authority figures.   Traveling to Los Angeles in a last ditch attempt to patch things up with his estranged wife Holly (Bonnie Bedelia), John McClane suddenly finds himself involved in a hostage situation. Terrorists, led by the enigmatic Hans Gruber (Alan Rickman), have taken over the office building in which Holly is working, and with Gruber holding the upper hand over the LAPD and FBI forces in Los Angeles, it&#39;s up to John McClane to save the day . . . .<br/><br/>Kudos should be given to both director John McTiernan and screenwriters Jeb Stuart and Steven DeSouza -- the film is tight, electrifying, and clever, which is something few action films can ever claim.  The story isn&#39;t completely believable, but it&#39;s believable enough, and it manages to move along at a quick enough pace to where the most glaring plotholes can easily be glossed over.  There&#39;s also enough twists and wrinkles thrown into the story to keep the audience guessing as to what&#39;s going to happen next . . . and the surprises don&#39;t come out of left field, but are actually clever and well thought-out.  (The fact that McClane often relies on his brains instead of his bullets to get out of his predicaments is also a big plus.) Simply put, &quot;Die Hard&quot; is one of the smartest and savviest action screenplays ever written.  McTiernan holds up his end of the film admirably as well -- he uses the claustrophobic nature of the office building to great effect (particularly in any scene involving an elevator shaft), and he keeps the film rolling at a rollercoaster pace, building up the anticipation of the audience before unleashing the action.  A lot of recent action films just fly along at a mindless, breakneck pace, without ever allowing the story to breathe or the suspense to build . . . unlike those films, &quot;Die Hard&quot; knows how to maximize the impact of each and every scene, and that&#39;s why it stands out so clearly from them all.  With &quot;Die Hard&quot;, John McTiernan puts on a perfect clinic as to how to pace an action movie.<br/><br/>As for the acting, it&#39;s darn near close to perfect.  Bruce Willis is awesome as John McClane.  As played by Willis, McClane&#39;s a smartass with a distinct disdain for being given orders . . . but McClane&#39;s also clever, and knows how to keep cool under pressure.  There&#39;s more to McClane than the stereotypical tough guy hero.  Fortunately, the role was given to Bruce Willis, who infuses McClane with the perfect mix of cocky arrogance and stone-cold heroism.  The fact that Willis plays McClane as a man often in disbelief of his own situation, and who struggles in his fight against bad guys instead of just killing bad guys with ease, like most stereotypical action heroes -- well, not only does it make the character much more believable, it&#39;s darn brilliant.  (The fact that Willis also knows how to deliver a deadpan one-liner better than anybody else in Hollywood makes the character all the better.)  There&#39;s only a handful of movies where both character and actor are a completely perfect match; Bruce Willis as John McClane is one such perfect match.<br/><br/>Also worthy of mention is Alan Rickman&#39;s performance as the villain Hans Gruber.  The Machiavellian Gruber would&#39;ve been an easy villain to turn into little more than a scenery-chewing Bond villain . . . fortunately, Rickman doesn&#39;t travel the easy route.  Gruber, as played by Rickman, is cold and calculating, and actually acts smart, instead of merely claiming to be smart and then being thoroughly outwitted by the hero.  He always appears to have an ace hidden up his sleeve, and is so convincing at giving this impression, it&#39;s hard to tell throughout the film whether he or McClane truly have the upper hand.  Other actors probably could&#39;ve played Gruber fairly well, but Rickman makes Gruber one of the all-time great villains.  As for the rest of the cast, they&#39;re all pretty good.  Bonnie Bedelia does a nice job as John&#39;s soon-to-be-ex-wife Holly -- she plays her with enough smarts and feistiness to break the usual &quot;damsel in distress&quot; mold.  It&#39;s also worth mentioning that Paul Gleason, who plays the obstinate police chief Robinson, pretty much sets up the modern action movie stereotype of the authority figure who refuses to heed the advice of the maverick hero.  The character is stupid to a fault, and he&#39;s wonderful because of it.<br/><br/>&quot;Die Hard&quot; is a terrific example of what happens when all the pieces of a film fall together perfectly.  There simply are no weak spots or dull moments in the film.  Is &quot;Die Hard&quot; one of the best overall movies ever made?  Probably not.  But it&#39;s undeniably one of the best action movies ever made, and it just might well be the perfect modern action film.  Grade: A</div>
                 <div class="actions text-muted">
-                300 out of 399 found this helpful.
+                301 out of 400 found this helpful.
                     <span>Was this review helpful? <button class="btn small" data-value="UP">Yes</button> <button class="btn small" data-value="DOWN">No</button></span>
                             | <a href="/registration/signin?u=/title/tt0095016/reviews&ref_=tt_urv"
 onclick="imdb.contribution.clickHandler(event)" >Report this</a>
@@ -766,7 +763,7 @@ onclick="imdb.contribution.clickHandler(event)" >Report this</a>
             <div class="content">
                 <div class="text">One could claim that 1988&#39;s &quot;Die Hard&quot; is one of the most influential action movies ever made because it basically revolutionized one of the most copied (but never matched, at least in terms of quality) formulas: a loner, by some unique twist of fate, battles it out with an &quot;x&quot; number of terrorists in an enclosed environment.<br/><br/>By the time that &quot;Die Hard&quot; was released, the action movies were most often dominated by the likes of Arnold Schwarzenegger, Sylvester Stallone, and Chuck Norris. Star Bruce Willis, whose only notable credits at the time were television&#39;s &quot;Moonlighting&quot; and 1987&#39;s &quot;Blind Date,&quot; which was released the year before, was the unlikeliest of them all.<br/><br/>Willis was a wild card - an unlikely choice for the role of our hero &quot;John McClane&quot; - since he didn&#39;t have any action credits on his resume&#39; and let&#39;s face it: Bruce Willis just didn&#39;t have the bulging biceps required for a role like this. But that&#39;s the beauty of his performance in this movie: he&#39;s an everyday guy, caught in a not-so-everyday situation.<br/><br/>On Christmas, McClane&#39;s estranged wife Holly (Bonnie Bedelia) invites him from New York all the way out to Los Angeles to spend the holidays with the family. But it requires him to make a stop at the Nakatomi offices, which is having an after-hours Christmas party. Riding for the first time in a limo, he&#39;s introduced to the suave driver, Argyle (De&#39;voreaux White), who gives him some pretty useful advice on trying to win over the wife.<br/><br/>At Nakatomi, things of course get off to a rough start for McClane, as he gets into an argument with the wife and is left to wallow in his misery. However, those problems are about to take a backseat to the real &quot;party&quot; - twelve terrorists, led by Hans Gruber (all-purpose bad guy Alan Rickman, perfectly cast) - seize control of the building and proceed to rob the Nakatomi building of its assets, most of which include negotiable bonds and other valuables. But they didn&#39;t count on the &quot;fly in the ointment&quot; (pain in the a**) to make things hell for these so-called party crashers.<br/><br/>Certainly one of the best known action movies ever, &quot;Die Hard&quot; did receive the scorn of critics upon its 1988 summer release, but the audiences sung a completely different tune.<br/><br/>The film was most often praised for the production, with the brand-new Fox Plaza office tower serving as the fictional Nakatomi building. It was also praised for the energetic and skillful direction of John McTiernan, whose most notable credit was the action-sci-fi thriller &quot;Predator,&quot; which was released the year before and starred Arnold Schwarzenegger.<br/><br/>Bruce Willis was the perfect actor for this performance, since he brings the wit and vulnerability to a role like this one. If Stallone or Schwarzenegger were in this movie, I&#39;m sure the effect would have been a lot different.<br/><br/>Personally, I think &quot;Die Hard&quot; is one of the greatest action movies ever, up there close to my favorite action movie of all time, &quot;Raiders of the Lost Ark.&quot; Like Indiana Jones in that film, &quot;Die Hard&quot; had an Everyman cast in the role; McClane, like Indiana Jones, wasn&#39;t a larger-than-life musclebound grotesque: he was a real guy that you cared about, who got hurt, and had real feelings.<br/><br/>That&#39;s why I think both of these movies have sort of stood the test of time as becoming what they are best known for today: action classics, and they&#39;re here to stay, ladies and gentlemen.<br/><br/>10/10</div>
                 <div class="actions text-muted">
-                239 out of 340 found this helpful.
+                241 out of 342 found this helpful.
                     <span>Was this review helpful? <button class="btn small" data-value="UP">Yes</button> <button class="btn small" data-value="DOWN">No</button></span>
                             | <a href="/registration/signin?u=/title/tt0095016/reviews&ref_=tt_urv"
 onclick="imdb.contribution.clickHandler(event)" >Report this</a>
@@ -824,6 +821,48 @@ onclick="imdb.contribution.clickHandler(event)" >Report this</a>
             </div>
         </div>
         <div class="clear"></div>
+    </div>
+</div>
+<div class="lister-item mode-detail imdb-user-review  collapsable" data-vote-url="/title/tt0095016/review/rw2361629/vote/interesting">
+    <div class="review-container">
+        <div class="lister-item-content">
+    <div class="ipl-ratings-bar">
+            <span class="rating-other-user-rating">
+            <svg class="ipl-star-icon" xmlns="http://www.w3.org/2000/svg" fill="#000000" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+                <span>10</span><span class="point-scale">/10</span>
+            </span>
+    </div>
+            <div class="title">One seized tower block, one sweaty vest and one big set of action cojones.</div>
+            <div class="display-name-date">
+                    <span class="display-name-link"><a href="/user/ur16161013/?ref_=tt_urv"
+>Spikeopath</a></span><span class="review-date">31 December 2010</span>
+            </div>
+            <div class="content">
+                <div class="text">Based on ex cop Roderick Thorpe&#39;s 1979 novel Nothing Lasts Forever, Die Hard, directed by John McTiernan, changed the face of the action movie. Starring Bruce Willis, Alan Rickman, Bonnie Bedelia, Reginald Veljohnson, Alexander Godunov, William Atherton &amp; Paul Gleason, McTiernan&#39;s movie went on to make over $100 million in profit at the box office alone. Spawning three equally successful sequels (at the time of writing), it began a franchise that showed that if done well, the action movie could be a dominant force in the world of cinema. <br/><br/>The set up is relatively simple, Willis plays New York cop John McLane who during the Christmas holidays is in L.A. to visit his estranged wife Holly (Bedelia). She works for the Japanese Corporation of Nakatomi, and currently she&#39;s attending the company Christmas party up on the 30th floor of the humongous Nakatomi Plaza tower block. Bad day at the office because a group of apparent German terrorists, led by the charismatic Hans Gruber (Rickman), take the whole building hostage: with one exception; McLane, who evades capture and launches a one man war against the terrorists. <br/><br/>What follows is just over two hours of high octane action, smart dialogue and technical smarts. McTiernan had already endeared himself to the action movie fan with the ball busting beef stew that was Predator in 87, a fact not lost on Die Hard&#39;s co producer Joel Silver, who clearly knew that McTiernan could smoothly shift the action from the Val Verde jungle to the urban jungle of L.A. And he did. Next was to get the right man for McLane. Richard Gere was first choice but passed, so the makers took a gamble on Willis, whose career was at a standstill after his leap from TV show Moonlighting on to the big screen with the likes of Blind Date &amp; Sunset barely making a ripple in Hollywood. The rest for Willis, as they say, is history. McLane is an everyman hero, streetwise, even slobbish, but identifiable to many with his work ethics, desperate heroics and emotional vulnerability. Willis attacks the role with a hunger rarely seen from the big male earners in filmdom. During the two hours and ten minute running time of Die Hard, Willis as McLane changed the face of the action hero for ever; even making a dirty white vest iconic in the process; the latter of which couples nicely with the hero being bare footed throughout for a nifty bit of writing. <br/><br/>Across the board the casting is flawless, Bedelia is spunky and driven, a woman worth fighting for. Veljohnson as beat copper Al Powell-McLane&#39;s walkie-talkie buddy and only link to the outside world-is memorable because it feels real, he has his own issue gnawing away at him, but his exchanges with Willis keeps the humanity grounded as the carnage unfolds. Gleason &amp; Atherton are wonderfully anal as Deputy Police Chief and TV Reporter respectively, while Hart Bochner as Ellis dishes out one of the best weasel turns to have ever graced a movie featuring corporate suit types. But as Die Hard resembles the great Westerns of yesteryear, much like the great Oaters, Die Hard could only be as good as its chief villain. As Willis&#39; McLane ushered in a new action hero to copy, Rickman&#39;s uber intelligent villain set a new benchmark. <br/><br/>Snappily dressed, well versed and as charming as they come, Gruber in Rickman&#39;s hands is a villain you could quite easily root for! That&#39;s further testament to Willis&#39; turn that Rickman doesn&#39;t walk away with the movie, both men are from different sides of the fence, good and evil, yet both are characters you can hang your hat on. Quite a trick from McTiernan that. Rickman is ably supported by the scary Godunov as right hand man Karl and Clarence Gilyard Jr. as the cold hearted Theo. Elsewhere the impact of Robert Davi &amp; Grand L. Bush as the two cocksure FBI agents Johnson &amp; Johnson (no relation) should not be underestimated. All the actors, of course, are indebted to the sizzling script by Steven E. de Souza &amp; Jeb Stuart. So to is praise due to photographer Jan de Bont, who in collaboration with McTiernan, produces a camera work lesson for action movies, as the camera swoops in and around the tower, down elevator shafts and up tilt to roofs; with the fight scenes afforded a spatial sheen not expected in the confines of a tower block setting (the film was actually shot at 20th Century Fox&#39;s own 2121 Fox Plaza). Even the scoring from Michael Kamen and the sound tracking are of a high standard; check out the various &quot;mood&quot; uses of Beethoven&#39;s Ode to Joy from Symphony No.9 and Bach&#39;s Brandenburg Concerto No. 3 In G Major: Brilliant. <br/><br/>The 80s was well served by action movies with the likes of Lethal Weapon and Beverly Hills Cop proving massively popular. But just as Raiders Of The Lost Ark changed the game for action/adventure, so too did Die Hard. It&#39;s now the benchmark movie for action, a film that unlike Hills Cop &amp; Lethal Weapon remarkably shows no signs of ageing either. It&#39;s no monkey in the wrench or a fly in the ointment, it&#39;s the daddy, and the one that all other action movies have to answer to. 10/10</div>
+                <div class="actions text-muted">
+                13 out of 16 found this helpful.
+                    <span>Was this review helpful? <button class="btn small" data-value="UP">Yes</button> <button class="btn small" data-value="DOWN">No</button></span>
+                            | <a href="/registration/signin?u=/title/tt0095016/reviews&ref_=tt_urv"
+onclick="imdb.contribution.clickHandler(event)" >Report this</a>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="gradient-expander hidden show-more">
+        <div class="gradient-container"></div>
+    <div class="ipl-expander ">
+        <div class="ipl-expander__container">
+        <span class="show-more__control ipl-expander__control">&nbsp;</span>
+                <svg class="ipl-expander__icon expander-icon " width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M10.197 0L6 4.304 1.803 0 0 1.85 6 8l6-6.15" fill="#2572B3" fill-rule="evenodd"/>
+                </svg>
+        </div>
+    </div>
     </div>
 </div>
 <div class="lister-item mode-detail imdb-user-review  with-spoiler" data-vote-url="/title/tt0095016/review/rw1663760/vote/interesting">
@@ -943,56 +982,14 @@ onclick="imdb.contribution.clickHandler(event)" >Report this</a>
         <div class="clear"></div>
     </div>
 </div>
-<div class="lister-item mode-detail imdb-user-review  collapsable" data-vote-url="/title/tt0095016/review/rw2361629/vote/interesting">
-    <div class="review-container">
-        <div class="lister-item-content">
-    <div class="ipl-ratings-bar">
-            <span class="rating-other-user-rating">
-            <svg class="ipl-star-icon" xmlns="http://www.w3.org/2000/svg" fill="#000000" height="24" viewBox="0 0 24 24" width="24">
-                <path d="M0 0h24v24H0z" fill="none"/>
-                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                <path d="M0 0h24v24H0z" fill="none"/>
-            </svg>
-                <span>10</span><span class="point-scale">/10</span>
-            </span>
-    </div>
-            <div class="title">One seized tower block, one sweaty vest and one big set of action cojones.</div>
-            <div class="display-name-date">
-                    <span class="display-name-link"><a href="/user/ur16161013/?ref_=tt_urv"
->Spikeopath</a></span><span class="review-date">31 December 2010</span>
-            </div>
-            <div class="content">
-                <div class="text">Based on ex cop Roderick Thorpe&#39;s 1979 novel Nothing Lasts Forever, Die Hard, directed by John McTiernan, changed the face of the action movie. Starring Bruce Willis, Alan Rickman, Bonnie Bedelia, Reginald Veljohnson, Alexander Godunov, William Atherton &amp; Paul Gleason, McTiernan&#39;s movie went on to make over $100 million in profit at the box office alone. Spawning three equally successful sequels (at the time of writing), it began a franchise that showed that if done well, the action movie could be a dominant force in the world of cinema. <br/><br/>The set up is relatively simple, Willis plays New York cop John McLane who during the Christmas holidays is in L.A. to visit his estranged wife Holly (Bedelia). She works for the Japanese Corporation of Nakatomi, and currently she&#39;s attending the company Christmas party up on the 30th floor of the humongous Nakatomi Plaza tower block. Bad day at the office because a group of apparent German terrorists, led by the charismatic Hans Gruber (Rickman), take the whole building hostage: with one exception; McLane, who evades capture and launches a one man war against the terrorists. <br/><br/>What follows is just over two hours of high octane action, smart dialogue and technical smarts. McTiernan had already endeared himself to the action movie fan with the ball busting beef stew that was Predator in 87, a fact not lost on Die Hard&#39;s co producer Joel Silver, who clearly knew that McTiernan could smoothly shift the action from the Val Verde jungle to the urban jungle of L.A. And he did. Next was to get the right man for McLane. Richard Gere was first choice but passed, so the makers took a gamble on Willis, whose career was at a standstill after his leap from TV show Moonlighting on to the big screen with the likes of Blind Date &amp; Sunset barely making a ripple in Hollywood. The rest for Willis, as they say, is history. McLane is an everyman hero, streetwise, even slobbish, but identifiable to many with his work ethics, desperate heroics and emotional vulnerability. Willis attacks the role with a hunger rarely seen from the big male earners in filmdom. During the two hours and ten minute running time of Die Hard, Willis as McLane changed the face of the action hero for ever; even making a dirty white vest iconic in the process; the latter of which couples nicely with the hero being bare footed throughout for a nifty bit of writing. <br/><br/>Across the board the casting is flawless, Bedelia is spunky and driven, a woman worth fighting for. Veljohnson as beat copper Al Powell-McLane&#39;s walkie-talkie buddy and only link to the outside world-is memorable because it feels real, he has his own issue gnawing away at him, but his exchanges with Willis keeps the humanity grounded as the carnage unfolds. Gleason &amp; Atherton are wonderfully anal as Deputy Police Chief and TV Reporter respectively, while Hart Bochner as Ellis dishes out one of the best weasel turns to have ever graced a movie featuring corporate suit types. But as Die Hard resembles the great Westerns of yesteryear, much like the great Oaters, Die Hard could only be as good as its chief villain. As Willis&#39; McLane ushered in a new action hero to copy, Rickman&#39;s uber intelligent villain set a new benchmark. <br/><br/>Snappily dressed, well versed and as charming as they come, Gruber in Rickman&#39;s hands is a villain you could quite easily root for! That&#39;s further testament to Willis&#39; turn that Rickman doesn&#39;t walk away with the movie, both men are from different sides of the fence, good and evil, yet both are characters you can hang your hat on. Quite a trick from McTiernan that. Rickman is ably supported by the scary Godunov as right hand man Karl and Clarence Gilyard Jr. as the cold hearted Theo. Elsewhere the impact of Robert Davi &amp; Grand L. Bush as the two cocksure FBI agents Johnson &amp; Johnson (no relation) should not be underestimated. All the actors, of course, are indebted to the sizzling script by Steven E. de Souza &amp; Jeb Stuart. So to is praise due to photographer Jan de Bont, who in collaboration with McTiernan, produces a camera work lesson for action movies, as the camera swoops in and around the tower, down elevator shafts and up tilt to roofs; with the fight scenes afforded a spatial sheen not expected in the confines of a tower block setting (the film was actually shot at 20th Century Fox&#39;s own 2121 Fox Plaza). Even the scoring from Michael Kamen and the sound tracking are of a high standard; check out the various &quot;mood&quot; uses of Beethoven&#39;s Ode to Joy from Symphony No.9 and Bach&#39;s Brandenburg Concerto No. 3 In G Major: Brilliant. <br/><br/>The 80s was well served by action movies with the likes of Lethal Weapon and Beverly Hills Cop proving massively popular. But just as Raiders Of The Lost Ark changed the game for action/adventure, so too did Die Hard. It&#39;s now the benchmark movie for action, a film that unlike Hills Cop &amp; Lethal Weapon remarkably shows no signs of ageing either. It&#39;s no monkey in the wrench or a fly in the ointment, it&#39;s the daddy, and the one that all other action movies have to answer to. 10/10</div>
-                <div class="actions text-muted">
-                12 out of 15 found this helpful.
-                    <span>Was this review helpful? <button class="btn small" data-value="UP">Yes</button> <button class="btn small" data-value="DOWN">No</button></span>
-                            | <a href="/registration/signin?u=/title/tt0095016/reviews&ref_=tt_urv"
-onclick="imdb.contribution.clickHandler(event)" >Report this</a>
-                </div>
-            </div>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="gradient-expander hidden show-more">
-        <div class="gradient-container"></div>
-    <div class="ipl-expander ">
-        <div class="ipl-expander__container">
-        <span class="show-more__control ipl-expander__control">&nbsp;</span>
-                <svg class="ipl-expander__icon expander-icon " width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M10.197 0L6 4.304 1.803 0 0 1.85 6 8l6-6.15" fill="#2572B3" fill-rule="evenodd"/>
-                </svg>
-        </div>
-    </div>
-    </div>
-</div>
     </div>
     <div class="row text-center lister-working hidden">
     </div>
 
-        <div class="load-more-data" data-key="zrgidevj5luqq5z6cjpvcljw54vufvjpk3y7g3u7qtujsxfqxtxm5hl6ewfstsmlnhhsddcxdklyw" data-ajaxurl="/title/tt0095016/reviews/_ajax">
+        <div class="load-more-data" data-key="wdrzf7uq4jayncjocto3kmixv3my2qv6ie2vanbecoheg6cosv4zuyumly7zqkmcxep5l3msf574m" data-ajaxurl="/title/tt0095016/reviews/_ajax">
     <div class="ipl-load-more ipl-load-more--loaded">
         <div class="ipl-load-more__load-indicator">
-            <img src="http://i.media-imdb.com/images/spinning-progress.gif" alt="loading" height="16" width="16" />
+            <img src="https://i.media-imdb.com/images/spinning-progress.gif" alt="loading" height="16" width="16" />
         </div>
     <div class="ipl-message-box ipl-message-box--alert ipl-load-more__message-box ipl-load-more__message-box--hidden">
             <svg class="ipl-alert-icon" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -1270,81 +1267,81 @@ class="link" >External Sites</a>
 
     <div class="list-preview even">
         <div class="list-preview-item-narrow">
-<a href="/list/ls000024455?ref_=tt_rls_1"
-><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/film.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMzNmY2IwYzAtNDQ1NC00MmI4LThkOTgtZmVhYmExOTVhMWRkXkEyXkFqcGdeQXVyMTk5NDA3Nw@@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
+<a href="/list/ls000965553?ref_=tt_rls_1"
+><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/film.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ1MTAwODc3OV5BMl5BanBnXkFtZTcwNzI0MDQ3NA@@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
         <div class="list_name">
-            <strong><a href="/list/ls000024455?ref_=tt_rls_1"
+            <strong><a href="/list/ls000965553?ref_=tt_rls_1"
 >
-My Favorite Movies of All Time! part 2
+The Best Movies That Everyone Should Own.
 </a></strong>
         </div>
         <div class="list_meta">
-            a list of 41 titles
-            <br />created 10&nbsp;Feb&nbsp;2011
+            a list of 40 titles
+            <br />created 25&nbsp;Jun&nbsp;2011
         </div>
         <div class="clear">&nbsp;</div>
     </div>
     <div class="list-preview odd">
         <div class="list-preview-item-narrow">
-<a href="/list/ls000041077?ref_=tt_rls_2"
-><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/film.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
+<a href="/list/ls031211251?ref_=tt_rls_2"
+><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/film.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
         <div class="list_name">
-            <strong><a href="/list/ls000041077?ref_=tt_rls_2"
+            <strong><a href="/list/ls031211251?ref_=tt_rls_2"
 >
-List of movies I'd love to watch again.!!
+X-mas
 </a></strong>
         </div>
         <div class="list_meta">
-            a list of 43 titles
-            <br />created 20&nbsp;Feb&nbsp;2011
+            a list of 25 titles
+            <br />created 02&nbsp;Jan&nbsp;2016
         </div>
         <div class="clear">&nbsp;</div>
     </div>
     <div class="list-preview even">
         <div class="list-preview-item-narrow">
-<a href="/list/ls003163813?ref_=tt_rls_3"
-><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/film.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTc4NjE4MzI0N15BMl5BanBnXkFtZTgwMzIwMTM0MDE@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
+<a href="/list/ls063820388?ref_=tt_rls_3"
+><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/film.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
         <div class="list_name">
-            <strong><a href="/list/ls003163813?ref_=tt_rls_3"
+            <strong><a href="/list/ls063820388?ref_=tt_rls_3"
 >
-1970-2011
+My Favourite Action Movies
 </a></strong>
         </div>
         <div class="list_meta">
-            a list of 26 titles
-            <br />created 25&nbsp;Sep&nbsp;2011
+            a list of 38 titles
+            <br />created 19&nbsp;Sep&nbsp;2016
         </div>
         <div class="clear">&nbsp;</div>
     </div>
     <div class="list-preview odd">
         <div class="list-preview-item-narrow">
-<a href="/list/ls008573101?ref_=tt_rls_4"
-><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/film.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BODBmOWU2YWMtZGUzZi00YzRhLWJjNDAtYTUwNWVkNDcyZmU5XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
+<a href="/list/ls020251155?ref_=tt_rls_4"
+><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/film.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BYjRmODkzNDItMTNhNi00YjJlLTg0ZjAtODlhZTM0YzgzYThlXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
         <div class="list_name">
-            <strong><a href="/list/ls008573101?ref_=tt_rls_4"
+            <strong><a href="/list/ls020251155?ref_=tt_rls_4"
 >
-Badass Films
+Yearly Favorites
 </a></strong>
         </div>
         <div class="list_meta">
-            a list of 30 titles
-            <br />created 09&nbsp;Aug&nbsp;2012
+            a list of 38 titles
+            <br />created 3&nbsp;months&nbsp;ago
         </div>
         <div class="clear">&nbsp;</div>
     </div>
     <div class="list-preview even">
         <div class="list-preview-item-narrow">
-<a href="/list/ls056153544?ref_=tt_rls_5"
-><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/film.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BZWFkY2I1ZDAtNmZhNS00NjVlLWJiMGQtMGQ1ZmM0ZDA5ODg5XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
+<a href="/list/ls025831484?ref_=tt_rls_5"
+><img height="86" width="86" alt="list image" title="list image"src="/images/nopicture/medium/film.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BODkyNDQzMzUzOF5BMl5BanBnXkFtZTcwODYyMDEyOA@@._V1_UX86_CR0,0,86,86_AL_.jpg" /></a>        </div>
         <div class="list_name">
-            <strong><a href="/list/ls056153544?ref_=tt_rls_5"
+            <strong><a href="/list/ls025831484?ref_=tt_rls_5"
 >
-Must Watch Action Films
+Movies To Study
 </a></strong>
         </div>
         <div class="list_meta">
-            a list of 23 titles
-            <br />created 06&nbsp;Aug&nbsp;2013
+            a list of 24 titles
+            <br />created 1&nbsp;month&nbsp;ago
         </div>
         <div class="clear">&nbsp;</div>
     </div>
@@ -1413,13 +1410,13 @@ Must Watch Action Films
                 <div class="col outside">
     <h3>IMDb Everywhere</h3>
     <div class="app-links">
-    <a href="/offsite/?page-action=ft_app_apple&token=BCYhpPgpX48cKGYcyuUKn_8J3MnbigwhrQWfXdGb5hq8p_xFdejLpolvHsxq3pO0_5LCqXH2SJ4W%0D%0ArjZlgpBPOIOhFqayfFHG31ecH6JJp6-TWbDPgMRLTkvLQrzLCsEbxWnNriNWbL57wKe5KxSNLYSC%0D%0ATdFg9ldSqWw9Dj6aQvwdDKSZGEAeskPBZuDdv0MuOxUIzdByyTEW4sEJZakEUz7C9B6i-TAiUS8K%0D%0AldYL6EaMr80%0D%0A&ref_=ft_app_apple"
+    <a href="/offsite/?page-action=ft_app_apple&token=BCYj82e6LxqRPp0D8or7VWz__BncYWGENY_xgncG_fmkKFPh1FeFlJPNvv_jsTlLF7slEnO_oz3y%0D%0A2y9fd0uWUHV9OHyaEKMFfvczpI2-zdz93Sq822Hw4oI0g4w9Kn3K-CH4Im455vrUquOXWEPkHArf%0D%0ABZFpnBOIjnSZg5gcls8YzC6GDtxiO_WwkcsfABjXOcS605Tll3sV1hXkYlYFyddmJgRIy0utEcF4%0D%0A7KjMViofe-w%0D%0A&ref_=ft_app_apple"
 title="Get the IMDb App on the Apple App Store" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-apple" ></span>
 </a>
-    <a href="/offsite/?page-action=ft_app_google&token=BCYv8pgRayY2gns7WecLbddIahidgdEG28nmetyN6q2WLeVDG-iQLqGG9Bi9ruGp5lT5AHsmZxx8%0D%0Axq29tDnDlZy7P5Xus0ymh_PlrXJYoAqp8q3Lte5Z_E9TP5u4CAQLxUY5eYRrd2vOKo34cV3A64P3%0D%0Ag03hVq9uFhcp3-Mp_hUUOL4LcTjmmOeQDBwjzYv72LBwfM41dZpgMMaJ7fgrCJUpPaHbwguJ7IK2%0D%0A1bmczB9pwEI%0D%0A&ref_=ft_app_google"
+    <a href="/offsite/?page-action=ft_app_google&token=BCYknCZI5QJSaoh4ChMiG2RZfW-ExNDKVmHgoPXxzJcvOWv1MfvwAq-tTXL2IZxqQs3V1kEtCZlv%0D%0AU21WBKkeY_MJqT-IcP5pohn2S7Mb68SESJTW20i_3EGpYoKhGx77H9-Gbfz7H4ol7tQhms7n62ft%0D%0AZB73WN8j8yPDWYLP65BtpLhgVxB7aU-pQCZXd3O9cFlfusqt0KCWFfWldm32CRLHJUWvq-RIotFN%0D%0ALuX21Qxt6c4%0D%0A&ref_=ft_app_google"
 title="Get the IMDb app on Google Play" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-google" ></span>
 </a>
-    <a href="/offsite/?page-action=ft_app_amazon&token=BCYkoy1nleQrKYoPb1YXV1YrjVvqR5bIj6Or8yw1Gg7N5HC_6eLItiBgZF5nrpFt5Qbsa8APbJBe%0D%0AG2WJ4dI046DLtFE9HSSFAFUoENHB0FjVItq4toEx2luu1WLApNtHiB4l1Ugl-TIHLEk3zUO40xXR%0D%0AWEpaJMHs3f2XA6hJTkweLQUKG3QscexnOF9VwBNbgLj8X6OqPeCGT1BQpYFEFPdzTs_9I690WeQd%0D%0AibTIWhQ_0gEZO3rUwAXP8S4MIW-6cmWIHep7O41EITnVwmFZkXHuKb9Cb6M2uphAD_K9o5yU21c4%0D%0AabtkHuFE6QDD_uAzglpsvtTA2pnipqgcMNjKwnrxPLfR7UIY-KNGtBzp2vvF1fu7F0X_dTNKmAWY%0D%0ALyj48LhCS4rzn4fxE_UBQMqW7oX52W5HkTMRa-45ee6wKiB6GoI%0D%0A&ref_=ft_app_amazon"
+    <a href="/offsite/?page-action=ft_app_amazon&token=BCYrrlGPZ2L6sLV3hv2BxQY5sT1InAgeiv_0ztuKBrzZVBjKmUgUE2dF08FplVDUwbhWXNIg3cYg%0D%0AaxxDHc4IkhN4NINyy5r4RjzrAel_IGtXACTKOXuGz6ZoF1ymxzVAeIhldFJTEgeH_sQ4wqbaFc-U%0D%0AiYlC1Um4IH9CJbtyL5fw8W2lWagz9l8NzA_70bHixpMmy_9w34lPLIFsjzuO5l3RBC76XoGTXIOu%0D%0AOHNIUhQXVde349vba-6yIu0vXSpLmfYnvkELCtgfR5QSFkOLBmIZp0fxEVMT045_dQVrtiBtyLke%0D%0A4_DBpecVzTu2pGvTj_fODcQXLcl4Fsrs5U71Bt8C9TqCHdCATIi8lEU_WMSmFGlBaOPejkYQDBKO%0D%0AHBVW9heyZm-Z4mn9ZgE3oIHUXEsJckiOMZ93Ykpm1BJyaKEHIzg%0D%0A&ref_=ft_app_amazon"
 title="Get the IMDb app on Amazon Appstore for Android" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-amazon" ></span>
 </a>
     </div>
@@ -1435,13 +1432,13 @@ class="touchlink" >IMDb Mobile site</a>
       Follow IMDb on
       <div>
 
-    <a href="/offsite/?page-action=fol_fb&token=BCYosJizeWAS5iU62f_QvejwwxDURHGgzmAup78Pv9VzO9DxNM1PIoVHS4ew80LIIxm6ocn0_lTi%0D%0Auw7OD8mZCDfU6BbVeUmTpH25R-qztkkGnmEI0mu2DeDKn956kc-5_HyDrgBOaDbwD602QSM9L4zr%0D%0A-mJck_JZijnzCYtYGS4PeLfSHZPwL_vFeqbChZ9NqoMr7P-lLINjlG6d2PGSfIRpWQ%0D%0A&ref_=tt_ft_fol_fb"
+    <a href="/offsite/?page-action=fol_fb&token=BCYvePTfcuZMFDezO4juzA2aszpYU3A5PidtBvd79PDTQ15AxLr9R4nE8L_qJaioqIBFIjValhhI%0D%0ArwDAFcAM-qE1YGsUIh-zXsURxX1at-WuQx1yHN-cZyJYcs6xx3qUm18oGdpv_aCUYbuUhN3S-knh%0D%0ACip3UWsjL_3sXTrTBdTO6Mg049yvLwzMlrSiBplyLOo-iwrLAyRHuFL0gJpPHHApxA%0D%0A&ref_=tt_ft_fol_fb"
 title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_tw&token=BCYgHnoB-zVaKCHelhcJxxGqI54QD964zx4OY6khKcfgS0g-g1TA2cdVYl8KggGMAJ-gdWBqvC7X%0D%0AumMvCzOc1fe2nREmBZ4jBsVtWqkU0qi9c4IXIWuWV3POpmwGLUaI5wpaVEgTmNakc4_c97hu__eK%0D%0A4BmQ7LOStlxFT-ZDYZFa0A35GIxDWPMErmzHsMq3t16R9P0wfpw9cnKz5pokejLD2g%0D%0A&ref_=tt_ft_fol_tw"
+    <a href="/offsite/?page-action=fol_tw&token=BCYtu0CpufNuD8J4KyclP59l9OZKJNQZJaL8vZgV-O-9laD-iOzWMvDt3HestQUO7BPE71OSYHBE%0D%0AbEcBzmgAKS8mYUxKJkd_6LqLEjbdvHtV9xUQWi_2fvOIowvhHnDVIfIjd08EuopYt2YoZMWpxTUT%0D%0AU1nW0iDtg_7XM6xtCz5ieOevmbWoqRjWxYZtKQce431WTHgaKd8fH6K8BZQ-vPUjLw%0D%0A&ref_=tt_ft_fol_tw"
 title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_inst&token=BCYsTTGY88XUkTr6OIGBpmvaroyJfNwaKP3RRY19HzMPAXQiUnA1hsyaZGeHlgcqzpPHWwr4pN-8%0D%0AyleRpU5g-mpsN9chaNR-UcSNyKW_99ky3Stl9Gb49z8McFpTuTzO7HPt32p93JlohDFNnY8Ko2sG%0D%0AsMajxDLrU-ma6aE61kIq1cdU2B5bozQxncL6ubLnc26fPYbOtc8L7dhht7USQabsXw%0D%0A&ref_=tt_ft_fol_inst"
+    <a href="/offsite/?page-action=fol_inst&token=BCYvIpwv1I9ulrgTFl1nfRX7sAoTbQMVlf1Zn5gAM9ZwszI-vkZqtgtW-awb3ieo0zOvm1smEVxn%0D%0AqHyCvWntA6u7bqmCpBrcFXeuoSq5LdJ_e2K9OppIIyQ0WhbGdFhnxCjlbM8pcMgsSf_qnTRrVn8V%0D%0A3AvYRjQeZGP9LtwjNteTKtT2IG-B61sviWZUVC2NONFBCcuqR-TPmQMeAQ3b9tRrLA%0D%0A&ref_=tt_ft_fol_inst"
 title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
 </a>
       </div>
@@ -1458,7 +1455,7 @@ title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="de
 >Top Rated Movies</a></li>
                 <li><a href="/chart/?ref_=ft_cht"
 >Box Office</a></li>
-                <li><a href="/sections/tv/?ref_=ft_tv"
+                <li><a href="/tv/?ref_=ft_tv"
 >TV</a></li>
                 <li><a href="/movies-coming-soon/?ref_=ft_cs"
 >Coming Soon</a></li>
@@ -1490,12 +1487,12 @@ title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="de
         </div>
         <div class="col col-4">
             <ul class="unstyled">
-                <li><a href="http://pro.imdb.com/signup/index.html?rf=cons_ft_hm&ref_=cons_ft_hm"
+                <li><a href="https://pro.imdb.com/signup/index.html?rf=cons_ft_hm&ref_=cons_ft_hm"
 >IMDbPro</a></li>
-                <li>    <a href="/offsite/?page-action=ft-mojo&token=BCYstS4428HjegGIImVK6-Jg6W0pNy4FP7_vTiuBBb4b1Zmsh7jyBx-w8fxgYDXapmR6pCbRq-eX%0D%0AEm_iiBjqbW3S0B8Csq18lS_ERiCZUgXbzqnnNGh6k8EMv1q9FUJh5hEzwExkjLFSwd681nWfwO6v%0D%0AP_HNUPzs3acqcDZmHWeBX6Bg7NhxVivKRF_s5x9_0wOraJTD7WCeqkXd3aa_bp0QCA%0D%0A&ref_=ft_bom"
+                <li>    <a href="/offsite/?page-action=ft-mojo&token=BCYgJqDj76zFdOgE2CzI33bbyCyywnNB_C_OZuNu9hGNLZam2zANZUbYco7M6Wf32GD2NyGl1174%0D%0A_7wxx4y13TeKPoxVabPGyfgpwpk3NnBIv5PUChmonZkw7dB1_QEa7nS9MAkRwD_wChZpsnTWVd7F%0D%0AjAJ4p9i5AV9aaZ8G5pju6vFyPHSjz8x6CdsxaK5tH8W6s0wpeddZXzSixK5PyJfBRg%0D%0A&ref_=ft_bom"
 itemprop='url'>Box Office Mojo</a>
 </li>
-                <li>    <a href="/offsite/?page-action=ft-wab&token=BCYu2ncwp2Uxq3p8qWjOr6rMsSMwmj1iZ_MLkyi0tOq_QRO13ccR-FhUsuC-fA-C7qYu1i1qY3NP%0D%0AGiXccamyujwczIK-14ZHw6y5N8orcXd0TMirQ24qvCeNECNndO8AoPf9K1VepMhT1nGdPceIsWmd%0D%0AlRWOMHlfr7I3_hUh5w1oxWbmEto5B-3qJzBz-czFMrHFMfSbGHkKA2hRJfLZ-vmddw%0D%0A&ref_=ft_wab"
+                <li>    <a href="/offsite/?page-action=ft-wab&token=BCYrWJVKJkcltU1lbGH42Lnrwr2Tcvb7UM_LfO-DfZWy76o5PfyVVGDusbTfxg0GlLXn_WXav0Pu%0D%0AJVx66TRlflC666NLOQz6yTm4nJzIWWvDUQ4ZQsjNKdsldEso1vU64X63dq0cWqtsPwwLrzF8r295%0D%0A-HgWheNnVpJQmwMzWAmGecooE7Hi-9kiVzqb5ESOpTrG5NbbGZcFMdXZbks98HG_SQ%0D%0A&ref_=ft_wab"
 itemprop='url'>Withoutabox</a>
 </li>
                 <li class="spacer"></li>
@@ -1503,7 +1500,7 @@ itemprop='url'>Withoutabox</a>
 >Conditions of Use</a></li>
                 <li><a href="/privacy?ref_=ft_pvc"
 >Privacy Policy</a></li>
-                <li>    <a href="/offsite/?page-action=ft-iba&token=BCYr2_qcWgXdmeerKE_F3RVZq0cuwwumg2OhJ6ztdcTIHLytVuUvhxRorxUIuMnZi-MkWSBfR1-W%0D%0Aa18RS466Ae6P7-ilb1rvPAYkg1ErpcxP6exxT7AVhZ3zdMT58RLAx5TOVNvxjyfLTZIu7Jtd1-j2%0D%0A90nQ8WiRKY1la7Sw8P67kMuJ_5GOM8Z7UxR7Z0UWqzCsKRkSaEXIR8rAiPDmfnQtt4BDX8zHldGm%0D%0AkKrR1Xpea2N8DyxwqG56X0cEEUXGRnA8%0D%0A&ref_=ft_iba"
+                <li>    <a href="/offsite/?page-action=ft-iba&token=BCYvliA9423tvqi44StSVVvlGW58CBDyqPPy8i8mBh1dU-xVNFs61t4AfIKzLlv0z5H1TTWOFUFZ%0D%0AJmCzB09X8roykOMORXD6VULw_CUMhkU17wjpuUMqlvO8P1eWT1CbRKNgYGxeAtQBdAjORi3raNNP%0D%0APY9Ad8OL2asbEa6ZlRIWW6RYTj0W4HmcYTGroImTHSQodrBDwZ1K4oiENOUtlthpxt8A57cNpbyS%0D%0A2000FYppO_kixW08HDG2EMK18xHSStVp%0D%0A&ref_=ft_iba"
 itemprop='url'>Interest-Based Ads</a>
 </li>
                 <li class="spacer"></li>
@@ -1538,7 +1535,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-aiv&token=BCYl8iIe-V26nRJFviYoo5AVcF5ea0xMsy22QlusAnuYd-BKlxAeBltI3PV9jzCfKQVmZaUEnGoL%0D%0A65XPlEZ2XL8tIzNVKfpz2mvg7id3kvzkruD1X83e0E2rzu0lGKgXDBoQY59ABLLOUJT-X9Vv1n9_%0D%0AS18KR_TQNvX-76G6cz6JisUfjg48dL2IIPTqY-97MZAefEhGZ8eIMFTkC3MFfYuA10vg1Fzst3kQ%0D%0AYFezjbDgw8Y%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-aiv&token=BCYu0aWMg5X2q2HVbp4qBlNzo0MB4aG44aSnQppBgm5GqP_HyQed8izpa1yTsA6AST_yiu4S9gHa%0D%0AvK9PUYHEBblRE296SAfMz2cn0lfJLD2VIrDVgLuG5uHrT_qchyvT84cXyzu487iy6VwTH3wh2yq1%0D%0AyBU3H2lJWyIY4hoeBTYzM3PD4yZ_4wI3Q04tcwAjUnLnRhHZgUCQPGt8GToi_WP6C5naIvCjZDFx%0D%0AhKASOn70K58%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Video</span><br>
                 <span class="amazon-affiliate-site-desc">Watch Movies &<br>TV Online</span>
             </a>
@@ -1547,7 +1544,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-piv&token=BCYlaBBW1n7YuhzH_vhLq4SkaRKuyvPrpIJT5ZxpNvKLXXsBKPMEgdo8IYQfS3f6I-4JLflTHrmK%0D%0AiUmRb-QTClwZmn3n6a9XKrcbTAQ1Xnw2TFx-mcUnb_ptp2WYG6Bf640vKN1DbFd-YUWS6O1kG4zt%0D%0ATtM1seSOenMhUyyFs_BfAEewKVXFbh_3I-SloKu2M9Qn2bw56ARJYrgiu99C3w9C7IMd5jxQkEEK%0D%0AX1L4_DZgDq4%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-piv&token=BCYsQk9Ze1K3MDggYHXvOApG_HuFfRbFB_BFURuhKX8isgXVaCNPwm7gTWEo0EhxvDvve6wmPALW%0D%0A2oflRLFIwt8DcLduB8mDoP0aFARg1BH_jY4PbEh-AZgfyXM8_nnmkLx15Z9LvU6Ypyta6sqxGSe4%0D%0As6zr4GsRDFrH_ZZVxLh_1_z6iKq5U4OCPEbqUS9sR8H3wF61yn7VW2zkiqfcRzSspZSGQCoSQYzV%0D%0AKkEBr0az3k4%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Prime Video</span><br>
                 <span class="amazon-affiliate-site-desc">Unlimited Streaming<br>of Movies & TV</span>
             </a>
@@ -1556,7 +1553,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-de&token=BCYounVstE6mUwPVCF_08jECe8_M-GwBhh2Tttb-2X4oWJEJi1h6peZyUGKVOh8xVuV943fm1J8K%0D%0AH8zi46eQJiiAY7ACEJ6MoaOf3f1SZdJKReDtfz4U1kdx3QxF_IOWKJXrZg4E1EdRe5bLEYnDpCn_%0D%0AZBA-54uCgJiY5K2A3P8ISUg1Zmut1p5TgoBPmfWSUFzkTuLXHC_a70s1bAW41irre5y9F66EAEXA%0D%0AqVljQ0ebXmI%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-de&token=BCYkju9hy6Kw86mSc3eUEZOw7L2Mk0dCaRosI8IjrgDPky59MFrO7nBR1hrPd5GdS9ksTZyps2pK%0D%0AuChu9TpU43L0H1X6PZG3xr7BleB6G8exun98Ki6uyBXoNLl__VwBm6tL7uSj0rfQ7Nct0txB63TQ%0D%0AMQQmK1ljOEA0v1Ac5cUeDE_1Dg0pnmb-RZteNfeTKrKz6ytgPm9Nyc5YbXUaeBMKuxGEiB1qbngs%0D%0AA3Zj3yOaW1M%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Germany</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -1565,7 +1562,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-it&token=BCYlxh5WxH_nRmDrv9GgGpzS6kp5T-GSJMVY013l7_7XArfm6l6yU0JaDe4vCS-4l4JR3S-NHAJD%0D%0A6tDCGKUB6Q9334H35tIr1NsB6vySyyC2K46dKWLPsPuT0JRJD8s9UFaAP-WQ5VJV66ygpZ_wslxt%0D%0AV53k6Fnw_7FrYYbaFxZzlVCmng7Vw-LpXUrY-cMuyeh2uC3CpOLOMFKEbrCwksU4Jvh-Fkm84Fwq%0D%0AQc3scnZSZNw%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-it&token=BCYiSzibkw8y-DMs9KyctIgOIpQkgg-odUJEk7PEBm-RibDqJrSbFJDyQy27Su5HGjEZWA7hzxRK%0D%0AJ-22a4U26PC_UAtiVXQPw3N1d7OylAV6rr4a9ymWfX57yZVgK8mTLkZAZ_WBG4qK0mZ-L06Gmn0X%0D%0AYZ8VUQqMbENkEcOoORUUzAFS3DhuLuGVauoOHRsxvtAfCcTzTWM4V1aZJYov_6L_Tgui1AbIiICr%0D%0AIxBPUWNmTkY%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Italy</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -1574,7 +1571,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-fr&token=BCYrjzAA119AX8OsMaNXgRrUSLiQ2uWJSQZzUOqnCK53vOjrDSkFp2McucVmK31cfdHASabkCgNH%0D%0ArjrSUpd21ro_c35i3IrKz76IvHLHh57PCzHG8h6z-32HkfqHTbONCQFy-3gPo8rRkoMaFWWSfdUY%0D%0AXPfF6wTScGTMYLwgUpkZ-ljpLPDODsS3kaJ_t4kc4Z_lE_aCTUYPyOtwIr00OwrjmoysjBVoMxBN%0D%0AQkCrZ4Xj6qQ%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-fr&token=BCYuUi6dXmGMObV0L0_FyoSN_rRkq_LoxvVPYFn1mnLSZjbnYdN92Gl6iiAqUdqzMyBXTQSHoU86%0D%0ArViCkyfkvfmOH1gjLYUQ6xXtwBjS6ebi07XJzgEpI9ClR3xGkNCjX1vixP7eSGOa6KYXpsSGozn-%0D%0A2M9Ml89-kSkSgey3h7mSuLfXW7oHDfy7bxCezSoHTnvJEU-Lu1-mSl3ovvLukimvUQ5d-NBGhXLw%0D%0Ag4afyQa5lmk%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon France</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -1583,7 +1580,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-in&token=BCYngHMQ_rt_7gAZuehV8KpmRtCBKPTz-FRmnIFkSHmXdvDJ4UHiw05I4CMVpUYV5N4ljhrh5dLh%0D%0AqEsNCDOAR4ls8m0yejwahhHiRTIcBfBwu_lWszrbKSx337l3aEPi-UHSUJ8K3BxGEmGkEcroY4M4%0D%0AvzjFx2QFfnA-0T1ZIxGbhrg8WwN0_kjjTavT9uDKb6FOkhp0IdVEQogZAaB0sexZfyxq9xLDrnmH%0D%0Aq5qmbHL_M_Ouqm0z1yHGP3iCBleTHGsw%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-in&token=BCYr3MoaeqGq97XAtX-cABfKucKwXrZeBZ7pqLoKnQ9FtMdMpAFmE3r1Bg2A3F4tZHiXVbp_UebR%0D%0AZOoBgSEpO6KPSOROMa9byrmwBkL3EfUP8kCebK4AeblSvJ8B-piMoMG05Ph_KtYM32FoWNvv0Zlz%0D%0A_5x_2cEIwyFcbHgmDYxm8Oi1rYOyXFmOSAJB_4V5grzBbx_saJs7DISQOGNSUfL0rpfzTl_-GAbl%0D%0Av-BST8ud0B5X_OhaF8fl09qvx9HwFycS%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon India</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movie and<br>TV Show DVDs</span>
             </a>
@@ -1592,7 +1589,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-dpr&token=BCYhZ6f9AzFdMv45fEyR68M-IejPFH9eRcX725vy0bZPF-nw9Xf5UKA6o5yWALJ_wYOictdVF04P%0D%0AC4ujXPrCO_UrOJGpcctH4yC-fobF7QY13qJkqAgdRXGrZMqEBSUPHFLwZ6PQKUDDCINqh9DwUE-b%0D%0AbaCKDd8AUSqJ8yr_wyBUCXw%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-dpr&token=BCYsIvpj-SI-1pJFYn4f8B1-1s8I2T85giBuyN_V61eC_EegVeC7MBnAHLozdiyfOke26hixNcqT%0D%0AJKS4m4wCMDjXoawsd86EkXzZwbYF-lxdPuFehpDpaf2OELGAfy6_ZR2TlOyyxzj9TRW4Ls22TkYN%0D%0ALDLJIZF1UAC6eNjqRkMh5OI%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">DPReview</span><br>
                 <span class="amazon-affiliate-site-desc">Digital<br>Photography</span>
             </a>
@@ -1601,7 +1598,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-aud&token=BCYlLiFJtvIc6mX7GDvm6G3Zh6I36KmEWBrGjM7fjIH3WbQTvaH4wX387_3V_TZYjBCnYsVd7JzB%0D%0Akv9WcpN84exNc28Xr6Ryb7wygMw30u03HJ52NNJRhnWdYVuBnAh1DMz9qlH2aTAPMn6QQbEEQ8Qr%0D%0AS-B-_7u18TZJkeIqcRwah5w%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-aud&token=BCYmspoCzjoYQJe03lTw__v0WK_TIWOQuHPljYEvxAGYW5fpXP1MduV_zPbF2UPBS17KNB0dDff5%0D%0AVlbA-IVaWmJ_HdQ3G7ZLAujBKFOV5xUbR2191XzJmUEH8kE38uaJW5Ny99dSkOPcDEEF3av5fvgc%0D%0AEbTIpkBcIK8KRzhjeiKFBMo%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Audible</span><br>
                 <span class="amazon-affiliate-site-desc">Download<br>Audio Books</span>
             </a>
@@ -1614,11 +1611,11 @@ itemprop='url'>Interest-Based Ads</a>
         </div>
 <script type="text/javascript" src="http://ia.media-imdb.com/images/G/01/imdb/js/collections/common-2411119445._CB514893747_.js"></script>
 <script type="text/javascript" src="http://ia.media-imdb.com/images/G/01/imdb/js/collections/jquery-2134322634._CB514272171_.js"></script>
-<script type="text/javascript" src="http://ia.media-imdb.com/images/G/01/imdb/js/collections/consumersite-1667471666._CB492402753_.js"></script>
+<script type="text/javascript" src="http://ia.media-imdb.com/images/G/01/imdb/js/collections/consumersite-3768315988._CB491732422_.js"></script>
 
 
 
-<script type="text/javascript" src="http://ia.media-imdb.com/images/G/01/imdb/js/collections/title-core-404313602._CB492499720_.js"></script>
+<script type="text/javascript" src="http://ia.media-imdb.com/images/G/01/imdb/js/collections/title-core-1388045439._CB491724626_.js"></script>
 <script type="text/javascript" src="http://ia.media-imdb.com/images/G/01/imdb/js/collections/user-reviews-3353004362._CB492567222_.js"></script>
 
 <script type="text/javascript" id="login">
@@ -1660,7 +1657,7 @@ itemprop='url'>Interest-Based Ads</a>
         </script>
 
 
-<div id="servertime" time="119"/>
+<div id="servertime" time="67"/>
 
 
 
