@@ -1,7 +1,7 @@
 module Imdb
   # Represents something on IMDB.com
   class Base
-    attr_accessor :id, :url, :title, :also_known_as
+    attr_accessor :id, :url, :title, :year, :poster_thumbnail, :related_person, :related_person_role
 
     # Initialize a new IMDB movie object with it's IMDB id (as a String)
     #
@@ -15,6 +15,12 @@ module Imdb
       @id = imdb_id
       @url = Imdb::Base.url_for(@id, :reference)
       @title = title.gsub(/"/, '').strip if title
+    end
+
+    def reload
+      @title = nil
+      @year = nil
+      @poster_thumbnail = nil
     end
 
     # Returns an array with cast members
@@ -107,6 +113,7 @@ module Imdb
 
     # Returns a string containing the URL for a thumbnail sized movie poster.
     def poster_thumbnail
+      return @poster_thumbnail if @poster_thumbnail
       document.at("img[@alt*='Poster']")['src'] rescue nil
     end
 
@@ -173,6 +180,7 @@ module Imdb
 
     # Returns an integer containing the year (CCYY) the movie was released in.
     def year
+      return @year if @year
       document.at("//h3[@itemprop='name']/span/a/text()").content.strip.to_i rescue nil
     end
 

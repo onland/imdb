@@ -7,6 +7,7 @@ require 'nokogiri'
 
 require 'imdb/base'
 require 'imdb/movie'
+require 'imdb/person'
 require 'imdb/serie'
 require 'imdb/season'
 require 'imdb/episode'

@@ -50,6 +50,9 @@ IMDB_SAMPLES = {
   'http://akas.imdb.com/title/tt0056801/reference' => 'tt0056801',
   'http://akas.imdb.com/title/tt0804503/reference' => 'tt0804503',
   'http://akas.imdb.com/title/tt0804503/' => 'tt0804503_apex',
+  'http://www.imdb.com/name/nm0000019/' => 'nm0000019',
+  'http://www.imdb.com/name/nm0000229/' => 'nm0000229',
+  'http://www.imdb.com/name/nm0051482/' => 'nm0051482',
 }
 
 unless ENV['LIVE_TEST']
