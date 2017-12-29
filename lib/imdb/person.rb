@@ -1,6 +1,8 @@
 module Imdb
   # Represents a person on IMDB.com
   class Person
+    attr_accessor :id, :url
+
     def initialize(imdb_id)
       @id = imdb_id
       @url = "http://www.imdb.com/name/#{imdb_id}/"
