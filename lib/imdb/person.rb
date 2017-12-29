@@ -43,15 +43,19 @@ module Imdb
     # Returns an array of Imdb::Movie objects with some data pre-populated
     def known_for
       document.search("//div[@id='knownfor']/div[contains(@class, 'knownfor-title')]").map do |div|
-        imdb_id = div.at("div[@class='knownfor-title-role']/a")['href'].match(/title\/tt([0-9]+)/)[1]
-        movie = Imdb::Movie.new(imdb_id)
-        movie.title = div.at("div[@class='knownfor-title-role']/a").content
-        movie.year = div.at("div[@class='knownfor-year']/span").content.match(/\(([0-9]{4})\)/)[1].to_i
-        movie.poster_thumbnail = div.at("img")['src']
-        movie.related_person = self
-        movie.related_person_role = div.at("div[@class='knownfor-title-role']/span").content
-        movie
-      end
+        begin
+          imdb_id = div.at("div[@class='knownfor-title-role']/a")['href'].match(/title\/tt([0-9]+)/)[1]
+          movie = Imdb::Movie.new(imdb_id)
+          movie.title = div.at("div[@class='knownfor-title-role']/a").content
+          movie.year = div.at("div[@class='knownfor-year']/span").content.match(/\(([0-9\-]+)\)/)[1].to_i
+          movie.poster_thumbnail = div.at("img")['src']
+          movie.related_person = self
+          movie.related_person_role = div.at("div[@class='knownfor-title-role']/span").content
+          movie
+        rescue
+          nil
+        end
+      end.compact
     end
 
     def picture_thumbnail
