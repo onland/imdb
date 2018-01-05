@@ -14,11 +14,6 @@ describe 'Imdb::Person' do
 
     it 'finds their death date' do
       expect(subject.death_date).to eq(Date.new(1993, 10, 31))
-      expect(subject.living?).to eq(false)
-    end
-
-    it 'finds if they are living' do
-      expect(subject.living?).to eq(false)
     end
 
     it 'finds their age' do
@@ -109,7 +104,6 @@ describe 'Imdb::Person' do
     it 'finds they are living' do
       expect(subject.birth_date).to eq(Date.new(1946, 12, 18))
       expect(subject.death_date).to eq(nil)
-      expect(subject.living?).to eq(true)
     end
 
     it 'finds nickname is nil if there is none' do
@@ -138,6 +132,20 @@ describe 'Imdb::Person' do
 
     it 'finds their personal quote' do
       expect(subject.personal_quote).to eq(nil)
+    end
+  end
+
+  context 'Nelson McCormick' do
+    subject { Imdb::Person.new('nm1879589') }
+
+    it 'finds their name' do
+      expect(subject.name).to eq('Nelson McCormick')
+    end
+
+    it 'handles lack of birth and death date' do
+      expect(subject.birth_date).to eq(nil)
+      expect(subject.death_date).to eq(nil)
+      expect(subject.age).to eq(nil)
     end
   end
 end

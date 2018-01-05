@@ -25,15 +25,12 @@ module Imdb
     end
 
     def age
+      return unless birth_date
       bday = birth_date
       end_date = death_date || Date.today
       age = (end_date.year - bday.year)
       age -= 1 if end_date < Date.new(end_date.year, bday.month, bday.day)
       age
-    end
-
-    def living?
-      !birth_date.nil? && death_date.nil?
     end
 
     def bio
