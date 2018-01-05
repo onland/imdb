@@ -54,6 +54,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/name/nm0000229/' => 'nm0000229',
   'http://www.imdb.com/name/nm0051482/' => 'nm0051482',
   'http://www.imdb.com/name/nm1879589/' => 'nm1879589',
+  'http://www.imdb.com/name/nm0000206/' => 'nm0000206',
 }
 
 unless ENV['LIVE_TEST']

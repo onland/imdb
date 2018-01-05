@@ -68,7 +68,7 @@ module Imdb
     end
 
     def personal_quote
-      document.at("//div[h4[text()='Personal Quote:']]/text()[2]").content.strip rescue nil
+      document.at("//div[h4[text()='Personal Quote:']]").content.delete("\r\n").strip.gsub(/^Personal Quote:/, '').gsub(/\s\s+See more.*/, '') rescue nil
     end
 
     def alternative_names

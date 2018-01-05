@@ -148,4 +148,16 @@ describe 'Imdb::Person' do
       expect(subject.age).to eq(nil)
     end
   end
+
+  context 'Keanu Reeves' do
+    subject { Imdb::Person.new('nm0000206') }
+
+    it 'finds their name' do
+      expect(subject.name).to eq('Keanu Reeves')
+    end
+
+    it 'finds the perosnal quote even if there is a hyperlink in it' do
+      expect(subject.personal_quote).to eq('[on River Phoenix] River was a remarkable artist and a rare human being. I miss him every day.')
+    end
+  end
 end
