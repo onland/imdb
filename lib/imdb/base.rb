@@ -107,7 +107,8 @@ module Imdb
 
     # Returns a string containing the URL to the movie poster.
     def poster
-      src = document.at("a[@name='poster'] img")['src'] rescue nil
+      #PATCH a name poster -> alt=Poster
+      src = document.at("a img[alt=Poster]")['src'] rescue nil
       case src
       when /^(https?:.+@@)/
         Regexp.last_match[1] + '.jpg'
