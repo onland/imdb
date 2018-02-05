@@ -42,7 +42,8 @@ module Imdb
 
     # Returns the name of the director
     def director
-      document.search("h5[text()^='Director'] ~ div a").map { |link| link.content.strip } rescue []
+      #PATCH: h5 -> div.titlereference...
+      document.search("div.titlereference-overview-section:contains('Director') ul li a").map { |link| link.content.strip } rescue []
     end
 
     # Returns the names of Writers
@@ -165,13 +166,18 @@ module Imdb
       if @title && !force_refresh
         @title
       else
-        @title = document.at('h1').inner_html.split('<span').first.strip.imdb_unescape_html rescue nil
+        #PATCH: h1 -> h3
+        @title = document.at('h3').inner_html.split('<span').first.strip.imdb_unescape_html rescue nil
       end
     end
 
     # Returns an integer containing the year (CCYY) the movie was released in.
     def year
-      document.at("a[@href^='/year/']").content.to_i rescue nil
+      #PATCH: Link has moved
+      # "a[@href^='/year/']" -> "a[@href^='/search/title?year']"
+      # or
+      # "a[@href^='/year/']" -> "span.titlereference-title-year a"
+      document.at("span.titlereference-title-year a").content.to_i rescue nil
     end
 
     # Returns release date for the movie.
