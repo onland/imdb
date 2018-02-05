@@ -27,7 +27,9 @@ module Imdb
     end
 
     def self.query(query)
-      open("http://akas.imdb.com/find?q=#{CGI.escape(query)};s=tt")
+      url = "http://akas.imdb.com/find?q=#{CGI::escape(query.gsub(' & ',' and '))};s=tt"
+      puts "DOWNLOADING #{query.inspect} via #{url.inspect}"
+      open(url)
     end
 
     def parse_movie
