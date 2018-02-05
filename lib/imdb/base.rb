@@ -79,7 +79,8 @@ module Imdb
 
     # Returns the duration of the movie in minutes as an integer.
     def length
-      document.at("h5[text()='Runtime:'] ~ div").content[/\d+ min/].to_i rescue nil
+      #PATCH: h5 -> td:contains
+      document.at("td:contains('Runtime') ~ td ul li").content[/\d+ min/].to_i
     end
 
     # Returns the company
@@ -89,7 +90,8 @@ module Imdb
 
     # Returns a string containing the plot.
     def plot
-      sanitize_plot(document.at("h5[text()='Plot:'] ~ div").content) rescue nil
+      #PATCH No 'Plot:' anymore. Could be brittle
+      sanitize_plot(document.at("section.titlereference-section-overview div").content) rescue nil
     end
 
     # Returns a string containing the plot summary
@@ -116,7 +118,8 @@ module Imdb
 
     # Returns a float containing the average user rating
     def rating
-      document.at('.starbar-meta b').content.split('/').first.strip.to_f rescue nil
+      #PATCH: starbar-meta -> ipl-rating...
+      document.at('.ipl-rating-star__rating').content.to_f rescue nil
     end
 
     def user_reviews
