@@ -80,7 +80,7 @@ module Imdb
     # Returns the duration of the movie in minutes as an integer.
     def length
       #PATCH: h5 -> td:contains
-      document.at("td:contains('Runtime') ~ td ul li").content[/\d+ min/].to_i
+      document.at("td:contains('Runtime') ~ td ul li").content[/\d+ min/].to_i rescue nil
     end
 
     # Returns the company
