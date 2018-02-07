@@ -108,7 +108,7 @@ describe 'Imdb::Movie' do
     end
 
     it 'finds the length (in minutes)' do
-      expect(subject.length).to eq(131)
+      expect(subject.length).to eq(132) # Somehow Die Hard got 1 minute longer
     end
 
     it 'finds the plot' do
