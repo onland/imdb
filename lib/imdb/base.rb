@@ -13,7 +13,7 @@ module Imdb
     #
     def initialize(imdb_id, title = nil)
       @id = imdb_id
-      @url = "http://imdb.com/title/tt#{imdb_id}/combined"
+      @url = "http://www.imdb.com/title/tt#{imdb_id}/combined"
       @title = title.gsub(/"/, '').strip if title
     end
 
@@ -59,7 +59,7 @@ module Imdb
 
     # Returns the url to the "Watch a trailer" page
     def trailer_url
-      'http://imdb.com' + document.at("a[@href*='/video/screenplay/']")['href'] rescue nil
+      'http://www.imdb.com' + document.at("a[@href*='/video/screenplay/']")['href'] rescue nil
     end
 
     # Returns an array of genres (as strings)
@@ -233,7 +233,7 @@ module Imdb
     
     # Use HTTParty to fetch the raw HTML for this movie.
     def self.find_by_id(imdb_id, page = :combined)
-      open("http://imdb.com/title/tt#{imdb_id}/#{page}", Imdb::HTTP_HEADER)
+      open("http://www.imdb.com/title/tt#{imdb_id}/#{page}", Imdb::HTTP_HEADER)
     end
 
     # Convenience method for search
