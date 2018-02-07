@@ -23,7 +23,7 @@ module Imdb
     end
 
     def cast_member_ids
-      document.search('table.cast td.nm a').map{ |l| l['href'].sub(%r{^/name/(.*)/}, '\1') }
+      document.search('table.cast_list tr td[itemprop="actor"] a').map{|l| l['href'][/(?<=\/name\/)nm\d+/]}
     end
 
     # Returns an array with cast characters
@@ -71,7 +71,7 @@ module Imdb
 
     # Returns an array of countries as strings.
     def countries
-      document.search("h5[text()='Country:'] ~ div a[@href*='/country/']").map { |link| link.content.strip } rescue []
+      document.search("td a[@href*='/country/']").map(&:text)
     end
 
     # Returns the duration of the movie in minutes as an integer.
