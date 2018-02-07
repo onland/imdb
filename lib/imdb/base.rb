@@ -170,8 +170,13 @@ module Imdb
       if @title && !force_refresh
         @title
       else
-        #PATCH: h1 -> h3
-        @title = document.at('h3').inner_html.split('<span').first.strip.imdb_unescape_html rescue nil
+        # If (original title) is present, it's the first text node after 'h3'
+        original_title = document.at_xpath('//h3/following-sibling::text()').content.strip.imdb_unescape_html
+        @title = if original_title.empty?
+                   document.at('h3').inner_html.split('<span').first.strip.imdb_unescape_html rescue nil
+                 else
+                   original_title
+                 end
       end
     end
 
