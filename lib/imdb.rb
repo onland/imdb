@@ -5,6 +5,12 @@ require 'open-uri'
 require 'rubygems'
 require 'nokogiri'
 
+module Imdb
+  # akas.imdb.com doesn't return original language anymore. This header is needed to disable localizing.
+  # use_it with open-uri's open
+  HTTP_HEADER = {'Accept-Language' => 'en'}
+end
+
 require 'imdb/base'
 require 'imdb/movie'
 require 'imdb/serie'

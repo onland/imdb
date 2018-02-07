@@ -233,7 +233,7 @@ module Imdb
     
     # Use HTTParty to fetch the raw HTML for this movie.
     def self.find_by_id(imdb_id, page = :combined)
-      open("http://akas.imdb.com/title/tt#{imdb_id}/#{page}")
+      open("http://akas.imdb.com/title/tt#{imdb_id}/#{page}", Imdb::HTTP_HEADER)
     end
 
     # Convenience method for search
