@@ -48,13 +48,9 @@ module Imdb
 
     # Returns the names of Writers
     def writers
-      writers_list = []
-
-      fullcredits_document.search("h4[text()^='Writing Credits'] + table tbody tr td[class='name']").each_with_index do |name, i|
-        writers_list[i] = name.content.strip unless writers_list.include? name.content.strip
-      end rescue []
-
-      writers_list
+      fullcredits_document.search("h4[text()^='Writing Credits'] + table tbody tr td[class='name']").map do |name|
+        name.content.strip
+      end.uniq rescue []
     end
 
     # Returns the url to the "Watch a trailer" page

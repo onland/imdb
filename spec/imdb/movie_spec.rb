@@ -112,7 +112,7 @@ describe 'Imdb::Movie' do
     end
 
     it 'finds the plot' do
-      expect(subject.plot).to eq('John McClane, officer of the NYPD, tries to save wife Holly Gennaro and several others, taken hostage by German terrorist Hans Gruber during a Christmas party at the Nakatomi Plaza in Los Angeles.')
+      expect(subject.plot).to eq('John McClane, officer of the NYPD, tries to save his wife Holly Gennaro and several others that were taken hostage by German terrorist Hans Gruber during a Christmas party at the Nakatomi...')
     end
 
     it 'finds plot synopsis' do
@@ -165,7 +165,7 @@ describe 'Imdb::Movie' do
         # Waar (2013)
         subject { Imdb::Movie.new('1821700') }
         it 'finds writers' do
-          expect(subject.writers).to eq(['Hassan Waqas Rana'])
+          expect(subject.writers).to eq(['Hassan Rana'])
         end
       end
     end
