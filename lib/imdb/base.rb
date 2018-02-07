@@ -193,7 +193,7 @@ module Imdb
 
     # Returns filming locations from imdb_url/locations
     def filming_locations
-      locations_document.search('#filming_locations_content .soda dt a').map { |link| link.content.strip } rescue []
+      locations_document.search('#filming_locations .soda dt a').map { |link| link.content.strip } rescue []
     end
 
     # Returns alternative titles from imdb_url/releaseinfo
