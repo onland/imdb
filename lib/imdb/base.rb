@@ -171,7 +171,7 @@ module Imdb
         @title
       else
         #PATCH: h1 -> h3
-        @title = document.at_xpath('//h3/following-sibling::text()').content.strip.imdb_unescape_html rescue nil
+        @title = document.at('h3').inner_html.split('<span').first.strip.imdb_unescape_html rescue nil
       end
     end
 

@@ -8,7 +8,7 @@ require 'nokogiri'
 module Imdb
   # akas.imdb.com doesn't return original language anymore. This header is needed to disable localizing.
   # use_it with open-uri's open
-  HTTP_HEADER = {'Accept-Language' => 'en'}
+  HTTP_HEADER = {'Accept-Language' => 'en-US;en'}
 end
 
 require 'imdb/base'

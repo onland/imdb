@@ -20,16 +20,16 @@ end
 def write_fixture(url, path)
   curl_headers = Imdb::HTTP_HEADER.map{|k, v| "-H \"#{k}:#{v}\""}.join(' ')
   File.open(File.expand_path(File.join(File.dirname(__FILE__), 'fixtures', path)), 'w+') do |fixture|
-    #fixture.write `curl -is #{url}`
-    fixture.write `curl -is #{curl_headers} #{url} | grep -v '^Via:'`
+    #print "curl -is #{curl_headers} \"#{url}\""
+    fixture.write `curl -is #{curl_headers} \"#{url}\" | grep -v '^Via:'`
   end
 end
 
 IMDB_SAMPLES = {
-  'http://www.imdb.com:80/find?q=Kannethirey+Thondrinal;s=tt' => 'search_kannethirey_thondrinal',
-  'http://www.imdb.com/title/tt0330508/?fr=c2M9MXxsbT01MDB8ZmI9dXx0dD0xfG14PTIwfGh0bWw9MXxjaD0xfGNvPTF8cG49MHxmdD0xfGt3PTF8cXM9S2FubmV0aGlyZXkgVGhvbmRyaW5hbHxzaXRlPWFrYXxxPUthbm5ldGhpcmV5IFRob25kcmluYWx8bm09MQ__;fc=1;ft=1' => 'tt0330508',
-  'http://www.imdb.com:80/find?q=I+killed+my+lesbian+wife;s=tt' => 'search_killed_wife',
-  'http://www.imdb.com/find?q=Star+Trek%3A+TOS;s=tt' => 'search_star_trek',
+  'http://www.imdb.com:80/find?q=Kannethirey+Thondrinal&s=tt' => 'search_kannethirey_thondrinal',
+  'http://www.imdb.com/title/tt0330508/?fr=c2M9MXxsbT01MDB8ZmI9dXx0dD0xfG14PTIwfGh0bWw9MXxjaD0xfGNvPTF8cG49MHxmdD0xfGt3PTF8cXM9S2FubmV0aGlyZXkgVGhvbmRyaW5hbHxzaXRlPWFrYXxxPUthbm5ldGhpcmV5IFRob25kcmluYWx8bm09MQ__&fc=1&ft=1' => 'tt0330508',
+  'http://www.imdb.com:80/find?q=I+killed+my+lesbian+wife&s=tt' => 'search_killed_wife',
+  'http://www.imdb.com/find?q=Star+Trek%3A+TOS&s=tt' => 'search_star_trek',
   'http://www.imdb.com:80/title/tt0117731/reference' => 'tt0117731',
   'http://www.imdb.com:80/title/tt0095016/reference' => 'tt0095016',
   'http://www.imdb.com/title/tt0095016/criticreviews' => 'criticreviews',
@@ -41,7 +41,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com:80/title/tt0242653/reference' => 'tt0242653',
   'http://www.imdb.com:80/title/tt1821700/reference' => 'tt1821700',
   'http://www.imdb.com/title/tt1821700/fullcredits' => 'fullcredits',
-  'http://www.imdb.com/title/tt0166222/?fr=c2M9MXxsbT01MDB8ZmI9dXx0dD0xfG14PTIwfGh0bWw9MXxjaD0xfGNvPTF8cG49MHxmdD0xfGt3PTF8cXM9SSBraWxsZWQgbXkgbGVzYmlhbiB3aWZlfHNpdGU9YWthfHE9SSBraWxsZWQgbXkgbGVzYmlhbiB3aWZlfG5tPTE_;fc=1;ft=7' => 'tt0166222',
+  'http://www.imdb.com/title/tt0166222/?fr=c2M9MXxsbT01MDB8ZmI9dXx0dD0xfG14PTIwfGh0bWw9MXxjaD0xfGNvPTF8cG49MHxmdD0xfGt3PTF8cXM9SSBraWxsZWQgbXkgbGVzYmlhbiB3aWZlfHNpdGU9YWthfHE9SSBraWxsZWQgbXkgbGVzYmlhbiB3aWZlfG5tPTE_&fc=1&ft=7' => 'tt0166222',
   'http://www.imdb.com:80/chart/top' => 'top_250',
   'http://www.imdb.com/chart/boxoffice/' => 'box_office',
   'http://www.imdb.com/title/tt0111161/reference' => 'tt0111161',
@@ -55,7 +55,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt1628064/reference' => 'thewalkingdead-s1e2',
   'http://www.imdb.com/title/tt0898266/episodes?season=1' => 'tbbt-s1',
   'http://www.imdb.com/title/tt0898266/reference' => 'tt0898266',
-  'http://www.imdb.com/find?q=Wall-E;s=tt' => 'wall_e_search'
+  'http://www.imdb.com/find?q=Wall-E&s=tt' => 'wall_e_search'
 }
 
 if ENV['UPDATE_FIXTURES']

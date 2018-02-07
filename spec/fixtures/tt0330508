@@ -1,16 +1,15 @@
 HTTP/1.1 200 OK
-Date: Wed, 07 Feb 2018 11:06:11 GMT
+Date: Wed, 07 Feb 2018 12:57:42 GMT
 Server: Server
 X-Frame-Options: SAMEORIGIN
 Content-Security-Policy: frame-ancestors 'self' imdb.com *.imdb.com *.media-imdb.com withoutabox.com *.withoutabox.com amazon.com *.amazon.com amazon.co.uk *.amazon.co.uk amazon.de *.amazon.de translate.google.com images.google.com www.google.com www.google.co.uk search.aol.com bing.com www.bing.com
 Content-Language: en
 Vary: Accept-Encoding,User-Agent
-Set-Cookie: uu=BCYiv0_frxRwF1SwxJ3aHxjwz3d8LQ731D09Ho3A1UuoAK8OUuXQfd4b1xVPzXsziy2Kk6UBDY_B%0D%0AVpXOE06l3t37_iAYMQd3Z7OXTKnscg0XHupjiG-i5MZvK4-7IvqwdqYATcuoE9WJYQr1bLjum_kl%0D%0AYvqDvLF4uDrs_wcxsTpeJ6LrLWLXAV7IN96lmMhR2CdOwHVL9T6YJRaL01ekMvBH3SUT3iR8yA2n%0D%0AEsPffDXC5jndZ26TmhYfY_AMNp8LuGyHGb-xubBChDvAA7OCZ_ILuw%0D%0A; Domain=.imdb.com; Expires=Mon, 25-Feb-2086 14:20:19 GMT; Path=/
-Set-Cookie: session-id=000-0000000-0000000; Domain=.imdb.com; Expires=Mon, 25-Feb-2086 14:20:19 GMT; Path=/
-Set-Cookie: session-id-time=2148721571; Domain=.imdb.com; Expires=Mon, 25-Feb-2086 14:20:19 GMT; Path=/
+Set-Cookie: uu=BCYsWpOKO22bQrk7MQx9ifjPxYdiutVh5OE4cwfiqPDPY0jIGepS673HbtIGZWV9J8D8LlYdhsK-%0D%0AIasx5Lx0weI_GRPid_NEd6ljJC_WY9kaHi8iLJcSPtYTdB7ywowmGYfStAf8ReulioQptdl4sX1M%0D%0AyKzbAKD3cMhJOeZPDCiTzw9iwmpOKbsPVqxxrs6Nq-hwAnIfW1K-G8mkTwCZAwvhVlSGeKZRzi-1%0D%0A-q_X_SP-f7iIJDx712UikgLoF4EHUbtINFPQIz_DPWY4IORskg52Rg%0D%0A; Domain=.imdb.com; Expires=Mon, 25-Feb-2086 16:11:50 GMT; Path=/
+Set-Cookie: session-id=000-0000000-0000000; Domain=.imdb.com; Expires=Mon, 25-Feb-2086 16:11:50 GMT; Path=/
+Set-Cookie: session-id-time=2148728262; Domain=.imdb.com; Expires=Mon, 25-Feb-2086 16:11:50 GMT; Path=/
 Transfer-Encoding: chunked
 Content-Type: text/html;charset=UTF-8
-Via: 1.1 ironport.rz.hft-stuttgart.de:80 (Cisco-WSA/9.0.1-162)
 Connection: keep-alive
 
 
@@ -36,10 +35,10 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
                 var ue_sn = "www.imdb.com";  
                 var ue_furl = "fls-na.amazon.com";
                 var ue_sid = "000-0000000-0000000";
-                var ue_id = "0VTRSSYT6VSYE61YMCYP";
+                var ue_id = "1W6G7JS2VCN8QMYQ2F6C";
                 (function(e){var c=e;var a=c.ue||{};a.main_scope="mainscopecsm";a.q=[];a.t0=c.ue_t0||+new Date();a.d=g;function g(h){return +new Date()-(h?0:a.t0)}function d(h){return function(){a.q.push({n:h,a:arguments,t:a.d()})}}function b(m,l,h,j,i){var k={m:m,f:l,l:h,c:""+j,err:i,fromOnError:1,args:arguments};c.ueLogError(k);return false}b.skipTrace=1;e.onerror=b;function f(){c.uex("ld")}if(e.addEventListener){e.addEventListener("load",f,false)}else{if(e.attachEvent){e.attachEvent("onload",f)}}a.tag=d("tag");a.log=d("log");a.reset=d("rst");c.ue_csm=c;c.ue=a;c.ueLogError=d("err");c.ues=d("ues");c.uet=d("uet");c.uex=d("uex");c.uet("ue")})(window);(function(e,d){var a=e.ue||{};function c(g){if(!g){return}var f=d.head||d.getElementsByTagName("head")[0]||d.documentElement,h=d.createElement("script");h.async="async";h.src=g;f.insertBefore(h,f.firstChild)}function b(){var k=e.ue_cdn||"z-ecx.images-amazon.com",g=e.ue_cdns||"images-na.ssl-images-amazon.com",j="/images/G/01/csminstrumentation/",h=e.ue_file||"ue-full-11e51f253e8ad9d145f4ed644b40f692._V1_.js",f,i;if(h.indexOf("NSTRUMENTATION_FIL")>=0){return}if("ue_https" in e){f=e.ue_https}else{f=e.location&&e.location.protocol=="https:"?1:0}i=f?"https://":"http://";i+=f?g:k;i+=j;i+=h;c(i)}if(!e.ue_inline){if(a.loadUEFull){a.loadUEFull()}else{b()}}a.uels=c;e.ue=a})(window,document);
                 if (!('CS' in window)) { window.CS = {}; }
-                    window.CS.loginLocation = "https://www.imdb.com/registration/signin?u=%2Ftitle%2Ftt0330508%2F%3Ffr%3Dc2M9MXxsbT01MDB8ZmI9dXx0dD0xfG14PTIwfGh0bWw9MXxjaD0xfGNvPTF8cG49MHxmdD0xfGt3PTF8cXM9S2FubmV0aGlyZXkgVGhvbmRyaW5hbHxzaXRlPWFrYXxxPUthbm5ldGhpcmV5IFRob25kcmluYWx8bm09MQ__";
+                    window.CS.loginLocation = "https://www.imdb.com/registration/signin?u=%2Ftitle%2Ftt0330508%2F%3Ffr%3Dc2M9MXxsbT01MDB8ZmI9dXx0dD0xfG14PTIwfGh0bWw9MXxjaD0xfGNvPTF8cG49MHxmdD0xfGt3PTF8cXM9S2FubmV0aGlyZXkgVGhvbmRyaW5hbHxzaXRlPWFrYXxxPUthbm5ldGhpcmV5IFRob25kcmluYWx8bm09MQ__%26fc%3D1%26ft%3D1";
             </script>
 
 
@@ -113,7 +112,7 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
         <meta name="description" content="Directed by Ravichandran.  With Prashanth, Simran, Karan, Srividya. Family opposition to a couple's coming together forms the basis for this standard love story." />
         <meta property="og:description" content="Directed by Ravichandran.  With Prashanth, Simran, Karan, Srividya. Family opposition to a couple's coming together forms the basis for this standard love story." />
         <meta name="keywords" content="Reviews, Showtimes, DVDs, Photos, Message Boards, User Ratings, Synopsis, Trailers, Credits" />
-        <meta name="request_id" content="0VTRSSYT6VSYE61YMCYP" />
+        <meta name="request_id" content="1W6G7JS2VCN8QMYQ2F6C" />
 
 <script>
     if (typeof uet == 'function') {
@@ -121,7 +120,7 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
     }
 </script>
   <script>(function(t){ (t.events = t.events || {})["csm_head_pre_css"] = new Date().getTime(); })(IMDbTimer);</script>
-<!-- h=ics-c42xl-1a-846b0e39.us-east-1 -->
+<!-- h=ics-c42xl-1e-14705108.us-east-1 -->
 
             <link rel="stylesheet" type="text/css" href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/css/collections/title-flat-v2-109797988._CB486963292_.css" />
             <link rel="stylesheet" type="text/css" href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/css/collections/subset-trending-widget-4290501603._CB504479108_.css" />
@@ -425,19 +424,19 @@ title="Home" >IMDb</a>
 <a href="/news/ni61906571/?ref_=nv_nw_tn_1"
 > Jean-Pierre Jeunet Accuses Guillermo Del Toro of Copying ‘Delicatessen’ Dance Scene in ‘The Shape Of Water’
 </a><br />
-                        <span class="time">14 hours ago</span>
+                        <span class="time">16 hours ago</span>
                 </li>
                 <li itemprop="headline">
 <a href="/news/ni61906784/?ref_=nv_nw_tn_2"
 > Paramount to Release J.J. Abrams’ ‘Overlord’ Despite Shuffling ‘Cloverfield Paradox’ to Netflix
 </a><br />
-                        <span class="time">12 hours ago</span>
+                        <span class="time">14 hours ago</span>
                 </li>
                 <li itemprop="headline">
 <a href="/news/ni61906786/?ref_=nv_nw_tn_3"
 > Milla Jovovich to Replace Olivia Munn in Action-Thriller ‘Hummingbird’
 </a><br />
-                        <span class="time">12 hours ago</span>
+                        <span class="time">14 hours ago</span>
                 </li>
     </ul>
                     </div>
@@ -533,13 +532,13 @@ https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/navbar/imdbpro_m
         </li>
         <li class="social">
 
-    <a href="/offsite/?page-action=fol_fb&token=BCYiushyTxywQMcmZjL174q-ziBQ0p-TqYrZb3qOWVTRJFr0nUUZEXA1IAqA0PvuXp2-B0dCqTUU%0D%0Ahmalj_XJRU7B1uWImUSdlre1oG4yieXy7x9b2lxu2cXvmlLjGNKmz_cBL3vSmM3cbNhZDiApIa20%0D%0A9hb5mx0BzYoBAphfEbBLkofvkjLy6X3MoRzqJu91ciPOy_uU0lLI03wGwZKCPJG4kQ%0D%0A&ref_=tt_nv_fol_fb"
+    <a href="/offsite/?page-action=fol_fb&token=BCYt0orK_gy_nDcaElsOvBT6GI04H0ydWPaGruLoosEtJ4x3vrhRzVULyBOEwFbpt_1v_V3uA1b1%0D%0AvwilZP4_y4Q1iSqpM00q9GpQWfHbdeDSwHipS11tDaEKeuDAPvfslLWJgl3QMrcr1XJ8KsoCaOuK%0D%0AzihgxCW7mAtxPqWNTtvlxceCyjl76VfEZLB7jdCnLXC6Bs0sm9xAaLZPpX2FhR7bmw%0D%0A&ref_=tt_nv_fol_fb"
 title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_tw&token=BCYho1lWBJe5r480Ar4uOgX9Rkg_ZAAaNldaOJeN1vjopk9icCaZTaG7U1VHpTnd8IFdHe8Eqyym%0D%0A6Tknxnpz5xAxy6v15Gra7-7s0oVx2oOPw3wmOqa6T75OwbRx8DPQTU7yoFO84xcMjbswk_4h1Maq%0D%0AE3AsUOeEmVIVaBMqXiln8c4Mx38fWSW3RSvpmjMEY3SBjJJAAFbQdTw2bVsY5PSWAw%0D%0A&ref_=tt_nv_fol_tw"
+    <a href="/offsite/?page-action=fol_tw&token=BCYutKANGEyheyH8mBjt4YffhbZ6e2WYj8gZUV91PyCu8wPDG3jvr1ujD_pbIwd-vyeYPE3Rrdw-%0D%0Al6Q3RvsDxtGoi7-T1mPb0fhE8hhyG7rUsedmxRKH2A8QnrYqiLG94gXdvFCDyk4W0RCcSDbExdMw%0D%0AZiw_q_7JrjcSm-tRtAHba7Enbbj5oULkN29zqIMM4a-A5JE2A_Mm0P_dthztgVG8yg%0D%0A&ref_=tt_nv_fol_tw"
 title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_inst&token=BCYmxQpn5HUKDZ8J04EiIkF_6mmJlcKc7Rhne3B4PF8Win-8oqEMTnP3Gz7hUGsTn0kDxDu2zmKo%0D%0A73ZmkAn6wN6CiN-wCmmSOD-9uxEJMEXk4YOmreBF0Bv80KlKXRTYkvHyMjGo6RvM1vuBMRsl6iH9%0D%0AOHjIib8J9smoeOiaAnQb3PeVfjTzQk_JkwVALziSL63zBATXQ8Vy8Zt9FbVG-BpXyQ%0D%0A&ref_=tt_nv_fol_inst"
+    <a href="/offsite/?page-action=fol_inst&token=BCYtvwid-03UTLvJtPQPlUt--V7A1n8GNuCwrty_lfOfMFXZlkyFoF-PKzXcWAxxmId17dok7M-N%0D%0AXu8r3S2eFePAKQNVybjpQ-qhV5JI5ZCshsRB9WnI2M4fhJRtn08RxdG2sEuI7SXDJehqnm7SzYvD%0D%0AjC1oQcK8NTpu9drVo3wiyRqFYQSs6PnkD6CYYBAaHB089HPud9MXDLET0gCZizDlAA%0D%0A&ref_=tt_nv_fol_inst"
 title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
 </a>
         </li>
@@ -553,7 +552,7 @@ title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="de
                 <a id="facebook-signin-link" href="https://graph.facebook.com/v2.8/oauth/authorize?client_id=127059960673829&scope=email%2Cuser_about_me%2Cuser_birthday&state=eyI0OWU2YyI6ImRhMjkiLCJ1IjoiaHR0cHM6Ly93d3cuaW1kYi5jb20vP3JlZl89bnZfZmJfbGdpbiIsIm1hbnVhbExpbmsiOiJmYWxzZSJ9&redirect_uri=https%3A%2F%2Fwww.imdb.com%2Fregistration%2Ffacebookhandler%2F" class="signin-button">
                 <span class="facebook-logo"></span>
                 <span class="signin-facebook-text">Sign in with Facebook</span></a>
-                <a href="https://www.imdb.com/registration/signin?u=/title/tt0330508/%3Ffr%3Dc2M9MXxsbT01MDB8ZmI9dXx0dD0xfG14PTIwfGh0bWw9MXxjaD0xfGNvPTF8cG49MHxmdD0xfGt3PTF8cXM9S2FubmV0aGlyZXkgVGhvbmRyaW5hbHxzaXRlPWFrYXxxPUthbm5ldGhpcmV5IFRob25kcmluYWx8bm09MQ__&ref_=nv_usr_lgin_1"
+                <a href="https://www.imdb.com/registration/signin?u=/title/tt0330508/%3Ffr%3Dc2M9MXxsbT01MDB8ZmI9dXx0dD0xfG14PTIwfGh0bWw9MXxjaD0xfGNvPTF8cG49MHxmdD0xfGt3PTF8cXM9S2FubmV0aGlyZXkgVGhvbmRyaW5hbHxzaXRlPWFrYXxxPUthbm5ldGhpcmV5IFRob25kcmluYWx8bm09MQ__%26fc%3D1%26ft%3D1&ref_=nv_usr_lgin_1"
 rel="login" class="signin-other-options-text" id="nblogin" >Other Sign in options</a>
                 </p>
         </li>
@@ -1081,7 +1080,7 @@ itemprop='url'><span class="itemprop" itemprop="name">Karan</span></a>          
                             <span id="trending-list-rank-item-rank-position-number-sign-1" class="trending-list-rank-item-rank-position-number-sign">#</span>
                             <span id="trending-list-rank-item-rank-position-1" class="trending-list-rank-item-rank-position">1</span>
                             <span id="trending-list-rank-item-name-1" class="trending-list-rank-item-name"><a href="/title/tt7218518/">Padman</a></span>
-                            <span id="trending-list-rank-item-share-1" class="trending-list-rank-item-share">31.7%</span>
+                            <span id="trending-list-rank-item-share-1" class="trending-list-rank-item-share">32.0%</span>
                         </div>
                     </div>
                     <div id="trending-list-rank-item-2" class="trending-list-rank-item">
@@ -1090,7 +1089,7 @@ itemprop='url'><span class="itemprop" itemprop="name">Karan</span></a>          
                             <span id="trending-list-rank-item-rank-position-number-sign-2" class="trending-list-rank-item-rank-position-number-sign">#</span>
                             <span id="trending-list-rank-item-rank-position-2" class="trending-list-rank-item-rank-position">2</span>
                             <span id="trending-list-rank-item-name-2" class="trending-list-rank-item-name"><a href="/title/tt6774212/">Aiyaary</a></span>
-                            <span id="trending-list-rank-item-share-2" class="trending-list-rank-item-share">19.8%</span>
+                            <span id="trending-list-rank-item-share-2" class="trending-list-rank-item-share">19.7%</span>
                         </div>
                     </div>
                     <div id="trending-list-rank-item-3" class="trending-list-rank-item">
@@ -1099,7 +1098,7 @@ itemprop='url'><span class="itemprop" itemprop="name">Karan</span></a>          
                             <span id="trending-list-rank-item-rank-position-number-sign-3" class="trending-list-rank-item-rank-position-number-sign">#</span>
                             <span id="trending-list-rank-item-rank-position-3" class="trending-list-rank-item-rank-position">3</span>
                             <span id="trending-list-rank-item-name-3" class="trending-list-rank-item-name"><a href="/title/tt7484128/">Damru</a></span>
-                            <span id="trending-list-rank-item-share-3" class="trending-list-rank-item-share">13.1%</span>
+                            <span id="trending-list-rank-item-share-3" class="trending-list-rank-item-share">12.8%</span>
                         </div>
                     </div>
                     <div id="trending-list-rank-item-4" class="trending-list-rank-item">
@@ -1108,7 +1107,7 @@ itemprop='url'><span class="itemprop" itemprop="name">Karan</span></a>          
                             <span id="trending-list-rank-item-rank-position-number-sign-4" class="trending-list-rank-item-rank-position-number-sign">#</span>
                             <span id="trending-list-rank-item-rank-position-4" class="trending-list-rank-item-rank-position">4</span>
                             <span id="trending-list-rank-item-name-4" class="trending-list-rank-item-name"><a href="/title/tt7762982/">Sajjan Singh Rangroot</a></span>
-                            <span id="trending-list-rank-item-share-4" class="trending-list-rank-item-share">9.5%</span>
+                            <span id="trending-list-rank-item-share-4" class="trending-list-rank-item-share">9.2%</span>
                         </div>
                     </div>
                     <div id="trending-list-rank-item-5" class="trending-list-rank-item">
@@ -1117,7 +1116,7 @@ itemprop='url'><span class="itemprop" itemprop="name">Karan</span></a>          
                             <span id="trending-list-rank-item-rank-position-number-sign-5" class="trending-list-rank-item-rank-position-number-sign">#</span>
                             <span id="trending-list-rank-item-rank-position-5" class="trending-list-rank-item-rank-position">5</span>
                             <span id="trending-list-rank-item-name-5" class="trending-list-rank-item-name"><a href="/title/tt7581902/">Sonu Ke Titu Ki Sweety</a></span>
-                            <span id="trending-list-rank-item-share-5" class="trending-list-rank-item-share">6.9%</span>
+                            <span id="trending-list-rank-item-share-5" class="trending-list-rank-item-share">7.1%</span>
                         </div>
                     </div>
                     <div id="trending-list-rank-item-6" class="trending-list-rank-item">
@@ -1126,7 +1125,7 @@ itemprop='url'><span class="itemprop" itemprop="name">Karan</span></a>          
                             <span id="trending-list-rank-item-rank-position-number-sign-6" class="trending-list-rank-item-rank-position-number-sign">#</span>
                             <span id="trending-list-rank-item-rank-position-6" class="trending-list-rank-item-rank-position">6</span>
                             <span id="trending-list-rank-item-name-6" class="trending-list-rank-item-name"><a href="/title/tt7363076/">Raid</a></span>
-                            <span id="trending-list-rank-item-share-6" class="trending-list-rank-item-share">5.1%</span>
+                            <span id="trending-list-rank-item-share-6" class="trending-list-rank-item-share">5.0%</span>
                         </div>
                     </div>
                     <div id="trending-list-rank-item-7" class="trending-list-rank-item">
@@ -1134,8 +1133,8 @@ itemprop='url'><span class="itemprop" itemprop="name">Karan</span></a>          
                         <div class="trending-list-rank-item-data-container">
                             <span id="trending-list-rank-item-rank-position-number-sign-7" class="trending-list-rank-item-rank-position-number-sign">#</span>
                             <span id="trending-list-rank-item-rank-position-7" class="trending-list-rank-item-rank-position">7</span>
-                            <span id="trending-list-rank-item-name-7" class="trending-list-rank-item-name"><a href="/title/tt5325684/">Hate Story IV</a></span>
-                            <span id="trending-list-rank-item-share-7" class="trending-list-rank-item-share">4.5%</span>
+                            <span id="trending-list-rank-item-name-7" class="trending-list-rank-item-name"><a href="/title/tt7329858/">Pari</a></span>
+                            <span id="trending-list-rank-item-share-7" class="trending-list-rank-item-share">4.6%</span>
                         </div>
                     </div>
                     <div id="trending-list-rank-item-8" class="trending-list-rank-item">
@@ -1143,8 +1142,8 @@ itemprop='url'><span class="itemprop" itemprop="name">Karan</span></a>          
                         <div class="trending-list-rank-item-data-container">
                             <span id="trending-list-rank-item-rank-position-number-sign-8" class="trending-list-rank-item-rank-position-number-sign">#</span>
                             <span id="trending-list-rank-item-rank-position-8" class="trending-list-rank-item-rank-position">8</span>
-                            <span id="trending-list-rank-item-name-8" class="trending-list-rank-item-name"><a href="/title/tt7329858/">Pari</a></span>
-                            <span id="trending-list-rank-item-share-8" class="trending-list-rank-item-share">4.3%</span>
+                            <span id="trending-list-rank-item-name-8" class="trending-list-rank-item-name"><a href="/title/tt5325684/">Hate Story IV</a></span>
+                            <span id="trending-list-rank-item-share-8" class="trending-list-rank-item-share">4.4%</span>
                         </div>
                     </div>
                     <div id="trending-list-rank-item-9" class="trending-list-rank-item">
@@ -1212,7 +1211,7 @@ itemprop='url'><span class="itemprop" itemprop="name">Karan</span></a>          
     
 
     <div class="ab_ninja">
-<span class="widget_header"> <span class="oneline"> <a href="/list/ls025849840/videoplayer/vi2144581657?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=c5ae318e-6372-446c-8df7-fe1ad731f849&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_ecw_112vod3_rhs_hd" > <h3>IMDb on Location: Inside Celebrity Trailers</h3> </a> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_center"> <div class="ninja_image first_image last_image" style="width:307px;height:auto;" > <div style="width:307px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/list/ls025849840/videoplayer/vi2144581657?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=c5ae318e-6372-446c-8df7-fe1ad731f849&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_ecw_112vod3_rhs_i_1" class="video-modal" data-refsuffix="tt_ecw_112vod3_rhs" data-ref="tt_ecw_112vod3_rhs_i_1"> <img itemprop="image" class="pri_image" title="Watch now" alt="Watch now" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjAyMzI0NDc4NV5BMl5BanBnXkFtZTgwOTM5MDI3NDM@._CR398,16,1408,1055_UX614_UY460._SY230_SX307_AL_.jpg" /> <img alt="Watch now" title="Watch now" class="image_overlay overlay_mouseout" src="https://images-na.ssl-images-amazon.com/images/G/01/IMDb/icon/play-button._CB318667375_.png" data-src-x2="https://images-na.ssl-images-amazon.com/images/G/01/IMDb/icon/play-button._CB318667375_.png" /> <img alt="Watch now" title="Watch now" class="image_overlay overlay_mouseover" src="https://images-na.ssl-images-amazon.com/images/G/01/IMDb/icon/play-button-hover._CB318667374_.png" data-src-x2="https://images-na.ssl-images-amazon.com/images/G/01/IMDb/icon/play-button-hover._CB318667374_.png" /> </a> </div> </div> </div> </div> </div> </div> </div> </div> <p class="blurb">"<a href="/title/tt7549864/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=c5ae318e-6372-446c-8df7-fe1ad731f849&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_ecw_112vod3_rhs_lk1">The IMDb Show</a>" explores the sometimes lavish trailers used by your favorite celebs.</p> <p class="seemore"><a href="/list/ls025849840/videoplayer/vi2144581657?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=c5ae318e-6372-446c-8df7-fe1ad731f849&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_ecw_112vod3_rhs_sm" class="position_bottom supplemental" >Watch now</a></p>    </div>
+<span class="widget_header"> <span class="oneline"> <a href="/oscars/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e29e8d21-6238-4c36-9b4a-31390f278331&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_acd_promo_rhs_hd" > <h3>Get Ready for the 2018 Academy Awards</h3> </a> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_center"> <div class="ninja_image first_image last_image" style="width:307px;height:auto;" > <div style="width:307px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/oscars/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e29e8d21-6238-4c36-9b4a-31390f278331&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_acd_promo_rhs_i_1" > <img itemprop="image" class="pri_image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMzcxMTI3OTI3NF5BMl5BanBnXkFtZTgwMTI4NDQxNDM@._CR742,205,943,706_UX614_UY460._SY230_SX307_AL_.jpg" /> </a> </div> </div> </div> </div> </div> </div> </div> </div> <p class="blurb">Visit our <a href="/oscars/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e29e8d21-6238-4c36-9b4a-31390f278331&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_acd_promo_rhs_lk1">Oscars Guide</a> for a <a href="/oscars/2018-oscars-snubs-and-surprises/ls021360258/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e29e8d21-6238-4c36-9b4a-31390f278331&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_acd_promo_rhs_lk2">round-up of snubs and surprises</a>, <a href="/oscars/2018-acting-nominees-in-character/rg4188052224/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e29e8d21-6238-4c36-9b4a-31390f278331&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_acd_promo_rhs_lk3">photos of the contenders</a>, and the <a href="/oscars/nominations/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e29e8d21-6238-4c36-9b4a-31390f278331&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_acd_promo_rhs_lk4">full list of nominees</a>.</p> <p class="seemore"><a href="/oscars/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e29e8d21-6238-4c36-9b4a-31390f278331&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_acd_promo_rhs_sm" class="position_bottom supplemental" >Visit our Guide to the Oscars</a></p>    </div>
     
 
                         
@@ -1686,7 +1685,7 @@ itemprop='url'>View more styles</a>
                                 
 
     
-            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','ChartPromotionWidget',{wb:1});}</script>
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','TrendingPromotionWidget',{wb:1});}</script>
                                 
 
                     
@@ -1696,7 +1695,7 @@ itemprop='url'>View more styles</a>
     
 
     <div class="ab_widget">
-<span class="widget_header"> <span class="oneline"> <a href="/india/top-rated-tamil-movies?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b2a2c10a-f0e5-4ab6-b77c-47e386d702fa&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_tr_ta_hd" > <h3>Top Rated Tamil Movies</h3> </a> </span> </span> <p class="blurb">See the top 50 Tamil movies as rated by IMDb users – from evergreen hits to recent chartbusters.</p> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_left"> <div class="ninja_image first_image" style="width:116px;height:auto;" > <div style="width:116px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/title/tt0140377?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b2a2c10a-f0e5-4ab6-b77c-47e386d702fa&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_tr_ta_i_1" > <img itemprop="image" class="pri_image" title="Michael Madana Kamarajan (1990)" alt="Michael Madana Kamarajan (1990)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMGZhNDdjY2ItMmY2MC00NTJlLWIyNDktZGJmMThmODFjNzhlXkEyXkFqcGdeQXVyNDkwNTY5OA@@._V1_SY172_CR7,0,116,172_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/title/tt0140377?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b2a2c10a-f0e5-4ab6-b77c-47e386d702fa&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_tr_ta_cap_pri_1" > <i>Michael Madana Kamarajan</i> </a> </div> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image" style="width:116px;height:auto;" > <div style="width:116px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/title/tt5611648?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b2a2c10a-f0e5-4ab6-b77c-47e386d702fa&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_tr_ta_i_2" > <img itemprop="image" class="pri_image" title="Joker (2016)" alt="Joker (2016)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTg3NzU5Mzg1MF5BMl5BanBnXkFtZTgwODIxMDg4MDI@._V1_SY172_CR5,0,116,172_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/title/tt5611648?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b2a2c10a-f0e5-4ab6-b77c-47e386d702fa&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_tr_ta_cap_pri_2" > <i>Joker</i> </a> </div> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image" style="width:116px;height:auto;" > <div style="width:116px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/title/tt0096827?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b2a2c10a-f0e5-4ab6-b77c-47e386d702fa&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_tr_ta_i_3" > <img itemprop="image" class="pri_image" title="Apoorva Sagodharargal (1989)" alt="Apoorva Sagodharargal (1989)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BZWMwNzRhMjYtYmIxMi00OTJiLWJlMzMtNzkwY2FjOWFmNzQ0XkEyXkFqcGdeQXVyMjM3NjAwODc@._V1_SY172_CR95,0,116,172_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/title/tt0096827?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b2a2c10a-f0e5-4ab6-b77c-47e386d702fa&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_tr_ta_cap_pri_3" > <i>Apoorva Sagodharargal</i> </a> </div> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image" style="width:116px;height:auto;" > <div style="width:116px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/title/tt0119385?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b2a2c10a-f0e5-4ab6-b77c-47e386d702fa&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_tr_ta_i_4" > <img itemprop="image" class="pri_image" title="Iruvar (1997)" alt="Iruvar (1997)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNDVmYWIwM2ItYzhkNy00YTE3LTgxOGQtZDNkOGRiYzQxZTUzXkEyXkFqcGdeQXVyMjc1MjY3MTQ@._V1_SY172_CR1,0,116,172_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/title/tt0119385?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b2a2c10a-f0e5-4ab6-b77c-47e386d702fa&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_tr_ta_cap_pri_4" > <i>Iruvar</i> </a> </div> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image last_image" style="width:116px;height:auto;" > <div style="width:116px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/title/tt3569782?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b2a2c10a-f0e5-4ab6-b77c-47e386d702fa&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_tr_ta_i_5" > <img itemprop="image" class="pri_image" title="Jigarthanda (2014)" alt="Jigarthanda (2014)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BODExZjUzMDktNWEwNy00MzRkLWI2ZTctZTNmZTViNDhkMmU2XkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_SY172_CR5,0,116,172_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/title/tt3569782?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b2a2c10a-f0e5-4ab6-b77c-47e386d702fa&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_tr_ta_cap_pri_5" > <i>Jigarthanda</i> </a> </div> </div> </div> </div> </div> </div> </div> </div> </div> <p class="seemore"><a href="/india/top-rated-tamil-movies?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b2a2c10a-f0e5-4ab6-b77c-47e386d702fa&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_tr_ta_sm" class="position_bottom supplemental" >See more</a></p>    </div>
+<span class="widget_header"> <span class="oneline"> <a href="/india/tamil?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=02b8a8f8-3992-4dc2-a72d-dadf8f751cc9&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_tp_hd" > <h3>Trending Tamil Movies</h3> </a> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_left"> <div class="ninja_image first_image" style="width:116px;height:auto;" > <div style="width:116px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/tamil?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=02b8a8f8-3992-4dc2-a72d-dadf8f751cc9&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_tp_i_1" > <img itemprop="image" class="pri_image" title="Thaanaa Serndha Koottam (2018)" alt="Thaanaa Serndha Koottam (2018)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BZGUwOWQxZmItNjVmYy00MTUzLWIzNTItMzcyYjJkYmU1ZDRjXkEyXkFqcGdeQXVyNDA1NTY2Nzk@._V1_SY172_CR5,0,116,172_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/india/tamil?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=02b8a8f8-3992-4dc2-a72d-dadf8f751cc9&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_tp_cap_pri_1" > <i>Thaanaa Serndha Koottam</i> </a> </div> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image" style="width:116px;height:auto;" > <div style="width:116px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/tamil?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=02b8a8f8-3992-4dc2-a72d-dadf8f751cc9&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_tp_i_2" > <img itemprop="image" class="pri_image" title="Mersal (2017)" alt="Mersal (2017)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BOGQzOWJmYTQtMTk5OC00YjQ5LTkxYTYtOTZmYzgyYWFjMzUyXkEyXkFqcGdeQXVyODE0NjUxNzY@._V1_SX116_CR0,0,116,172_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/india/tamil?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=02b8a8f8-3992-4dc2-a72d-dadf8f751cc9&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_tp_cap_pri_2" > <i>Mersal</i> </a> </div> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image" style="width:116px;height:auto;" > <div style="width:116px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/tamil?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=02b8a8f8-3992-4dc2-a72d-dadf8f751cc9&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_tp_i_3" > <img itemprop="image" class="pri_image" title="Velaikkaran (2017)" alt="Velaikkaran (2017)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjBlOGJjYmItNTI3MS00MmM4LWE4YjMtMjU0OWJlODZlZjgzXkEyXkFqcGdeQXVyNjQ3ODkxMjE@._V1_SY172_CR3,0,116,172_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/india/tamil?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=02b8a8f8-3992-4dc2-a72d-dadf8f751cc9&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_tp_cap_pri_3" > <i>Velaikkaran</i> </a> </div> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image" style="width:116px;height:auto;" > <div style="width:116px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/tamil?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=02b8a8f8-3992-4dc2-a72d-dadf8f751cc9&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_tp_i_4" > <img itemprop="image" class="pri_image" title="Oru Nalla Naal Paarthu Soldren (2018)" alt="Oru Nalla Naal Paarthu Soldren (2018)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BZDgxODg3NzEtZWE5Yy00ZmQ5LWFiYzgtMDU3MDA4MGQ0Yzc4XkEyXkFqcGdeQXVyMzYxOTQ3MDg@._V1_SY172_CR1,0,116,172_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/india/tamil?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=02b8a8f8-3992-4dc2-a72d-dadf8f751cc9&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_tp_cap_pri_4" > <i>Oru Nalla Naal Paarthu Soldren</i> </a> </div> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image last_image" style="width:116px;height:auto;" > <div style="width:116px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/tamil?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=02b8a8f8-3992-4dc2-a72d-dadf8f751cc9&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_tp_i_5" > <img itemprop="image" class="pri_image" title="Balloon (2017)" alt="Balloon (2017)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNDQwMWMwMjctZDFmMy00NmExLWJkM2UtZWE5MGZhMTUxZDE0XkEyXkFqcGdeQXVyMzYxOTQ3MDg@._V1_SX116_CR0,0,116,172_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/india/tamil?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=02b8a8f8-3992-4dc2-a72d-dadf8f751cc9&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_tp_cap_pri_5" > <i>Balloon</i> </a> </div> </div> </div> </div> </div> </div> </div> </div> </div> <p class="seemore"><a href="/india/tamil?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=02b8a8f8-3992-4dc2-a72d-dadf8f751cc9&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-8&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_tp_sm" class="position_bottom supplemental" >See what's trending now</a></p>    </div>
     
 
                         
@@ -1705,7 +1704,7 @@ itemprop='url'>View more styles</a>
 
 
             <script type="text/javascript">
-                if(typeof uex === 'function'){uex('ld','ChartPromotionWidget',{wb:1});}
+                if(typeof uex === 'function'){uex('ld','TrendingPromotionWidget',{wb:1});}
             </script>
         
 
@@ -1735,7 +1734,7 @@ itemprop='url'>View more styles</a>
     
 
     <div class="ab_ninja">
-<span class="widget_header"> <span class="oneline"> <a href="/india/most-anticipated-indian-movies-2018/ls021298614?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_India_WL_Jun_hd" > <h3>Most Anticipated Indian Movies of 2018</h3> </a> </span> </span> <p class="blurb">We've tallied your votes to see which 2018 Indian movies IMDb fans are most looking forward to watching. Learn more about the movies that dominated our recent <a href="https://www.imdb.com/poll/FObiGRGanfM/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=hm_poll_in">poll</a>.</p> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_left"> <div class="ninja_image first_image" style="width:148px;height:auto;" > <div style="width:148px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/most-anticipated-indian-movies-2018/ls021298614?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_India_WL_Jun_i_1" > <img itemprop="image" class="pri_image" title="Thugs of Hindostan (2018)" alt="Thugs of Hindostan (2018)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTViZGIyNDYtNThlNS00Y2JhLWExYTItZGYwZjliNThjMjc0XkEyXkFqcGdeQXVyNTkzNDQ4ODc@._V1_QL50_SY219_CR8,0,148,219_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image" style="width:148px;height:auto;" > <div style="width:148px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/most-anticipated-indian-movies-2018/ls021298614?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_India_WL_Jun_i_2" > <img itemprop="image" class="pri_image" title="Gold (2018)" alt="Gold (2018)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTgwZjZlYWItNmJkNC00NjUwLWIzNTctMGUxZDk3NGZkYmFlXkEyXkFqcGdeQXVyMjM1NjkwMDI@._V1_SY219_CR8,0,148,219_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image" style="width:148px;height:auto;" > <div style="width:148px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/most-anticipated-indian-movies-2018/ls021298614?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_India_WL_Jun_i_3" > <img itemprop="image" class="pri_image" title="Saaho (2018)" alt="Saaho (2018)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNzUzNzQ2NDM4Nl5BMl5BanBnXkFtZTgwMzk1MDAwNDI@._V1_SX148_CR0,0,148,219_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image last_image" style="width:148px;height:auto;" > <div style="width:148px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/most-anticipated-indian-movies-2018/ls021298614?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_India_WL_Jun_i_4" > <img itemprop="image" class="pri_image" title="Kaala (2018)" alt="Kaala (2018)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjlkMGU5NGYtYmU2NS00ZjliLWI5ZjEtZjhhNjZmODRlYzc2XkEyXkFqcGdeQXVyNzY0NTAzNjA@._V1_SX148_CR0,0,148,219_AL_.jpg" /> </a> </div> </div> </div> </div> </div> </div> </div> </div> <p class="seemore"><a href="/india/most-anticipated-indian-movies-2018/ls021298614?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_India_WL_Jun_sm" class="position_bottom supplemental" >See the full list</a></p>    </div>
+<span class="widget_header"> <span class="oneline"> <a href="/india/most-anticipated-indian-movies-2018/ls021298614?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_India_WL_Jun_hd" > <h3>Most Anticipated Indian Movies of 2018</h3> </a> </span> </span> <p class="blurb">We've tallied your votes to see which 2018 Indian movies IMDb fans are most looking forward to watching. Learn more about the movies that dominated our recent <a href="https://www.imdb.com/poll/FObiGRGanfM/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=hm_poll_in">poll</a>.</p> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_left"> <div class="ninja_image first_image" style="width:148px;height:auto;" > <div style="width:148px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/most-anticipated-indian-movies-2018/ls021298614?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_India_WL_Jun_i_1" > <img itemprop="image" class="pri_image" title="Thugs of Hindostan (2018)" alt="Thugs of Hindostan (2018)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTViZGIyNDYtNThlNS00Y2JhLWExYTItZGYwZjliNThjMjc0XkEyXkFqcGdeQXVyNTkzNDQ4ODc@._V1_QL50_SY219_CR8,0,148,219_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image" style="width:148px;height:auto;" > <div style="width:148px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/most-anticipated-indian-movies-2018/ls021298614?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_India_WL_Jun_i_2" > <img itemprop="image" class="pri_image" title="Gold (2018)" alt="Gold (2018)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTgwZjZlYWItNmJkNC00NjUwLWIzNTctMGUxZDk3NGZkYmFlXkEyXkFqcGdeQXVyMjM1NjkwMDI@._V1_SY219_CR8,0,148,219_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image" style="width:148px;height:auto;" > <div style="width:148px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/most-anticipated-indian-movies-2018/ls021298614?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_India_WL_Jun_i_3" > <img itemprop="image" class="pri_image" title="Saaho (2018)" alt="Saaho (2018)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNzUzNzQ2NDM4Nl5BMl5BanBnXkFtZTgwMzk1MDAwNDI@._V1_SX148_CR0,0,148,219_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image last_image" style="width:148px;height:auto;" > <div style="width:148px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/most-anticipated-indian-movies-2018/ls021298614?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_India_WL_Jun_i_4" > <img itemprop="image" class="pri_image" title="Kaala (2018)" alt="Kaala (2018)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjlkMGU5NGYtYmU2NS00ZjliLWI5ZjEtZjhhNjZmODRlYzc2XkEyXkFqcGdeQXVyNzY0NTAzNjA@._V1_SX148_CR0,0,148,219_AL_.jpg" /> </a> </div> </div> </div> </div> </div> </div> </div> </div> <p class="seemore"><a href="/india/most-anticipated-indian-movies-2018/ls021298614?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e811224a-882f-4798-992d-81440c07da4e&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-9&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_India_WL_Jun_sm" class="position_bottom supplemental" >See the full list</a></p>    </div>
     
 
                         
@@ -2629,7 +2628,7 @@ Mumtaj</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt5934894|imdb|7.6|7.6|p13nsims-title|tt0330508|title|main" data-ga-identifier=""
-title="Users rated this 7.6/10 (1,027 votes) - click stars to rate" >
+title="Users rated this 7.6/10 (1,028 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 106.4px">&nbsp;</span>
 <span class="rating-stars">
@@ -4154,7 +4153,7 @@ onclick="imdb.contribution.clickHandler(event)" >Review this title</a>&nbsp;&raq
     
 
     <div class="ab_ninja">
-<span class="widget_header"> <span class="oneline"> <h3>Top Rated and Trending Indian Movies</h3> </span> </span> <p class="blurb">Check out the Indian movies with the highest ratings from IMDb users, as well as the movies that are trending in real time.</p> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_left"> <div class="ninja_image first_image" style="width:307px;height:auto;" > <div style="width:307px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/top-rated-indian-movies?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d28039e3-2a8c-43e1-adf6-7878efe45914&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-20&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_trnt_i_1" > <img itemprop="image" class="pri_image" title="Amitabh Bachchan and Sumita Sanyal in Anand (1971)" alt="Amitabh Bachchan and Sumita Sanyal in Anand (1971)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTE5MDI5N2UtODRmZi00N2YzLWEyYjEtMDYxY2FlMGJjYThlXkEyXkFqcGdeQXVyNjgzNDU3OTg@._V1_QL50_SY230_CR51,0,307,230_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/india/top-rated-indian-movies?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d28039e3-2a8c-43e1-adf6-7878efe45914&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-20&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_trnt_cap_pri_1" > Top Rated Indian Movies </a> </div> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image last_image" style="width:307px;height:auto;" > <div style="width:307px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/released?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d28039e3-2a8c-43e1-adf6-7878efe45914&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-20&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_trnt_i_2" > <img itemprop="image" class="pri_image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTc4NDZjZjYtZWY3Ni00ODM4LWI3NjktMmZhMDljN2VjYzEzXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._CR689,512,2734,2048_UX614_UY460._SY230_SX307_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/india/released?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d28039e3-2a8c-43e1-adf6-7878efe45914&pf_rd_r=0VTRSSYT6VSYE61YMCYP&pf_rd_s=center-20&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_trnt_cap_pri_2" > Trending Indian Movies </a> </div> </div> </div> </div> </div> </div> </div> </div> </div>    </div>
+<span class="widget_header"> <span class="oneline"> <h3>Top Rated and Trending Indian Movies</h3> </span> </span> <p class="blurb">Check out the Indian movies with the highest ratings from IMDb users, as well as the movies that are trending in real time.</p> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_left"> <div class="ninja_image first_image" style="width:307px;height:auto;" > <div style="width:307px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/top-rated-indian-movies?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d28039e3-2a8c-43e1-adf6-7878efe45914&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-20&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_trnt_i_1" > <img itemprop="image" class="pri_image" title="Amitabh Bachchan and Sumita Sanyal in Anand (1971)" alt="Amitabh Bachchan and Sumita Sanyal in Anand (1971)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTE5MDI5N2UtODRmZi00N2YzLWEyYjEtMDYxY2FlMGJjYThlXkEyXkFqcGdeQXVyNjgzNDU3OTg@._V1_QL50_SY230_CR51,0,307,230_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/india/top-rated-indian-movies?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d28039e3-2a8c-43e1-adf6-7878efe45914&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-20&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_trnt_cap_pri_1" > Top Rated Indian Movies </a> </div> </div> </div> </div> </div><div class="ninja_image ninja_image_fixed_padding widget_padding"></div><div class="ninja_image last_image" style="width:307px;height:auto;" > <div style="width:307px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/india/released?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d28039e3-2a8c-43e1-adf6-7878efe45914&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-20&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_trnt_i_2" > <img itemprop="image" class="pri_image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BOTc4NDZjZjYtZWY3Ni00ODM4LWI3NjktMmZhMDljN2VjYzEzXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._CR689,512,2734,2048_UX614_UY460._SY230_SX307_AL_.jpg" /> </a> </div> <div class="widget_caption caption_below"> <div class="primary"> <a href="/india/released?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d28039e3-2a8c-43e1-adf6-7878efe45914&pf_rd_r=1W6G7JS2VCN8QMYQ2F6C&pf_rd_s=center-20&pf_rd_t=15021&pf_rd_i=tt0330508&ref_=tt_india_trnt_cap_pri_2" > Trending Indian Movies </a> </div> </div> </div> </div> </div> </div> </div> </div> </div>    </div>
     
 
                         
@@ -4259,13 +4258,13 @@ onclick="imdb.contribution.clickHandler(event)" >Review this title</a>&nbsp;&raq
                 <div class="col outside">
     <h3>IMDb Everywhere</h3>
     <div class="app-links">
-    <a href="/offsite/?page-action=ft_app_apple&token=BCYmy-K6xrkNU2W1T0sfS9Hy1I82GsNf50CeVapBfxUaK7oK0AFCbbd2CoGhzZS2d_sL8UG_sZxi%0D%0ALoF85d6cnaKSzMdwbXK5ctvVebm877VWNs0Sw913f1ZaNJIQ_pCKE1xZUJg0vO5PuNSW9Tp8X7Xe%0D%0ACXeZsH0k_lFabPIdMXZiOzCJVlBjOkvJBWRqjWqj8ykb5gXAur5L7ynhDfJabfbPweW3xhvrbgVu%0D%0AzyFyAlJ-NL0%0D%0A&ref_=ft_app_apple"
+    <a href="/offsite/?page-action=ft_app_apple&token=BCYs6DImDHyaaiHCs_Mp0a-qTMHNE0h0vEUAs2JKxWEXmAqsG3Qr8sdtgmbk6n7kG5hkbAx_P-Z4%0D%0AiEq4zlgI1BqOG4NmkpiU3LOLdn4r-6rMSXbMejsZVaqJY1CJHsQbcdupLXII6YS4PNcq7eIqGR8H%0D%0AkgzOURml3TmuRBr0SoRY-zP6CpSBOPDhv94W1TDRiqBa_xhEmKKWqQcKqkhE3XPw8wVoh0JZbQy5%0D%0AihakJZ0ka6k%0D%0A&ref_=ft_app_apple"
 title="Get the IMDb App on the Apple App Store" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-apple" ></span>
 </a>
-    <a href="/offsite/?page-action=ft_app_google&token=BCYuBonXFTsdJ_o9Nc3rfZWz7islu3ExB3qTQZOYprVy1FLyM6MTA3fS5RKbjdrc4E0IsDhzEz8Y%0D%0AalX37GRJ10VgvNxwNqF6Z7Gihg2eyxVaDJXFbYALpAG15zZjjoMUU21AowviaCNj5bBoxSEG0Sa6%0D%0Aq_qjBR4Ll00jKE5U_K8bBndR2M-tBDILWNzaKClhCVFtctGrm4OU3SQUfY3w4_TOq2i2eulijjST%0D%0AbXzoQK-jV4Y%0D%0A&ref_=ft_app_google"
+    <a href="/offsite/?page-action=ft_app_google&token=BCYsaZXAjMhaWJO78zshddHkMyhVDCvGEnK8E6OQznAf1GjqR6h_V-9kWSFW0-l6yUja35_MzD_0%0D%0AgDGiW9BgnAmcpBj8o41vanQtvrS4HKQ_u2ijcncLM2zU4hR9P3k4geX3gGK6sODZES-YS5AyLlOk%0D%0Asossb8h46ox3iP8ZhYGDy1MM8bJEig-gd7k6neo2rv4qR5GNF0uWSiR9qtWyToZv-BexpXkNmVaV%0D%0AH_72Q4mz3ug%0D%0A&ref_=ft_app_google"
 title="Get the IMDb app on Google Play" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-google" ></span>
 </a>
-    <a href="/offsite/?page-action=ft_app_amazon&token=BCYuv-Yn8Tkqo8rAkAfiW-Q8D8ZwBQ8x0oQ70DxlrCH9bECV9RsRm9dFDDuvXWcKrVe9TPAehQOr%0D%0ACTQibJyAxCY8kppRQP6Vi_7WegZLy9SvcMunqHWLJg97znttsy0EaZ4E4xwXewtXDfuuDXW4igPz%0D%0A5q6VDHmPSpaDJ_LxPpO-7Wi5YSYFZ5fCgsofvi1vpHeP7gNbDqG5_Lmu5Ae_jN07jD1kyoVrmPjM%0D%0AZLDS9XNTNtYSAqzxsvG0WkPz_WHq4ZumpVttWPjfc5disCnn3W7bgMWtH6k8ezAs5E_Vg_L__660%0D%0A0nWQkdEDe5BCF9r265E8aQWLOszOCdVN9nsDCkiuHxr43jJC4FvESLQQSbz6-YZpTyzft8x3sdA4%0D%0AmX9zJ3_GplR1nHoZ36TDwbIKPFID2sMOcxrAUzMx1BQaJldXIA0%0D%0A&ref_=ft_app_amazon"
+    <a href="/offsite/?page-action=ft_app_amazon&token=BCYm8CO0W5JIgxB0I8Yf8idJU-TVx3U_yAFfU0fjpTTn7woGqetcsq2YB7buA3aeqtXJpcOXVCK8%0D%0Aw0GBmrP0jG77Kw3U4vuSgm_3dFHvhHeA2Atru_sqdLo3j-BiAvRs1QicQl8-Z-kAQdwhfKvtvcP8%0D%0ATG6Qjxso1FfyIG3Fc2WceCSEqT7CNeNTp7QXTLp9KS71l8fDklTu3yN9arEmrAt2AVJZoD_cpBlp%0D%0AHwj0K4YgMRY4mPA4cXglQRkSpLzKwB5TRlx_t412jBJyJ1jyv0dUZfjkFysQsaPuZotDpf9oCG5H%0D%0AhtJlkuveY6W5yqD5MurjejIl_74Y1t3i3H89jcjd1jNf29TphgomD0BBLgLNBxi8nhLtqwFDk5VE%0D%0AtXhk4qUZbwyMGzdS5L0Wm52wBgRxxSR6q9kgKdYWIW9hNB-mJ20%0D%0A&ref_=ft_app_amazon"
 title="Get the IMDb app on Amazon Appstore for Android" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-amazon" ></span>
 </a>
     </div>
@@ -4281,13 +4280,13 @@ class="touchlink" >IMDb Mobile site</a>
       Follow IMDb on
       <div>
 
-    <a href="/offsite/?page-action=fol_fb&token=BCYut7iUudyiI7OUC4GymmyTvAmifq8JoovYRB8L4SvP5w9IpCkyg2fwMnuZz-9Cy-w8QYGctyI2%0D%0ApEbbAetVP6PhhidEFCtak5287iaSM3jPLmJjEwUC68nG88rHu8FZTrl9YlLBnOP2ToKpmJemD3cQ%0D%0AsBhqV-cQDMNRhlH_5P0EdwRn2KQVl6dBk14K98TN9lxkY2kmUp6L3_Gai13mcACf7g%0D%0A&ref_=tt_ft_fol_fb"
+    <a href="/offsite/?page-action=fol_fb&token=BCYh9SAa82BSTAQ06Kisy-MDWnNTKxJ2sL1cGFmWQHn3RmMwzgOw3qGPh9PfP04xVwEeKKCxq1_B%0D%0ATH42T-fXju5VDjPNe84ye_NiT5peNmB80y3FRnni5EDqQvMPnjTh0pZvUlJvKKim-eL7OhQtzW2s%0D%0AYUkMvVSw2BDCEjGYAu3hURCK0FtBbyE7JASjCfZN_LJCj7tWBTXoGKS913uqcB-W7Q%0D%0A&ref_=tt_ft_fol_fb"
 title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_tw&token=BCYkNfJFctsA_3cvSlkXs8991-G7vkkjkdeqn42evRY8oYC4CcuK5BKYnomBzdjc43jSVsKXgOTA%0D%0A40i2AqVYe5blFsQeOTrQof5XsOgUfyPNkWNNyl6X9uQrwny2bS12lwEuQB3JUZCHsU5_1we68eyi%0D%0AGVYzQYvkkAAUNQXW6k1x-GQR39FxFPYbdgz7AMeTfvkFunUgCaMWE4tMpZmPK3Xu7g%0D%0A&ref_=tt_ft_fol_tw"
+    <a href="/offsite/?page-action=fol_tw&token=BCYrYjeAhHtIoOBzMeWs7anfKxO8VzSDeO6F8tHB0yuZVPqJ-cyHmWy3f8-bO_yTKx89T5n9nQD2%0D%0Ak14pnrjhHddCUxo2pU57nwNshsOzk98XUYu0oTWHImpBeDa-F2SC3OzYHlQ5nv4YVHhY1SJ4dHYf%0D%0AHl6_VKMdkgaQ72awWJt3NXONsT1Q09LhezR3wzrnW5HqP08NDVEVZ7z4vYoPplbRsA%0D%0A&ref_=tt_ft_fol_tw"
 title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_inst&token=BCYpSe7H56DuCRZG4LW5iO5Qhngi3tbr5rcTdrhsz7AgtUEMopqom0phnIJ04xf8ZTfs0JBk6e0m%0D%0AgGrmcRpvhez6lDwaawCiKOixoZDc0OIFR3qDu2PbVte03_5Pp-DGgaupWBHLDYI7wXXyV8RIRTgw%0D%0AggTfuG6igRm-sEAJZUUkiOPkX9e6j_jTjJrJnC8mae026iEzErcptz3Bz9o2gNn_Jg%0D%0A&ref_=tt_ft_fol_inst"
+    <a href="/offsite/?page-action=fol_inst&token=BCYn4T6tTSDVYrYGo_WjKcVn7hmC_5qm0jjIuBI1lo_mRX06jpzlaOKyXVy5oIWRnOWd0gvPy-ui%0D%0AMLdcfKjWiv7ORopdYVvtkLYP_VHm5a-JjCx9C-DIs_uLFA5lui0K68EMje4GabbtMxpS6wqiNkB4%0D%0AiiRHmeevcXVBhQrSS8NmsWeJIdzYjntzHTi9lZedkFjAuZB9PistD-l4AjfWiNeJoQ%0D%0A&ref_=tt_ft_fol_inst"
 title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
 </a>
       </div>
@@ -4338,10 +4337,10 @@ title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="de
             <ul class="unstyled">
                 <li><a href="https://pro.imdb.com/signup/index.html?rf=cons_ft_hm&ref_=cons_ft_hm"
 >IMDbPro</a></li>
-                <li>    <a href="/offsite/?page-action=ft-mojo&token=BCYhMC_rxge_e_nBvAZQkbRDja7wb4hmCgEYahd7eUgEqZJobC8YjLxnt1fWWGDgsLuz8f017Qd6%0D%0ALoHJUOyRyZGuc3zlB2p6vphVpovQEafuw7OAinYGEjm6DY_uXZ0Kd7FNO2KWxo1zP2xYJil7WnAU%0D%0AwM2pJEc3AMNTKd9F0gIPvmEg3yD9IJ_DE86CENJh397vvObhJPUxEngO8BWGs5JCcA%0D%0A&ref_=ft_bom"
+                <li>    <a href="/offsite/?page-action=ft-mojo&token=BCYp6r203wk91XOzXx-mUkqWSohVh83ozzfQBuCpHvwcXoS8-uwSMWlLUcyQk8zoYZrCN0X2rP1H%0D%0A5BiwR8sGVrvCLstmILknOMWJ58CFD4niwTp2FAlkIIBK49OZBTRbvS4R-CL0KIcwqP9WuwfKZXoI%0D%0ABp2QUqWm2CNuh0P9_QlgBEHoUaNiX4XXHmVETQb0uESEL-LEfxJX0eSrplibwTlCDQ%0D%0A&ref_=ft_bom"
 itemprop='url'>Box Office Mojo</a>
 </li>
-                <li>    <a href="/offsite/?page-action=ft-wab&token=BCYoOcOftWCpQM_0K8VC2DA8r3zKVgl3qLSGks9289TiSNFIZTN982ulZzKixsz33khwysTDr81m%0D%0AVeBTekqAYNeYL5-vP9jthe9H_L3SDsyAInckvELF0EAFBXNSGI1_pjvF198TpFDEVJLGp2M7YnNk%0D%0AsPKedYdeQS2PvY-7KdGqiR7K5B-fS3iEStzp_S-B0vxekCMM2WjDHu9HP87PRwjeVQ%0D%0A&ref_=ft_wab"
+                <li>    <a href="/offsite/?page-action=ft-wab&token=BCYnT7-XK_hxBP_R1wRiz4JDUskO5_HjCo6xskPuevG5oAWkjX2fxcspntgAuki6ikW5xu1N2U1D%0D%0Ab7AlzgOEtMSKSP6tFNtDz-iLB6uhvJV9r4Hn_KkGIk860H9ZXtwqKm96C_oQkMsLw44p6VxglWwW%0D%0ALeliLT_rD75v3OkgywRyUd-fZtge8_5NXKohwYrAEiZ1NHcohmPdeAD5JDuYfxa6MQ%0D%0A&ref_=ft_wab"
 itemprop='url'>Withoutabox</a>
 </li>
                 <li class="spacer"></li>
@@ -4349,7 +4348,7 @@ itemprop='url'>Withoutabox</a>
 >Conditions of Use</a></li>
                 <li><a href="/privacy?ref_=ft_pvc"
 >Privacy Policy</a></li>
-                <li>    <a href="/offsite/?page-action=ft-iba&token=BCYj2Cuf4hjhu7iMBFWuwDTEY6MlCZwebArITOZhrVvgXNNx2O5JJhjRNB0n9hWYEdDXWRU-SK3b%0D%0Am6dKCUf9hBROe-pc-7XLIbU3Qmigt-hF_eAvXAfEkIDFMlXsoCMRTwu6MRJAhAQTCFVzUIzrSBgC%0D%0A1b37ReTRTAyOjW532g5h3RMX4hjBBS2Y3n0rC5CPOVxCOsqCOntZVnRxZDw-Gone-gf4fhb2hdxS%0D%0AIOaBHdOJ8FegZJ5YT6k2SnpnIyu1VO3X%0D%0A&ref_=ft_iba"
+                <li>    <a href="/offsite/?page-action=ft-iba&token=BCYtMiDXOiIwwWtnRA1p_2fyCcjwltdL-bT8ooVOU5S9ujFXUkCDMomWbfJv-rAa9sjZHIssXRSu%0D%0ALgvqvpoxS3TriYRAT6DF2TtDuHnxhJj8LiSSApZgEY-YTk6lyPYE1zoDPp1zqF3ZUera5D2KkS7V%0D%0AV9PQuE780AXvgfKCMePUDWCpFbh_ob6gbGMuxBqtZzBNtHHAXI0L9EDXBNh1mu8APn6Anw1pjMZd%0D%0AeeQbTvoHIb8cpMooOOzlwvpxRtAksSv8%0D%0A&ref_=ft_iba"
 itemprop='url'>Interest-Based Ads</a>
 </li>
                 <li class="spacer"></li>
@@ -4386,7 +4385,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-aiv&token=BCYo-7ybCxSn1_76fFTECDZ7eGriMX2H5CJhooEZQ4Jb_a4GlTT7Wd5sV83XC4nBwyX87GTIneol%0D%0A-XI5rPI8BxQEYPJBR6O53N7D7J6T71yqCkWPNeFeMykojWswXbFNVi6ut3RFSbkAoEre3cq_T8MP%0D%0Ac0hpUpaRda2zwiwV8B0XQgckai59iS92XIKqfzRb3IlX0ssUT2LUu1S7fh1VIDOlXFaYTkXNm826%0D%0AasJqKahtrq1cyf6MwcCpQud9WAa1qVMM%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-aiv&token=BCYiO2uHxq0kBnNC89HyURSXY1vtp1mfkb0kFRyDPDSwXxtvMcWlGGqRxflWXKWtvcz1v4SFydUH%0D%0A5ejRYMow-ep8o_tmGdMgi6YzWsqSjSTwXX0RTgEQ2LyFuq5B5KbB3skcM3NB3x9a8vdRk9QtDWAf%0D%0A4Juv8pOyiCDOF_MgDJzpkEGIp-BbK3y1RZI7QIijRvW2D1i0C8hW6yIdXUGg-XCtTMEvY9TJKgxS%0D%0AKSRq323f32m0Upg4_BlvVGMbjhOZRpVe%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Video</span><br>
                 <span class="amazon-affiliate-site-desc">Watch Movies &<br>TV Online</span>
             </a>
@@ -4395,7 +4394,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-piv&token=BCYnNvsnRWglIgNgeCwdSMQZQFnA_pSLcZhmY9BdOiWLedYhLtyNgzvbtuojcqqeGytsjQo5WyT-%0D%0A3s8u6Q6mGHhlS5sRQqUYEcLpOfvp92bWojYwnlZPY9IW7GDIM062ND-F7Fr6hafzNiJiJ-UQOzAu%0D%0AyQVGpHmPxn8QrcH3zKsu2w0c-1evQUH46imfgnuqXYLXkdOIVS5arRqlcX00wxG6HKphwWkjKptb%0D%0Atv7AzugAaOs%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-piv&token=BCYutOH6IYIGiUlfUmetRPo1KBUMK3gmciw1Xl5CgsWmJXF4AVMW_sb3tsOfFpllTU0pveINQvMa%0D%0AwMiVOX_vSBxk1ZDX7CCE-BoxFZgMlg89egsM0ckwx1ESGWzNYfqYr_0FJTRi4S2q0524xtzlUxIk%0D%0AeZRX1EKHQbRkxM8iLi9jlzPq5PSBGxHX-4Xh3XoR9t-t2RUNUvfYnNzJIIKqV9kRRZ2guEgpYzou%0D%0ACSBMUSJUrLc%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Prime Video</span><br>
                 <span class="amazon-affiliate-site-desc">Unlimited Streaming<br>of Movies & TV</span>
             </a>
@@ -4404,7 +4403,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-de&token=BCYg1mqWtX6N1sjaT34TfjX44bHP_YxdyTm_de6wBA6Ndp4q2QxW3ZOI4sOLWaYOrKifOX5PFaLE%0D%0AyQLirO-I_PZ7-Nj-4OYnU_f52rz3Hkgs74ICGlpXXYrRVIyqkpbiukBCFvQu3trTCq1BkG33coBH%0D%0AMuXTmk9L6Ilm9g4NDe8VVtPCEyDaT2_MIpi5TECT_F-vBLPl8VEiVkzlMhhh2GmaFr4R1a-0tEuH%0D%0AIyusJsVrdmo%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-de&token=BCYneN_lyowNHkjGpqgshu85KilBoZuws3G2LNboL_6ix-2MXhlkRfYoThDlPzDSV0k-dxNZvTOa%0D%0A-mJJWBjYDXGc93slULb5mjDliJhV89Vck7w2c3qG7iOCvrWSQfr3Y6TCNW4RTnhp72_kDwRUmxO8%0D%0AZwL8ALjCgNcMIyio4T_llFkohTL_pPS7HgGbeEKpnBN4si23-lrwEVpejxNgSe6Nk68UGbYjgtc1%0D%0ACtq6_IrVOG0%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Germany</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -4413,7 +4412,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-it&token=BCYrBJOIgpl2d-hCNOoI5ie7mKhBzr5Nw8UroDyUTrL7Igbq7gWs0hd0zYJZjvfrii5teE7xCJBl%0D%0AzadM0cA9B0DihSOAW0A65_1otmu2A_hZBC9doTv0PoKmHvZA271pJlpb91jNhqjyrDaC4kePDNHV%0D%0ANUksZaj5seFy-UpAEqI3tZcwBfG3N6f3v2r0IZwrOBeN9BFhF3Fan9YNI9KvcFB2m7U1GahUO06i%0D%0A9ZFJzjyTmf0%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-it&token=BCYlEhoOVfqQaeWoAx8WZdLyFsnHsmT3pfYUsyH8tMOd4RaQNWKD00RA7JcHFdbEwh_GnyhSWmjm%0D%0AZQdVG1H3nFusg-lDQ_kIHmucJ2VDLgxslOk_cFhbHLRcRwUJ1d8CHbXAgyqqAdsqeCqSdb34eSYp%0D%0A0XW5C0SQjdtS3DOtXS55vJvxpNVnP2GiLAefVOze3chUWex1da8Xo0kGCgknLrM__PqIJBIBjH6r%0D%0ALyRE_abTARI%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Italy</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -4422,7 +4421,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-fr&token=BCYtXCm-qfiYGOYaloJRimdKDIjXnkTTbTr44kFKjs5y5IqzJnI9cV8DhCYcT3MODRGaX6T1LrzU%0D%0ANVNtPPLPAC3GD2mty3NKymRaYE-PW0mo3zdfvaxfP5MO2PttEVF7c-e3Tl5FaWHBATa3TVU3wzPT%0D%0Ai6faNCCjSqeYPQayxpGOzQgCOA7P00-ekmCStLWKZxy1EG0k4DczOqyIttEWmNcabDTRktZ5EbXS%0D%0AvwS5j2gBk0A%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-fr&token=BCYk5xeof2DRbihI4vaOKV5Je3yxaFyrxiU50GGFKIPEEcBsftBLs7UYq7tyQeyv7ttn7XvP6niE%0D%0AmcmsO-KvDtYsmcc2nHPddmW6vjzFkBBjiTqkSORqi1coFAfMs4sOe-VyYUE8oYDdZAvnMUukA3ib%0D%0A23CPDwXgUM-acJgMunW_lKtaEVewq7VGlF51DfwedG3SOqdAhBelk_iJuOFM6M7aNjxns9Ska0Rb%0D%0Am8KF0XMVEdw%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon France</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -4431,7 +4430,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-in&token=BCYnhCfAdLO_uv51lnr2aflAcnuYTYXdM--1FXXj_rrZI2cSu2TNoWsvEBqXOJCvyHuSuCpIE1FO%0D%0A333P59WUQB7qjpnmxp54VUIagJElFlRn4mFxtUz2QXOQijtzteMW1G9OxAGv09fAfiltqNqa4OGU%0D%0A-F5y3hsvBJF8sT1OdCrjHFMq5v_2VNf90qCcVDmxyv2Q5_QXZ7T43dzZ_XRPMeVkBil2MIDPLZrG%0D%0AhFyO01Uh90yDpFLa13nJbnqBlYNHTCZ9%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-in&token=BCYrN2OFEqQamsmqxxyvzHSBzpW3nDk26aGm9Ser3fhLXitJbkg4wW1yc4kn_o8HSZf9P-febbzP%0D%0AzM_rmUxaeDdLAnLFcCOGCfjaiU9-oyxJz43MzFpnuoNQMfJHZwC-ac9RhoswHLPP9wBkc_tzTUB6%0D%0AsbkCJstqcOYC7HclT2yaXjjEDy-1oFSLAcGOcafqj-a0XZvC5ruxJW4aodEB-HB0UwQBiKkGHPJM%0D%0AnGVQVuzzqHVSHQI0ddUvgRHx3wB8xd2R%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon India</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movie and<br>TV Show DVDs</span>
             </a>
@@ -4440,7 +4439,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-dpr&token=BCYiIDElqB_FuUcZBhrDN5BYAOV_OgGhuZ77NnDtyxaUxVSHOCzZXliwN6L_jyczciwk5NidfBhT%0D%0AuT5-GnQX6mIPrQ-D2QgARenzMS2HItr8yN2U6t8-5AOJcC-pO2htWVdcPQSgRpyLsE5T_3ba7jMu%0D%0A7Rv9GYjFQSyETM8uQe-f0d0%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-dpr&token=BCYsKNhArrTwp5VvEfL7JPLmoC_8GC0CJsQvfOif01s1cwqN55g0aw5h2J7rfkkhIMwGFeL49etw%0D%0AYlvN-x_jp1ZN4WsR1c9Kb1Z8uG2-IwggpG1vb6kF6KMqUJLS_8c-ZG9gGe-qhDxkSPROGYDCrtLZ%0D%0ADjbR2CCIVbo8Cqx1hogysXw%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">DPReview</span><br>
                 <span class="amazon-affiliate-site-desc">Digital<br>Photography</span>
             </a>
@@ -4449,7 +4448,7 @@ itemprop='url'>Interest-Based Ads</a>
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-aud&token=BCYuiiHaMPFtl7LFbIRI1XykWjl2JLb4bUyqkOmmBhcze308WZEl-aIWFn1fR0XiCFDlYtAVUaEo%0D%0AGOZcFC4oCkqzW4fzc4oUmxDCK_ctyM4kxkcvlPQi7e_LI3sx0TbTBNG-4DWxyQ6DGYyqBfegLtAh%0D%0AxFO_L9jk9PQX9_-euig1pg8%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-aud&token=BCYqsvzLxdKCi9DPxUq8coSXSKkGBUO_PbaJnvoOIgKT4IYX6yDueG4qGrl1MTqIEVf2OCdtfifk%0D%0AokjPhRsUr0wLzQn0R16X4LlKt7uVg6MMP2esuokGjt8bh0jt-BSIpH5Zsg0_hba7Mb99Au7r_PVg%0D%0AbPJepLSA6y41EzWItDv6mbg%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Audible</span><br>
                 <span class="amazon-affiliate-site-desc">Download<br>Audio Books</span>
             </a>
@@ -4525,7 +4524,7 @@ itemprop='url'>Interest-Based Ads</a>
         </script>
 
 
-<div id="servertime" time="748"/>
+<div id="servertime" time="581"/>
 
 
 
