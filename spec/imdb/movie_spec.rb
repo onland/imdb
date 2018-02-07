@@ -116,11 +116,11 @@ describe 'Imdb::Movie' do
     end
 
     it 'finds plot synopsis' do
-      expect(subject.plot_synopsis).to match(/John McClane, a detective with the New York City Police Department, arrives in Los Angeles to attempt a Christmas reunion and reconciliation with his estranged wife Holly, who is attending a party thrown by her employer, the Nakatomi Corporation at its still-unfinished American branch office headquarters, the high-rise Nakatomi Plaza. When McClane refreshes himself from the flight in Holly's corporate room, they have an argument over the use of her maiden name, Gennero, but Holly is called away/)
+      expect(subject.plot_synopsis).to match(/John McClane, a detective with the New York City Police Department, arrives in Los Angeles to attempt a Christmas reunion and reconciliation with his estranged wife Holly \(Bonnie Bedelia\), who is attending a party thrown by her employer, the Nakatomi Corporation, at its still-unfinished American branch office headquarters, the high-rise Nakatomi Plaza. McClane is met at the airport by Argyle, a limo driver charged with taking John to Holly's office./)
     end
 
     it 'finds plot summary' do
-      expect(subject.plot_summary).to eq("New York City Detective John McClane has just arrived in Los Angeles to spend Christmas with his wife. Unfortunatly, it is not going to be a Merry Christmas for everyone. A group of terrorists, led by Hans Gruber is holding everyone in the Nakatomi Plaza building hostage. With no way of anyone getting in or out, it's up to McClane to stop them all. All 12!")
+      expect(subject.plot_summary).to eq("NYPD cop John McClane goes on a Christmas vacation to visit his wife Holly in Los Angeles where she works for the Nakatomi Corporation. While they are at the Nakatomi headquarters for a Christmas party, a group of bank robbers led by Hans Gruber take control of the building and hold everyone hostage, with the exception of John, while they plan to perform a lucrative heist. Unable to escape and with no immediate police response, John is forced to take matters into his own hands.")
     end
 
     it 'finds the poster' do

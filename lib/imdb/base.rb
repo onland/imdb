@@ -59,12 +59,14 @@ module Imdb
 
     # Returns an array of genres (as strings)
     def genres
-      document.search("h5[text()='Genre:'] ~ div a[@href*='/Sections/Genres/']").map { |link| link.content.strip } rescue []
+      # Alternative:
+      # document.search("tr.ipl-zebra-list__item td.ipl-zebra-list__label[text()^='Genres'] ~ td ul li a").map(&:text)
+      document.search("td a[@href*='/genre/']").map(&:text)
     end
 
     # Returns an array of languages as strings.
     def languages
-      document.search("h5[text()='Language:'] ~ div a[@href*='/language/']").map { |link| link.content.strip } rescue []
+      document.search("td a[@href*='/language/']").map(&:text)
     end
 
     # Returns an array of countries as strings.
@@ -91,13 +93,13 @@ module Imdb
 
     # Returns a string containing the plot summary
     def plot_synopsis
-      doc = Nokogiri::HTML(Imdb::Movie.find_by_id(@id, :synopsis))
-      doc.at("div[@id='swiki.2.1']").content.strip rescue nil
+      doc = Nokogiri::HTML(Imdb::Movie.find_by_id(@id, :plotsummary))
+      doc.at('ul#plot-synopsis-content li').text.imdb_unescape_html
     end
 
     def plot_summary
       doc = Nokogiri::HTML(Imdb::Movie.find_by_id(@id, :plotsummary))
-      doc.at('p.plotSummary').inner_html.gsub(/<i.*/im, '').strip.imdb_unescape_html rescue nil
+      doc.at('ul#plot-summaries-content li p').text.imdb_unescape_html
     end
 
     # Returns a string containing the URL to the movie poster.

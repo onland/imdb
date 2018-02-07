@@ -34,7 +34,6 @@ IMDB_SAMPLES = {
   'http://www.imdb.com:80/title/tt0095016/reference' => 'tt0095016',
   'http://www.imdb.com/title/tt0095016/criticreviews' => 'criticreviews',
   'http://www.imdb.com/title/tt0095016/reviews?start=0' => 'userreviews',
-  'http://www.imdb.com/title/tt0095016/synopsis' => 'synopsis',
   'http://www.imdb.com/title/tt0095016/plotsummary' => 'plotsummary',
   'http://www.imdb.com/title/tt0095016/locations' => 'locations',
   'http://www.imdb.com/title/tt0095016/releaseinfo' => 'releaseinfo',
