@@ -154,7 +154,7 @@ module Imdb
 
     # Returns a string containing the tagline
     def tagline
-      document.search("h5[text()='Tagline:'] ~ div").first.inner_html.gsub(/<.+>.+<\/.+>/, '').strip.imdb_unescape_html rescue nil
+      document.at("tr.ipl-zebra-list__item td.ipl-zebra-list__label[text()^='Taglines'] ~ td").children.first.text.strip rescue nil
     end
 
     # Returns a string containing the mpaa rating and reason for rating
