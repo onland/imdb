@@ -211,7 +211,7 @@ describe 'Imdb::Movie' do
     context 'Biography of Mohandas K. Gandhi' do
       subject { Imdb::Movie.new('0083987') }
       it 'finds a correct plot when HTML links are present' do
-        expect(subject.plot).to eq('Biography of Mohandas K. Gandhi, the lawyer who became the famed leader of the Indian revolts against the British rule through his philosophy of nonviolent protest.')
+        expect(subject.plot).to eq("Gandhi's character is fully explained as a man of nonviolence. Through his patience, he is able to drive the British out of the subcontinent. And the stubborn nature of Jinnah and his...")
       end
     end
 
@@ -255,12 +255,12 @@ describe 'Imdb::Movie' do
       it 'returns nil as poster url' do
         expect(subject.poster).to be_nil
       end
+    end
 
-      context 'movie 0111161' do
-        subject { Imdb::Movie.new('0111161') }
-        it 'returns the release date for movies' do
-          expect(subject.release_date).to eq('14 October 1994 (USA)')
-        end
+    context 'movie 0111161' do
+      subject { Imdb::Movie.new('0111161') }
+      it 'returns the release date for movies' do
+        expect(subject.release_date).to eq('14 October 1994 (USA)')
       end
     end
   end
