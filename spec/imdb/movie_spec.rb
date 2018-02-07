@@ -218,7 +218,7 @@ describe 'Imdb::Movie' do
     context 'movie 0036855' do
       subject { Imdb::Movie.new('0036855') }
       it "does not have a 'more' link in the plot" do
-        expect(subject.plot).to eq('Years after her aunt was murdered in her home, a young woman moves back into the house with her new husband. However, he has a secret which he will do anything to protect, even if that means driving his wife insane.')
+        expect(subject.plot).to eq('Years after her aunt was murdered in her home, a young woman moves back into the house with her new husband. However, he has a secret that he will do anything to protect, even if it means...')
       end
     end
   end
