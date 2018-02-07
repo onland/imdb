@@ -27,7 +27,7 @@ module Imdb
     end
 
     def self.query(query)
-      url = "http://imdb.com/find?q=#{CGI::escape(query.gsub(' & ',' and '))};s=tt"
+      url = "http://www.imdb.com/find?q=#{CGI::escape(query.gsub(' & ',' and '))};s=tt"
       puts "DOWNLOADING #{query.inspect} via #{url.inspect}"
       open(url, Imdb::HTTP_HEADER)
     end
