@@ -128,7 +128,7 @@ describe 'Imdb::Movie' do
     end
 
     it 'finds the rating' do
-      expect(subject.rating).to eq(8.3)
+      expect(subject.rating).to eq(8.2)
     end
     
     it 'finds the metascore' do
@@ -157,7 +157,7 @@ describe 'Imdb::Movie' do
         # The Matrix Revolutions (2003)
         subject { Imdb::Movie.new('0242653') }
         it 'finds multiple directors' do
-          expect(subject.director).to match_array(%w(Lana\ Wachowski Andy\ Wachowski))
+          expect(subject.director).to match_array(%w(Lana\ Wachowski Lilly\ Wachowski))
         end
       end
 
