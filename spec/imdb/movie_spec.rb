@@ -267,7 +267,7 @@ describe 'Imdb::Movie' do
       # Pulp Fiction (1994)
       subject { Imdb::Movie.new('0110912') }
       it 'has a poster' do
-        expect(subject.poster).to eq('http://ia.media-imdb.com/images/M/MV5BMjE0ODk2NjczOV5BMl5BanBnXkFtZTYwNDQ0NDg4.jpg')
+        expect(subject.poster).to eq('https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxMTA5OTAzMl5BMl5BanBnXkFtZTgwNjA5MDc3NjE@.jpg')
       end
     end
   end
