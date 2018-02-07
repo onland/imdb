@@ -136,7 +136,7 @@ describe 'Imdb::Movie' do
     end
 
     it 'finds number of votes' do
-      expect(subject.votes).to be_within(10_000).of(420_900)
+      expect(subject.votes).to be_within(10_000).of(663_000)
     end
 
     it 'finds the title' do

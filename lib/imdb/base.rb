@@ -149,7 +149,7 @@ module Imdb
 
     # Returns an int containing the number of user ratings
     def votes
-      document.at('#tn15rating .tn15more').content.strip.gsub(/[^\d+]/, '').to_i rescue nil
+      document.at('.ipl-rating-star__total-votes').content.gsub(/\D+/, '').to_i rescue nil
     end
 
     # Returns a string containing the tagline
