@@ -79,7 +79,7 @@ describe 'Imdb::Movie' do
 
     it 'returns the url to the movie trailer' do
       expect(subject.trailer_url).to be_a(String)
-      expect(subject.trailer_url).to eq('http://imdb.com/video/screenplay/vi581042457/')
+      expect(subject.trailer_url).to eq('http://www.imdb.com/title/tt0095016/videoplayer/vi581042457')
     end
 
     it 'finds the director' do
