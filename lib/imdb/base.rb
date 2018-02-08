@@ -120,23 +120,22 @@ module Imdb
       document.at('.ipl-rating-star__rating').content.to_f rescue nil
     end
 
+    # Returns an enumerator of hashes. Not an enumerator of arrays of hashes!
     def user_reviews
       Enumerator.new do |enum|
-        start = 0
+        data_key = nil
         loop do
-          ratings = userreviews_document(start)
-                      .search('//div[contains(@id, "tn15content")]//div[@class="yn"]//preceding-sibling::*[self::div and not(contains(@class, "yn")) or self::p]')
-                      .each_slice(2).map do |head, review|
-                        rating = head.children.search('img')[1]
-                        {
-                          title: head.at('h2').text,
-                          rating: rating ? rating['alt'].to_s.gsub('/10', '').to_i : nil,
-                          review: review.text
-                        }
-          end.compact
-          break if ratings.empty?
-          enum.yield(ratings)
-          start += 10
+          reviews_doc = userreviews_document(data_key)
+          review_divs = reviews_doc.search('div.review-container')
+          break if review_divs.empty?
+          review_divs.each do |review_div|
+            title = review_div.at('div.title').text
+            text = review_div.at('div.content div.text').text
+            rating = review_div.at_xpath(".//span[@class='point-scale']/preceding-sibling::span").text.to_i rescue nil
+            enum.yield({title: title, text: text, rating: rating})
+          end
+          data_key = reviews_doc.at('div.load-more-data')['data-key'] rescue nil
+          break unless data_key
           sleep 1
         end
       end
@@ -233,8 +232,13 @@ module Imdb
       @parentalguide_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'parentalguide'))
     end
 
-    def userreviews_document(start=0)
-      Nokogiri::HTML(Imdb::Movie.find_by_id(@id, "reviews?start=#{start}"))
+    def userreviews_document(data_key=nil)
+      if data_key
+        path = "reviews/_ajax?paginationKey=#{data_key}"
+      else
+        path = "reviews"
+      end
+      Nokogiri::HTML(Imdb::Movie.find_by_id(@id, path))
     end
     
     # Use HTTParty to fetch the raw HTML for this movie.
