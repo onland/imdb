@@ -159,7 +159,7 @@ module Imdb
 
     # Returns a string containing the mpaa rating and reason for rating
     def mpaa_rating
-      document.at("//a[starts-with(.,'MPAA')]/../following-sibling::*").content.strip rescue nil
+      parentalguide_document.at('tr#mpaa-rating td[2]').text.strip rescue nil
     end
 
     # Returns a string containing the title
@@ -227,6 +227,10 @@ module Imdb
     
     def criticreviews_document
       @criticreviews_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'criticreviews'))
+    end
+
+    def parentalguide_document
+      @parentalguide_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'parentalguide'))
     end
 
     def userreviews_document(start=0)

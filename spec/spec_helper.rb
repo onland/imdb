@@ -54,7 +54,9 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt1628064/reference' => 'thewalkingdead-s1e2',
   'http://www.imdb.com/title/tt0898266/episodes?season=1' => 'tbbt-s1',
   'http://www.imdb.com/title/tt0898266/reference' => 'tt0898266',
-  'http://www.imdb.com/find?q=Wall-E&s=tt' => 'wall_e_search'
+  'http://www.imdb.com/find?q=Wall-E&s=tt' => 'wall_e_search',
+  'http://www.imdb.com/title/tt0111161/parentalguide' => 'tt0111161_parentalguide',
+  'http://www.imdb.com/title/tt0095016/parentalguide' => 'tt0095016_parentalguide'
 }
 
 if ENV['UPDATE_FIXTURES']
