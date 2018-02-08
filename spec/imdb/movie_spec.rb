@@ -87,7 +87,7 @@ describe 'Imdb::Movie' do
     end
 
     it 'finds the company info' do
-      expect(subject.company).to eq('Twentieth Century Fox Film Corporation')
+      expect(subject.company).to eq('Twentieth Century Fox')
     end
 
     it 'finds the genres' do
