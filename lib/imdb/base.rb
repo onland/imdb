@@ -223,7 +223,8 @@ module Imdb
     def fullcredits_document
       @fullcredits_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'fullcredits'))
     end
-    
+
+    #TODO: Add reviews as array of hashes, as for user_reviews
     def criticreviews_document
       @criticreviews_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'criticreviews'))
     end
