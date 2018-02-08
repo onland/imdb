@@ -17,10 +17,9 @@ def read_fixture(path)
   File.read(File.expand_path(File.join(File.dirname(__FILE__), 'fixtures', path)))
 end
 
-def write_fixture(url, path)
+def write_fixture(url, cache_path)
   curl_headers = Imdb::HTTP_HEADER.map{|k, v| "-H \"#{k}:#{v}\""}.join(' ')
-  File.open(File.expand_path(File.join(File.dirname(__FILE__), 'fixtures', path)), 'w+') do |fixture|
-    #print "curl -is #{curl_headers} \"#{url}\""
+  File.open(cache_path, 'w+') do |fixture|
     fixture.write `curl -is #{curl_headers} \"#{url}\" | grep -v '^Via:'`
   end
 end
@@ -33,7 +32,8 @@ IMDB_SAMPLES = {
   'http://www.imdb.com:80/title/tt0117731/reference' => 'tt0117731',
   'http://www.imdb.com:80/title/tt0095016/reference' => 'tt0095016',
   'http://www.imdb.com/title/tt0095016/criticreviews' => 'criticreviews',
-  'http://www.imdb.com/title/tt0095016/reviews?start=0' => 'userreviews',
+  'http://www.imdb.com/title/tt0095016/reviews' => 'userreviews',
+  'http://www.imdb.com/title/tt0095016/reviews/_ajax?paginationKey=h2hqyotfisvxpzqltwsrn76x7jrboz25p25prr4m2x5n4hrrusvwvq33z6w4yltpxvg2ku6z45q2m' => 'userreviews_page2',
   'http://www.imdb.com/title/tt0095016/plotsummary' => 'plotsummary',
   'http://www.imdb.com/title/tt0095016/locations' => 'locations',
   'http://www.imdb.com/title/tt0095016/releaseinfo' => 'releaseinfo',
@@ -59,10 +59,11 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt0095016/parentalguide' => 'tt0095016_parentalguide'
 }
 
-if ENV['UPDATE_FIXTURES']
-  IMDB_SAMPLES.each do |url, basename|
-    puts "Downloading #{url.inspect} as #{basename}"
-    write_fixture(url, basename)
+IMDB_SAMPLES.each do |url, basename|
+  cache_path = File.expand_path(File.join(File.dirname(__FILE__), 'fixtures', basename))
+  unless File.exists?(cache_path)
+    puts "Downloading #{url.inspect} to #{cache_path}"
+    write_fixture(url, cache_path)
     sleep(1)
   end
 end

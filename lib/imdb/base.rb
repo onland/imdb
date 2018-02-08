@@ -132,7 +132,7 @@ module Imdb
             title = review_div.at('div.title').text
             text = review_div.at('div.content div.text').text
             rating = review_div.at_xpath(".//span[@class='point-scale']/preceding-sibling::span").text.to_i rescue nil
-            enum.yield({title: title, text: text, rating: rating})
+            enum.yield({title: title, review: text, rating: rating})
           end
           data_key = reviews_doc.at('div.load-more-data')['data-key'] rescue nil
           break unless data_key
