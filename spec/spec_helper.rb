@@ -31,6 +31,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/find?q=Star+Trek%3A+TOS&s=tt' => 'search_star_trek',
   'http://www.imdb.com:80/title/tt0117731/reference' => 'tt0117731',
   'http://www.imdb.com:80/title/tt0095016/reference' => 'tt0095016',
+  'http://www.imdb.com:80/title/tt0095016/fullcredits' => 'tt0095016_fullcredits',
   'http://www.imdb.com/title/tt0095016/criticreviews' => 'criticreviews',
   'http://www.imdb.com/title/tt0095016/reviews' => 'userreviews',
   'http://www.imdb.com/title/tt0095016/reviews/_ajax?paginationKey=h2hqyotfisvxpzqltwsrn76x7jrboz25p25prr4m2x5n4hrrusvwvq33z6w4yltpxvg2ku6z45q2m' => 'userreviews_page2',
@@ -38,6 +39,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt0095016/locations' => 'locations',
   'http://www.imdb.com/title/tt0095016/releaseinfo' => 'releaseinfo',
   'http://www.imdb.com:80/title/tt0242653/reference' => 'tt0242653',
+  'http://www.imdb.com:80/title/tt0242653/fullcredits' => 'tt0242653_fullcredits',
   'http://www.imdb.com:80/title/tt1821700/reference' => 'tt1821700',
   'http://www.imdb.com/title/tt1821700/fullcredits' => 'fullcredits',
   'http://www.imdb.com/title/tt0166222/?fr=c2M9MXxsbT01MDB8ZmI9dXx0dD0xfG14PTIwfGh0bWw9MXxjaD0xfGNvPTF8cG49MHxmdD0xfGt3PTF8cXM9SSBraWxsZWQgbXkgbGVzYmlhbiB3aWZlfHNpdGU9YWthfHE9SSBraWxsZWQgbXkgbGVzYmlhbiB3aWZlfG5tPTE_&fc=1&ft=7' => 'tt0166222',
@@ -56,7 +58,9 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt0898266/reference' => 'tt0898266',
   'http://www.imdb.com/find?q=Wall-E&s=tt' => 'wall_e_search',
   'http://www.imdb.com/title/tt0111161/parentalguide' => 'tt0111161_parentalguide',
-  'http://www.imdb.com/title/tt0095016/parentalguide' => 'tt0095016_parentalguide'
+  'http://www.imdb.com/title/tt0095016/parentalguide' => 'tt0095016_parentalguide',
+  'http://www.imdb.com/title/tt0401711/fullcredits' => 'tt0401711_fullcredits',
+  'http://www.imdb.com/title/tt0401711/reference' => 'tt0401711',
 }
 
 IMDB_SAMPLES.each do |url, basename|

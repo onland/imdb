@@ -39,17 +39,19 @@ module Imdb
       }
     end
 
-    # Returns the name of the director
+    # Returns the name of the directors. Should really be called directors
     def director
-      #PATCH: h5 -> div.titlereference...
-      document.search("div.titlereference-overview-section:contains('Director') ul li a").map { |link| link.content.strip } rescue []
+      fullcredits_document.search("h4[text()^='Directed by'] + table tbody tr td[class='name']").map do |name|
+        name.content.strip
+      end.uniq# rescue []
     end
+    alias_method :directors, :director
 
     # Returns the names of Writers
     def writers
       fullcredits_document.search("h4[text()^='Writing Credits'] + table tbody tr td[class='name']").map do |name|
         name.content.strip
-      end.uniq rescue []
+      end.uniq# rescue []
     end
 
     # Returns the url to the "Watch a trailer" page

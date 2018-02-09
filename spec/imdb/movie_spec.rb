@@ -292,4 +292,26 @@ describe 'Imdb::Movie' do
       end
     end
   end
+
+  describe 'with many writers and directors' do
+    context "Paris, je t'aime" do
+      # Paris, je t'aime (2006)
+      subject { Imdb::Movie.new('0401711') }
+      it 'has many writers' do
+        expect(subject.writers.size).to eq(30)
+      end
+
+      it "shouldn't have a 'see more' writer" do
+        expect(subject.writers).not_to include('See more »')
+      end
+
+      it 'has many directors' do
+        expect(subject.directors.size).to eq(22)
+      end
+
+      it "shouldn't have a 'see more' director" do
+        expect(subject.directors).not_to include('See more »')
+      end
+    end
+  end
 end
