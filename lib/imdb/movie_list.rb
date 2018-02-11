@@ -7,26 +7,17 @@ module Imdb
     private
 
     def parse_movies(table_css_class = "")
-      #TODO: Rewrite this
-      document.search("table#{table_css_class} a[@href^='/title/tt']").reject do |element|
-        element.inner_html.imdb_strip_tags.empty? ||
-        element.inner_html.imdb_strip_tags == 'X' ||
-        element.parent.inner_html =~ /media from/i
-      end.map do |element|
-        id = element['href'][/\d+/]
-
-        data = element.parent.inner_html.split('<br />')
-        title = (!data[0].nil? && !data[1].nil? && data[0] =~ /img/) ? data[1] : data[0]
-        title = title.imdb_strip_tags.imdb_unescape_html
-        title.gsub!(/\s+\(\d\d\d\d\)$/, '')
+      document.search("table#{table_css_class} tr td[2] a[@href^='/title/tt']").map do |element|
+        id = element['href'][/(?<=tt)\d+/]
+        title = element.text.imdb_strip_tags.imdb_unescape_html
 
         if title =~ /\saka\s/
           titles = title.split(/\saka\s/)
-          title = titles.shift.strip.imdb_unescape_html
+          title = titles.first.strip.imdb_unescape_html
         end
 
-        !title.strip.blank? ? [id, title] : nil
-      end.compact.uniq.map do |values|
+        [id, title]
+      end.uniq.map do |values|
         Imdb::Movie.new(*values)
       end
     end
