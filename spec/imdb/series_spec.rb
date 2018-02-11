@@ -21,3 +21,25 @@ describe 'Imdb::Serie' do
     expect(subject.season(1).episodes.size).to eq(6)
   end
 end
+
+describe 'Imdb::Serie with only one season' do
+  subject { Imdb::Serie.new('0303461') }
+
+  # Double check from Base.
+  it 'finds the title' do
+    expect(subject.title).to match(/Firefly/)
+  end
+
+  it 'reports the number of seasons' do
+    expect(subject.seasons.size).to eq(1)
+  end
+
+  it 'finds the plot' do
+    expect(subject.plot).to match('Five hundred years in the future, a renegade crew aboard a small spacecraft tries to survive')
+  end
+
+  it 'can fetch a specific season' do
+    expect(subject.season(1).season_number).to eq(1)
+    expect(subject.season(1).episodes.size).to eq(14)
+  end
+end

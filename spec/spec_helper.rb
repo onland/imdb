@@ -63,6 +63,8 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt0401711/reference' => 'tt0401711',
   'http://www.imdb.com/title/tt0910970/reference' => 'tt0910970',
   'http://www.imdb.com/title/tt0060028/reference' => 'tt0060028',
+  'http://www.imdb.com/title/tt0303461/reference' => 'tt0303461',
+  'http://www.imdb.com/title/tt0303461/episodes?season=1' => 'tt0303461_s1',
 }
 
 IMDB_SAMPLES.each do |url, basename|

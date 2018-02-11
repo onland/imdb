@@ -12,7 +12,7 @@ module Imdb
     private
 
     def season_urls
-      season_count = document.search("section div[text()*='Seasons:'] a[@href*='episodes?season']").map{|a| a.text.to_i}.max
+      season_count = document.search("section div[text()*='Season'] a[@href*='episodes?season']").map{|a| a.text.to_i}.max
       (1..season_count).map{ |season_id| URI.join(url, "episodes?season=#{season_id}").to_s }
     end
   end # Serie
