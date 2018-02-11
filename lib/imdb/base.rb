@@ -89,6 +89,7 @@ module Imdb
 
     # Returns a string containing the plot.
     # NOTE: Movie can actually contain a serie when created from Imdb::Search
+    # It won't recognize a plot in which "Season" appears.
     def plot
       sanitize_plot(document.at("section.titlereference-section-overview div:not([class]):not([text()*='Season'])").content) rescue nil
     end
