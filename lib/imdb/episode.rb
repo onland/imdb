@@ -11,7 +11,7 @@ module Imdb
 
     # Return the original air date for this episode
     def air_date
-      document.at("h5[text()*='Original Air Date'] ~ div").content.strip.split("\n").first.strip rescue nil
+      release_date
     end
 
     private

@@ -90,7 +90,7 @@ module Imdb
     # Returns a string containing the plot.
     def plot
       #PATCH No 'Plot:' anymore. Could be brittle
-      sanitize_plot(document.at("section.titlereference-section-overview div").content) rescue nil
+      sanitize_plot(document.at("section.titlereference-section-overview div:not([class])").content) rescue nil
     end
 
     # Returns a string containing the plot summary
