@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'Imdb::Episode' do
-  let(:serie)   { Imdb::Serie.new('1520211') }
+  let(:serie)   { Imdb::Serie.new('1520211') } # The walking dead
   let(:season)  { serie.seasons.first }
   let(:episode) { season.episode(2) }
 
@@ -10,7 +10,7 @@ describe 'Imdb::Episode' do
   end
 
   it 'has a url' do
-    expect(episode.url).to eq('http://akas.imdb.com/title/tt1628064/combined')
+    expect(episode.url).to eq('http://www.imdb.com/title/tt1628064/reference')
   end
 
   it 'has an episode title' do

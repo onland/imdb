@@ -2,7 +2,7 @@ module Imdb
   # Represents a TV series on IMDB.com
   class Serie < Base
     def season(number)
-      seasons.fetch(number - 1, nil)
+      seasons[number - 1]
     end
 
     def seasons
@@ -12,8 +12,8 @@ module Imdb
     private
 
     def season_urls
-      document.search("h5[text()='Seasons:'] ~ div a[@href*='episodes?season']")
-        .map { |link| url.gsub('combined', '') + 'episodes?season=' + link.content.strip } rescue []
+      season_count = document.search("section div[text()*='Seasons:'] a[@href*='episodes?season']").map{|a| a.text.to_i}.max
+      (1..season_count).map{ |season_id| URI.join(url, "episodes?season=#{season_id}").to_s }
     end
   end # Serie
 end # Imdb

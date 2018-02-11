@@ -4,6 +4,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__)) unless
 require 'open-uri'
 require 'rubygems'
 require 'nokogiri'
+require 'pry'
 
 module Imdb
   # akas.imdb.com doesn't return original language anymore. This header is needed to disable localizing.
