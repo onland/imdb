@@ -61,6 +61,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt0095016/parentalguide' => 'tt0095016_parentalguide',
   'http://www.imdb.com/title/tt0401711/fullcredits' => 'tt0401711_fullcredits',
   'http://www.imdb.com/title/tt0401711/reference' => 'tt0401711',
+  'http://www.imdb.com/title/tt0910970/reference' => 'tt0910970',
 }
 
 IMDB_SAMPLES.each do |url, basename|

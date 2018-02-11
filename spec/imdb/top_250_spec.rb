@@ -12,8 +12,8 @@ describe Imdb::Top250 do
   end
 
   it 'should provide array like access to the movies' do
-    expect(subject[0].title).to eq('1. The Shawshank Redemption')
-    expect(subject[1].title).to eq('2. The Godfather')
-    expect(subject[2].title).to eq('3. The Godfather: Part II')
+    expect(subject[0].title).to eq('The Shawshank Redemption') # Should Top250 position be in title?
+    expect(subject[1].title).to eq('The Godfather')
+    expect(subject[2].title).to eq('The Godfather: Part II')
   end
 end
