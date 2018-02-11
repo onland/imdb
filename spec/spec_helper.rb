@@ -28,7 +28,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com:80/find?q=Kannethirey+Thondrinal&s=tt' => 'search_kannethirey_thondrinal',
   'http://www.imdb.com/title/tt0330508/?fr=c2M9MXxsbT01MDB8ZmI9dXx0dD0xfG14PTIwfGh0bWw9MXxjaD0xfGNvPTF8cG49MHxmdD0xfGt3PTF8cXM9S2FubmV0aGlyZXkgVGhvbmRyaW5hbHxzaXRlPWFrYXxxPUthbm5ldGhpcmV5IFRob25kcmluYWx8bm09MQ__&fc=1&ft=1' => 'tt0330508',
   'http://www.imdb.com:80/find?q=I+killed+my+lesbian+wife&s=tt' => 'search_killed_wife',
-  'http://www.imdb.com/find?q=Star+Trek%3A+TOS&s=tt' => 'search_star_trek',
+  'http://www.imdb.com/find?q=Star+Trek&s=tt' => 'search_star_trek',
   'http://www.imdb.com:80/title/tt0117731/reference' => 'tt0117731',
   'http://www.imdb.com:80/title/tt0095016/reference' => 'tt0095016',
   'http://www.imdb.com:80/title/tt0095016/fullcredits' => 'tt0095016_fullcredits',
@@ -62,6 +62,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt0401711/fullcredits' => 'tt0401711_fullcredits',
   'http://www.imdb.com/title/tt0401711/reference' => 'tt0401711',
   'http://www.imdb.com/title/tt0910970/reference' => 'tt0910970',
+  'http://www.imdb.com/title/tt0060028/reference' => 'tt0060028',
 }
 
 IMDB_SAMPLES.each do |url, basename|

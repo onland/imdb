@@ -184,7 +184,7 @@ module Imdb
       # "a[@href^='/year/']" -> "a[@href^='/search/title?year']"
       # or
       # "a[@href^='/year/']" -> "span.titlereference-title-year a"
-      document.at("span.titlereference-title-year a").content.to_i rescue nil
+      document.at("span.titlereference-title-year a").content.to_i
     end
 
     # Returns release date for the movie.

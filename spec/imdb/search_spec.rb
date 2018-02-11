@@ -1,15 +1,15 @@
 require 'spec_helper'
 
 describe 'Imdb::Search with multiple search results' do
-  context 'Star Trek: TOS' do
-    subject { Imdb::Search.new('Star Trek: TOS') }
+  context 'Star Trek' do
+    subject { Imdb::Search.new('Star Trek') }
 
     it 'remembers the query' do
-      expect(subject.query).to eq('Star Trek: TOS')
+      expect(subject.query).to eq('Star Trek')
     end
 
-    it 'finds 14 results' do
-      expect(subject.movies.size).to eq(14)
+    it 'finds way too many results' do
+      expect(subject.movies.size).to eq(240)
     end
 
     it 'returns Imdb::Movie objects only' do
@@ -21,7 +21,8 @@ describe 'Imdb::Search with multiple search results' do
     end
 
     it 'returns only the title of the result' do
-      expect(subject.movies.first.title).to eq('Star Trek (1966) (TV Series)')
+      expect(subject.movies.first.title).to eq('Star Trek')
+      expect(subject.movies.first.year).to eq(1966)
     end
   end
 end

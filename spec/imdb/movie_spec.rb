@@ -197,8 +197,8 @@ describe 'Imdb::Movie' do
       expect(subject.also_known_as).to include(version: 'Russia', title: 'Крепкий орешек')
     end
 
-    context 'Star Trek: TOS' do
-      subject { Imdb::Movie.search('Star Trek: TOS') }
+    context 'Star Trek' do
+      subject { Imdb::Movie.search('Star Trek') }
       it 'provides a convenience method to search' do
         expect(subject).to respond_to(:each)
         subject.each { |movie| expect(movie).to be_an_instance_of(Imdb::Movie) }
