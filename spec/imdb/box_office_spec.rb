@@ -14,7 +14,7 @@ describe Imdb::BoxOffice do
   end
 
   it 'is an array like access to the movies' do
-    expected_movies = ['Big Hero 6', 'Interstellar', 'Gone Girl']
+    expected_movies = ['Paddington 2', 'Jumanji: Welcome to the Jungle', 'The Shape of Water']
     expect(subject.map(&:title)).to include(*expected_movies)
   end
 end

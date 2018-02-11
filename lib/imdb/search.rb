@@ -17,7 +17,7 @@ module Imdb
     # Returns an array of Imdb::Movie objects for easy search result yielded.
     # If the +query+ was an exact match, a single element array will be returned.
     def movies
-      @movies ||= (exact_match? ? parse_movie : parse_movies)
+      @movies ||= (exact_match? ? parse_movie : parse_movies('.findList'))
     end
 
     private

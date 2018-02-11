@@ -6,9 +6,9 @@ module Imdb
 
     private
 
-    def parse_movies
+    def parse_movies(table_css_class = "")
       #TODO: Rewrite this
-      document.search("table a[@href^='/title/tt']").reject do |element|
+      document.search("table#{table_css_class} a[@href^='/title/tt']").reject do |element|
         element.inner_html.imdb_strip_tags.empty? ||
         element.inner_html.imdb_strip_tags == 'X' ||
         element.parent.inner_html =~ /media from/i
