@@ -23,6 +23,12 @@ describe 'Imdb::Search with multiple search results' do
     it 'returns only the title of the result' do
       expect(subject.movies.first.title).to eq('Star Trek (1966) (TV Series)')
     end
+
+    it 'returns the correct result at the top' do
+      expect(subject.movies.first.title(true)).to eq('Star Trek')
+      expect(subject.movies.first.year).to eq(1966)
+      expect(subject.movies.first.plot).to match(/Captain James T. Kirk and the crew of the Starship Enterprise/)
+    end
   end
 end
 

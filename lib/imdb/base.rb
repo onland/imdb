@@ -51,14 +51,28 @@ module Imdb
       apex_document.search('//span[@itemprop="actors"]//span[@itemprop="name"]/text()').map(&:content) rescue []
     end
 
-    # Returns the name of the director
-    def director
-      document.search("div[text()*='Director']//a").map { |a| a.content.strip } rescue []
+    # Returns the name of the directors.
+    # Extracts from full_credits for movies with more than 3 directors.
+    def directors
+      top_directors = document.search("div[text()*='Director']//a").map { |a| a.content.strip }
+      if top_directors.empty? || top_directors.last.start_with?('See more')
+        all_directors
+      else
+        top_directors
+      end
     end
+    # NOTE: Keeping Base#director method for compatibility.
+    alias :director :directors
 
     # Returns the names of Writers
+    # Extracts from full_credits for movies with more than 3 writers.
     def writers
-      document.search("div[text()*='Writer']//a").map { |a| a.content.strip } rescue []
+      top_writers = document.search("div[text()*='Writer']//a").map { |a| a.content.strip }
+      if top_writers.empty? || top_writers.last.start_with?('See more')
+        all_writers
+      else
+        top_writers
+      end
     end
 
     # Returns the url to the "Watch a trailer" page
@@ -132,16 +146,27 @@ module Imdb
       document.at('.ipl-rating-star__rating').content.strip.to_f rescue nil
     end
 
-    # Returns an enumerator of pages of user reviews
-    # NOTE: unfortunatly paganation no longer supported
+    # Returns an enumerator of user reviews as hashes
+    # NOTE: Not an enumerator of arrays of hashes anymore.
     def user_reviews
-      [userreviews_document.search("//div[contains(@class, 'user-review')]").map do |review|
-        {
-          title: review.at("//div[@class='title']").content.strip,
-          rating: review.at("//span[contains(@class, 'rating')]/span").content.strip.to_i,
-          review: review.at("//div[@class='text']").content.strip,
-        }
-      end].to_enum
+      Enumerator.new do |enum|
+        data_key = nil
+        loop do
+          reviews_doc = userreviews_document(data_key)
+          review_divs = reviews_doc.search('div.review-container')
+          break if review_divs.empty?
+          review_divs.each do |review_div|
+            title = review_div.at('div.title').text
+            text = review_div.at('div.content div.text').text
+            rating = review_div.at_xpath(".//span[@class='point-scale']/preceding-sibling::span").text.to_i rescue nil
+            enum.yield({title: title, review: text, rating: rating})
+          end
+          # Extracts the key for the next page
+          data_key = reviews_doc.at('div.load-more-data')['data-key'] rescue nil
+          break unless data_key
+          sleep 1
+        end
+      end
     end
 
     # Returns an int containing the Metascore
@@ -240,8 +265,25 @@ module Imdb
       @summary_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'plotsummary'))
     end
 
-    def userreviews_document
-      @userreviews_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'reviews'))
+    def userreviews_document(data_key=nil)
+      if data_key
+        path = "reviews/_ajax?paginationKey=#{data_key}"
+      else
+        path = "reviews"
+      end
+      Nokogiri::HTML(Imdb::Movie.find_by_id(@id, path))
+    end
+
+    def all_directors
+      fullcredits_document.search("h4[text()*='Directed by'] + table tbody tr td[class='name']").map do |name|
+        name.content.strip
+      end.uniq
+    end
+
+    def all_writers
+      fullcredits_document.search("h4[text()*='Writing Credits'] + table tbody tr td[class='name']").map do |name|
+        name.content.strip
+      end.uniq
     end
 
     # Use HTTParty to fetch the raw HTML for this movie.

@@ -62,10 +62,25 @@ describe 'Imdb::Movie' do
       reviews = subject.user_reviews
 
       expect(reviews).to be_an(Enumerator)
-      expect(reviews.first.first[:title]).not_to be_blank
-      expect(reviews.first.first[:rating]).to be_an(Integer)
-      expect(reviews.first.first[:rating]).to be_between(0, 10)
-      expect(reviews.first.first[:review]).not_to be_blank
+      first_reviews = reviews.first(40) # Needs to load 2 pages since each page contains 24 reviews
+      expect(first_reviews).to be_an(Array)
+
+      first_reviews.each do |review|
+        expect(review[:title]).not_to be_blank
+        expect(review[:review]).not_to be_blank
+      end
+
+      reviews_with_ratings = first_reviews.select{|r| r[:rating] }
+      expect(reviews_with_ratings.size).to eq(34)
+      reviews_with_ratings.each do |review|
+        expect(review[:rating]).to be_an(Integer)
+        expect(review[:rating]).to be_between(0, 10)
+      end
+
+      ivo_cobra8_review = first_reviews.find {|r| r[:title].include?('hands down my personal favorite')}
+      expect(ivo_cobra8_review).to_not be_nil
+      expect(ivo_cobra8_review[:review]).to include('This film has heart and soul.')
+      expect(ivo_cobra8_review[:rating]).to eq(10)
     end
 
     describe 'fetching a list of imdb actor ids for the cast members' do
@@ -195,8 +210,11 @@ describe 'Imdb::Movie' do
 
     it "finds multiple 'also known as' versions" do
       also_known_as = subject.also_known_as
+      aka_hash = also_known_as.map{|h| h.values_at(:version, :title) }.to_h
       expect(also_known_as).to be_a(Array)
       expect(also_known_as.size).to eql(52)
+      expect(aka_hash['France']).to eql('Piège de cristal')
+      expect(aka_hash['Germany']).to eql('Stirb langsam')
     end
 
     it "finds a specific 'also known as' version" do
@@ -289,11 +307,47 @@ describe 'Imdb::Movie' do
   end
 
   describe 'with title that has utf-8 characters' do
+    context 'WALL-E' do
+      # WALL-E
+      subject { Imdb::Movie.search('Wall-E').first }
+
+      it 'returns the proper title' do
+        expect(subject.title).to eq('WALL·E (2008)')
+        expect(subject.title(true)).to eq('WALL·E')
+      end
+
+      it 'returns the proper movie' do
+        expect(subject.year).to eq(2008)
+      end
+    end
+
     context '8 1/2' do
       subject { Imdb::Movie.new('0056801') }
 
       it 'returns the proper title' do
         expect(subject.title).to include('8½')
+      end
+    end
+  end
+
+  describe 'with many writers and directors' do
+    context "Paris, je t'aime" do
+      # Paris, je t'aime (2006)
+      subject { Imdb::Movie.new('0401711') }
+      it 'has many writers' do
+        expect(subject.writers.size).to eq(30)
+      end
+
+      it "shouldn't have a 'see more' writer" do
+        expect(subject.writers).not_to include('See more »')
+      end
+
+      it 'has many directors' do
+        expect(subject.directors.size).to eq(22)
+      end
+
+      it "shouldn't have a 'see more' director" do
+        expect(subject.directors).not_to include('See more »')
       end
     end
   end
