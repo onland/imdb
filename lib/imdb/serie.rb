@@ -9,6 +9,10 @@ module Imdb
       season_urls.map { |url| Imdb::Season.new(url) }
     end
 
+    def creators
+      document.search("div[text()*='Creator']//a").map { |a| a.content.strip } rescue []
+    end
+
     private
 
     def newest_season

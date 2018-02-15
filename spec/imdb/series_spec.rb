@@ -8,6 +8,10 @@ describe 'Imdb::Serie' do
     expect(subject.title).to eq("The Walking Dead")
   end
 
+  it 'finds the creators' do
+    expect(subject.creators).to include('Frank Darabont')
+  end
+
   it 'reports the number of seasons' do
     expect(subject.seasons.size).to eq(9)
   end
@@ -31,6 +35,8 @@ describe 'Imdb::Serie' do
       expect(subject.plot).to match(/A drama about one of New York's most prestigious ad agencies at the beginning of the 1960s/)
       expect(subject.plot_summary).to match(/The professional and personal lives of those who work in advertising on Madison Avenue/)
       expect(subject.starring_actors).to include('Jon Hamm', 'Elisabeth Moss')
+      expect(subject.creators).to include('Matthew Weiner')
+      expect(subject.directors).to include('Matthew Weiner', 'Phil Abraham')
       expect(subject.writers).to include('Matthew Weiner')
       expect(subject.cast_members).to include('Jon Hamm', 'John Slattery')
       expect(subject.cast_characters).to include('Don Draper', 'Roger Sterling')
