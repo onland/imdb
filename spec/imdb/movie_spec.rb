@@ -195,8 +195,11 @@ describe 'Imdb::Movie' do
 
     it "finds multiple 'also known as' versions" do
       also_known_as = subject.also_known_as
+      aka_hash = also_known_as.map{|h| h.values_at(:version, :title) }.to_h
       expect(also_known_as).to be_a(Array)
       expect(also_known_as.size).to eql(52)
+      expect(aka_hash['France']).to eql('Piège de cristal')
+      expect(aka_hash['Germany']).to eql('Stirb langsam')
     end
 
     it "finds a specific 'also known as' version" do
