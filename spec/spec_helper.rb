@@ -31,7 +31,6 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt0095016/releaseinfo' => 'releaseinfo',
   'http://www.imdb.com:80/title/tt0242653/reference' => 'tt0242653',
   'http://www.imdb.com:80/title/tt1821700/reference' => 'tt1821700',
-  'http://www.imdb.com/title/tt1821700/fullcredits' => 'fullcredits',
   'http://www.imdb.com/title/tt0166222/?fr=c2M9MXxsbT01MDB8ZmI9dXx0dD0xfG14PTIwfGh0bWw9MXxjaD0xfGNvPTF8cG49MHxmdD0xfGt3PTF8cXM9SSBraWxsZWQgbXkgbGVzYmlhbiB3aWZlfHNpdGU9YWthfHE9SSBraWxsZWQgbXkgbGVzYmlhbiB3aWZlfG5tPTE_&fc=1&ft=7' => 'tt0166222',
   'http://www.imdb.com:80/chart/top' => 'top_250',
   'http://www.imdb.com/chart/boxoffice' => 'box_office',
@@ -49,6 +48,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt0898266/reference' => 'tt0898266',
   'http://www.imdb.com/title/tt0056801/reference' => 'tt0056801',
   'http://www.imdb.com/title/tt0804503/reference' => 'tt0804503',
+  'http://www.imdb.com/title/tt0804503/fullcredits' => 'mad_men_fullcredits',
   'http://www.imdb.com/title/tt0804503/' => 'tt0804503_apex',
   'http://www.imdb.com/name/nm0000019/' => 'nm0000019',
   'http://www.imdb.com/name/nm0000229/' => 'nm0000229',
@@ -61,6 +61,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/find?q=Wall-E&s=tt' => 'search_wall_e',
   'http://www.imdb.com/title/tt0910970/reference' => 'wall_e',
   'http://www.imdb.com/title/tt0401711/reference' => 'paris_je_t_aime',
+  'http://www.imdb.com/title/tt0401711/fullcredits' => 'paris_je_t_aime_fullcredits',
 }
 
 unless ENV['LIVE_TEST'] || ENV['FIXTURES_UPDATE']

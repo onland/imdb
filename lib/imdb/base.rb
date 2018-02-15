@@ -52,15 +52,27 @@ module Imdb
     end
 
     # Returns the name of the directors.
+    # Extracts from full_credits for movies with more than 3 directors.
     def directors
-      document.search("div[text()*='Director']//a").map { |a| a.content.strip } rescue []
+      top_directors = document.search("div[text()*='Director']//a").map { |a| a.content.strip }
+      if top_directors.empty? || top_directors.last.start_with?('See more')
+        all_directors
+      else
+        top_directors
+      end
     end
     # NOTE: Keeping Base#director method for compatibility.
     alias :director :directors
 
     # Returns the names of Writers
+    # Extracts from full_credits for movies with more than 3 writers.
     def writers
-      document.search("div[text()*='Writer']//a").map { |a| a.content.strip } rescue []
+      top_writers = document.search("div[text()*='Writer']//a").map { |a| a.content.strip }
+      if top_writers.empty? || top_writers.last.start_with?('See more')
+        all_writers
+      else
+        top_writers
+      end
     end
 
     # Returns the url to the "Watch a trailer" page
@@ -244,6 +256,18 @@ module Imdb
 
     def userreviews_document
       @userreviews_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'reviews'))
+    end
+
+    def all_directors
+      fullcredits_document.search("h4[text()*='Directed by'] + table tbody tr td[class='name']").map do |name|
+        name.content.strip
+      end.uniq
+    end
+
+    def all_writers
+      fullcredits_document.search("h4[text()*='Writing Credits'] + table tbody tr td[class='name']").map do |name|
+        name.content.strip
+      end.uniq
     end
 
     # Use HTTParty to fetch the raw HTML for this movie.
