@@ -292,6 +292,20 @@ describe 'Imdb::Movie' do
   end
 
   describe 'with title that has utf-8 characters' do
+    context 'WALL-E' do
+      # WALL-E
+      subject { Imdb::Movie.search('Wall-E').first }
+
+      it 'returns the proper title' do
+        expect(subject.title).to eq('WALL·E (2008)')
+        expect(subject.title(true)).to eq('WALL·E')
+      end
+
+      it 'returns the proper movie' do
+        expect(subject.year).to eq(2008)
+      end
+    end
+
     context '8 1/2' do
       subject { Imdb::Movie.new('0056801') }
 

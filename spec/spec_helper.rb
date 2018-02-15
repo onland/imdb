@@ -58,6 +58,8 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt0303461/reference' => 'firefly',
   'http://www.imdb.com/title/tt0303461/episodes?season=1' => 'firefly-s1',
   'http://www.imdb.com/title/tt0060028/reference' => 'star_trek',
+  'http://www.imdb.com/find?q=Wall-E&s=tt' => 'search_wall_e',
+  'http://www.imdb.com/title/tt0910970/reference' => 'wall_e',
 }
 
 unless ENV['LIVE_TEST'] || ENV['FIXTURES_UPDATE']
