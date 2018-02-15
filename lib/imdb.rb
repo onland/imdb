@@ -5,6 +5,14 @@ require 'open-uri'
 require 'rubygems'
 require 'nokogiri'
 
+module Imdb
+  # akas.imdb.com doesn't return original language anymore.
+  # www.imdb.com returns 'Die Verurteilten' for 'The Shawshank Redemption' in Germany.
+  # This header is needed to disable localizing.
+  # use_it with open-uri's open or `curl`
+  HTTP_HEADER = {'Accept-Language' => 'en-US;en'}
+end
+
 require 'imdb/base'
 require 'imdb/movie'
 require 'imdb/person'

@@ -25,19 +25,19 @@ describe 'Imdb::Person' do
       expect(known_for).to be_an(Array)
       known_for.each { |movie| expect(movie).to be_an_instance_of(Imdb::Movie) }
 
-      expect(known_for.first.id).to eq("0056801")
-      expect(known_for.first.title).to eq("8½")
-      expect(known_for.first.year).to eq(1963)
-      expect(known_for.first.poster_thumbnail).to match(/\Ahttp.*jpg\Z/)
-      expect(known_for.first.related_person).to eq(subject)
-      expect(known_for.first.related_person_role).to eq('Writer')
-
-      expect(known_for.last.id).to eq("0050783")
-      expect(known_for.last.title).to eq("The Nights of Cabiria")
-      expect(known_for.last.year).to eq(1957)
+      expect(known_for.last.id).to eq("0056801")
+      expect(known_for.last.title).to eq("8½")
+      expect(known_for.last.year).to eq(1963)
       expect(known_for.last.poster_thumbnail).to match(/\Ahttp.*jpg\Z/)
       expect(known_for.last.related_person).to eq(subject)
       expect(known_for.last.related_person_role).to eq('Writer')
+
+      expect(known_for[1].id).to eq("0050783")
+      expect(known_for[1].title).to eq("The Nights of Cabiria")
+      expect(known_for[1].year).to eq(1957)
+      expect(known_for[1].poster_thumbnail).to match(/\Ahttp.*jpg\Z/)
+      expect(known_for[1].related_person).to eq(subject)
+      expect(known_for[1].related_person_role).to eq('Writer')
     end
 
     it 'finds their picture thumbnail' do
@@ -54,7 +54,7 @@ describe 'Imdb::Person' do
     end
 
     it 'finds their nickname' do
-      expect(subject.nickname).to eq('FeFe')
+      expect(subject.nickname).to eq('Il Maestro')
     end
 
     it 'finds their alternative names' do
@@ -66,8 +66,7 @@ describe 'Imdb::Person' do
     end
 
     it 'finds their personal quote' do
-      expect(subject.personal_quote).to satisfy do |qt|
-       [
+       possible_quotes = [
          %q{There is no end. There is no beginning. There is only the infinite passion of life.},
          %q{My work is my only relationship to everything.},
          %q{You exist only in what you do.},
@@ -93,7 +92,11 @@ describe 'Imdb::Person' do
          %q{The visionary is the only true realist.},
          %q{Even if I set out to make a film about a fillet of sole, it would be about me.},
          %q{Our duty as storytellers is to bring people to the station. There each person will choose his or her own train... But we must at least take them to the station... to a point of departure.},
-       ].include?(qt)
+       ]
+      expect(subject.personal_quote).to satisfy do |quote|
+        possible_quotes.any? do |possible_quote|
+          possible_quote.start_with? quote.chomp('...')
+        end
       end
     end
   end
@@ -156,7 +159,7 @@ describe 'Imdb::Person' do
       expect(subject.name).to eq('Keanu Reeves')
     end
 
-    it 'finds the perosnal quote even if there is a hyperlink in it' do
+    it 'finds the personal quote even if there is a hyperlink in it' do
       expect(subject.personal_quote).to eq('[on River Phoenix] River was a remarkable artist and a rare human being. I miss him every day.')
     end
   end

@@ -164,17 +164,26 @@ module Imdb
       apex_document.at("span[@itemprop='contentRating']").content.strip
     end
 
-    # Returns a string containing the MPAA letter rating
+    # Returns a string containing the MPAA letter rating.
+    # IMDB Certificates also include 'TV-14' or 'TV-MA', so they need to be filtered out.
     def mpaa_letter_rating
-      document.at("a[@href*='certificates=US%3A']").content.gsub(/^United States:/, '') rescue nil
+      document.search("a[@href*='certificates=US%3A']").map do |a|
+        a.text.gsub(/^United States:/, '')
+      end.find{|r| r=~/\b(G|PG|PG-13|R|NC-17)\b/}
     end
 
-    # Returns a string containing the title
+    # Returns a string containing the original title if present, the title otherwise.
+    # Even with localization disabled, "Die Hard" will be displayed as "Stirb langsam (1998) Die Hard (original title)" in Germany
     def title(force_refresh = false)
       if @title && !force_refresh
         @title
       else
-        @title = document.at("//h3[@itemprop='name']/text()").content.strip rescue nil
+        original_title = document.at_xpath("//h3[@itemprop='name']/following-sibling::text()").content.strip
+        @title = if original_title.empty?
+	           document.at("//h3[@itemprop='name']/text()").content.strip rescue nil
+                 else
+                   original_title
+                 end
       end
     end
 
@@ -191,7 +200,7 @@ module Imdb
 
     # Returns filming locations from imdb_url/locations
     def filming_locations
-      locations_document.search('#filming_locations_content .soda dt a').map { |link| link.content.strip } rescue []
+      locations_document.search('#filming_locations .soda dt a').map { |link| link.content.strip } rescue []
     end
 
     # Returns alternative titles from imdb_url/releaseinfo
@@ -237,11 +246,11 @@ module Imdb
 
     # Use HTTParty to fetch the raw HTML for this movie.
     def self.find_by_id(imdb_id, page = :reference)
-      open(Imdb::Base.url_for(imdb_id, page))
+      open(Imdb::Base.url_for(imdb_id, page),  Imdb::HTTP_HEADER)
     end
 
     def self.url_for(imdb_id, page = :reference)
-      "http://akas.imdb.com/title/tt#{imdb_id}/#{page}"
+      "http://www.imdb.com/title/tt#{imdb_id}/#{page}"
     end
 
     # Convenience method for search

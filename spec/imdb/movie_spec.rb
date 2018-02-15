@@ -4,7 +4,7 @@ require 'spec_helper'
 
 # This test uses "Die hard (1988)" as a testing sample:
 #
-#     http://akas.imdb.com/title/tt0095016/combined
+#     http://www.imdb.com/title/tt0095016/reference
 #
 
 describe 'Imdb::Movie' do
@@ -84,7 +84,7 @@ describe 'Imdb::Movie' do
 
     it 'returns the url to the movie trailer' do
       expect(subject.trailer_url).to be_a(String)
-      expect(subject.trailer_url).to eq('http://www.imdb.com/videoplayer/vi782369049')
+      expect(subject.trailer_url).to eq('http://www.imdb.com/videoplayer/vi581042457')
     end
 
     it 'finds the director' do
@@ -293,7 +293,7 @@ describe 'Imdb::Movie' do
       subject { Imdb::Movie.new('0056801') }
 
       it 'returns the proper title' do
-        expect(subject.title).to eq("Federico Fellini's 8½")
+        expect(subject.title).to include('8½')
       end
     end
   end

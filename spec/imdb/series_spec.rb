@@ -5,11 +5,11 @@ describe 'Imdb::Serie' do
 
   # Double check from Base.
   it 'finds the title' do
-    expect(subject.title).to eq("TWD")
+    expect(subject.title).to eq("The Walking Dead")
   end
 
   it 'reports the number of seasons' do
-    expect(subject.seasons.size).to eq(8)
+    expect(subject.seasons.size).to eq(9)
   end
 
   it 'can fetch a specific season' do
