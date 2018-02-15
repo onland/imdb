@@ -9,7 +9,7 @@ describe 'Imdb::Search with multiple search results' do
     end
 
     it 'finds 6 results' do
-      expect(subject.movies.size).to eq(6)
+      expect(subject.movies.size).to eq(255)
     end
 
     it 'returns Imdb::Movie objects only' do
