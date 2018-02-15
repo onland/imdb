@@ -62,10 +62,25 @@ describe 'Imdb::Movie' do
       reviews = subject.user_reviews
 
       expect(reviews).to be_an(Enumerator)
-      expect(reviews.first.first[:title]).not_to be_blank
-      expect(reviews.first.first[:rating]).to be_an(Integer)
-      expect(reviews.first.first[:rating]).to be_between(0, 10)
-      expect(reviews.first.first[:review]).not_to be_blank
+      first_reviews = reviews.first(40) # Needs to load 2 pages since each page contains 24 reviews
+      expect(first_reviews).to be_an(Array)
+
+      first_reviews.each do |review|
+        expect(review[:title]).not_to be_blank
+        expect(review[:review]).not_to be_blank
+      end
+
+      reviews_with_ratings = first_reviews.select{|r| r[:rating] }
+      expect(reviews_with_ratings.size).to eq(34)
+      reviews_with_ratings.each do |review|
+        expect(review[:rating]).to be_an(Integer)
+        expect(review[:rating]).to be_between(0, 10)
+      end
+
+      ivo_cobra8_review = first_reviews.find {|r| r[:title].include?('hands down my personal favorite')}
+      expect(ivo_cobra8_review).to_not be_nil
+      expect(ivo_cobra8_review[:review]).to include('This film has heart and soul.')
+      expect(ivo_cobra8_review[:rating]).to eq(10)
     end
 
     describe 'fetching a list of imdb actor ids for the cast members' do

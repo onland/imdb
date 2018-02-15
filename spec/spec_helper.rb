@@ -26,6 +26,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com:80/title/tt0095016/reference' => 'tt0095016',
   'http://www.imdb.com/title/tt0095016/' => 'apex',
   'http://www.imdb.com/title/tt0095016/reviews' => 'userreviews',
+  'http://www.imdb.com/title/tt0095016/reviews/_ajax?paginationKey=h2hqyotfisvxpzqltwsrn76x7jrboz25p25prr4m2x5n4hrrusvwvq33z6w4yltpxvg2ku6z45q2m' => 'userreviews_p2',
   'http://www.imdb.com/title/tt0095016/plotsummary' => 'plotsummary',
   'http://www.imdb.com/title/tt0095016/locations' => 'locations',
   'http://www.imdb.com/title/tt0095016/releaseinfo' => 'releaseinfo',

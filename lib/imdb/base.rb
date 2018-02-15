@@ -146,16 +146,27 @@ module Imdb
       document.at('.ipl-rating-star__rating').content.strip.to_f rescue nil
     end
 
-    # Returns an enumerator of pages of user reviews
-    # NOTE: unfortunatly paganation no longer supported
+    # Returns an enumerator of user reviews as hashes
+    # NOTE: Not an enumerator of arrays of hashes anymore.
     def user_reviews
-      [userreviews_document.search("//div[contains(@class, 'user-review')]").map do |review|
-        {
-          title: review.at("//div[@class='title']").content.strip,
-          rating: review.at("//span[contains(@class, 'rating')]/span").content.strip.to_i,
-          review: review.at("//div[@class='text']").content.strip,
-        }
-      end].to_enum
+      Enumerator.new do |enum|
+        data_key = nil
+        loop do
+          reviews_doc = userreviews_document(data_key)
+          review_divs = reviews_doc.search('div.review-container')
+          break if review_divs.empty?
+          review_divs.each do |review_div|
+            title = review_div.at('div.title').text
+            text = review_div.at('div.content div.text').text
+            rating = review_div.at_xpath(".//span[@class='point-scale']/preceding-sibling::span").text.to_i rescue nil
+            enum.yield({title: title, review: text, rating: rating})
+          end
+          # Extracts the key for the next page
+          data_key = reviews_doc.at('div.load-more-data')['data-key'] rescue nil
+          break unless data_key
+          sleep 1
+        end
+      end
     end
 
     # Returns an int containing the Metascore
@@ -254,8 +265,13 @@ module Imdb
       @summary_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'plotsummary'))
     end
 
-    def userreviews_document
-      @userreviews_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'reviews'))
+    def userreviews_document(data_key=nil)
+      if data_key
+        path = "reviews/_ajax?paginationKey=#{data_key}"
+      else
+        path = "reviews"
+      end
+      Nokogiri::HTML(Imdb::Movie.find_by_id(@id, path))
     end
 
     def all_directors
