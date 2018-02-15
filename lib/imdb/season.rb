@@ -32,7 +32,7 @@ module Imdb
     private
 
     def document
-      @document ||= Nokogiri::HTML(open(@url))
+      @document ||= Nokogiri::HTML(open(@url, Imdb::HTTP_HEADER))
     end
   end
 end

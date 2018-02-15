@@ -3,7 +3,7 @@ module Imdb
     private
 
     def document
-      @document ||= Nokogiri::HTML(open('http://www.imdb.com/chart/top'))
+      @document ||= Nokogiri::HTML(open('http://www.imdb.com/chart/top', Imdb::HTTP_HEADER))
     end
   end # Top250
 end # Imdb

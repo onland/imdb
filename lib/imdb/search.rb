@@ -27,7 +27,7 @@ module Imdb
     end
 
     def self.query(query)
-      open("http://www.imdb.com/find?q=#{CGI.escape(query)};s=tt")
+      open("http://www.imdb.com/find?q=#{CGI.escape(query)};s=tt", Imdb::HTTP_HEADER)
     end
 
     def parse_movie
