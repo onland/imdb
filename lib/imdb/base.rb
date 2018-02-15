@@ -51,10 +51,12 @@ module Imdb
       apex_document.search('//span[@itemprop="actors"]//span[@itemprop="name"]/text()').map(&:content) rescue []
     end
 
-    # Returns the name of the director
-    def director
+    # Returns the name of the directors.
+    def directors
       document.search("div[text()*='Director']//a").map { |a| a.content.strip } rescue []
     end
+    # NOTE: Keeping Base#director method for compatibility.
+    alias :director :directors
 
     # Returns the names of Writers
     def writers
