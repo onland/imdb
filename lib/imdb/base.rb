@@ -164,9 +164,12 @@ module Imdb
       apex_document.at("span[@itemprop='contentRating']").content.strip
     end
 
-    # Returns a string containing the MPAA letter rating
+    # Returns a string containing the MPAA letter rating.
+    # IMDB Certificates also include 'TV-14' or 'TV-MA', so they need to be filtered out.
     def mpaa_letter_rating
-      document.at("a[@href*='certificates=US%3A']").content.gsub(/^United States:/, '') rescue nil
+      document.search("a[@href*='certificates=US%3A']").map do |a|
+        a.text.gsub(/^United States:/, '')
+      end.find{|r| r=~/\b(G|PG|PG-13|R|NC-17)\b/}
     end
 
     # Returns a string containing the original title if present, the title otherwise.
