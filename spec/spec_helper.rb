@@ -57,7 +57,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/name/nm0000206/' => 'nm0000206',
 }
 
-unless ENV['LIVE_TEST']
+unless ENV['LIVE_TEST'] || ENV['FIXTURES_UPDATE']
   begin
     require 'rubygems'
     require 'fakeweb'

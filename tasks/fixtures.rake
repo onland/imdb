@@ -1,6 +1,10 @@
 namespace :fixtures do
   desc 'Refresh spec fixtures with fresh data from IMDB.com'
   task :refresh do
+
+    # ENV variable to tell spec_helper not to try to read any fixture.
+    # It would fail with Errno::ENOENT for new fixtures otherwise
+    ENV['FIXTURES_UPDATE'] = 'true'
     require File.expand_path(File.dirname(__FILE__) + '/../spec/spec_helper')
 
     ONLY = ENV['ONLY'] ? ENV['ONLY'].split(',') : []
