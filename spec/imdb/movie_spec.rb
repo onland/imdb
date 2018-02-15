@@ -293,7 +293,7 @@ describe 'Imdb::Movie' do
       subject { Imdb::Movie.new('0056801') }
 
       it 'returns the proper title' do
-        expect(subject.title).to eq("Federico Fellini's 8½")
+        expect(subject.title).to include('8½')
       end
     end
   end

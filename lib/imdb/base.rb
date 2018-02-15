@@ -169,12 +169,18 @@ module Imdb
       document.at("a[@href*='certificates=US%3A']").content.gsub(/^United States:/, '') rescue nil
     end
 
-    # Returns a string containing the title
+    # Returns a string containing the original title if present, the title otherwise.
+    # Even with localization disabled, "Die Hard" will be displayed as "Stirb langsam (1998) Die Hard (original title)" in Germany
     def title(force_refresh = false)
       if @title && !force_refresh
         @title
       else
-        @title = document.at("//h3[@itemprop='name']/text()").content.strip rescue nil
+        original_title = document.at_xpath("//h3[@itemprop='name']/following-sibling::text()").content.strip
+        @title = if original_title.empty?
+	           document.at("//h3[@itemprop='name']/text()").content.strip rescue nil
+                 else
+                   original_title
+                 end
       end
     end
 
