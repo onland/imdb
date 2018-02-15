@@ -60,6 +60,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt0060028/reference' => 'star_trek',
   'http://www.imdb.com/find?q=Wall-E&s=tt' => 'search_wall_e',
   'http://www.imdb.com/title/tt0910970/reference' => 'wall_e',
+  'http://www.imdb.com/title/tt0401711/reference' => 'paris_je_t_aime',
 }
 
 unless ENV['LIVE_TEST'] || ENV['FIXTURES_UPDATE']
