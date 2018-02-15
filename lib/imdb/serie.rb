@@ -12,7 +12,7 @@ module Imdb
     private
 
     def newest_season
-      document.at("//div[contains(text(), 'Seasons:')]/a").content.strip.to_i rescue 0
+      document.at("section div[text()*='Season'] a[@href*='episodes?season']").content.strip.to_i rescue 0
     end
 
     def season_urls

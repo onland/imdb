@@ -55,6 +55,8 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/name/nm0051482/' => 'nm0051482',
   'http://www.imdb.com/name/nm1879589/' => 'nm1879589',
   'http://www.imdb.com/name/nm0000206/' => 'nm0000206',
+  'http://www.imdb.com/title/tt0303461/reference' => 'firefly',
+  'http://www.imdb.com/title/tt0303461/episodes?season=1' => 'firefly-s1',
 }
 
 unless ENV['LIVE_TEST'] || ENV['FIXTURES_UPDATE']
