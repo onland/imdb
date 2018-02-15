@@ -3,7 +3,7 @@ module Imdb
     private
 
     def document
-      @document ||= Nokogiri::HTML(open('http://akas.imdb.com/chart/boxoffice'))
+      @document ||= Nokogiri::HTML(open('http://www.imdb.com/chart/boxoffice'))
     end
   end # BoxOffice
 end # Imdb

@@ -241,7 +241,7 @@ module Imdb
     end
 
     def self.url_for(imdb_id, page = :reference)
-      "http://akas.imdb.com/title/tt#{imdb_id}/#{page}"
+      "http://www.imdb.com/title/tt#{imdb_id}/#{page}"
     end
 
     # Convenience method for search
