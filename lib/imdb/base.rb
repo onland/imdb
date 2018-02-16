@@ -25,7 +25,7 @@ module Imdb
 
     # Returns an array with cast members
     def cast_members
-      document.search('table.cast_list td.itemprop a').map { |a| a.content.strip } rescue []
+      document.search('table.cast_list td.itemprop a').map { |a| a.content.strip }
     end
 
     def cast_member_ids
@@ -34,7 +34,7 @@ module Imdb
 
     # Returns an array with cast characters
     def cast_characters
-      document.search('table.cast_list td.character').map { |a| a.content.tr("\u00A0", ' ').gsub(/(\(|\/).*/, '').strip } rescue []
+      document.search('table.cast_list td.character').map { |a| a.content.tr("\u00A0", ' ').gsub(/(\(|\/).*/, '').strip }
     end
 
     # Returns an array with cast members and characters
@@ -46,7 +46,7 @@ module Imdb
 
     # Returns an array of starring actors as strings
     def starring_actors
-      apex_document.search('//span[@itemprop="actors"]//span[@itemprop="name"]/text()').map(&:content) rescue []
+      apex_document.search('//span[@itemprop="actors"]//span[@itemprop="name"]/text()').map(&:content)
     end
 
     # Returns the name of the directors.
@@ -80,17 +80,17 @@ module Imdb
 
     # Returns an array of genres (as strings)
     def genres
-      document.search("//tr[td[contains(@class, 'label') and text()='Genres']]/td[2]//a").map { |a| a.content.strip } rescue []
+      document.search("//tr[td[contains(@class, 'label') and text()='Genres']]/td[2]//a").map { |a| a.content.strip }
     end
 
     # Returns an array of languages as strings.
     def languages
-      document.search("//tr[td[contains(@class, 'label') and text()='Language']]/td[2]//a").map { |a| a.content.strip } rescue []
+      document.search("//tr[td[contains(@class, 'label') and text()='Language']]/td[2]//a").map { |a| a.content.strip }
     end
 
     # Returns an array of countries as strings.
     def countries
-      document.search("//tr[contains(@class, 'item') and td[text()='Country']]/td[2]//a").map { |a| a.content.strip } rescue []
+      document.search("//tr[contains(@class, 'item') and td[text()='Country']]/td[2]//a").map { |a| a.content.strip }
     end
 
     # Returns the duration of the movie in minutes as an integer.
@@ -105,7 +105,7 @@ module Imdb
 
     # Returns a list of production companies
     def production_companies
-      document.search("//h4[text()='Production Companies']/following::ul[1]/li/a[contains(@href, '/company/')]").map { |a| a.content.strip } rescue []
+      document.search("//h4[text()='Production Companies']/following::ul[1]/li/a[contains(@href, '/company/')]").map { |a| a.content.strip }
     end
 
     # Returns a string containing the (possibly truncated) plot summary.
@@ -223,7 +223,7 @@ module Imdb
 
     # Returns filming locations from imdb_url/locations
     def filming_locations
-      locations_document.search('#filming_locations .soda dt a').map { |link| link.content.strip } rescue []
+      locations_document.search('#filming_locations .soda dt a').map { |link| link.content.strip }
     end
 
     # Returns alternative titles from imdb_url/releaseinfo
@@ -233,7 +233,7 @@ module Imdb
           version: aka.search('td:nth-child(1)').text,
           title:   aka.search('td:nth-child(2)').text,
         }
-      end rescue []
+      end
     end
 
     private
