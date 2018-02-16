@@ -13,6 +13,11 @@ describe 'Imdb::Season' do
     expect(episode.title).to match(/Days Gone By/i)
     expect(episode.episode).to eq(1)
     expect(episode.season).to eq(1)
+    expect(season.episode(999)).to be_nil
+  end
+
+  it 'knows the Serie id' do
+    expect(season.id).to eq('1520211')
   end
 end
 
