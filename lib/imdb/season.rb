@@ -22,7 +22,7 @@ module Imdb
           link[:href].scan(/\d+/).first,
           @season_number,
           div.search("meta[@itemprop*='episodeNumber']").first[:content].to_i,
-          link.content.strip,
+          link.content.strip
         )
       end
 

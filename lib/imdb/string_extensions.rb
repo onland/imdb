@@ -13,9 +13,11 @@ module Imdb #:nordoc:
     end
 
     # Strips out whitespace then tests if the string is empty.
-    def blank?
-      strip.empty?
-    end unless method_defined?(:blank?)
+    unless method_defined?(:blank?)
+      def blank?
+        strip.empty?
+      end
+    end
   end
 end
 

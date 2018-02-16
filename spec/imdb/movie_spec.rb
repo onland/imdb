@@ -70,14 +70,14 @@ describe 'Imdb::Movie' do
         expect(review[:review]).not_to be_blank
       end
 
-      reviews_with_ratings = first_reviews.select{|r| r[:rating] }
+      reviews_with_ratings = first_reviews.select { |r| r[:rating] }
       expect(reviews_with_ratings.size).to eq(34)
       reviews_with_ratings.each do |review|
         expect(review[:rating]).to be_an(Integer)
         expect(review[:rating]).to be_between(0, 10)
       end
 
-      ivo_cobra8_review = first_reviews.find {|r| r[:title].include?('hands down my personal favorite')}
+      ivo_cobra8_review = first_reviews.find { |r| r[:title].include?('hands down my personal favorite') }
       expect(ivo_cobra8_review).to_not be_nil
       expect(ivo_cobra8_review[:review]).to include('This film has heart and soul.')
       expect(ivo_cobra8_review[:rating]).to eq(10)
@@ -210,7 +210,7 @@ describe 'Imdb::Movie' do
 
     it "finds multiple 'also known as' versions" do
       also_known_as = subject.also_known_as
-      aka_hash = also_known_as.map{|h| h.values_at(:version, :title) }.to_h
+      aka_hash = also_known_as.map { |h| h.values_at(:version, :title) }.to_h
       expect(also_known_as).to be_a(Array)
       expect(also_known_as.size).to eql(52)
       expect(aka_hash['France']).to eql('Piège de cristal')

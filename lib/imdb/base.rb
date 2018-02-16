@@ -14,7 +14,7 @@ module Imdb
     def initialize(imdb_id, title = nil)
       @id = imdb_id
       @url = Imdb::Base.url_for(@id, :reference)
-      @title = title.gsub(/"/, '').strip if title
+      @title = title.delete('"').strip if title
     end
 
     def reload
@@ -34,7 +34,7 @@ module Imdb
 
     # Returns an array with cast characters
     def cast_characters
-      document.search('table.cast_list td.character').map { |a| a.content.gsub("\u00A0", " ").gsub(/(\(|\/).*/, '').strip } rescue []
+      document.search('table.cast_list td.character').map { |a| a.content.tr("\u00A0", ' ').gsub(/(\(|\/).*/, '').strip } rescue []
     end
 
     # Returns an array with cast members and characters
@@ -62,7 +62,7 @@ module Imdb
       end
     end
     # NOTE: Keeping Base#director method for compatibility.
-    alias :director :directors
+    alias director directors
 
     # Returns the names of Writers
     # Extracts from full_credits for movies with more than 3 writers.
@@ -159,7 +159,7 @@ module Imdb
             title = review_div.at('div.title').text
             text = review_div.at('div.content div.text').text
             rating = review_div.at_xpath(".//span[@class='point-scale']/preceding-sibling::span").text.to_i rescue nil
-            enum.yield({title: title, review: text, rating: rating})
+            enum.yield(title: title, review: text, rating: rating)
           end
           # Extracts the key for the next page
           data_key = reviews_doc.at('div.load-more-data')['data-key'] rescue nil
@@ -194,7 +194,7 @@ module Imdb
     def mpaa_letter_rating
       document.search("a[@href*='certificates=US%3A']").map do |a|
         a.text.gsub(/^United States:/, '')
-      end.find{|r| r=~/\b(G|PG|PG-13|R|NC-17)\b/}
+      end.find { |r| r =~ /\b(G|PG|PG-13|R|NC-17)\b/ }
     end
 
     # Returns a string containing the original title if present, the title otherwise.
@@ -205,7 +205,7 @@ module Imdb
       else
         original_title = document.at_xpath("//h3[@itemprop='name']/following-sibling::text()").content.strip
         @title = if original_title.empty?
-	           document.at("//h3[@itemprop='name']/text()").content.strip rescue nil
+                   document.at("//h3[@itemprop='name']/text()").content.strip rescue nil
                  else
                    original_title
                  end
@@ -265,12 +265,12 @@ module Imdb
       @summary_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'plotsummary'))
     end
 
-    def userreviews_document(data_key=nil)
-      if data_key
-        path = "reviews/_ajax?paginationKey=#{data_key}"
-      else
-        path = "reviews"
-      end
+    def userreviews_document(data_key = nil)
+      path = if data_key
+               "reviews/_ajax?paginationKey=#{data_key}"
+             else
+               'reviews'
+             end
       Nokogiri::HTML(Imdb::Movie.find_by_id(@id, path))
     end
 
@@ -288,7 +288,7 @@ module Imdb
 
     # Use HTTParty to fetch the raw HTML for this movie.
     def self.find_by_id(imdb_id, page = :reference)
-      open(Imdb::Base.url_for(imdb_id, page),  Imdb::HTTP_HEADER)
+      open(Imdb::Base.url_for(imdb_id, page), Imdb::HTTP_HEADER)
     end
 
     def self.url_for(imdb_id, page = :reference)

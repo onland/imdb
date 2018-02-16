@@ -1,7 +1,6 @@
 namespace :fixtures do
   desc 'Refresh spec fixtures with fresh data from IMDB.com'
   task :refresh do
-
     # ENV variable to tell spec_helper not to try to read any fixture.
     # It would fail with Errno::ENOENT for new fixtures otherwise
     ENV['FIXTURES_UPDATE'] = 'true'
@@ -10,7 +9,7 @@ namespace :fixtures do
     ONLY = ENV['ONLY'] ? ENV['ONLY'].split(',') : []
 
     # Forces curl to download pages in English with '-H "Accept-Language:en-US;en"'
-    curl_headers = Imdb::HTTP_HEADER.map{|k, v| "-H \"#{k}:#{v}\""}.join(' ')
+    curl_headers = Imdb::HTTP_HEADER.map { |k, v| "-H \"#{k}:#{v}\"" }.join(' ')
 
     IMDB_SAMPLES.each_pair do |url, fixture|
       next if !ONLY.empty? && !ONLY.include?(fixture)

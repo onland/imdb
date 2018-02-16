@@ -25,15 +25,15 @@ describe 'Imdb::Person' do
       expect(known_for).to be_an(Array)
       known_for.each { |movie| expect(movie).to be_an_instance_of(Imdb::Movie) }
 
-      expect(known_for.last.id).to eq("0056801")
-      expect(known_for.last.title).to eq("8½")
+      expect(known_for.last.id).to eq('0056801')
+      expect(known_for.last.title).to eq('8½')
       expect(known_for.last.year).to eq(1963)
       expect(known_for.last.poster_thumbnail).to match(/\Ahttp.*jpg\Z/)
       expect(known_for.last.related_person).to eq(subject)
       expect(known_for.last.related_person_role).to eq('Writer')
 
-      expect(known_for[1].id).to eq("0050783")
-      expect(known_for[1].title).to eq("The Nights of Cabiria")
+      expect(known_for[1].id).to eq('0050783')
+      expect(known_for[1].title).to eq('The Nights of Cabiria')
       expect(known_for[1].year).to eq(1957)
       expect(known_for[1].poster_thumbnail).to match(/\Ahttp.*jpg\Z/)
       expect(known_for[1].related_person).to eq(subject)
@@ -66,33 +66,33 @@ describe 'Imdb::Person' do
     end
 
     it 'finds their personal quote' do
-       possible_quotes = [
-         %q{There is no end. There is no beginning. There is only the infinite passion of life.},
-         %q{My work is my only relationship to everything.},
-         %q{You exist only in what you do.},
-         %q{In the myth of the cinema, Oscar is the supreme prize.},
-         %q{In the mythology of the cinema, the Oscar is the supreme prize.},
-         %q{Our dreams are our real life. My fantasies and obsessions are not only my reality, but the stuff of which my films are made.},
-         %q{You have to live spherically--in many directions. To accept yourself for what you are without inhibitions, to be open.},
-         %q{Put yourself into life and never lose your openness, your childish enthusiasm throughout the journey that is life, and things will come your way.},
-         %q{It's easier to be faithful to a restaurant than it is to a woman.},
-         %q{All art is autobiographical. The pearl is the oyster's autobiography.},
-         %q{Cinema is an old whore, like circus and variety, who knows how to give many kinds of pleasure. Besides, you can't teach old fleas new dogs.},
-         %q{Censorship is advertising paid by the government.},
-         %q{It's absolutely impossible to improvise. Making a movie is a mathematical operation. It is like sending a missile to the moon. It isn't improvised. It is too defined to be called improvisational, too mechanical. Art is a scientific operation, so I can say that what we usually call improvisation is in my case just having an ear and eye for things that sometimes occur during the time we are making the picture.},
-         %q{I always direct the same film. I can't distinguish one from another.},
-         %q{Happiness is simply a temporary condition that proceeds unhappiness. Fortunately for us, it works the other way around as well. But it's all a part of the carnival, isn't it.},
-         %q{[on Akira Kurosawa] I think he is the greatest example of all that an author of the cinema should be. I feel a fraternal affinity with his way of telling a story.},
-         %q{We don't really know who woman is. She remains in that precise place within man where darkness begins. Talking about women means talking about the darkest part of ourselves, the undeveloped part, the true mystery within. In the beginning, I believe man was complete and androgynous-both male and female, or neither, like angels. Then came the division, and Eve was taken from him. So the problem for man is to reunite himself with the other half of his being, to find the woman who is right for him-right be she is simply a projection, a mirror of himself. A man can't become whole or free until he has set woman free-his woman. It's his responsibility, not hers. He can't be complete, truly alive until he makes her his sexual companion, and not a slave of libidinous acts or a saint with a halo.},
-         %q{I'm just a storyteller, and the cinema happens to be my medium. I like it because it recreates life in movement, enlarges it, enhances it, distills it. For me, it's far closer to the miraculous creation of life than, say, a painting or music or even literature. It's not just an art form; it's actually a new form of life, with its own rhythms, cadences, perspectives and transparencies. It's my way of telling a story.},
-         %q{Anyone who lives, as I do, in a world of imagination must make an enormous and unnatural effect to be factual in the ordinary sense. I confess I would be a terrible witness in court because of this--and a terrible journalist. I feel compelled to a story the way I see it and this is seldom the way it happened, in all its documentary detail.},
-         %q{No doubt there's a connection between pathology and creation, we can't deny it. Yet I view with pleasure the work of film professionals I love, such as Bunuel, Kurosawa, Kubrick, Bergman.},
-         %q{With the death of Sergei Parajanov cinema lost one of its magicians. (July, 1990)},
-         %q{Talking about dreams is like talking about movies, since the cinema uses the language of dreams; years can pass in a second and you can hop from one place to another. It's a language made of image. And in the real cinema, every object and every light means something as in a dream.},
-         %q{The visionary is the only true realist.},
-         %q{Even if I set out to make a film about a fillet of sole, it would be about me.},
-         %q{Our duty as storytellers is to bring people to the station. There each person will choose his or her own train... But we must at least take them to the station... to a point of departure.},
-       ]
+      possible_quotes = [
+        'There is no end. There is no beginning. There is only the infinite passion of life.',
+        'My work is my only relationship to everything.',
+        'You exist only in what you do.',
+        'In the myth of the cinema, Oscar is the supreme prize.',
+        'In the mythology of the cinema, the Oscar is the supreme prize.',
+        'Our dreams are our real life. My fantasies and obsessions are not only my reality, but the stuff of which my films are made.',
+        'You have to live spherically--in many directions. To accept yourself for what you are without inhibitions, to be open.',
+        'Put yourself into life and never lose your openness, your childish enthusiasm throughout the journey that is life, and things will come your way.',
+        "It's easier to be faithful to a restaurant than it is to a woman.",
+        "All art is autobiographical. The pearl is the oyster's autobiography.",
+        "Cinema is an old whore, like circus and variety, who knows how to give many kinds of pleasure. Besides, you can't teach old fleas new dogs.",
+        'Censorship is advertising paid by the government.',
+        "It's absolutely impossible to improvise. Making a movie is a mathematical operation. It is like sending a missile to the moon. It isn't improvised. It is too defined to be called improvisational, too mechanical. Art is a scientific operation, so I can say that what we usually call improvisation is in my case just having an ear and eye for things that sometimes occur during the time we are making the picture.",
+        "I always direct the same film. I can't distinguish one from another.",
+        "Happiness is simply a temporary condition that proceeds unhappiness. Fortunately for us, it works the other way around as well. But it's all a part of the carnival, isn't it.",
+        '[on Akira Kurosawa] I think he is the greatest example of all that an author of the cinema should be. I feel a fraternal affinity with his way of telling a story.',
+        "We don't really know who woman is. She remains in that precise place within man where darkness begins. Talking about women means talking about the darkest part of ourselves, the undeveloped part, the true mystery within. In the beginning, I believe man was complete and androgynous-both male and female, or neither, like angels. Then came the division, and Eve was taken from him. So the problem for man is to reunite himself with the other half of his being, to find the woman who is right for him-right be she is simply a projection, a mirror of himself. A man can't become whole or free until he has set woman free-his woman. It's his responsibility, not hers. He can't be complete, truly alive until he makes her his sexual companion, and not a slave of libidinous acts or a saint with a halo.",
+        "I'm just a storyteller, and the cinema happens to be my medium. I like it because it recreates life in movement, enlarges it, enhances it, distills it. For me, it's far closer to the miraculous creation of life than, say, a painting or music or even literature. It's not just an art form; it's actually a new form of life, with its own rhythms, cadences, perspectives and transparencies. It's my way of telling a story.",
+        'Anyone who lives, as I do, in a world of imagination must make an enormous and unnatural effect to be factual in the ordinary sense. I confess I would be a terrible witness in court because of this--and a terrible journalist. I feel compelled to a story the way I see it and this is seldom the way it happened, in all its documentary detail.',
+        "No doubt there's a connection between pathology and creation, we can't deny it. Yet I view with pleasure the work of film professionals I love, such as Bunuel, Kurosawa, Kubrick, Bergman.",
+        'With the death of Sergei Parajanov cinema lost one of its magicians. (July, 1990)',
+        "Talking about dreams is like talking about movies, since the cinema uses the language of dreams; years can pass in a second and you can hop from one place to another. It's a language made of image. And in the real cinema, every object and every light means something as in a dream.",
+        'The visionary is the only true realist.',
+        'Even if I set out to make a film about a fillet of sole, it would be about me.',
+        'Our duty as storytellers is to bring people to the station. There each person will choose his or her own train... But we must at least take them to the station... to a point of departure.',
+      ]
       expect(subject.personal_quote).to satisfy do |quote|
         possible_quotes.any? do |possible_quote|
           possible_quote.start_with? quote.chomp('...')

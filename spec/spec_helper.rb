@@ -63,7 +63,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt0910970/reference' => 'wall_e',
   'http://www.imdb.com/title/tt0401711/reference' => 'paris_je_t_aime',
   'http://www.imdb.com/title/tt0401711/fullcredits' => 'paris_je_t_aime_fullcredits',
-}
+}.freeze
 
 unless ENV['LIVE_TEST'] || ENV['FIXTURES_UPDATE']
   begin

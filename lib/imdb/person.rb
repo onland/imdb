@@ -45,7 +45,7 @@ module Imdb
           movie = Imdb::Movie.new(imdb_id)
           movie.title = div.at("div[@class='knownfor-title-role']/a").content
           movie.year = div.at("div[@class='knownfor-year']/span").content.match(/\(([0-9\-]+)\)/)[1].to_i
-          movie.poster_thumbnail = div.at("img")['src']
+          movie.poster_thumbnail = div.at('img')['src']
           movie.related_person = self
           movie.related_person_role = div.at("div[@class='knownfor-title-role']/span").content
           movie
@@ -81,7 +81,7 @@ module Imdb
     private
 
     def document
-      @document ||= Nokogiri::HTML(open(@url,  Imdb::HTTP_HEADER))
+      @document ||= Nokogiri::HTML(open(@url, Imdb::HTTP_HEADER))
     end
   end
 end

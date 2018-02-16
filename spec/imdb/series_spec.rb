@@ -5,7 +5,7 @@ describe 'Imdb::Serie' do
 
   # Double check from Base.
   it 'finds the title' do
-    expect(subject.title).to eq("The Walking Dead")
+    expect(subject.title).to eq('The Walking Dead')
   end
 
   it 'finds the creators' do
@@ -30,7 +30,7 @@ describe 'Imdb::Serie' do
     subject { Imdb::Serie.new('0804503') }
 
     it 'finds the base info' do
-      expect(subject.title).to eq("Mad Men")
+      expect(subject.title).to eq('Mad Men')
       expect(subject.year).to eq(2007)
       expect(subject.plot).to match(/A drama about one of New York's most prestigious ad agencies at the beginning of the 1960s/)
       expect(subject.plot_summary).to match(/The professional and personal lives of those who work in advertising on Madison Avenue/)
