@@ -13,7 +13,7 @@ module Imdb
     end
 
     def roles
-      document.search("//span[@itemprop='jobTitle']").map { |a| a.content.strip } rescue []
+      document.search("//span[@itemprop='jobTitle']").map { |a| a.content.strip }
     end
 
     def birth_date
