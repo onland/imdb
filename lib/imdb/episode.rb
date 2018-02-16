@@ -10,7 +10,7 @@ module Imdb
 
     # Return the original air date for this episode
     def air_date
-      document.at('a[@href*="/releaseinfo"]').content.strip rescue nil
+      release_date
     end
   end
 end
