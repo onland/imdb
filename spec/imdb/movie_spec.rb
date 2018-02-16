@@ -257,7 +257,7 @@ describe 'Imdb::Movie' do
   describe 'mpaa rating' do
     context 'movie 0111161' do
       subject { Imdb::Movie.new('0111161') }
-      it 'finds the mpaa rating with explination when present' do
+      it 'finds the mpaa rating with explanation when present' do
         expect(subject.mpaa_rating).to eq('Rated R for language and prison violence')
       end
     end
