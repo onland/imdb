@@ -29,7 +29,7 @@ module Imdb
     end
 
     def cast_member_ids
-      document.search('table.cast_list td.itemprop a').map { |a| a['href'].sub(%r{^/name/(.*)/.*}, '\1') } rescue []
+      document.search('table.cast_list tr td[itemprop="actor"] a').map { |a| a['href'][/(?<=\/name\/)nm\d+/] }
     end
 
     # Returns an array with cast characters
@@ -39,11 +39,9 @@ module Imdb
 
     # Returns an array with cast members and characters
     def cast_members_characters(sep = '=>')
-      memb_char = []
-      cast_members.each_with_index do |_m, i|
-        memb_char[i] = "#{cast_members[i]} #{sep} #{cast_characters[i]}"
+      cast_members.zip(cast_characters).map do |cast_member, cast_character|
+        "#{cast_member} #{sep} #{cast_character}"
       end
-      memb_char
     end
 
     # Returns an array of starring actors as strings

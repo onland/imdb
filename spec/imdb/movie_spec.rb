@@ -42,6 +42,7 @@ describe 'Imdb::Movie' do
       char = subject.cast_characters
       cast_char = subject.cast_members_characters
 
+      expect(cast_char[0]).to eq("Bruce Willis => John McClane")
       expect(cast_char[0]).to eq("#{cast[0]} => #{char[0]}")
       expect(cast_char[10]).to eq("#{cast[10]} => #{char[10]}")
       expect(cast_char[-1]).to eq("#{cast[-1]} => #{char[-1]}")
