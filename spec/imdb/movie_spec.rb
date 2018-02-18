@@ -356,4 +356,21 @@ describe 'Imdb::Movie' do
       end
     end
   end
+
+  describe 'with not much information' do
+    context "Avatar 5 (2025)" do
+      subject { Imdb::Movie.new('5637536') }
+      it 'has one director' do
+        expect(subject.director).to eq(['James Cameron'])
+      end
+
+      it 'returns nil as trailer url' do
+        expect(subject.trailer_url).to be_nil
+      end
+
+      it 'returns nil as length' do
+        expect(subject.length).to be_nil
+      end
+    end
+  end
 end

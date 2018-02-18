@@ -97,7 +97,8 @@ module Imdb
 
     # Returns the duration of the movie in minutes as an integer.
     def length
-      document.at("//tr[td[contains(@class, 'label') and text()='Runtime']]/td[2]").content.strip.gsub(/ min$/, '').to_i rescue nil
+      runtime = document.at("//tr[td[contains(@class, 'label') and text()='Runtime']]/td[2]")
+      runtime.content.strip.gsub(/ min$/, '').to_i if runtime
     end
 
     # Returns a single production company (legacy)
