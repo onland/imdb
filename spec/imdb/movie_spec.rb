@@ -288,6 +288,10 @@ describe 'Imdb::Movie' do
         expect(subject.poster).to be_nil
       end
 
+      it 'returns nil as trailer url' do
+        expect(subject.trailer_url).to be_nil
+      end
+
       context 'movie 0111161' do
         subject { Imdb::Movie.new('0111161') }
         it 'returns the release date for movies' do
