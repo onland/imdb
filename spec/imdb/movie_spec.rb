@@ -387,6 +387,14 @@ describe 'Imdb::Movie' do
       it 'returns nil as rating' do
         expect(subject.rating).to be_nil
       end
+
+      it 'returns nil as metascore' do
+        expect(subject.metascore).to be_nil
+      end
+
+      it 'returns an empty enumerable as reviews' do
+        expect(subject.user_reviews.to_a).to be_empty
+      end
     end
   end
 end

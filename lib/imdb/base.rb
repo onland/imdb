@@ -145,7 +145,8 @@ module Imdb
 
     # Returns a float containing the average user rating
     def rating
-      document.at('.ipl-rating-star__rating').content.strip.to_f rescue nil
+      rating_html = document.at('.ipl-rating-star__rating')
+      rating_html.content.strip.to_f if rating_html
     end
 
     # Returns an enumerator of user reviews as hashes
