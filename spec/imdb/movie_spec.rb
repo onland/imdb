@@ -371,6 +371,22 @@ describe 'Imdb::Movie' do
       it 'returns nil as length' do
         expect(subject.length).to be_nil
       end
+
+      it 'returns "unkown" as plot' do
+        expect(subject.plot).to match(/Plot unknown/)
+      end
+
+      it 'returns "missing" as plot synopsys' do
+        expect(subject.plot_synopsis).to match(/we don't have a synopsis/i)
+      end
+
+      it 'returns nil as plot summary' do
+        expect(subject.plot_summary).to be_nil
+      end
+
+      it 'returns nil as rating' do
+        expect(subject.rating).to be_nil
+      end
     end
   end
 end

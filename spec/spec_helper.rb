@@ -64,6 +64,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt0401711/reference' => 'paris_je_t_aime',
   'http://www.imdb.com/title/tt0401711/fullcredits' => 'paris_je_t_aime_fullcredits',
   'http://www.imdb.com/title/tt5637536/reference' => 'avatar_5',
+  'http://www.imdb.com/title/tt5637536/plotsummary' => 'avatar_5_plot',
 }.freeze
 
 unless ENV['LIVE_TEST'] || ENV['FIXTURES_UPDATE']

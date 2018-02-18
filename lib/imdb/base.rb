@@ -113,22 +113,24 @@ module Imdb
 
     # Returns a string containing the (possibly truncated) plot summary.
     def plot
-      sanitize_plot(document.at('//section[contains(@class, "overview")]//hr[last()]/preceding-sibling::div[1]').content.strip) rescue nil
+      plot_html = document.at('//section[contains(@class, "overview")]//hr[last()]/preceding-sibling::div[1]')
+      sanitize_plot(plot_html.content.strip) if plot_html
     end
 
     # Returns a string containing the plot synopsis
     def plot_synopsis
-      summary_document.at("li[@id*='synopsis']").content.strip rescue nil
+      summary_document.at("li[@id*='synopsis']").content.strip
     end
 
     # Retruns a string with a longer plot summary
     def plot_summary
-      document.at("//tr[td[contains(@class, 'label') and text()='Plot Summary']]/td[2]/p/text()").content.strip rescue nil
+      summary_html = document.at("//tr[td[contains(@class, 'label') and text()='Plot Summary']]/td[2]/p/text()")
+      summary_html.content.strip if summary_html
     end
 
     # Returns a string containing the URL for a thumbnail sized movie poster.
     def poster_thumbnail
-      @poster_thumbnail || document.at("img[@alt*='Poster']")['src'] rescue nil
+      @poster_thumbnail || (poster_img = document.at("img[@alt*='Poster']")) && poster_img['src']
     end
 
     # Returns a string containing the URL to the movie poster.
