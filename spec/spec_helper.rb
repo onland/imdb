@@ -66,6 +66,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt5637536/reference' => 'avatar_5',
   'http://www.imdb.com/title/tt5637536/plotsummary' => 'avatar_5_plot',
   'http://www.imdb.com/title/tt5637536/reviews' => 'avatar_5_reviews',
+  'http://www.imdb.com/title/tt5637536/' => 'avatar_5_apex',
 }.freeze
 
 unless ENV['LIVE_TEST'] || ENV['FIXTURES_UPDATE']

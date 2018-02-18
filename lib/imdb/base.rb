@@ -179,7 +179,8 @@ module Imdb
 
     # Returns an int containing the Metascore
     def metascore
-      apex_document.at('div[@class*="metacriticScore"]/span').content.to_i rescue nil
+      metascore_html = apex_document.at('div[@class*="metacriticScore"]/span')
+      metascore_html.content.to_i if metascore_html
     end
 
     # Returns an int containing the number of user ratings
