@@ -14,11 +14,9 @@ $LOAD_PATH.unshift(File.dirname(__FILE__) + '/../lib')
 require 'imdb'
 
 def read_fixture(path)
-  begin
-    File.read(File.expand_path(File.join(File.dirname(__FILE__), 'fixtures', path)))
-  rescue Errno::ENOENT
-    raise(Errno::ENOENT, "Missing fixture #{path.inspect}. Please run 'rake fixtures:refresh ONLY=#{path}'")
-  end
+  File.read(File.expand_path(File.join(File.dirname(__FILE__), 'fixtures', path)))
+rescue Errno::ENOENT
+  raise(Errno::ENOENT, "Missing fixture #{path.inspect}. Please run 'rake fixtures:refresh ONLY=#{path}'")
 end
 
 IMDB_SAMPLES = {
@@ -72,6 +70,7 @@ IMDB_SAMPLES = {
   'http://www.imdb.com/title/tt5637536/reviews' => 'avatar_5_reviews',
   'http://www.imdb.com/title/tt5637536/' => 'avatar_5_apex',
   'http://www.imdb.com/title/tt7617048/reference' => 'untitled_star_wars_trilogy',
+  'http://www.imdb.com/name/nm0742578/' => 'maria_rosenfeldt',
 }.freeze
 
 unless ENV['LIVE_TEST'] || ENV['FIXTURES_UPDATE']

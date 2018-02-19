@@ -163,4 +163,49 @@ describe 'Imdb::Person' do
       expect(subject.personal_quote).to eq('[on River Phoenix] River was a remarkable artist and a rare human being. I miss him every day.')
     end
   end
+
+  context 'with not much information except name' do
+    subject { Imdb::Person.new('nm0742578') }
+
+    it 'finds their name' do
+      expect(subject.name).to eq('María Rosenfeldt')
+    end
+
+    it 'has no nickname' do
+      expect(subject.nickname).to be_nil
+    end
+
+    it 'has no personal quote' do
+      expect(subject.personal_quote).to be_nil
+    end
+
+    it 'has no birth date' do
+      expect(subject.birth_date).to be_nil
+    end
+
+    it 'has no death date' do
+      expect(subject.death_date).to be_nil
+    end
+
+    it 'has no age' do
+      expect(subject.age).to be_nil
+    end
+
+    it 'has no picture' do
+      expect(subject.picture_thumbnail).to be_nil
+    end
+
+    it 'has a template bio' do
+      expect(subject.bio).to match(/#{subject.name} is an (actor|actress), known for/)
+    end
+
+    it 'has no award' do
+      expect(subject.award_highlight).to be_nil
+    end
+
+    it 'has a single known_for movie' do
+      expect(subject.known_for.size).to eq(1)
+      expect(subject.known_for[0].related_person_role).to eq('Niña')
+    end
+  end
 end
