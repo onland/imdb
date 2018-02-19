@@ -185,12 +185,14 @@ module Imdb
 
     # Returns an int containing the number of user ratings
     def votes
-      document.at('.ipl-rating-star__total-votes').content.strip.gsub(/[^\d+]/, '').to_i rescue nil
+      votes_html = document.at('.ipl-rating-star__total-votes')
+      votes_html.content.strip.gsub(/[^\d+]/, '').to_i if votes_html
     end
 
     # Returns a string containing the tagline
     def tagline
-      document.at("//tr[td[contains(@class, 'label') and text()='Taglines']]/td[2]/text()").text.strip rescue nil
+      tagline_html = document.at("//tr[td[contains(@class, 'label') and text()='Taglines']]/td[2]/text()")
+      tagline_html.text.strip if tagline_html
     end
 
     # Returns a string containing the mpaa rating and reason for rating
@@ -214,7 +216,8 @@ module Imdb
       else
         original_title = document.at_xpath("//h3[@itemprop='name']/following-sibling::text()").content.strip
         @title = if original_title.empty?
-                   document.at("//h3[@itemprop='name']/text()").content.strip rescue nil
+                   title_html = document.at("//h3[@itemprop='name']/text()")
+                   title_html.content.strip if title_html
                  else
                    original_title
                  end
@@ -223,12 +226,12 @@ module Imdb
 
     # Returns an integer containing the year (CCYY) the movie was released in.
     def year
-      @year || document.at("//h3[@itemprop='name']/span/a/text()").content.strip.to_i rescue nil
+      @year || (year_html = document.at("//h3[@itemprop='name']/span/a/text()")) && year_html.content.strip.to_i
     end
 
     # Returns release date for the movie.
     def release_date
-      sanitize_release_date(document.at("a[@href*='/releaseinfo']").text) rescue nil
+      sanitize_release_date(document.at("div.titlereference-header a[@href*='/releaseinfo']").text) rescue nil
     end
 
     # Returns filming locations from imdb_url/locations

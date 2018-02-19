@@ -392,8 +392,39 @@ describe 'Imdb::Movie' do
         expect(subject.metascore).to be_nil
       end
 
+      it 'returns nil as vote' do
+        expect(subject.votes).to be_nil
+      end
+
+      it 'returns nil as tagline' do
+        expect(subject.tagline).to be_nil
+      end
+
       it 'returns an empty enumerable as reviews' do
         expect(subject.user_reviews.to_a).to be_empty
+      end
+    end
+
+    context "Untitled Star Wars Trilogy: Episode I" do
+      subject { Imdb::Movie.new('7617048') }
+      it 'has one director' do
+        expect(subject.director).to eq(['Rian Johnson'])
+      end
+
+      it 'returns nil as trailer url' do
+        expect(subject.trailer_url).to be_nil
+      end
+
+      it 'returns nil as length' do
+        expect(subject.length).to be_nil
+      end
+
+      it 'returns nil as year' do
+        expect(subject.year).to be_nil
+      end
+
+      it 'returns nil as release date' do
+        expect(subject.release_date).to be_nil
       end
     end
   end
