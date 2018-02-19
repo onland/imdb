@@ -10,8 +10,7 @@ module Imdb
 
     # NOTE: Can a Person not have a name on IMDB?
     def name
-      name_html = document.at("//span[@itemprop='name']")
-      name_html.content.strip if name_html
+      get_node_content("//span[@itemprop='name']")
     end
 
     def roles
@@ -19,13 +18,15 @@ module Imdb
     end
 
     def birth_date
-      birth_date_html = document.at("//time[@itemprop='birthDate']")
-      Date.parse(birth_date_html['datetime']) if birth_date_html
+      get_node_content("//time[@itemprop='birthDate']") do |node|
+        Date.parse(node['datetime'])
+      end
     end
 
     def death_date
-      death_date_html = document.at("//time[@itemprop='deathDate']")
-      Date.parse(death_date_html['datetime']) if death_date_html
+      get_node_content("//time[@itemprop='deathDate']") do |node|
+        Date.parse(node['datetime'])
+      end
     end
 
     def age
@@ -39,8 +40,7 @@ module Imdb
 
     # NOTE: Can a Person not have a bio on IMDB?
     def bio
-      bio_html = document.at("//div[@itemprop='description']/text()")
-      bio_html.content.strip if bio_html
+      get_node_content("//div[@itemprop='description']/text()")
     end
 
     # Returns an array of Imdb::Movie objects with some data pre-populated
@@ -62,23 +62,23 @@ module Imdb
     end
 
     def picture_thumbnail
-      img_html = document.at("//img[@id='name-poster']")
-      img_html['src'] if img_html
+      get_node_content("//img[@id='name-poster']") { |node| node['src'] }
     end
 
     def award_highlight
-      award_html = document.at("//span[@itemprop='awards']/b")
-      award_html.content.gsub(/[[:space:]]+/, ' ').strip if award_html
+      get_node_content("//span[@itemprop='awards']/b") do |node|
+        node.content.gsub(/[[:space:]]+/, ' ').strip
+      end
     end
 
     def nickname
-      nickname_html = document.at("//div[h4[text()='Nickname:']]/text()[2]")
-      nickname_html.content.strip if nickname_html
+      get_node_content("//div[h4[text()='Nickname:']]/text()[2]")
     end
 
     def personal_quote
-      quote_html = document.at("//div[h4[text()='Personal Quote:']]")
-      quote_html.content.delete("\r\n").strip.gsub(/^Personal Quote:/, '').gsub(/\s\s+See more.*/, '') if quote_html
+      get_node_content("//div[h4[text()='Personal Quote:']]") do |node|
+        node.content.delete("\r\n").strip.gsub(/^Personal Quote:/, '').gsub(/\s\s+See more.*/, '')
+      end
     end
 
     def alternative_names
@@ -89,6 +89,19 @@ module Imdb
     end
 
     private
+
+    # Get node content from document at xpath.
+    # Returns stripped content if present, nil otherwise.
+    def get_node_content(xpath)
+      node = document.at(xpath)
+      if node
+        if block_given?
+          yield node
+        else
+          node.content.strip
+        end
+      end
+    end
 
     def document
       @document ||= Nokogiri::HTML(open(@url, Imdb::HTTP_HEADER))
