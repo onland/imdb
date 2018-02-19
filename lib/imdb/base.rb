@@ -231,7 +231,8 @@ module Imdb
 
     # Returns release date for the movie.
     def release_date
-      sanitize_release_date(document.at("div.titlereference-header a[@href*='/releaseinfo']").text) rescue nil
+      date_html = document.at("div.titlereference-header a[@href*='/releaseinfo']")
+      sanitize_release_date(date_html.text) if date_html
     end
 
     # Returns filming locations from imdb_url/locations
