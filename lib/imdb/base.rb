@@ -26,16 +26,16 @@ module Imdb
 
     # Returns an array with cast members
     def cast_members
-      get_nodes_content('table.cast_list td.itemprop a')
+      get_nodes('table.cast_list td.itemprop a')
     end
 
     def cast_member_ids
-      get_nodes_content('table.cast_list tr td[itemprop="actor"] a') { |a| a['href'][/(?<=\/name\/)nm\d+/] }
+      get_nodes('table.cast_list tr td[itemprop="actor"] a') { |a| a['href'][/(?<=\/name\/)nm\d+/] }
     end
 
     # Returns an array with cast characters
     def cast_characters
-      get_nodes_content('table.cast_list td.character') { |a| a.content.tr("\u00A0", ' ').gsub(/(\(|\/).*/, '').strip }
+      get_nodes('table.cast_list td.character') { |a| a.content.tr("\u00A0", ' ').gsub(/(\(|\/).*/, '').strip }
     end
 
     # Returns an array with cast members and characters
@@ -47,13 +47,13 @@ module Imdb
 
     # Returns an array of starring actors as strings
     def starring_actors
-      apex_document.search('//span[@itemprop="actors"]//span[@itemprop="name"]/text()').map(&:content)
+      get_nodes('//span[@itemprop="actors"]//span[@itemprop="name"]/text()', apex_document)
     end
 
     # Returns the name of the directors.
     # Extracts from full_credits for movies with more than 3 directors.
     def directors
-      top_directors = get_nodes_content("div[text()*='Director']//a")
+      top_directors = get_nodes("div[text()*='Director']//a")
       if top_directors.empty? || top_directors.last.start_with?('See more')
         all_directors
       else
@@ -66,7 +66,7 @@ module Imdb
     # Returns the names of Writers
     # Extracts from full_credits for movies with more than 3 writers.
     def writers
-      top_writers = get_nodes_content("div[text()*='Writer']//a")
+      top_writers = get_nodes("div[text()*='Writer']//a")
       if top_writers.empty? || top_writers.last.start_with?('See more')
         all_writers
       else
@@ -76,29 +76,29 @@ module Imdb
 
     # Returns the url to the "Watch a trailer" page
     def trailer_url
-      get_node_content("a[@href^='videoplayer/']") do |trailer_link|
+      get_node("a[@href^='videoplayer/']") do |trailer_link|
         'http://www.imdb.com/' + trailer_link['href']
       end
     end
 
     # Returns an array of genres (as strings)
     def genres
-      get_nodes_content("//tr[td[contains(@class, 'label') and text()='Genres']]/td[2]//a")
+      get_nodes("//tr[td[contains(@class, 'label') and text()='Genres']]/td[2]//a")
     end
 
     # Returns an array of languages as strings.
     def languages
-      get_nodes_content("//tr[td[contains(@class, 'label') and text()='Language']]/td[2]//a")
+      get_nodes("//tr[td[contains(@class, 'label') and text()='Language']]/td[2]//a")
     end
 
     # Returns an array of countries as strings.
     def countries
-      get_nodes_content("//tr[contains(@class, 'item') and td[text()='Country']]/td[2]//a")
+      get_nodes("//tr[contains(@class, 'item') and td[text()='Country']]/td[2]//a")
     end
 
     # Returns the duration of the movie in minutes as an integer.
     def length
-      get_node_content("//tr[td[contains(@class, 'label') and text()='Runtime']]/td[2]") do |runtime|
+      get_node("//tr[td[contains(@class, 'label') and text()='Runtime']]/td[2]") do |runtime|
         runtime.content.strip.gsub(/ min$/, '').to_i
       end
     end
@@ -110,29 +110,29 @@ module Imdb
 
     # Returns a list of production companies
     def production_companies
-      get_nodes_content("//h4[text()='Production Companies']/following::ul[1]/li/a[contains(@href, '/company/')]")
+      get_nodes("//h4[text()='Production Companies']/following::ul[1]/li/a[contains(@href, '/company/')]")
     end
 
     # Returns a string containing the (possibly truncated) plot summary.
     def plot
-      get_node_content('//section[contains(@class, "overview")]//hr[last()]/preceding-sibling::div[1]') do |plot_html|
+      get_node('//section[contains(@class, "overview")]//hr[last()]/preceding-sibling::div[1]') do |plot_html|
         sanitize_plot(plot_html.content.strip)
       end
     end
 
     # Returns a string containing the plot synopsis
     def plot_synopsis
-      get_node_content("li[@id*='synopsis']", summary_document)
+      get_node("li[@id*='synopsis']", summary_document)
     end
 
     # Retruns a string with a longer plot summary
     def plot_summary
-      get_node_content("//tr[td[contains(@class, 'label') and text()='Plot Summary']]/td[2]/p/text()")
+      get_node("//tr[td[contains(@class, 'label') and text()='Plot Summary']]/td[2]/p/text()")
     end
 
     # Returns a string containing the URL for a thumbnail sized movie poster.
     def poster_thumbnail
-      @poster_thumbnail || get_node_content("img[@alt*='Poster']") { |poster_img| poster_img['src'] }
+      @poster_thumbnail || get_node("img[@alt*='Poster']") { |poster_img| poster_img['src'] }
     end
 
     # Returns a string containing the URL to the movie poster.
@@ -147,7 +147,7 @@ module Imdb
 
     # Returns a float containing the average user rating
     def rating
-      get_node_content('.ipl-rating-star__rating') do |rating_html|
+      get_node('.ipl-rating-star__rating') do |rating_html|
         rating_html.content.strip.to_f
       end
     end
@@ -182,26 +182,26 @@ module Imdb
 
     # Returns an int containing the Metascore
     def metascore
-      get_node_content('div[@class*="metacriticScore"]/span', apex_document) do |metascore_html|
+      get_node('div[@class*="metacriticScore"]/span', apex_document) do |metascore_html|
         metascore_html.content.to_i
       end
     end
 
     # Returns an int containing the number of user ratings
     def votes
-      get_node_content('.ipl-rating-star__total-votes') do |votes_html|
+      get_node('.ipl-rating-star__total-votes') do |votes_html|
         votes_html.content.strip.gsub(/[^\d+]/, '').to_i
       end
     end
 
     # Returns a string containing the tagline
     def tagline
-      get_node_content("//tr[td[contains(@class, 'label') and text()='Taglines']]/td[2]/text()")
+      get_node("//tr[td[contains(@class, 'label') and text()='Taglines']]/td[2]/text()")
     end
 
     # Returns a string containing the mpaa rating and reason for rating
     def mpaa_rating
-      get_node_content("span[@itemprop='contentRating']", apex_document)
+      get_node("span[@itemprop='contentRating']", apex_document)
     end
 
     # Returns a string containing the MPAA letter rating.
@@ -218,9 +218,9 @@ module Imdb
       if @title && !force_refresh
         @title
       else
-        original_title = get_node_content("//h3[@itemprop='name']/following-sibling::text()")
+        original_title = get_node("//h3[@itemprop='name']/following-sibling::text()")
         @title = if original_title.empty?
-                   get_node_content("//h3[@itemprop='name']/text()")
+                   get_node("//h3[@itemprop='name']/text()")
                  else
                    original_title
                  end
@@ -229,27 +229,27 @@ module Imdb
 
     # Returns an integer containing the year (CCYY) the movie was released in.
     def year
-      @year || (year_html = document.at("//h3[@itemprop='name']/span/a/text()")) && year_html.content.strip.to_i
+      @year || get_node("//h3[@itemprop='name']/span/a/text()") { |year_html| year_html.content.strip.to_i }
     end
 
     # Returns release date for the movie.
     def release_date
-      get_node_content("div.titlereference-header a[@href*='/releaseinfo']") do |date_html|
+      get_node("div.titlereference-header a[@href*='/releaseinfo']") do |date_html|
         sanitize_release_date(date_html.text)
       end
     end
 
     # Returns filming locations from imdb_url/locations
     def filming_locations
-      locations_document.search('#filming_locations .soda dt a').map { |link| link.content.strip }
+      get_nodes('#filming_locations .soda dt a', locations_document)
     end
 
     # Returns alternative titles from imdb_url/releaseinfo
     def also_known_as
-      releaseinfo_document.search('#akas tr').map do |aka|
+      get_nodes('#akas tr', releaseinfo_document) do |aka|
         {
-          version: aka.search('td:nth-child(1)').text,
-          title:   aka.search('td:nth-child(2)').text,
+          version: aka.at('td:nth-child(1)').text,
+          title:   aka.at('td:nth-child(2)').text,
         }
       end
     end
@@ -283,7 +283,7 @@ module Imdb
 
     # Get node content from document at xpath.
     # Returns stripped content if present, nil otherwise.
-    def get_node_content(xpath, doc=document)
+    def get_node(xpath, doc=document)
       node = doc.at(xpath)
       if node
         if block_given?
@@ -296,7 +296,7 @@ module Imdb
 
     # Get nodes content from document at xpath.
     # Returns stripped content for each node
-    def get_nodes_content(xpath, doc=document, &block)
+    def get_nodes(xpath, doc=document, &block)
       nodes = doc.search(xpath)
       if block_given?
         nodes.map(&block)
