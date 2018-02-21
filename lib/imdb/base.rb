@@ -26,16 +26,16 @@ module Imdb
 
     # Returns an array with cast members
     def cast_members
-      document.search('table.cast_list td.itemprop a').map { |a| a.content.strip }
+      get_nodes_content('table.cast_list td.itemprop a')
     end
 
     def cast_member_ids
-      document.search('table.cast_list tr td[itemprop="actor"] a').map { |a| a['href'][/(?<=\/name\/)nm\d+/] }
+      get_nodes_content('table.cast_list tr td[itemprop="actor"] a') { |a| a['href'][/(?<=\/name\/)nm\d+/] }
     end
 
     # Returns an array with cast characters
     def cast_characters
-      document.search('table.cast_list td.character').map { |a| a.content.tr("\u00A0", ' ').gsub(/(\(|\/).*/, '').strip }
+      get_nodes_content('table.cast_list td.character') { |a| a.content.tr("\u00A0", ' ').gsub(/(\(|\/).*/, '').strip }
     end
 
     # Returns an array with cast members and characters
@@ -53,7 +53,7 @@ module Imdb
     # Returns the name of the directors.
     # Extracts from full_credits for movies with more than 3 directors.
     def directors
-      top_directors = document.search("div[text()*='Director']//a").map { |a| a.content.strip }
+      top_directors = get_nodes_content("div[text()*='Director']//a")
       if top_directors.empty? || top_directors.last.start_with?('See more')
         all_directors
       else
@@ -66,7 +66,7 @@ module Imdb
     # Returns the names of Writers
     # Extracts from full_credits for movies with more than 3 writers.
     def writers
-      top_writers = document.search("div[text()*='Writer']//a").map { |a| a.content.strip }
+      top_writers = get_nodes_content("div[text()*='Writer']//a")
       if top_writers.empty? || top_writers.last.start_with?('See more')
         all_writers
       else
@@ -83,17 +83,17 @@ module Imdb
 
     # Returns an array of genres (as strings)
     def genres
-      document.search("//tr[td[contains(@class, 'label') and text()='Genres']]/td[2]//a").map { |a| a.content.strip }
+      get_nodes_content("//tr[td[contains(@class, 'label') and text()='Genres']]/td[2]//a")
     end
 
     # Returns an array of languages as strings.
     def languages
-      document.search("//tr[td[contains(@class, 'label') and text()='Language']]/td[2]//a").map { |a| a.content.strip }
+      get_nodes_content("//tr[td[contains(@class, 'label') and text()='Language']]/td[2]//a")
     end
 
     # Returns an array of countries as strings.
     def countries
-      document.search("//tr[contains(@class, 'item') and td[text()='Country']]/td[2]//a").map { |a| a.content.strip }
+      get_nodes_content("//tr[contains(@class, 'item') and td[text()='Country']]/td[2]//a")
     end
 
     # Returns the duration of the movie in minutes as an integer.
@@ -110,7 +110,7 @@ module Imdb
 
     # Returns a list of production companies
     def production_companies
-      document.search("//h4[text()='Production Companies']/following::ul[1]/li/a[contains(@href, '/company/')]").map { |a| a.content.strip }
+      get_nodes_content("//h4[text()='Production Companies']/following::ul[1]/li/a[contains(@href, '/company/')]")
     end
 
     # Returns a string containing the (possibly truncated) plot summary.
@@ -291,6 +291,17 @@ module Imdb
         else
           node.content.strip
         end
+      end
+    end
+
+    # Get nodes content from document at xpath.
+    # Returns stripped content for each node
+    def get_nodes_content(xpath, doc=document, &block)
+      nodes = doc.search(xpath)
+      if block_given?
+        nodes.map(&block)
+      else
+        nodes.map { |node| node.content.strip }
       end
     end
 
