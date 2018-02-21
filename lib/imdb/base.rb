@@ -76,8 +76,9 @@ module Imdb
 
     # Returns the url to the "Watch a trailer" page
     def trailer_url
-      trailer_link = document.at("a[@href^='videoplayer/']")
-      'http://www.imdb.com/' + trailer_link['href'] if trailer_link
+      get_node_content("a[@href^='videoplayer/']") do |trailer_link|
+        'http://www.imdb.com/' + trailer_link['href']
+      end
     end
 
     # Returns an array of genres (as strings)
@@ -97,8 +98,9 @@ module Imdb
 
     # Returns the duration of the movie in minutes as an integer.
     def length
-      runtime = document.at("//tr[td[contains(@class, 'label') and text()='Runtime']]/td[2]")
-      runtime.content.strip.gsub(/ min$/, '').to_i if runtime
+      get_node_content("//tr[td[contains(@class, 'label') and text()='Runtime']]/td[2]") do |runtime|
+        runtime.content.strip.gsub(/ min$/, '').to_i
+      end
     end
 
     # Returns a single production company (legacy)
@@ -113,24 +115,24 @@ module Imdb
 
     # Returns a string containing the (possibly truncated) plot summary.
     def plot
-      plot_html = document.at('//section[contains(@class, "overview")]//hr[last()]/preceding-sibling::div[1]')
-      sanitize_plot(plot_html.content.strip) if plot_html
+      get_node_content('//section[contains(@class, "overview")]//hr[last()]/preceding-sibling::div[1]') do |plot_html|
+        sanitize_plot(plot_html.content.strip)
+      end
     end
 
     # Returns a string containing the plot synopsis
     def plot_synopsis
-      summary_document.at("li[@id*='synopsis']").content.strip
+      get_node_content("li[@id*='synopsis']", summary_document)
     end
 
     # Retruns a string with a longer plot summary
     def plot_summary
-      summary_html = document.at("//tr[td[contains(@class, 'label') and text()='Plot Summary']]/td[2]/p/text()")
-      summary_html.content.strip if summary_html
+      get_node_content("//tr[td[contains(@class, 'label') and text()='Plot Summary']]/td[2]/p/text()")
     end
 
     # Returns a string containing the URL for a thumbnail sized movie poster.
     def poster_thumbnail
-      @poster_thumbnail || (poster_img = document.at("img[@alt*='Poster']")) && poster_img['src']
+      @poster_thumbnail || get_node_content("img[@alt*='Poster']") { |poster_img| poster_img['src'] }
     end
 
     # Returns a string containing the URL to the movie poster.
@@ -145,8 +147,9 @@ module Imdb
 
     # Returns a float containing the average user rating
     def rating
-      rating_html = document.at('.ipl-rating-star__rating')
-      rating_html.content.strip.to_f if rating_html
+      get_node_content('.ipl-rating-star__rating') do |rating_html|
+        rating_html.content.strip.to_f
+      end
     end
 
     # Returns an enumerator of user reviews as hashes
@@ -179,25 +182,26 @@ module Imdb
 
     # Returns an int containing the Metascore
     def metascore
-      metascore_html = apex_document.at('div[@class*="metacriticScore"]/span')
-      metascore_html.content.to_i if metascore_html
+      get_node_content('div[@class*="metacriticScore"]/span', apex_document) do |metascore_html|
+        metascore_html.content.to_i
+      end
     end
 
     # Returns an int containing the number of user ratings
     def votes
-      votes_html = document.at('.ipl-rating-star__total-votes')
-      votes_html.content.strip.gsub(/[^\d+]/, '').to_i if votes_html
+      get_node_content('.ipl-rating-star__total-votes') do |votes_html|
+        votes_html.content.strip.gsub(/[^\d+]/, '').to_i
+      end
     end
 
     # Returns a string containing the tagline
     def tagline
-      tagline_html = document.at("//tr[td[contains(@class, 'label') and text()='Taglines']]/td[2]/text()")
-      tagline_html.text.strip if tagline_html
+      get_node_content("//tr[td[contains(@class, 'label') and text()='Taglines']]/td[2]/text()")
     end
 
     # Returns a string containing the mpaa rating and reason for rating
     def mpaa_rating
-      apex_document.at("span[@itemprop='contentRating']").content.strip
+      get_node_content("span[@itemprop='contentRating']", apex_document)
     end
 
     # Returns a string containing the MPAA letter rating.
@@ -214,10 +218,9 @@ module Imdb
       if @title && !force_refresh
         @title
       else
-        original_title = document.at_xpath("//h3[@itemprop='name']/following-sibling::text()").content.strip
+        original_title = get_node_content("//h3[@itemprop='name']/following-sibling::text()")
         @title = if original_title.empty?
-                   title_html = document.at("//h3[@itemprop='name']/text()")
-                   title_html.content.strip if title_html
+                   get_node_content("//h3[@itemprop='name']/text()")
                  else
                    original_title
                  end
@@ -231,8 +234,9 @@ module Imdb
 
     # Returns release date for the movie.
     def release_date
-      date_html = document.at("div.titlereference-header a[@href*='/releaseinfo']")
-      sanitize_release_date(date_html.text) if date_html
+      get_node_content("div.titlereference-header a[@href*='/releaseinfo']") do |date_html|
+        sanitize_release_date(date_html.text)
+      end
     end
 
     # Returns filming locations from imdb_url/locations
@@ -275,6 +279,19 @@ module Imdb
 
     def summary_document
       @summary_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'plotsummary'))
+    end
+
+    # Get node content from document at xpath.
+    # Returns stripped content if present, nil otherwise.
+    def get_node_content(xpath, doc=document)
+      node = doc.at(xpath)
+      if node
+        if block_given?
+          yield node
+        else
+          node.content.strip
+        end
+      end
     end
 
     def userreviews_document(data_key = nil)
