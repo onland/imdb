@@ -1,6 +1,8 @@
 module Imdb
   # Represents something on IMDB.com
   class Base
+    include Util
+
     attr_accessor :id, :url, :related_person, :related_person_role
     attr_writer :title, :year, :poster_thumbnail
 
@@ -279,30 +281,6 @@ module Imdb
 
     def summary_document
       @summary_document ||= Nokogiri::HTML(Imdb::Movie.find_by_id(@id, 'plotsummary'))
-    end
-
-    # Get node content from document at xpath.
-    # Returns stripped content if present, nil otherwise.
-    def get_node(xpath, doc = document)
-      node = doc.at(xpath)
-      if node
-        if block_given?
-          yield node
-        else
-          node.content.strip
-        end
-      end
-    end
-
-    # Get nodes content from document at xpath.
-    # Returns stripped content for each node
-    def get_nodes(xpath, doc = document, &block)
-      nodes = doc.search(xpath)
-      if block_given?
-        nodes.map(&block)
-      else
-        nodes.map { |node| node.content.strip }
-      end
     end
 
     def userreviews_document(data_key = nil)

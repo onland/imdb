@@ -13,6 +13,7 @@ module Imdb
   HTTP_HEADER = { 'Accept-Language' => 'en-US;en' }.freeze
 end
 
+require 'imdb/util'
 require 'imdb/base'
 require 'imdb/movie'
 require 'imdb/person'

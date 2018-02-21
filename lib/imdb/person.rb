@@ -1,6 +1,7 @@
 module Imdb
   # Represents a person on IMDB.com
   class Person
+    include Util
     attr_accessor :id, :url
 
     def initialize(imdb_id)
@@ -86,31 +87,6 @@ module Imdb
     end
 
     private
-
-    # Get node content from document at xpath.
-    # Returns stripped content if present, nil otherwise.
-    # TODO: DRY with Imdb::Base
-    def get_node(xpath)
-      node = document.at(xpath)
-      if node
-        if block_given?
-          yield node
-        else
-          node.content.strip
-        end
-      end
-    end
-
-    # Get nodes content from document at xpath.
-    # Returns stripped content for each node, or apply block to each node if present.
-    def get_nodes(xpath, doc = document, &block)
-      nodes = doc.search(xpath)
-      if block_given?
-        nodes.map(&block)
-      else
-        nodes.map { |node| node.content.strip }
-      end
-    end
 
     def document
       @document ||= Nokogiri::HTML(open(@url, Imdb::HTTP_HEADER))
