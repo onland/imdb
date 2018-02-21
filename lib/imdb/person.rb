@@ -10,21 +10,21 @@ module Imdb
 
     # NOTE: Can a Person not have a name on IMDB?
     def name
-      get_node_content("//span[@itemprop='name']")
+      get_node("//span[@itemprop='name']")
     end
 
     def roles
-      document.search("//span[@itemprop='jobTitle']").map { |a| a.content.strip }
+      get_nodes("//span[@itemprop='jobTitle']")
     end
 
     def birth_date
-      get_node_content("//time[@itemprop='birthDate']") do |node|
+      get_node("//time[@itemprop='birthDate']") do |node|
         Date.parse(node['datetime'])
       end
     end
 
     def death_date
-      get_node_content("//time[@itemprop='deathDate']") do |node|
+      get_node("//time[@itemprop='deathDate']") do |node|
         Date.parse(node['datetime'])
       end
     end
@@ -40,12 +40,12 @@ module Imdb
 
     # NOTE: Can a Person not have a bio on IMDB?
     def bio
-      get_node_content("//div[@itemprop='description']/text()")
+      get_node("//div[@itemprop='description']/text()")
     end
 
     # Returns an array of Imdb::Movie objects with some data pre-populated
     def known_for
-      document.search("//div[starts-with(@id, 'knownfor')]/div[contains(@class, 'knownfor-title')]").map do |div|
+      get_nodes("//div[starts-with(@id, 'knownfor')]/div[contains(@class, 'knownfor-title')]") do |div|
         begin
           imdb_id = div.at("div[@class='knownfor-title-role']/a")['href'][/(?<=title\/tt)\d+/]
           movie = Imdb::Movie.new(imdb_id)
@@ -62,37 +62,35 @@ module Imdb
     end
 
     def picture_thumbnail
-      get_node_content("//img[@id='name-poster']") { |node| node['src'] }
+      get_node("//img[@id='name-poster']") { |node| node['src'] }
     end
 
     def award_highlight
-      get_node_content("//span[@itemprop='awards']/b") do |node|
+      get_node("//span[@itemprop='awards']/b") do |node|
         node.content.gsub(/[[:space:]]+/, ' ').strip
       end
     end
 
     def nickname
-      get_node_content("//div[h4[text()='Nickname:']]/text()[2]")
+      get_node("//div[h4[text()='Nickname:']]/text()[2]")
     end
 
     def personal_quote
-      get_node_content("//div[h4[text()='Personal Quote:']]") do |node|
+      get_node("//div[h4[text()='Personal Quote:']]") do |node|
         node.content.delete("\r\n").strip.gsub(/^Personal Quote:/, '').gsub(/\s\s+See more.*/, '')
       end
     end
 
     def alternative_names
-      document.search("//div[h4[text()='Alternate Names:']]/text()").map do |name|
-        nm = name.content.strip
-        nm unless nm.empty?
-      end.compact
+      get_nodes("//div[h4[text()='Alternate Names:']]/text()").reject(&:empty?)
     end
 
     private
 
     # Get node content from document at xpath.
     # Returns stripped content if present, nil otherwise.
-    def get_node_content(xpath)
+    # TODO: DRY with Imdb::Base
+    def get_node(xpath)
       node = document.at(xpath)
       if node
         if block_given?
@@ -100,6 +98,17 @@ module Imdb
         else
           node.content.strip
         end
+      end
+    end
+
+    # Get nodes content from document at xpath.
+    # Returns stripped content for each node, or apply block to each node if present.
+    def get_nodes(xpath, doc = document, &block)
+      nodes = doc.search(xpath)
+      if block_given?
+        nodes.map(&block)
+      else
+        nodes.map { |node| node.content.strip }
       end
     end
 

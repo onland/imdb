@@ -283,7 +283,7 @@ module Imdb
 
     # Get node content from document at xpath.
     # Returns stripped content if present, nil otherwise.
-    def get_node(xpath, doc=document)
+    def get_node(xpath, doc = document)
       node = doc.at(xpath)
       if node
         if block_given?
@@ -296,7 +296,7 @@ module Imdb
 
     # Get nodes content from document at xpath.
     # Returns stripped content for each node
-    def get_nodes(xpath, doc=document, &block)
+    def get_nodes(xpath, doc = document, &block)
       nodes = doc.search(xpath)
       if block_given?
         nodes.map(&block)
