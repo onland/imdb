@@ -1,6 +1,6 @@
-# By default if you have the FakeWeb gem installed when the specs are
+# By default if you have the Webmock gem installed when the specs are
 # run they will hit recorded responses.  However, if you don't have
-# the FakeWeb gem installed or you set the environment variable
+# the Webmock gem installed or you set the environment variable
 # LIVE_TEST then the tests will hit the live site IMDB.com.
 #
 # Having both methods available for testing allows you to quickly
@@ -13,6 +13,7 @@ require 'rspec'
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/../lib')
 require 'imdb'
 
+# NOTE: An alternative would be to use VCR gem: https://github.com/vcr/vcr
 def read_fixture(path)
   File.read(File.expand_path(File.join(File.dirname(__FILE__), 'fixtures', path)))
 rescue Errno::ENOENT
@@ -76,14 +77,19 @@ IMDB_SAMPLES = {
 unless ENV['LIVE_TEST'] || ENV['FIXTURES_UPDATE']
   begin
     require 'rubygems'
-    require 'fakeweb'
+    require 'webmock'
 
-    FakeWeb.allow_net_connect = false
+    WebMock.enable!
+    WebMock.disable_net_connect!
+
     IMDB_SAMPLES.each do |url, fixture|
-      FakeWeb.register_uri(:get, url, response: read_fixture(fixture))
+      # See https://github.com/bblimke/webmock/issues/274 for global stubs
+      # stub_request could also be used, but it would need to be done before(:each) because stubs are cleared after each test.
+      WebMock::StubRegistry.instance.global_stubs << WebMock::RequestStub.new(:get, url).to_return(read_fixture(fixture))
     end
+
   rescue LoadError
-    puts 'Could not load FakeWeb, these tests will hit IMDB.com'
-    puts 'You can run `gem install fakeweb` to stub out the responses.'
+    puts 'Could not load Webmock, these tests will hit IMDB.com'
+    puts 'You can run `gem install webmock` to stub out the responses.'
   end
 end

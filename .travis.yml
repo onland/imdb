@@ -17,7 +17,7 @@ matrix:
     - rvm: ruby-head
 
 before_install:
-  - gem install fakeweb
+  - gem install webmock
 
 script:
   - "bundle exec rake spec"
