@@ -54,7 +54,7 @@ describe 'Imdb::Person' do
     end
 
     it 'finds their nickname' do
-      expect(subject.nickname).to eq('Il Maestro')
+      expect(['Il Maestro', 'FeFe']).to include(subject.nickname)
     end
 
     it 'finds their alternative names' do
