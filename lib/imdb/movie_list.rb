@@ -16,7 +16,7 @@ module Imdb
         id = element['href'][/\d+/]
 
         data = element.parent.inner_html.split('<br />')
-        title = (!data[0].nil? && !data[1].nil? && data[0] =~ /img/) ? data[1] : data[0]
+        title = !data[0].nil? && !data[1].nil? && data[0] =~ /img/ ? data[1] : data[0]
         title = title.imdb_strip_tags.imdb_unescape_html
         title.gsub!(/\s+\(\d\d\d\d\)$/, '')
         title.gsub!(/\n\s+/, ' ')

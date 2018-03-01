@@ -10,9 +10,10 @@ module Imdb
   # www.imdb.com returns 'Die Verurteilten' for 'The Shawshank Redemption' in Germany.
   # This header is needed to disable localizing.
   # use_it with open-uri's open or `curl`
-  HTTP_HEADER = {'Accept-Language' => 'en-US;en'}
+  HTTP_HEADER = { 'Accept-Language' => 'en-US;en' }.freeze
 end
 
+require 'imdb/util'
 require 'imdb/base'
 require 'imdb/movie'
 require 'imdb/person'

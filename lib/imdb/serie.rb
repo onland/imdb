@@ -2,7 +2,7 @@ module Imdb
   # Represents a TV series on IMDB.com
   class Serie < Base
     def season(number)
-      seasons.fetch(number - 1, nil)
+      seasons[number - 1]
     end
 
     def seasons
@@ -10,7 +10,7 @@ module Imdb
     end
 
     def creators
-      document.search("div[text()*='Creator']//a").map { |a| a.content.strip } rescue []
+      document.search("div[text()*='Creator']//a").map { |a| a.content.strip }
     end
 
     private

@@ -6,6 +6,10 @@ notifications:
 rvm:
   - 2.0
   - 2.1
+  - 2.2
+  - 2.3
+  - 2.4
+  - 2.5
   - ruby-head
 
 matrix:
@@ -13,7 +17,7 @@ matrix:
     - rvm: ruby-head
 
 before_install:
-  - gem install fakeweb
+  - gem install webmock
 
 script:
   - "bundle exec rake spec"

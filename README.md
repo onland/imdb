@@ -72,7 +72,7 @@ As this gem uses content from imdb.com, the test suite uses a set of
 pre-defined fixute files in `spec/fixtures`. These fixtures are 
 copies of imdb page used in tests. 
 
-Run bundle install to install all dependencies, including fakeweb, which
+Run bundle install to install all dependencies, including webmock, which
 will serve the fixture files instead of doing actual requests to imdb.com.
 
     $ bundle install
