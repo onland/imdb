@@ -6,7 +6,7 @@ module Imdb
 
     def initialize(imdb_id)
       @id = imdb_id
-      @url = "http://www.imdb.com/name/#{imdb_id}/"
+      @url = "#{Imdb::HTTP_PROTOCOL}://www.imdb.com/name/#{imdb_id}/"
     end
 
     # NOTE: Can a Person not have a name on IMDB?

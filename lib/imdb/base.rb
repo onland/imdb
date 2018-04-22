@@ -79,7 +79,7 @@ module Imdb
     # Returns the url to the "Watch a trailer" page
     def trailer_url
       get_node("a[@href^='videoplayer/']") do |trailer_link|
-        'http://www.imdb.com/' + trailer_link['href']
+        "#{Imdb::HTTP_PROTOCOL}://www.imdb.com/" + trailer_link['href']
       end
     end
 
@@ -310,7 +310,7 @@ module Imdb
     end
 
     def self.url_for(imdb_id, page = :reference)
-      "http://www.imdb.com/title/tt#{imdb_id}/#{page}"
+      "#{Imdb::HTTP_PROTOCOL}://www.imdb.com/title/tt#{imdb_id}/#{page}"
     end
 
     # Convenience method for search

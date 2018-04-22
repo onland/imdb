@@ -11,6 +11,7 @@ module Imdb
   # This header is needed to disable localizing.
   # use_it with open-uri's open or `curl`
   HTTP_HEADER = { 'Accept-Language' => 'en-US;en' }.freeze
+  HTTP_PROTOCOL = 'https'.freeze
 end
 
 require 'imdb/util'

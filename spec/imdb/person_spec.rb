@@ -25,9 +25,9 @@ describe 'Imdb::Person' do
       expect(known_for).to be_an(Array)
       known_for.each { |movie| expect(movie).to be_an_instance_of(Imdb::Movie) }
 
-      expect(known_for.last.id).to eq('0056801')
-      expect(known_for.last.title).to eq('8½')
-      expect(known_for.last.year).to eq(1963)
+      expect(known_for.last.id).to eq('0053779')
+      expect(known_for.last.title).to eq('La Dolce Vita')
+      expect(known_for.last.year).to eq(1960)
       expect(known_for.last.poster_thumbnail).to match(/\Ahttp.*jpg\Z/)
       expect(known_for.last.related_person).to eq(subject)
       expect(known_for.last.related_person_role).to eq('Writer')
@@ -41,7 +41,7 @@ describe 'Imdb::Person' do
     end
 
     it 'finds their picture thumbnail' do
-      expect(subject.picture_thumbnail).to eq('https://images-na.ssl-images-amazon.com/images/M/MV5BMjE0NDI1MDU5Nl5BMl5BanBnXkFtZTgwNjQ2ODMwMzE@._V1_UY317_CR8,0,214,317_AL_.jpg')
+      expect(subject.picture_thumbnail).to eq('https://ia.media-imdb.com/images/M/MV5BMjE0NDI1MDU5Nl5BMl5BanBnXkFtZTgwNjQ2ODMwMzE@._V1_UY317_CR8,0,214,317_AL_.jpg')
     end
 
     it 'finds their roles' do
@@ -160,7 +160,7 @@ describe 'Imdb::Person' do
     end
 
     it 'finds the personal quote even if there is a hyperlink in it' do
-      expect(subject.personal_quote).to eq('[on River Phoenix] River was a remarkable artist and a rare human being. I miss him every day.')
+      expect(subject.personal_quote).to eq("What would happen if you melted? You know, you never really hear this talked about much, but spontaneous combustion? It exists!...[people] burn from within...sometimes they'll be in a wooden chair and the chair won't burn, but there'll be nothing left of the person. Except sometimes his teeth. Or the heart. No one speaks about this, but its for real.")
     end
   end
 

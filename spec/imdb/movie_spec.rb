@@ -100,7 +100,7 @@ describe 'Imdb::Movie' do
 
     it 'returns the url to the movie trailer' do
       expect(subject.trailer_url).to be_a(String)
-      expect(subject.trailer_url).to eq('http://www.imdb.com/videoplayer/vi581042457')
+      expect(subject.trailer_url).to eq('https://www.imdb.com/videoplayer/vi581042457')
     end
 
     it 'finds the director' do
@@ -149,11 +149,11 @@ describe 'Imdb::Movie' do
     end
 
     it 'finds the poster thumbnail' do
-      expect(subject.poster_thumbnail).to eq('https://images-na.ssl-images-amazon.com/images/M/MV5BMzNmY2IwYzAtNDQ1NC00MmI4LThkOTgtZmVhYmExOTVhMWRkXkEyXkFqcGdeQXVyMTk5NDA3Nw@@._V1_SY150_CR0,0,101,150_.jpg')
+      expect(subject.poster_thumbnail).to eq('https://ia.media-imdb.com/images/M/MV5BMzNmY2IwYzAtNDQ1NC00MmI4LThkOTgtZmVhYmExOTVhMWRkXkEyXkFqcGdeQXVyMTk5NDA3Nw@@._V1_SY150_CR0,0,101,150_.jpg')
     end
 
     it 'finds the poster' do
-      expect(subject.poster).to eq('https://images-na.ssl-images-amazon.com/images/M/MV5BMzNmY2IwYzAtNDQ1NC00MmI4LThkOTgtZmVhYmExOTVhMWRkXkEyXkFqcGdeQXVyMTk5NDA3Nw@@.jpg')
+      expect(subject.poster).to eq('https://ia.media-imdb.com/images/M/MV5BMzNmY2IwYzAtNDQ1NC00MmI4LThkOTgtZmVhYmExOTVhMWRkXkEyXkFqcGdeQXVyMTk5NDA3Nw@@.jpg')
     end
 
     it 'finds the rating' do
@@ -306,7 +306,7 @@ describe 'Imdb::Movie' do
       # Pulp Fiction (1994)
       subject { Imdb::Movie.new('0110912') }
       it 'has a poster' do
-        expect(subject.poster).to eq('https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxMTA5OTAzMl5BMl5BanBnXkFtZTgwNjA5MDc3NjE@.jpg')
+        expect(subject.poster).to eq('https://ia.media-imdb.com/images/M/MV5BMTkxMTA5OTAzMl5BMl5BanBnXkFtZTgwNjA5MDc3NjE@.jpg')
       end
     end
   end
@@ -373,7 +373,7 @@ describe 'Imdb::Movie' do
       end
 
       it 'returns "unkown" as plot' do
-        expect(subject.plot).to match(/Plot unknown/)
+        expect(subject.plot).to include('unknown')
       end
 
       it 'returns "missing" as plot synopsys' do
